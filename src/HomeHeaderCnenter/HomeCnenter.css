@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.img_center {
+    background-image: url('../images/center-image.jpg');
+    width: 100%;
+    height:70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    color: #fff;
+    border-radius: 0px;
+    align-items: center;
+    margin-top: 12%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.img_center h1, span {
+    color: rgb(238, 238, 238);
+    margin: 20px;
+    /* padding-top: 50px; */
+    font-size: 80px;
+    align-items: center;
+    font-family: 'Bungee', cursive;
+    font-weight: bolder;
+    line-height: 100px;
+    border-radius: 0px;
+}
+span {
+    color: lightblue;
+    text-shadow: 10px 10px 10px
+     rgba(0,0,0,.5), 20px 20px 20px
+     rgba(0,0,0,.4), 30px 30px 30px 
+     rgba(0,0,0,.1);
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 40px;
+    font-family: Arial, sans-serif
+    ;
+    font-weight: bolder;
+}
+
+h1, h4 {
+    text-shadow: 10px 10px 10px
+     rgba(0,0,0,.5), 20px 20px 20px
+     rgba(0,0,0,.4), 30px 30px 30px 
+     rgba(0,0,0,.1);
+}
+
+.about_section {
+    text-Align: center;
+    width: 100%;
+    height:50vh;
+    background: green;
+
+}
+
+@media only screen and (max-width: 800px) {
+   .img_center h1, span, h4{
+        font-size: 40px;
+        text-align: justify;
+    }   
+    .img_center img{
+        width: 100%;
+        background: green;
+    }
+}

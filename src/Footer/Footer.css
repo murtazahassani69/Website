@@ -1,0 +1,14 @@
+.footer_section {
+     position: fixed; 
+     bottom: 0; 
+     width: 100%; 
+     background-color: black;
+     height: 100px; 
+     margin-top: 50%;
+     text-align: center;
+     border-radius:0px;  
+     color: #fff;
+     font-size: 30px;    
+    list-style: none;
+
+}
