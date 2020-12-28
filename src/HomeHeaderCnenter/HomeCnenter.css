@@ -2,41 +2,37 @@
 
 .img_center {
     background-image: url('../images/center-image.jpg');
-    width: 100%;
-    height:70vh;
+    /* position: static; */
+    min-height: 780px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     padding: 0;
+    display: inline-block;
+    width: 100%;
     color: #fff;
-    border-radius: 0px;
     align-items: center;
-    margin-top: 12%;
+    /* margin-top: 12%; */
     padding-bottom: 3%;
-    padding-top: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scroll-behavior: smooth;
 }
 
-.img_center h1, span {
-    color: rgb(238, 238, 238);
+.img_center h1, span{
     margin: 20px;
-    /* padding-top: 50px; */
     font-size: 80px;
     align-items: center;
     font-family: 'Bungee', cursive;
     font-weight: bolder;
     line-height: 100px;
     border-radius: 0px;
-}
-span {
-    color: lightblue;
-    text-shadow: 10px 10px 10px
-     rgba(0,0,0,.5), 20px 20px 20px
-     rgba(0,0,0,.4), 30px 30px 30px 
-     rgba(0,0,0,.1);
+    will-change: transform, opacity;
+    color: rgb(44 195 165);
+
 }
 
-h4 {
+
+.img_center h4 {
     color: rgb(255, 255, 255);
     margin: 20px;
     font-size: 40px;
@@ -44,29 +40,53 @@ h4 {
     ;
     font-weight: bolder;
 }
+.img_center p{
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
+    display:flex;
+    margin: 20px;
+    text-align: inherit;
+    font-size: 26px;
 
-h1, h4 {
+}
+
+.img_center h1, h4 {
     text-shadow: 10px 10px 10px
      rgba(0,0,0,.5), 20px 20px 20px
      rgba(0,0,0,.4), 30px 30px 30px 
      rgba(0,0,0,.1);
 }
 
-.about_section {
-    text-Align: center;
-    width: 100%;
-    height:50vh;
-    background: green;
-
-}
+.button1 {
+    width: 40%;
+    font-size: 30px;
+    margin-left: 30px;
+    background-color:rgb(21 155 254 / 92%);
+    border-radius: 15px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+     }
+    .button1:hover{
+        background-color: darkcyan;
+        color: darkgoldenrod;
+    }
+    
 
 @media only screen and (max-width: 800px) {
-   .img_center h1, span, h4{
+   .img_center h1{
         font-size: 40px;
-        text-align: justify;
     }   
-    .img_center img{
-        width: 100%;
-        background: green;
+    .img_center{
+    margin-top: 30%;
+    position: relative;
+    align-items: center;
+    align-self: center;
+
+    }
+    h4{
+        font-size: 28px;
+        letter-spacing: -1px;
     }
 }
+
