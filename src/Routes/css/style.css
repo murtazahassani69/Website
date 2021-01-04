@@ -8,44 +8,62 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
   /* color: #616971; */
-  margin: 30px 50px;
+  background-color: #fff;
   line-height: 1.5rem;
 }
-
+p {
+  color: #616971;
+}
 img {
   max-width: 100%;
+}
+img:hover {
+  border-radius: 10px;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .btn {
   background:  #68a0d2;
   color: #fff;
+  letter-spacing: 0.5px;
   padding: 0.6rem 1.3rem;
   text-decoration: none;
   border: 0;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #4981b3!important;
+  border: .2rem solid #4981b3!important;
+  border-radius: 6px;
+}
+
+hr {
+  width: 30%;
+  background-color:  #68a0d2;
+  border: 1px  #68a0d2 solid;
+}
+hr:hover {
+  transform: scale(1.5);
 }
 
 /* welcome text */
 .welcome-content {
   margin-top: 2rem;
+  padding-top: 1rem;
   text-align: center;
-  padding: 1rem;
 }
 .welcome-content h1 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
 }
 .welcome-content p {
-  font-size: 1.7rem;
-}
-hr {
-  width: 35%;
-  background-color:  #68a0d2;
-  border: 1px  #68a0d2 solid;
+  font-size: 1.5rem;
 }
 
 /* grid-boxes */
 .grid-boxes {
-  margin: .5rem .5rem;
-  padding-top: .5rem;
+  margin: 2rem .5rem;
+  padding: 2rem 0;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -55,6 +73,7 @@ hr {
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: .1rem solid #4981b3;
+  border-radius: 5px;
 }
 .grid-box img {
   box-shadow: var(--shadow);
@@ -62,53 +81,31 @@ hr {
   height: 200px;
 }
 
-/* info grid */
-.info {
-  margin: .5rem .5rem;
-  padding-top: .5rem;
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 2rem;
-}
-.info-img,
-.visit-info-img {
-  box-shadow: var(--shadow);
-  width: 30rem;
-}
-.info div,
-.visit-info {
-  text-align: start;
-}
-
-/* info grid */
-.visit-info {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(2, 1fr);
-  margin: .5rem .5rem;
-  padding-top: .5rem;
-  margin-top: 2rem;
+.horizonal {
+  padding: .2px 0;
+  width: 100%;
+  border: 1px!important;
+  /* background-color: #333!important; */
 }
 
 /* portfolio */
 .port h1 {
+  font-family: 'Courier New', Courier, sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 2rem;
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
 }
-.port hr {
-  width: 10%;
-  background-color:  #68a0d2;
-  border: 1px  #68a0d2 solid;
+.port p {
+  font-family: 'Courier New', Courier, sans-serif;
+  font-size: 1.1rem;
 }
 
 /* Boxes */
 .boxes {
-  margin: .5rem .5rem;
-  padding: 1.5rem 0;
+  margin: 1rem .5rem 2.5rem .5rem;
+  padding: 1rem 0 2.5rem 0;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -116,47 +113,157 @@ hr {
 
 .box {
   box-shadow: var(--shadow);
-  background-color: #ccc;
+  background-color:rgb(247, 242, 242);
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: .1rem solid #4981b3;
 }
 
-.portfolio {
-  margin: 1.5rem .5rem;
-  padding-top: .5rem 0;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.portfolio img {
-  width: 100%;
-  box-shadow: var(--shadow);
-}
-
-.advance {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
+/*  */
+.head-text h2{
+  font-family: 'Courier New', Courier, sans-serif;
+  text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+}
+.head-text p {
+  font-family: 'Courier New', Courier, sans-serif;
+  font-size: 1.1rem;
+  /* text-transform: uppercase; */
+}
+.columns-container {
+  display: grid;
+  width: 100%;
+  margin: .5rem .5rem 2.5rem 0;
+  padding: .5rem 0 2.5rem 0;
+  grid-gap: 5px;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.flex-columns {
+  box-shadow: var(--shadow);
+  align-items: center;
+  padding: .5rem 0;
+  box-shadow: .1rem solid #4981b3;
+  border-radius: 5px;
 }
 
-.row {
-  gap: 30px;
-  background-color: #ccc;
-  font-size: 1.3rem;
-  margin: 2rem auto;
-  padding: 1rem auto;
-  display: flex;
-}
-.row h4 {
-  width: 80%;
-  padding-left: 1.5rem;
-}
-.row .btn {
-  width: 20%;
-  justify-self: end;
+/* reacticons */
+.lead-icon {
+  justify-content: center;
   text-align: center;
-  padding: 2rem;
+}
+
+.font-page {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: .5rem auto;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.site-icon {
+  box-shadow: var(--shadow);
+  align-items: center;
+  padding: 1.5rem 2rem;
+  box-shadow: .1rem solid #4981b3;
+  border-radius: 5px;
+}
+
+.jumbotron {
+  display: flex;
+  background-color: rgb(247, 242, 242);
+
+}
+.jumbotron h4 {
+  gap: 40px;
+  justify-self: flex-start;
+  font-size: 1rem;
+  float: left;
+  padding: 15px;
+  margin: 10px; 
+}
+.jumbotron .btn {
+  gap: 40px;
+  float: right;
+  height: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  margin-right: 15px; 
+}
+
+/* @media queries 992/ 1024*/
+
+@media (max-width: 768px) {
+  .welcome-content h1, 
+  .port h1 {
+    font-size: 1.5rem;
+  }
+  .grid-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-boxes .btn {
+    width: 90%;
+    padding: 0.6rem 0.6rem;
+  }
+  .columns-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .jumbotron {
+    display: flex;
+    width: 100%;
+  }
+  .jumbotron h4 {
+    width: 70%;
+  }
+  .jumbotron .btn {
+    width: 30%;
+    height: 45px;
+    border-radius: 30px;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .welcome-content h1, 
+  .port h1 {
+    font-size: 1.2rem;
+  }
+  .grid-boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .btn {
+    display: block;
+  }
+  .columns-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .jumbotron {
+    background-color: #fff;
+    display: grid;
+    margin: 5px 5px;
+    padding: 2px 2px;
+  }
+  .jumbotron h4 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .jumbotron .btn{
+    height: 25px;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    border-radius: 4px;
+  }
 }
