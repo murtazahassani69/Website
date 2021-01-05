@@ -1,42 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 .img_center {
-    background-image: url('../images/center-image.jpg');
-    /* position: static; */
-    min-height: 780px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: 
+      url('../images/ba.jpg') fixed center center;
     background-size: cover;
-    padding: 0;
-    display: inline-block;
-    width: 100%;
-    color: #fff;
-    align-items: center;
-    /* margin-top: 12%; */
-    padding-bottom: 3%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    scroll-behavior: smooth;
+    padding: 120px 0;
 }
+  
+  .img_center h4 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .img_center p {
+    color: #fff;
+  }
+
+  @media (max-width: 1024px) {
+    .img_center {
+      background-attachment: scroll;
+    }
+  }
+  
 
 .img_center h1, span{
     margin: 20px;
-    font-size: 80px;
+    font-size: 50px;
     align-items: center;
-    font-family: 'Bungee', cursive;
+    font-family: fangsong;
     font-weight: bolder;
     line-height: 100px;
     border-radius: 0px;
-    will-change: transform, opacity;
-    color: rgb(44 195 165);
+
+    color: white;
 
 }
 
-
+.img_center .tit_welcome {
+  background: rgb(0 0 0 / 40%);
+  color: #fff;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;  
+  /* border: 3px solid green ; */
+  margin-top: 96px;
+  padding-left: 84px;
+}
 .img_center h4 {
     color: rgb(255, 255, 255);
     margin: 20px;
     font-size: 40px;
-    font-family: Arial, sans-serif
+    font-family:initial
     ;
     font-weight: bolder;
 }
@@ -47,29 +61,33 @@
     margin: 20px;
     text-align: inherit;
     font-size: 26px;
+    font-family: initial;
 
 }
 
-.img_center h1, h4 {
-    text-shadow: 10px 10px 10px
-     rgba(0,0,0,.5), 20px 20px 20px
-     rgba(0,0,0,.4), 30px 30px 30px 
-     rgba(0,0,0,.1);
-}
 
 .button1 {
-    width: 40%;
-    font-size: 30px;
-    margin-left: 30px;
-    background-color:rgb(21 155 254 / 92%);
-    border-radius: 15px;
-    color: #fff;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    width:20%;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid rgb(157, 216, 255);
+    color: rgb(0, 0, 0);
+    border-style: none; 
     outline: none;
-    cursor: pointer;
+    justify-content: center;
      }
     .button1:hover{
-        background-color: darkcyan;
-        color: darkgoldenrod;
+        background: #1e2122;
+        border: 2px solid #0af02d;
+   
+
     }
     
 
