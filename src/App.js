@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import HomeCnenter from "./HomeHeaderCnenter/HomeCnenter";
+import HomeCnenter from "./HomeHeader/HomeCnenter";
 import particlesConfig from "./config/particlesConfig";
 import Particles from "react-particles-js";
 

@@ -5,7 +5,7 @@
   background-size: cover;
   padding: 196px 0px;
 
-  background-image: url("../images/tecno.jpg");
+  background-image: url("../img/tecno.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,18 +13,8 @@
   background-repeat: no-repeat;
 }
 
-body {
-  /* background: url(background-photo.jpg) center center cover no-repeat fixed; */
-}
 
-/* For mobile devices */
-@media only screen and (max-width: 767px) {
-  body {
-    /* The file size of this background image is 93% smaller
-     * to improve page load speed on mobile internet connections */
-    /* background-image: url('../images/back  ground-photo-mobile-devices.jpg'); */
-  }
-}
+
 .img_center h4 {
   color: #fff;
   font-size: 28px;
