@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -15,3 +16,115 @@ body {
   height:70vh;
   margin: 40px;
 }
+
+
+li {
+  color: white;
+}
+
+ul {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.App {
+  text-align: center;
+  /* background-color: rgb(224, 225, 226); */
+}
+
+.a-small-menu {
+  margin-right: 15px;
+}
+
+.div-diff-menus {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.div-menu-line {
+  background: white;
+  width: 45px;
+  height: 7px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 25px;
+}
+
+.div-small-menu {
+  background: rgb(65, 61, 61);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+}
+
+.nav-gen-menu {
+display: flex;
+justify-content: center;
+min-height: 10vh;
+background: rgb(65, 61, 61);
+color: white;
+}
+
+.nav-links {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 0 2% 0 2%;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(rgb(211, 199, 199), rgb(211, 199, 199));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.nav-links li a:hover {
+cursor: pointer;
+background-size: 100% 2px;
+}
+
+/* RESPONSIVENESS*/
+/* Mobile phones */
+@media screen and (max-width: 450px) {
+	.nav-gen-menu{
+    display: none;
+  }
+
+  .div-small-menu {
+    display: flex;
+  }
+}
+
+/* RESPONSIVENESS*/
+/* TABLETS */
+@media screen and (min-width: 451px) and (max-width: 900px) {
+	.nav-gen-menu{
+    display: none;
+  }
+
+  .div-small-menu {
+    display: flex;
+  }
+}
+
+/* RESPONSIVENESS*/
+/* LARGER SCREENS */
+@media screen and (min-width: 901px) {
+  .nav-gen-menu{
+    display: flex;
+  }
+}
+
