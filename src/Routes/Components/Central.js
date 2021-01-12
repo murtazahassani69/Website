@@ -15,13 +15,7 @@ function Central() {
 
         {/* <!-- Main page --> */}
 
-        <div class="welcome-content">
-          <h1>WellCome to the StartUP Team</h1>
-          <hr></hr>
-          <p>For all your professional web designing and development</p>
-        </div>
-
-        {/* <!-- first section --> */}
+        {/* <!-- first sectsion --> */}
 
         <div id="container">
           <div class="grid-boxes">
@@ -82,7 +76,7 @@ function Central() {
           </div>
 
           <div class="box">
-            <img src="https://www.practicalparenting.com.au/media/12522/01_03_19-pitbull-landscape.jpg" alt="" width="350px" height="200px"></img>
+            <img src="https://cdn.mos.cms.futurecdn.net/jgXYNK8U4o4itGBBMRtCKa-1200-80.jpg" alt="" width="350px" height="200px"></img>
             <h3>Support</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
           </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import { Helmet } from "react-helmet";
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import icon from './Routes/imgs/tab_logo.png';

@@ -62,7 +62,7 @@ const particlesConfig = {
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 600,
+        "rotateX": 800,
         "rotateY": 1200
       }
     }
