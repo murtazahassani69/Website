@@ -1,5 +1,4 @@
 import React from 'react';
-// import './StoreFooter.css';
 import '../../../css/StoreFooter.css';
 
 
@@ -63,7 +62,9 @@ function Footer() {
               <a href="#" class="storeFooterIcon"><i class='fab fa-instagram'></i></a>
               <a href="#" class="storeFooterIcon"><i class='fab fa-youtube'></i></a>
             </div>
+
             <hr className='storeHr'></hr>
+
             <div className='storeFooterPaymentLink'>
             <h3>Payment Methods</h3>
               <a href="#" class="storeFooterIcon"><i class='fab fa-cc-visa'></i></a>
