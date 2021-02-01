@@ -1,8 +1,6 @@
 import React from 'react';
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import particlesConfig from "./config/particlesConfig";
-import Particles from "react-particles-js";
 import Home from "./Routes/Components/Home";
 import Restaurant from "./Routes/Components/Restaurant";
 import Store from "./Routes/Components/StoreOnLine";
@@ -13,15 +11,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div style={{ position: "absolute" }}>
-          <Particles
-            className="Particless"
-            paddingTop="153px"
-            width="100vw"
-            justifyContent="center"
-            params={particlesConfig}
-          />
-        </div>
         <Switch>
           <Route path='/' exact component={Home} />   
           <Route path='/restaurant' exact component={Restaurant} /> 

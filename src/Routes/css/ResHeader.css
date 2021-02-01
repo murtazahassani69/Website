@@ -1,0 +1,176 @@
+
+.home_header {
+  background-color: #ffffff;
+  padding: 24px 30px;
+  -moz-border-radius: 2px;
+  position: relative;
+  -webkit-border-radius: 2px;
+  color: rgb(0, 0, 0);
+}
+
+.home_header ul {
+  display: table;
+  line-height: 10px;
+}
+.home_header ul li {
+  position: relative;
+  display: inline;
+}
+.home_header ul li a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.home_header ul li a:hover {
+  background: rgb(238, 238, 234);
+  color: rgb(0, 0, 0);
+}
+.home_header ul ul {
+  position: absolute;
+  width: 210px;
+  top: 50px;
+  left: -370px; /* CHROME, SAFARI */
+  -webkit-transform: translateX(232px); /* CHROME SAFARI */
+  -moz-transform: translateX(135px); /* FIREFOX */
+
+  /* BACKGROUND COLOR AND BORDER. */
+  background: #ffa734;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+
+  /* ADD BORDER SHADOW. */
+  box-shadow: 0 0 10px #444;
+  -moz-box-shadow: 0 0 10px #444;
+  -webkit-box-shadow: 0 0 10px #444;
+}
+
+/* SUB home_header LIST */
+.home_header ul ul li {
+  text-align: left;
+  margin: 0;
+}
+
+.home_header ul ul li a {
+  height: 0;
+  line-height: 0;
+  width: 200px;
+  color: rgb(0, 0, 0);
+  padding: 0 20px;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.home_header ul ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 175px;
+}
+.categories a {
+  transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+.categories:hover ul li a {
+  height: 40px;
+  line-height: 40px;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.home_header .categories .da > ul {
+  transition: opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out,
+    visibility 0.1s 0.1s linear;
+  -o-transition: opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out,
+    visibility 0.1s 0.1s linear;
+  -moz-transition: opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out,
+    visibility 0.1s 0.1s linear;
+  -webkit-transition: opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out,
+    visibility 0.1s 0.1s linear;
+}
+.home_header .categories .da:hover > ul {
+  visibility: visible;
+  position: absolute;
+  left: -232px; /* CHROME, SAFARI */
+  -moz-transform: translateX(232px); /* FIREFOX */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.rest_header {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background-image: url('../Components/Demo/Restaurant/imgs/rest-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  top: 0;
+  position: absolute; 
+  height: 100vh;
+  width: 100%;
+}
+
+.rest_header-title {
+  grid-row: 2/4;
+  grid-column: 2/8;
+  align-self: center;
+  justify-self: center;
+}
+.rest_header-title h3 {
+  font-family: "Montez", cursive;
+  font-size: 4rem;
+  color: #fcda9a;
+  font-weight: lighter;
+  line-height: 3rem;
+}
+
+.rest_header-title h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: white;
+}
+
+.rest_header-line {
+  display: grid;
+  font-size: 1.6rem;
+  color: #fcda9a;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+
+.rest_header-line::after,
+.rest_header-line::before {
+  background-color: currentColor;
+  content: "";
+  display: block;
+  height: 1px;
+}
+
+.rest_header-openhours {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.rest_header-days {
+}
+
+.rest_header-hours {
+  margin-left: 1rem;
+}
+
+.rest_header-img1 {
+  z-index: 10;
+  width: 100%;
+}
+

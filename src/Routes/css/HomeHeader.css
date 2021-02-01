@@ -54,7 +54,6 @@
   /* background: url("../images/ba.jpg") fixed center center; */
   background-size: cover;
   padding: 196px 0px;
-
   background-image: url("../imgs/tecno.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -85,7 +84,7 @@
   color: #fff;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  margin-top: 96px;
+  margin-top: 108px;
 }
 .header_img_center h4 {
   color: rgb(255, 255, 255);
@@ -136,13 +135,6 @@
 }
 
 
-.header_img_center .header_title {
-  background: rgb(0 0 0 / 40%);
-  color: #fff;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  margin-top: 96px;
-}
 .header_img_center h4 {
   color: rgb(255, 255, 255);
   margin: 20px;
@@ -191,14 +183,6 @@
   }
 }
 
-
-.header_img_center .header_title {
-  background: rgb(0 0 0 / 40%);
-  color: #fff;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  margin-top: 96px;
-}
 .header_img_center h4 {
   color: rgb(255, 255, 255);
   margin: 20px;
@@ -244,5 +228,8 @@
   }
   .header_img_center p {
     font-size: 16px;
+  }
+  .header_img_center .header_title  {
+  margin-top: -38px;
   }
 }
