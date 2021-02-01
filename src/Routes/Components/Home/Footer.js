@@ -6,7 +6,7 @@ import twitter from '../../imgs/twitter.jpg';
 import youtube from '../../imgs/youtube.jpg' ;
 import phone from '../../imgs/phone.jpg';
 import mail from '../../imgs/mail.jpg';
-import '../../css/Footer.css';
+import '../../css/HomeFooter.css';
 
 function Footer() {
     return (

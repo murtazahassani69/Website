@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.Menu {
+  background-color: #fff;
+  display: flow-root;
+  margin-bottom: 12%;
+  margin-top: 2%;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.rest_menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  grid-gap: 2rem;
+  z-index: 10;
+  position: relative;
+}
+
+.rest_menu-link:link,
+.rest_menu-link:visited {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  display: block;
+  padding: 1.5rem;
+  transition: all 0.2s;
+}
+
+.rest_menu-link:hover,
+.rest_menu-link:active {
+  color: #fcda9a;
+  transform: translateY(-3px);
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.card {
+  width: 45ch;
+  height: 45ch;
+  background: grey;
+  border-radius: 5px;
+  /* background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40); */
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.restaurant_home_center {
+  background-image: url("https://raster-static.postmates.com/?url=https://buyer-static-gcp.postmates.com/dist/prod/home-header-food-tablet.03c1ec1a0a6afd3cb89e1e662bccedc82fd5c194893b3dbdaad843ed1298c82a92573c2e08dd9b9e1169d82f199d528cbc9ac9c47b839fbcb6999ce4e6fac21b.png&quality=85&w=0&h=0&mode=auto&format=webp&v=4");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 72vh;
+  background-color: bottom;
+  margin-top: 22px;
+  position: absolute;
+  width: 100%;
+  background-color: #151d2b;
+  max-width: 1500px;
+  margin: 0px auto;
+  /* display: flex; */
+  flex-direction: column-reverse;
+  padding-top: 60px;
+  position: relative;
+  text-align: center;
+  z-index: 101;
+  background-attachment: unset;
+}
+
+.restaurant_home_center:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.restaurant_home_center > h1 {
+  display: flex;
+  font-size: 54px;
+  letter-spacing: -1.6px;
+  margin-bottom: 0px;
+  position: relative;
+  color: #fdfeff;
+  height: 82px;
+  line-height: 84px;
+  overflow: hidden;
+}
+
+.restaurant_home_center p {
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  text-align: initial;
+  padding: 7px;
+  padding-right: 28%;
+  font-family: fangsong;
+  font-weight: bolder;
+  background-color: rgb(0, 0, 0, 0 0.4);
+}
+
+/* risponsive for mobile display */
+@media screen and (max-device-width: 700px), screen and (max-width: 700px) {
+  .restaurant_home_center p {
+    color: #ffffff;
+    font-size: 19px;
+  }
+  .restaurant_home_center h1 {
+    color: white;
+    font-size: 53px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px;
+  }
+  .restaurant_home_center {
+    /* width: auto; */
+    /* height: auto; */
+    /* padding-left: 10px; */
+    margin: 0;
+    background-attachment: unset;
+    background-clip: border-box;
+    background-position: right;
+    background-position-x: center;
+  }
+}
