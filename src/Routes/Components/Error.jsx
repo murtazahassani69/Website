@@ -2,7 +2,7 @@ import React from "react";
 import "../css/Error.css";
 const Error = () => {
   return (
-    <div className="contaner">
+    <div className="container">
       <div className="error">
         <p className="p">4</p>
         <span className="dracula">
@@ -21,7 +21,7 @@ const Error = () => {
         <div className="page-ms">
           <p className="page-msg">
             {" "}
-            Oops, the page you're looking for Disappeared{" "}
+            Oops, the page you're looking for has Disappeared{" "}
           </p>
           <button className="go-back">
             <a href="/">Go Back</a>

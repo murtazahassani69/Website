@@ -1,10 +1,10 @@
-*::before,
+/* *::before,
 *::after {
   content: "";
   position: absolute;
-}
+} */
 
-body {
+.container {
   background: #1b0034;
   background-image: linear-gradient(135deg, #1b0034 10%, #33265c 100%);
   background-attachment: fixed;
@@ -24,7 +24,7 @@ body {
   height: 300px;
   display: inline-block;
   margin: auto;
-  overflowx: hidden;
+  overflow: hidden;
 }
 
 .error .p {

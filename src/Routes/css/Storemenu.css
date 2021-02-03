@@ -1,6 +1,6 @@
-*{
+/* *{
     margin: 0;
-}
+} */
 
 #store-menu-logMenu{
     width: 100%;
@@ -11,11 +11,13 @@
 
 #store-menu-loginClient{
     width: 100%;
-    background: #D6D6D6;
+    /* background: #f563e9; */
+    /* background: #cc90df; */
+    background: #7fadf3;
     padding-top: 1.5em;
     padding-bottom: 2rem;
     margin-bottom: 1px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .store-menu-client{
@@ -52,12 +54,13 @@
     text-decoration: none;
 }
 .store-menu-text{
+    font-size: 16px;
     margin: 0.3em;
     padding: 0.4em;
     transition: 1s;
 }
 .store-menu-text:hover{
-    background-color: rgb(114, 85, 21); ;
+    background-color: rgb(114, 85, 21);
     border-radius: 10px;
 }
 #store-menu-logo{
@@ -105,9 +108,11 @@ input[placeholder='Search']::before{
 .store-menu-myImg1{
     margin-left: 1em;
     margin-right: 1em;
+    cursor: pointer;
 }
 .store-menu-myImg2{
     margin-right: 1em;
+    cursor: pointer;
 }
 .store-menu-checkbtn{
     font-size: 40px;

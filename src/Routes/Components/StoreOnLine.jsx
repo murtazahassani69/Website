@@ -8,6 +8,7 @@ import StoreFooter from './Demo/StoreOnline/StoreFooter'
 // Swith Component renders the first match and ignore the rest.//   {/* Mutaza and Presefoni Part */}
 function StoreOnLine() {
   return (
+     //style={{margin: '0px'}}
     <Router>     
         <StoreMenu />
         <StoreHeader />
