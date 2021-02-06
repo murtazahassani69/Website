@@ -2,28 +2,28 @@ import React from "react";
 import "../css/Error.css";
 const Error = () => {
   return (
-    <div className="contaner">
-      <div className="error">
+    <div className="error-div-container">
+      <div className="error-div-error">
         <p className="p">4</p>
-        <span className="dracula">
-          <div className="con">
-            <div className="hair"></div>
-            <div className="hair-r"></div>
-            <div className="head"></div>
-            <div className="eye"></div>
-            <div className="eye eye-r"></div>
-            <div className="mouth"></div>
-            <div className="blod"></div>
-            <div className="blod blod2"></div>
+        <span className="error-span-dracula">
+          <div className="error-div-con">
+            <div className="error-div-hair"></div>
+            <div className="error-div-hair-r"></div>
+            <div className="error-div-head"></div>
+            <div className="error-div-eye"></div>
+            <div className="error-div-eye error-div-eye-r"></div>
+            <div className="error-div-mouth"></div>
+            <div className="error-div-blod"></div>
+            <div className="error-div-blod error-div-blod2"></div>
           </div>
         </span>
         <p className="p">4</p>
-        <div className="page-ms">
-          <p className="page-msg">
+        <div className="error-div-page-ms">
+          <p className="error-div-page-msg">
             {" "}
             Oops, the page you're looking for Disappeared{" "}
           </p>
-          <button className="go-back">
+          <button className="error-button-go-back">
             <a href="/">Go Back</a>
           </button>
         </div>

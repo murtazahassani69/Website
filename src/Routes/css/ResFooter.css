@@ -1,17 +1,7 @@
 /* -------------RESTAURANT----FOOTER  */
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #485271;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
 
 .ResFooter-div-wrapper {
-  background-image: url("https://raster-static.postmates.com?url=https://buyer-static-gcp.postmates.com/dist/prod/ready-to-order-food.51b50e784d9cb2acdd8e37a9fda07d937570cd440fde10cdd758862308d6bde614e51c1b877a58dcddfac3245d882619be81aeeec79cff352b9e2dc5393556a1.png&amp;quality=85&amp;w=2304&amp;h=0&amp;mode=auto&amp;format=webp&amp;v=4");
+  /* background-image: url("https://raster-static.postmates.com?url=https://buyer-static-gcp.postmates.com/dist/prod/ready-to-order-food.51b50e784d9cb2acdd8e37a9fda07d937570cd440fde10cdd758862308d6bde614e51c1b877a58dcddfac3245d882619be81aeeec79cff352b9e2dc5393556a1.png&amp;quality=85&amp;w=2304&amp;h=0&amp;mode=auto&amp;format=webp&amp;v=4"); */
   display: block;
   overflow: hidden;
   background-color: #151d2b;
@@ -26,33 +16,39 @@
 .ResFooter-div-wrapper .ResFooter-div-inner .ResFooter-footer-boxes {
   float: left;
   width: 33%;
-  padding: 30px;
+  padding: 26px;
   box-sizing: border-box;
 }
 
 .ResFooter-div-wrapper .ResFooter-div-inner h1,
 p,
 .ResFooter-contact,
-.ResFooter-socials a,
+.ResFooter-social a,
 .ResFooter-div-wrapper .ResFooter-div-inner h2 {
   color: white;
 }
+
+
+
 /* ------------------------------------------- */
 #ResFooter-logo {
   width: 90px;
 }
-#ResFooter-footer-box1 .ResFooter-socials {
+#ResFooter-footer-box1 .ResFooter-social {
   margin: 1em;
   margin-left: 10%;
+  color: #fff;
+  font-size: 1.7rem;
+  margin-top: 25px;
+  padding: 3px;
+  justify-content: space-between;
 }
-#ResFooter-footer-box1 .ResFooter-socials a img {
-  width: 38px;
-}
+ 
 
-#ResFooter-footer-box1 .ResFooter-socials a {
+#ResFooter-footer-box1 .ResFooter-social a {
   border: 1px solid gray;
-  width: 55px;
-  height: 45px;
+  width: 52px;
+  height: 39px;
   padding-top: 5px;
   margin-right: 5px;
   text-align: center;
@@ -60,7 +56,7 @@ p,
   border-radius: 5px;
   transition: all 0.3s;
 }
-#ResFooter-footer-box1 .ResFooter-socials a:hover,
+#ResFooter-footer-box1 .ResFooter-social a:hover,
 #ResFooter-footer-logo:hover {
   border: 1px solid white;
   color: white;
@@ -71,22 +67,17 @@ p,
   margin: 0em;
 }
 #ResFooter-footer-box2 p {
-  /* margin: 2em; */
   padding: 10px;
 }
 #ResFooter-footer-box2 h1 span {
   color: #05f7ff;
 }
 
-#ResFooter-footer-box3 img {
-  width: 20px;
-  height: auto;
-  margin-left: 10%;
-}
 
 #ResFooter-footer-box3 h2 {
   color: #05f7ff;
   margin-left: 20px;
+  padding-bottom: 8%;
 }
 
 .ResFooter-contact span:hover {
@@ -98,7 +89,6 @@ p,
 
 .ResFooter-newsletter {
   position: relative;
-  margin-left: 20px;
   align-items: center;
 }
 .ResFooter-newsletter .email {
@@ -186,6 +176,17 @@ p,
   margin: 0 auto 20px auto;
 }
 
+#ResFooter-bottom-container .scroll-up{
+  border: 1px solid gray;
+  position: fixed;
+  bottom: 43px;
+  right: 25px;
+  z-index: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
 /* RESPONSIVENESS*/
 /* Mobile phones */
 @media screen and (max-width: 450px) {
@@ -223,20 +224,15 @@ p,
   #ResFooter-footer-box1 {
     margin: 4%;
   }
-  #ResFooter-footer-box1 .ResFooter-socials {
+  #ResFooter-footer-box1 .ResFooter-social {
     margin: 0;
   }
-  #ResFooter-footer-box1 .ResFooter-socials a {
+  #ResFooter-footer-box1 .ResFooter-social a {
     width: 38px;
     margin: 2%;
   }
-  .ResFooter-div-wrapper #ResFooter-footer-box2 img {
-    margin-left: 0%;
-  }
-  #ResFooter-footer-box3 {
-    line-height: 18px;
-    display: inline;
-  }
+ 
+ 
   .ResFooter-div-wrapper .ResFooter-bottom-container {
     padding: 15px 0;
     width: 100%;

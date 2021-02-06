@@ -1,39 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .rest_menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: transparent;
   height: 5rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.rest_menu.active {
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  height: 3.5rem;
 }
 
 .rest_logo {
-  margin-right: 3rem;
+  margin-right: 4rem;
 }
 
 .rest_menu-list {
   list-style: none;
   display: flex;
-  width: inherit;
   justify-content: center;
+  align-items: center;
 }
 
-.rest_menu-link::before {
-  opacity: 0;
-  content: "";
-  background-color: #fcda9a;
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  transform: translate(-100%, 100%);
+@media only screen and (max-width: 1056px) {
+  .rest_menu {
+    justify-content: space-around;
+  }
+
+  .rest_menu-list {
+    display: none;
+  }
+  .rest_logo {
+    display: block;
+  }
+
+  .rest_menu {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 
 .rest_menu-link:link,
 .rest_menu-link:visited {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -45,49 +59,158 @@
   transition: all 0.2s;
 }
 
+@media only screen and (max-width: 1280px) {
+  .rest_menu-link:link,
+  .rest_menu-link:visited {
+    font-size: 1rem;
+  }
+
+  .rest_logo {
+    margin-right: 0rem;
+  }
+}
+
 .rest_menu-link:hover,
 .rest_menu-link:active {
   color: #fcda9a;
   transform: translateY(-3px);
 }
 
-.rest_menu-link:hover::before {
-  opacity: 1;
-}
-
-ul li ul {
+.rest_menu-dropdown {
   visibility: hidden;
   opacity: 1;
   position: absolute;
   transition: all 0.2s ease;
   list-style: none;
-  transform: translateX(21%);
-  margin-top: -1.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: inherit;
+  padding-inline-start: 0px !important;
+  margin-top: -2.3rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 8rem;
+  text-align: center;
+  margin-left: 0.4rem;
+  border-top: 1px solid #fff;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
+.rest_menu-dropdown li {
+  margin: 30px 0;
+}
+
+.rest_menu-list li:hover > a {
+  color: #fcda9a;
+}
+
+.rest_menu-list li:hover > .rest_menu-dropdown,
+.rest_menu-list li .rest_menu-dropdown :hover {
   visibility: visible;
   opacity: 1;
   display: block;
-  border-bottom: 1px lawngreen;
 }
 
-ul li ul li a {
+.rest_menu-list li .rest_menu-dropdown li a {
   font-size: 0.9rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  text-align: center;
   display: block;
-  padding: 0.5rem;
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
+  width: 100%;
+  font-weight: 400;
 }
 
-ul li ul li a:hover {
+.rest_menu-list li .rest_menu-dropdown li a:hover {
   background-color: #fcda9a;
+}
+
+.rest_button-toggle {
+  background: #eecf92;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-right: 1%;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-self: center;
+  margin-right: 10%;
+}
+
+@media only screen and (min-width: 1056px) {
+  .rest_button-toggle,
+  .rest_menu-toggle,
+  .rest_toggle-dropdown {
+    display: none;
+  }
+}
+.rest_span-toggle {
+  color: white;
+  height: 2rem;
+  width: 2rem;
+}
+@media only screen and (max-width: 1056px) {
+  .rest_list-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1056px) {
+  .rest_list-toggle-active {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: fixed;
+    width: 30%;
+    transform: translateX(-10%);
+    right: 12%;
+    top: 5.5%;
+    padding-left: 0px;
+    align-items: center;
+    z-index: 1000;
+    border-top: 1px solid #fff;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .rest_list-toggle-active {
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: flex-start;
+    width: 100%;
+    transform: translateX(0);
+    right: 0%;
+    top: 5.5%;
+  }
+
+  .rest_menu {
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    height: 3.5rem;
+  }
+}
+
+.rest_list-toggle-active li {
+  opacity: 1;
+  font-size: 25px;
+  margin: 25px 0px;
+}
+
+.rest_list-toggle-active li:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.rest_list-toggle-active a {
+  color: #fff;
+}
+
+.rest_list-toggle-active a:active,
+.rest_list-toggle-active a:hover {
+  background-color: #fcda9a;
+}
+
+.rest_toggle-dropdown {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.rest_toggle-dropdown li {
+  text-decoration: none;
 }

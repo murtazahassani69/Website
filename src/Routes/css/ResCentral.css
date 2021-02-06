@@ -1,5 +1,228 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+.res_foods_Menu {
+  background-color: rgb(255, 255, 255);
+  display: flow-root;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+.res_foods_Menu .res_foods_h1_title {
+  color: rgb(84, 83, 83);
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+.res_foods_Menu .res_foods_h1_title:hover {
+  color: rgb(47, 14, 165);
+  transition: all 0.3s;
+  transition-timing-function: ease-in;
+}
 
+.res_foods_Menu .res_foods_hr {
+  color: violet;
+  border-bottom: 5px solid #ff7def;
+  justify-content: center;
+  width: 50%;
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+}
+.res_foods_Menu .res_foods_Menu_h3_title {
+  color: rgb(84, 83, 83);
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.res_foods_Menu .res_foods_Menu_h3_title:hover {
+  color: rgb(84, 83, 83);
+  color: green;
+}
+.RestaurantBookTable {
+  scroll-behavior: smooth;
+}
+.res_foods_Menu .gallery {
+  margin: 22px;
+  transition: transform 1.2s;
+  border-bottom: 3px solid rgb(255, 0, 0);
+  box-shadow: 0px 30px 100px -10px rgb(0 0 0 / 40%);
+}
+
+.res_foods_Menu .gallery:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+}
+
+.res_foods_Menu .gallery img {
+  width: 100%;
+  height: 32vh;
+  filter: brightness(80%);
+}
+
+.res_foods_Menu .desc {
+  padding: 4px;
+}
+.res_foods_Menu .res_food_a_link {
+  color: rgb(114, 27, 11);
+  font-weight: bolder;
+  text-align: start;
+}
+
+.res_foods_Menu .res_food_a_link:hover {
+  color: rgb(60, 0, 255);
+  transition: all 0.3s;
+  border-bottom: 1px solid black;
+}
+.res_foods_Menu .desc .res_foods_Menu_p {
+  color: black;
+  text-align: justify;
+  padding: 4px;
+}
+
+.res_responsive {
+  /* padding: 0 6px; */
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .res_responsive {
+    width: 49.99999%;
+    margin: 10px 6px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .res_responsive {
+    width: 100%;
+  }
+  .res_foods_Menu .res_foods_hr {
+    margin-left: 19vh;
+  }
+  .res_foods_Menu .res_foods_h1_title {
+    font-size: 33px;
+    line-height: 36px;
+  }
+}
+
+/* second menu of restaurant section */
+.res_div_second_menu_home_section {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #777777;
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url("../Components/Demo/Restaurant/imgs/menu-bkg-img11.jpg");
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 6%;
+}
+.res_second_menu_center {
+  width: 85%;
+  height: auto;
+  justify-content: center;
+  display: inline-table;
+  text-align: center;
+  color: #181818;
+  -webkit-box-shadow: 0 0 18px 7px rgb(0 0 0 / 30%);
+  border: 17px solid #131822;
+  padding: 0px 40px;
+  background-size: 100%;
+  background-position: revert;
+  background-clip: content-box;
+  background-origin: content-box;
+  background-color: #fff;
+  border: 17px solid #131822;
+  padding: 35px 30px;
+  box-shadow: 0 0 18px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 18px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 18px 7px rgba(0, 0, 0, 0.3);
+}
+.res_second_menu_center .second_menu_h3_title {
+  font-size: 38px;
+  font-weight: 800;
+  color: rgb(84, 83, 83);
+  padding: 2px;
+  text-transform: uppercase;
+  margin-top: 64px;
+}
+.res_span_dot {
+  height: 17px;
+  width: 17px;
+  background-color: brown;
+  border-radius: 50%;
+  display: inline-block;
+}
+.res_second_menu_center .second_menu_h3_title:hover {
+  color: rgb(0, 131, 246);
+  transition: all 0.7s ease-in;
+  transition-property: color;
+  transition-delay: 0s;
+}
+.res_second_menu_center .second_menu_p {
+  margin: 10px 0;
+  padding: 5px;
+  text-align: justify;
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: black;
+  line-height: 28px;
+  font-weight: 900;
+}
+.res_second_menu_center .second_menu_hr {
+  width: 50%;
+  display: inherit;
+  height: 1%;
+  outline: none;
+  border: 3px solid rgb(216, 72, 72);
+  border-radius: 50vh;
+}
+
+.res_div_second_menu_home_section_container {
+  padding: 0.5em;
+  display: flex;
+}
+.second_menu_section_left {
+  padding: 0;
+}
+.second_menu_section_right {
+  padding: 0;
+}
+@media only screen and (max-width: 1123px) {
+  .second_menu_section_right {
+    display: none;
+  }
+  .second_menu_section_left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .res_second_menu_center {
+    display: table-cell;
+    border: 10px solid #7577b5;
+    background-size: 100%;
+  }
+  .res_div_second_menu_home_section {
+    margin-top: 211%;
+  }
+  .res_second_menu_center .second_menu_h3_title {
+    font-size: 33px;
+    letter-spacing: 2px;
+  }
+  .res_second_menu_center .second_menu_hr {
+    color: rgb(84, 83, 83);
+    width: 50%;
+    display: inline-block;
+  }
+  .res_span_dot {
+    color: #a52d12;
+    display: inline-table;
+  }
+}
+
+/* restaurant central section */
 .restaurant_home_center {
   background-image: url("https://raster-static.postmates.com/?url=https://buyer-static-gcp.postmates.com/dist/prod/home-header-food-tablet.03c1ec1a0a6afd3cb89e1e662bccedc82fd5c194893b3dbdaad843ed1298c82a92573c2e08dd9b9e1169d82f199d528cbc9ac9c47b839fbcb6999ce4e6fac21b.png&quality=85&w=0&h=0&mode=auto&format=webp&v=4");
   background-position: bottom;
@@ -8,12 +231,10 @@
   height: 72vh;
   background-color: bottom;
   margin-top: 22px;
-  /* position: absolute; */
   width: 100%;
   background-color: #151d2b;
   max-width: 1500px;
   margin: 0px auto;
-  /* display: flex; */
   flex-direction: column-reverse;
   padding-top: 60px;
   margin-top: 19px;
@@ -29,12 +250,12 @@
 
 .restaurant_home_center > .res_title_h1 {
   display: flex;
-  font-size: 54px;
+  font-size: clamp(2.5rem, 10vw, 5rem);
   letter-spacing: -1.6px;
   margin-bottom: 0px;
   position: relative;
   color: #c79c60;
-  font-family: "Times New Roman", serif;
+  font-family: "Kanit", sans-serif;
   height: 82px;
   padding: 5px;
   line-height: 84px;
@@ -43,7 +264,6 @@
 .restaurant_home_center .res_title_h1,
 .res_paragraph_p {
   border-left: 5px solid rgb(255, 255, 255);
-  /* margin: 10px; */
   margin-left: 20px;
   justify-content: start;
   align-self: center;
@@ -61,7 +281,7 @@
   background-color: rgb(0, 0, 0, 0 0.4);
 }
 
-/* risponsive for mobile display */
+/* responsive for mobile display */
 @media screen and (max-device-width: 700px), screen and (max-width: 700px) {
   .restaurant_home_center .res_paragraph_p {
     color: #ffffff;
@@ -74,9 +294,6 @@
     text-shadow: 5px 5px 5px;
   }
   .restaurant_home_center {
-    /* width: auto; */
-    /* height: auto; */
-    /* padding-left: 10px; */
     margin: 0;
     background-attachment: unset;
     background-clip: border-box;
@@ -167,4 +384,164 @@
   justify-content: center;
   color: #ffffff;
   font-weight: bolder;
+}
+
+/* restaurant book table section */
+.restaurant_book_table_section {
+  background-color: gold;
+  padding-bottom: 22px;
+  padding-top: 22px;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+}
+.restaurant_book_table_section .restaurant_book_table_left {
+  margin-right: 0%;
+  padding: 25px;
+}
+.restaurant_book_table_section .restaurant_book_table_right {
+  margin-left: 0%;
+  padding: 25px;
+}
+.restaurant_book_table_section .res_input {
+  padding: 20px;
+  outline: none;
+  border: none;
+  transition: 0.18s ease-out;
+  display: list-item;
+  width: 86%;
+  border: 1px solid rgb(0, 0, 0);
+}
+.restaurant_book_table_section .restaurant_book_table_submit button {
+  padding: 20px;
+  margin: 5px 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+.restaurant_book_table_section .restaurant_book_table_submit button:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+  background-color: #7577b5;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.restaurant_book_table_center {
+  height: auto;
+  justify-content: center;
+  display: inline-table;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 7px rgb(0 0 0 / 30%);
+  padding: 0px 40px;
+  background-size: 100%;
+  background-color: #fff;
+  padding: 20px 40px;
+  margin-top: -3%;
+}
+
+.restaurant_book_table_center .restaurant_book_table_h3 {
+  font-size: 38px;
+  font-weight: 800;
+  color: rgb(84, 83, 83);
+  padding: 2px;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+.restaurant_book_table_section .res_input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.restaurant_book_table_section .res_input:focus {
+  color: #4b515d;
+  border: 1px solid #b8b6b6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant_book_table_section .restaurant_book_table_p {
+  color: rgb(91, 88, 88);
+  font-size: 22px;
+  text-align: center;
+  text-align: justify;
+  font-weight: 900;
+  padding: 4px;
+}
+
+@media screen and (max-device-width: 700px), screen and (max-width: 700px) {
+  .restaurant_book_table_section .res_input {
+    width: auto !important;
+    height: auto !important;
+  }
+  .restaurant_book_table_section .restaurant_book_table_submit button {
+    width: auto !important;
+    height: auto !important;
+  }
+  .restaurant_book_table_section .restaurant_book_table_p {
+    margin-left: auto;
+  }
+}
+.restaurant_book_table_center .restaurant_book_table_h3:hover {
+  color: rgb(0, 131, 246);
+  transition: all 0.7s ease-in;
+  transition-property: color;
+  transition-delay: 0s;
+}
+.restaurant_book_table_center .second_menu_p {
+  margin: 10px 0;
+  padding: 5px;
+  text-align: justify;
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: black;
+  line-height: 28px;
+  font-weight: 900;
+}
+
+.restaurant_book_table_section_container {
+  padding: 0.5em;
+  display: flex;
+}
+.restaurant_book_table_left {
+  padding: 0;
+}
+.restaurant_book_table_left img {
+  box-shadow: 8px 8px #fffefb;
+}
+.restaurant_book_table_right img {
+  box-shadow: 8px 8px #fffefb;
+}
+.restaurant_book_table_right {
+  padding: 0;
+}
+@media only screen and (max-width: 1123px) {
+  .restaurant_book_table_right {
+    display: none;
+  }
+  .restaurant_book_table_section_container {
+    box-shadow: 8px 8px #ffffff;
+  }
+  .restaurant_book_table_left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .restaurant_book_table_center {
+    display: table-cell;
+    background-size: 100%;
+  }
+  .res_div_second_menu_home_section {
+    margin-top: 211%;
+  }
+  .restaurant_book_table_center .restaurant_book_table_h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .restaurant_book_table_section .res_input {
+    display: flex;
+    max-width: auto !important;
+  }
 }

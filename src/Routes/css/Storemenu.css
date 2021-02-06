@@ -108,9 +108,11 @@ input[placeholder='Search']::before{
 .store-menu-myImg1{
     margin-left: 1em;
     margin-right: 1em;
+    cursor: pointer;
 }
 .store-menu-myImg2{
     margin-right: 1em;
+    cursor: pointer;
 }
 .store-menu-checkbtn{
     font-size: 40px;

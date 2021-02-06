@@ -179,7 +179,7 @@
     font-size: 23px;
   }
   .header_img_center p {
-    font-size: 16px;
+    font-size: 16px; 
   }
 }
 
@@ -211,6 +211,7 @@
   color: rgb(0, 0, 0);
   border-style: none;
   outline: none;
+  text-align: center;
   justify-content: center;
 }
 .header_button:hover {

@@ -10,8 +10,8 @@ function Restaurant() {
   return (
     <Router>   
       <Header />
-      <Central />
       <Menu /> 
+      <Central />
       <Footer />
     </Router>
   );

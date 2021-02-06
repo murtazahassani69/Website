@@ -1,33 +1,28 @@
 import React from 'react';
 import "../../../css/ResHeader.css";
-import logo from "../../../imgs/footer_logo.png";
+import header1 from '../Restaurant/imgs/rest-left.png';
+import header2 from '../Restaurant/imgs/rest-right.png';
 
 function Header() {
-  return (
-    <div id="header_id" className="home_header">
-    <div className="tm-top-header">
-    <div className="container">
-      <div className="row">
-        <div className="tm-top-header-inner">
-          <div className="tm-logo-container">
-            <img src={logo} alt="Logo" className="tm-site-logo" />
-            <h1 className="tm-site-name tm-handwriting-font">Amnick</h1>
-          </div>
-     
-          <nav className="tm-nav">
-            <ul>
-              <li><a href="index.html" className="active">Home</a></li>
-              <li><a href="today-special.html">Today Special</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>   
-        </div>           
-      </div>    
-    </div>
-    </div>
-  </div>
-  );
+    return (
+       <header className="rest_header">
+            <div className="rest_header-title">
+                <h3>Discover</h3>
+                <h1 className>
+                    London Plate
+                </h1>
+                <p className="rest_header-openhours">Opening hours</p>
+                <div className="rest_header-timetable">
+                    <p className="rest_header-days">Monday - Friday:</p> 
+                    <p className="rest_header-hours" >08:00 a.m. - 23:00 p.m.</p> 
+                    <p className="rest_header-weekends">Weekends:</p> 
+                    <p className="rest_header-hours" >08:00 a.m. - 23:00 a.m.</p> 
+                </div>
+            </div>
+           <img  alt ="plate1" src={header1} className="rest_header-img1"></img>
+           <img  alt ="plate1" src={header2} className="rest_header-img2"></img>
+        </header>
+    );
 }
 
 export default Header;

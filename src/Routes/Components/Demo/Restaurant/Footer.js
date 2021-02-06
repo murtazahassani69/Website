@@ -1,11 +1,5 @@
 import React from 'react';
 import footer_img from '../../../imgs/footer_logo.png';
-import facebook from '../../../imgs/facebook.png';
-import instagram from '../../../imgs/instagram.jpg';
-import twitter from '../../../imgs/twitter.jpg';
-import youtube from '../../../imgs/youtube.jpg' ;
-import phone from '../../../imgs/phone.jpg';
-import mail from '../../../imgs/mail.jpg';
 import '../../../css/ResFooter.css';
 
 function Footer() {
@@ -26,12 +20,12 @@ function Footer() {
                 <div id="ResFooter-footer-box1" class="ResFooter-footer-boxes">
                     <a href="#" ><img id="ResFooter-logo" src={footer_img} alt="logo" ></img></a>
                     
-                    <div class="ResFooter-socials">
+                    <div class="ResFooter-social">
                         <br></br>
-                        <a href="#"><img src={facebook} alt='facebook' ></img></a>
-                        <a href="#"><img src={instagram}alt='instagram' ></img></a>
-                        <a href="#"><img src={twitter} alt='twitter' ></img></a>
-                        <a href="#"><img src={youtube} alt='youtube' ></img></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-youtube"></i></a>
                     </div>
                      
                 </div>
@@ -40,8 +34,8 @@ function Footer() {
                 <div id="ResFooter-footer-box3" class="ResFooter-footer-boxes">
                     <div class="ResFooter-contact">
                         <h2>Contact info</h2>
-                        <span><img src={phone}alt='phone'></img>&nbsp;+306988083143</span><br></br>
-                        <span><img src={mail}alt='mail'></img>&nbsp;info@yuka.com</span>
+                        <span><i class="fas fa-phone"></i>&nbsp;+306988083143</span><br></br>
+                        <span><i class="fas fa-at"></i>&nbsp;info@yuka.com</span>
                                    
                         <div class="ResFooter-newsletter">
                             <form >
