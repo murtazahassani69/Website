@@ -202,6 +202,9 @@ input[placeholder='Search']::before{
     #store-menu-logo{
         margin-left: 1em;
     }
+    #store-menu-logo img{
+        cursor: pointer;
+    }
     .fa-search:before{
         right: 12rem;
     }
