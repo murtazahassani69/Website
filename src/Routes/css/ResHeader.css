@@ -24,6 +24,7 @@
   align-self: center;
   display: grid;
   grid-row: repeat(6, minmax(min-content, max-content));
+  justify-items: center;
   grid-template-columns: repeat(2, max-content);
   grid-column-gap: 3rem;
   color: white;

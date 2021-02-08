@@ -30,8 +30,7 @@ html {
 .res_foods_Menu .res_foods_Menu_h3_title {
   color: rgb(84, 83, 83);
   font-weight: bolder;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 .res_foods_Menu .res_foods_Menu_h3_title:hover {
   color: rgb(84, 83, 83);
@@ -470,8 +469,7 @@ html {
 .restaurant_book_table_section .res_input:focus {
   color: #4b515d;
   border: 1px solid #b8b6b6;
-  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
-    0px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
 .restaurant_book_table_section .restaurant_book_table_p {

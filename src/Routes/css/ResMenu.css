@@ -8,12 +8,13 @@
   height: 5rem;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 
 .rest_menu.active {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0);
   display: flex;
-  height: 6.5rem;
+  height: 3.5rem;
 }
 
 .rest_logo {
@@ -40,17 +41,8 @@
   }
 
   .rest_menu {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
   }
-}
-.rest_menu-link::before {
-  opacity: 0;
-  content: "";
-  background-color: #fcda9a;
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  transform: translate(-100%, 100%);
 }
 
 .rest_menu-link:link,
@@ -67,7 +59,7 @@
   transition: all 0.2s;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   .rest_menu-link:link,
   .rest_menu-link:visited {
     font-size: 1rem;
@@ -84,20 +76,19 @@
   transform: translateY(-3px);
 }
 
-.rest_menu-link:hover::before {
-  opacity: 1;
-}
-
 .rest_menu-dropdown {
   visibility: hidden;
   opacity: 1;
   position: absolute;
   transition: all 0.2s ease;
   list-style: none;
-
+  padding-inline-start: 0px !important;
   margin-top: -2.3rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   width: 8rem;
+  text-align: center;
+  margin-left: 0.4rem;
+  border-top: 1px solid #fff;
 }
 
 .rest_menu-dropdown li {
@@ -131,19 +122,21 @@
 }
 
 .rest_button-toggle {
-  background: #fcda9a;
+  background: #eecf92;
   cursor: pointer;
   border: none;
   outline: none;
   margin-right: 1%;
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   align-self: center;
   margin-right: 10%;
 }
 
 @media only screen and (min-width: 1056px) {
-  .rest_button-toggle {
+  .rest_button-toggle,
+  .rest_menu-toggle,
+  .rest_toggle-dropdown {
     display: none;
   }
 }
@@ -157,28 +150,40 @@
     display: none;
   }
 }
+
 @media only screen and (max-width: 1056px) {
   .rest_list-toggle-active {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     display: flex;
     flex-direction: column;
     list-style: none;
-    position: absolute;
+    position: fixed;
     width: 30%;
     transform: translateX(-10%);
-    right: 10%;
-    top: 7%;
+    right: 12%;
+    top: 5.5%;
+    padding-left: 0px;
+    align-items: center;
+    z-index: 1000;
+    border-top: 1px solid #fff;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .rest_list-toggle-active {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     justify-content: flex-start;
     width: 100%;
     transform: translateX(0);
     right: 0%;
+    top: 5.5%;
+  }
+
+  .rest_menu {
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    height: 3.5rem;
   }
 }
 
@@ -203,8 +208,7 @@
 
 .rest_toggle-dropdown {
   list-style: none;
-  padding-left: 3.5rem;
-  margin: 0px;
+  padding-left: 1rem;
 }
 
 .rest_toggle-dropdown li {

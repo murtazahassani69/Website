@@ -14,7 +14,6 @@ function Restaurant() {
       <Central />
       <Footer />
     </Router>
-
   );
 }
 
