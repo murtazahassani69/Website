@@ -13,6 +13,8 @@ function Restaurant() {
       <Menu /> 
       <Central />
       <Footer />
+    </Router>
+
   );
 }
 

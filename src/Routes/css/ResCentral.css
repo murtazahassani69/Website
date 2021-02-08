@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   scroll-behavior: smooth;
-
 }
 .res_foods_Menu {
   background-color: rgb(255, 255, 255);
@@ -46,13 +45,10 @@ html {
   transition: transform 1.2s;
   border-bottom: 3px solid rgb(255, 0, 0);
   box-shadow: 0px 30px 100px -10px rgb(0 0 0 / 40%);
-
 }
 
 .res_foods_Menu .gallery:hover {
-  transform: scale(
-    1.1
-  ); 
+  transform: scale(1.1);
   box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
 }
 
@@ -223,7 +219,7 @@ html {
     background-size: 100%;
   }
   .second_menu_home_section {
-    margin-top: 211%;
+    margin-top: 8%;
   }
   .res_second_menu_center .second_menu_h3_title {
     font-size: 33px;
@@ -240,17 +236,16 @@ html {
   }
 }
 
-
 /* restaurant central section */
 .restaurant_home_center {
   /* background-image: url('https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'); */
-  
+
   /* background-image: url('https://images.unsplash.com/photo-1553527922-767df645c5f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fHJlc3RhdXJhbnQlMjB3ZWxjb21lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'); */
-  background-image: url('https://img.freepik.com/free-vector/neon-welcome-signboard-brick-wall-background_1017-19721.jpg?size=626&ext=jpg');
+  background-image: url("https://img.freepik.com/free-vector/neon-welcome-signboard-brick-wall-background_1017-19721.jpg?size=626&ext=jpg");
 
   /* background-image: url('https://images.unsplash.com/photo-1520694146360-85079777e456?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMHdlbGNvbWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'); */
   padding-top: 10%;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
   z-index: 101;
   background-attachment: unset;
@@ -261,7 +256,7 @@ html {
   top: 0;
   position: relative;
   width: 100%;
-  height:80VH; 
+  height: 80vh;
 }
 
 .restaurant_home_center:hover {
@@ -285,7 +280,7 @@ html {
 .res_paragraph_p {
   border-left: 5px solid rgb(255, 255, 255);
   margin-left: 20px;
-  margin-top: 3%;
+  margin-top: 4%;
   justify-content: start;
   align-self: center;
 }
@@ -299,7 +294,6 @@ html {
   font-family: fangsong;
   font-weight: bolder;
 }
-
 
 /* responsive for mobile display */
 @media screen and (max-device-width: 700px), screen and (max-width: 700px) {
@@ -490,10 +484,6 @@ html {
 }
 
 @media screen and (max-device-width: 700px), screen and (max-width: 700px) {
-  .restaurant_book_table_section .res_input {
-    width: auto !important;
-    height: auto !important;
-  }
   .restaurant_book_table_section .restaurant_book_table_submit button {
     width: auto !important;
     height: auto !important;
@@ -539,9 +529,7 @@ html {
   .restaurant_book_table_right {
     display: none;
   }
-  .restaurant_book_table_section_container {
-    box-shadow: 8px 8px #ffffff;
-  }
+
   .restaurant_book_table_left {
     display: none;
   }
@@ -552,9 +540,7 @@ html {
     display: table-cell;
     background-size: 100%;
   }
-  .second_menu_home_section {
-    margin-top: 211%;
-  }
+
   .restaurant_book_table_center .restaurant_book_table_h3 {
     font-size: 30px;
     letter-spacing: 1px;
