@@ -128,7 +128,7 @@ function Central() {
       <h1 className="res_title_h1">WELCOME</h1>
       <p className="res_paragraph_p">
         Dear guests, you are welcomed at our restaurant. <br /> We greatly
-        appreciate your choice of dining with us and we promise to serve you
+        appreciate your choice of dining with us <br /> and we promise to serve you
         with our excellence. <br /> Welcome you and have a fine dining
         experience.
       </p>

@@ -80,9 +80,11 @@
 .header_img_center .header_title {
   background: rgb(0 0 0 / 40%);
   color: #fff;
-  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
-  margin-top: 108px;
+  /* margin-top: 108px; */
+  justify-content: center;
+  text-align: -webkit-match-parent;
+  padding: 5rem
 }
 .header_img_center h4 {
   color: rgb(255, 255, 255);
@@ -100,7 +102,7 @@
 }
 
 .header_button {
-  font-family:'Circular-Loom';
+  font-family: 'Circular-Loom';
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 1px;
@@ -113,6 +115,8 @@
   border-style: none;
   outline: none;
   justify-content: center;
+  position: relative;
+  cursor: pointer;
 }
 .header_button:hover {
   background: #6092a3;
@@ -148,21 +152,6 @@
   font-family: initial;
 }
 
-.header_button {
-  font-family:'Circular-Loom';
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid rgb(157, 216, 255);
-  color: rgb(0, 0, 0);
-  border-style: none;
-  outline: none;
-  justify-content: center;
-}
 .header_button:hover {
   background: #6092a3;
   border: 2px solid #0af02d;
@@ -196,21 +185,6 @@
   font-family: initial;
 }
 
-.header_button {
-  font-family:'Circular-Loom';
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid rgb(157, 216, 255);
-  color: rgb(0, 0, 0);
-  border-style: none;
-  outline: none;
-  justify-content: center;
-}
 .header_button:hover {
   background: #6092a3;
   border: 2px solid #0af02d;
@@ -229,5 +203,6 @@
   }
   .header_img_center .header_title  {
   margin-top: -38px;
+  padding: 1px
   }
 }
