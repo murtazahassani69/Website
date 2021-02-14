@@ -237,12 +237,7 @@ html {
 
 /* restaurant central section */
 .restaurant_home_center {
-  /* background-image: url('https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fHJlc3RhdXJhbnR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'); */
-
-  /* background-image: url('https://images.unsplash.com/photo-1553527922-767df645c5f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fHJlc3RhdXJhbnQlMjB3ZWxjb21lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'); */
-  background-image: url("https://img.freepik.com/free-vector/neon-welcome-signboard-brick-wall-background_1017-19721.jpg?size=626&ext=jpg");
-
-  /* background-image: url('https://images.unsplash.com/photo-1520694146360-85079777e456?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMHdlbGNvbWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'); */
+  background-image: url("https://michiramen.com/img/wood.jpg");
   padding-top: 10%;
   justify-content: center;
   text-align: center;
@@ -343,6 +338,7 @@ html {
   color: #fff;
   overflow: hidden;
   transition: all 0.5s;
+  border-radius: 50px;
 }
 
 .res_button:hover,
