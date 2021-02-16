@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+/* background section or Home central */
+.CVMurtazaTemp_background {
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #2f3e88 100%);
+  height: 100vh;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  border-bottom-left-radius: 122vh;
+}
+.CVMurtazaTemp_top_container {
+  justify-content: center;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  color: #ffffff;
+  margin-top: 18%;
+}
+
+.CVMurtazaTemp_work_button {
+  margin-top: 1rem;
+  padding: 0.2rem 2rem;
+  background-color: #f8f9fa;
+  color: black;
+  border-radius: 2rem;
+  border: 1px #122444 solid;
+  outline: none;
+  -moz-outline-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.CVMurtazaTemp_work_button:hover {
+  background-color: #122444;
+  color: white;
+  cursor: pointer;
+}
+.CVMurtazaTemp_work_button:focus {
+  outline: 0;
+}
+
+/* About section */
+.CVMurtazaTemp_about_section {
+  background-color: hsl(0deg 0% 100%);
+  width: 100%;
+  height: auto;
+  margin: 5px 0px 5px;
+  padding: 1rem;
+  color: black;
+}
+.CVMurtazaTemp_into_about_section_pa .CVMurtazaTemp_about_section_p {
+  color: #061b3d;
+  display: inline-form;
+  padding: 2%;
+  width: 50%;
+  text-align: justify;
+  font-size: 22px;
+  height: auto;
+  /* width: auto; */
+}
+
+.CVMurtazaTemp_about_section_img {
+  width: 300px;
+  height: 230px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 16px 66px -7px #777;
+}
+
+.CVMurtazaTemp_into_about_section_pa {
+  margin-top: 12px;
+}
+/* End About section */
+
+/* Footer section */
+.container1 {
+  background-color: #273566;
+  color: rgb(255, 255, 255);
+  z-index: 1000;
+  padding: 12px;
+  width: 100%;
+}
+.container-fluid {
+  color: rgb(255, 255, 255);
+}
+.CVMurtazaTemp_img-fluid {
+  color: #fff;
+}
+/* Skills section */
+.CVMurtazaTemp_skills_section {
+  background-color: hsl(0deg 0% 100%);
+  height: 100vh;
+  width: 100%;
+  /* position: absolute; */
+}
+.CVMurtazaTemp_skills_ {
+  margin-top: 5rem;
+  display: inline-grid;
+  padding: 20px;
+  width: 50%;
+  background-color: #ffffff;
+  box-shadow: 1px 0px 39px 4px grey;
+}
+.CVMurtazaTemp_skills_section_h1 {
+  font-weight: 900;
+  font-family: cursive;
+  padding: 1px;
+}
+.CVMurtazaTemp_skills_ .CVMurtazaTemp_skills_span {
+  display: flex;
+  font-family: cursive;
+  margin: 6px;
+}
+
+/* Devices responsive */
+@media screen and (max-width: 768px) {
+  .CVMurtazaTemp_into_about_section_pa .CVMurtazaTemp_about_section_p {
+    padding: 0px;
+    margin: 0px;
+    display: contents;
+  }
+  .CVMurtazaTemp_skills_ {
+    width: 83%;
+    margin-left: 18px;
+  }
+}
+
+/* Education */
+.CVMurtazaTemp_education_intro_section {
+  width: 100%;
+  height: auto;
+  margin: 5px 0px 5px;
+  color: black;
+}
+.CVMurtazaTemp_education_title {
+  font-weight: 900;
+  font-family: cursive;
+  padding: 1px;
+  font-size: 4em;
+  padding-top: 2rem;
+}
+.CVMurtazaTemp_education {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: rgb(255, 255, 255);
+}
+.CVMurtazaTemp_education .CVMurtazaTemp_education_li {
+  list-style: none;
+  text-align: start;
+  border-left: 1px solid rgb(0, 0, 0);
+  padding-left: 2px;
+  padding: 1rem;
+}
+.CVMurtazaTemp_education .CVMurtazaTemp_education_ul {
+  list-style: none;
+  text-align: start;
+  padding: 3rem;
+}
+.CVMurtazaTemp_education .CVMurtazaTemp_education_h3 {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+  font-family: revert;
+}
+
+/* experience */
+.CVMurtazaTemp_experience_intro_section {
+  width: 100%;
+  height: auto;
+  margin: 5px 0px 5px;
+  color: black;
+}
+.CVMurtazaTemp_experience_title {
+  font-weight: 900;
+  font-family: cursive;
+  padding: 1px;
+  font-size: 4em;
+  padding-top: 2rem;
+}
+.CVMurtazaTemp_experience {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: rgb(255, 255, 255);
+}
+.CVMurtazaTemp_experience .CVMurtazaTemp_experience_li {
+  list-style: none;
+  text-align: start;
+  border-left: 1px solid rgb(0, 0, 0);
+  padding-left: 2px;
+  padding: 1rem;
+}
+.CVMurtazaTemp_experience .CVMurtazaTemp_experience_ul {
+  list-style: none;
+  text-align: start;
+  padding: 3rem;
+}
+.CVMurtazaTemp_experience .CVMurtazaTemp_experience_h3 {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+  font-family: revert;
+}
+/* form section */
+
+/* restaurant book form section */
+.CVMurtazaTemp_form_section {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 22px;
+  padding-top: 22px;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+}
+
+.CVMurtazaTemp_form_section .CVMurtazaTemp_form_right {
+  margin-left: 0%;
+  padding: 25px;
+}
+.CVMurtazaTemp_form_section .res_input {
+  padding: 20px;
+  outline: none;
+  border: none;
+  transition: 0.18s ease-out;
+  display: list-item;
+  width: 86%;
+  border: 1px solid rgb(0, 0, 0);
+}
+.CVMurtazaTemp_form_section .CVMurtazaTemp_form_submit button {
+  padding: 20px;
+  margin: 5px 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+.CVMurtazaTemp_form_section .CVMurtazaTemp_form_submit button:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+  background-color: #7577b5;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.CVMurtazaTemp_form_center {
+  height: auto;
+  justify-content: center;
+  display: inline-form;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 7px rgb(0 0 0 / 30%);
+  padding: 0px 40px;
+  background-size: 100%;
+  background-color: #fff;
+  padding: 20px 40px;
+  margin-top: -3%;
+}
+
+.CVMurtazaTemp_form_center .CVMurtazaTemp_form_h3 {
+  font-size: 38px;
+  font-weight: 800;
+  color: rgb(84, 83, 83);
+  padding: 2px;
+  text-transform: uppercase;
+  margin-top: 24px;
+  font-family: cursive;
+}
+
+.CVMurtazaTemp_form_section .res_input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.CVMurtazaTemp_form_section .res_input:focus {
+  color: #4b515d;
+  border: 1px solid #b8b6b6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
+    0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.CVMurtazaTemp_form_section .CVMurtazaTemp_form_p {
+  color: rgb(91, 88, 88);
+  font-size: 22px;
+  text-align: center;
+  text-align: justify;
+  font-weight: 900;
+  padding: 4px;
+}
+
+@media screen and (max-device-width: 700px), screen and (max-width: 700px) {
+  .CVMurtazaTemp_form_section .CVMurtazaTemp_form_submit button {
+    width: auto !important;
+    height: auto !important;
+  }
+  .CVMurtazaTemp_form_section .CVMurtazaTemp_form_p {
+    margin-left: auto;
+  }
+}
+.CVMurtazaTemp_form_center .CVMurtazaTemp_form_h3:hover {
+  color: rgb(0, 131, 246);
+  transition: all 0.7s ease-in;
+  transition-property: color;
+  transition-delay: 0s;
+  font-family: cursive;
+}
+.CVMurtazaTemp_form_center .second_menu_p {
+  margin: 10px 0;
+  padding: 5px;
+  text-align: justify;
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: black;
+  line-height: 28px;
+  font-weight: 900;
+}
+
+.CVMurtazaTemp_form_section_container {
+  padding: 0.5em;
+  display: flex;
+}
+
+.CVMurtazaTemp_form_right img {
+  box-shadow: 8px 8px #fffefb;
+}
+.CVMurtazaTemp_form_right {
+  padding: 0;
+}
+@media only screen and (max-width: 1123px) {
+  .CVMurtazaTemp_form_right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .CVMurtazaTemp_form_center {
+    display: form-cell;
+    background-size: 100%;
+  }
+  .CVMurtazaTemp_form_section_container {
+    padding-left: 43px;
+  }
+  .CVMurtazaTemp_experience_title {
+    font-size: 3rem;
+  }
+  .CVMurtazaTemp_education_title {
+    font-size: 3rem;
+  }
+
+  .CVMurtazaTemp_form_center .CVMurtazaTemp_form_h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .CVMurtazaTemp_skills_section_h1 {
+    letter-spacing: 1px;
+  }
+
+  .CVMurtazaTemp_form_section .res_input {
+    display: flex;
+    max-width: auto !important;
+  }
+}
