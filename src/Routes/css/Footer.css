@@ -44,8 +44,7 @@
       border-radius: 5px;
       transition: all .3s;
     }
-    #footer-box1 .socials a:hover,
-    #footer-logo:hover{
+    #footer-box1 .socials a:hover{
       border: 1px solid white;
       color: white;
       transition: all .3s;
