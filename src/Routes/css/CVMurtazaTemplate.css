@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+/* background section or Home central */
+.background {
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #2f3e88 100%);
+  height: 100vh;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  border-bottom-left-radius: 122vh;
+}
+.top-container {
+  justify-content: center;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  color: #ffffff;
+  margin-top: 18%;
+}
+
+.work-button {
+  margin-top: 1rem;
+  padding: 0.2rem 2rem;
+  background-color: #f8f9fa;
+  color: black;
+  border-radius: 2rem;
+  border: 1px #122444 solid;
+  outline: none;
+  -moz-outline-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.work-button:hover {
+  background-color: #122444;
+  color: white;
+  cursor: pointer;
+}
+.work-button:focus {
+  outline: 0;
+}
+
+/* About section */
+.about_section {
+  background-color: hsl(0deg 0% 100%);
+  width: 100%;
+  height: auto;
+  margin: 5px 0px 5px;
+  padding: 1rem;
+  color: black;
+}
+.into_about_section_pa .about_section_p {
+  color: #061b3d;
+  display: inline-table;
+  padding: 2%;
+  width: 50%;
+  text-align: justify;
+  font-size: 22px;
+  height: auto;
+  /* width: auto; */
+}
+
+.about_section_img {
+  width: 300px;
+  height: 230px;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 16px 66px -7px #777;
+}
+
+.into_about_section_pa {
+  margin-top: 12px;
+}
+/* End About section */
+
+/* Footer section */
+.container1 {
+  background-color: #273566;
+  color: rgb(255, 255, 255);
+  z-index: 1000;
+  padding: 12px;
+}
+.container-fluid {
+  color: rgb(255, 255, 255);
+}
+.img-fluid {
+  color: #fff;
+}
+/* Skills section */
+.skills_section {
+  background-color: hsl(0deg 0% 100%);
+  height: 100vh;
+  width: 100%;
+  /* position: absolute; */
+}
+.skills_ {
+  margin-top: 5rem;
+  display: inline-grid;
+  padding: 20px;
+  width: 50%;
+  background-color: #ffffff;
+  box-shadow: 1px 0px 39px 4px grey;
+}
+.skills_section_h1 {
+  font-weight: 900;
+  font-family: cursive;
+  padding: 1px;
+}
+.skills_ .skills_span {
+  display: flex;
+  font-family: cursive;
+  margin: 6px;
+}
+
+/* Devices responsive */
+@media screen and (max-width: 768px) {
+  .into_about_section_pa .about_section_p{
+    padding: 0px;
+    margin: 0px;
+    display: contents;
+    }
+    .skills_ {
+      width: 83%;
+      padding: 34px;
+      margin-left: 18px;
+        }
+}
