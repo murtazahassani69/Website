@@ -84,14 +84,11 @@
     font-size: 0.9em;
     width: 100%;
     padding: 0 ;
+    padding-left: 7px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-}
-
-.fa-search:before{
-    right: 7rem;
 }
 
 input[placeholder='Search']{
@@ -99,6 +96,7 @@ input[placeholder='Search']{
     font-size: 1.1em;
     width: 96.5%;
     padding: 8px 0;
+    padding-left: 4px;
 }
 input[placeholder='Search']::before{
     width: 4%;
@@ -112,9 +110,11 @@ input[placeholder='Search']::before{
 .store-menu-myImg1{
     margin-left: 1em;
     margin-right: 1em;
+    cursor: pointer;
 }
 .store-menu-myImg2{
     margin-right: 1em;
+    cursor: pointer;
 }
 .store-menu-checkbtn{
     font-size: 40px;
@@ -132,19 +132,14 @@ input[placeholder='Search']::before{
 .store-menu-formSearch:focus-within {
     position: absolute;
     width: 70%;
-    left: 20%;   
-}
-.store-menu-formSearch:focus-within > .fa-search:before{
-    right: 1.5rem;
+    left: 20%;
+    
 }
 
-    
+
 @media screen and (max-width: 1230px) {
 	.store-menu-myImg2{
         display: none;
-    }
-    .fa-search:before{
-        right: 4.5rem;
     }
 }
 @media screen and (max-width: 1200px) {
@@ -202,12 +197,6 @@ input[placeholder='Search']::before{
     #store-menu-logo{
         margin-left: 1em;
     }
-    #store-menu-logo img{
-        cursor: pointer;
-    }
-    .fa-search:before{
-        right: 12rem;
-    }
 
 }
 @media screen and (max-width: 992px) {
@@ -243,8 +232,5 @@ input[placeholder='Search']::before{
     }
     .store-menu-text{
         height: 5vh;
-    }
-    .fa-search:before{
-        right: 1rem;
     }
 }

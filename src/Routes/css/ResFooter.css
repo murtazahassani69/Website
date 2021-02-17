@@ -103,7 +103,7 @@ p,
   border: none;
   line-height: 37px;
   height: 40px;
-  padding-left: 20px;
+  padding-left: 12px;
   font-size: 13px;
   color: #acb8c4;
   border-radius: 0;
@@ -220,13 +220,13 @@ p,
     display: inline;
   }
   .ResFooter-footer-boxes:nth-of-type(-n + 1) {
-    min-width: 80%;
+    min-width: 85%;
   }
   .ResFooter-div-wrapper .ResFooter-div-inner .ResFooter-footer-boxes,
   .ResFooter-div-wrapper .ResFooter-bottom-container {
     font-size: 90%;
     box-sizing: content-box;
-    float: right;
+    padding: 18px;
   }
   #ResFooter-footer-box1 {
     margin: 4%;
@@ -235,11 +235,16 @@ p,
     margin: 0;
   }
   #ResFooter-footer-box1 .ResFooter-social a {
-    width: 38px;
+    width: 42px;
     margin: 2%;
   }
+  .ResFooter-newsletter .email {
+    padding-left: 6px;
+  }
  
- 
+  .ResFooter-newsletter .submit {
+    margin-top: 1px;
+  }
   .ResFooter-div-wrapper .ResFooter-bottom-container {
     padding: 15px 0;
     width: 100%;
