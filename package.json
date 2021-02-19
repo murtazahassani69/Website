@@ -20,6 +20,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
+    "react-to-pdf": "0.0.13",
     "react-transition-group": "^4.4.1",
     "styled-components": "^5.2.1"
   },
