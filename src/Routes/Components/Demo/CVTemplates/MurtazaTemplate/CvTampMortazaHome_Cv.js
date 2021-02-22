@@ -45,7 +45,7 @@ function About() {
       <section className="CVMurtazaTemp_into_about_section_pa">
         <img
           className="CVMurtazaTemp_about_section_img"
-          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80"
+          src="https://webstockreview.net/images/clipart-boy-nose-18.png"
           alt="My pic"
         />
         <h2>Murtaza Hassani</h2>
@@ -150,7 +150,7 @@ function Education() {
 function Experiences() {
   return (
     <div className="CVMurtazaTemp_experience_intro_section">
-      <h1 className="CVMurtazaTemp_experience_title">experience</h1>
+      <h1 className="CVMurtazaTemp_experience_title">Experience</h1>
       <div className="CVMurtazaTemp_experience">
         <ul className="CVMurtazaTemp_experience_ul">
           <h3 className="CVMurtazaTemp_experience_h3">ALTEN Canada</h3>
@@ -161,6 +161,8 @@ function Experiences() {
             Full stack web development for investment banking services with
             emphasis on React.js, Angular, .NET Core based solutions using Test
             Driven Development methodology.
+            <br />
+            <a href="">Let's see what i have done.</a>
           </li>
         </ul>
 
@@ -175,6 +177,8 @@ function Experiences() {
             Studies included fundamental computer science subjects such as
             software & hardware architecture and development. Also an emphasis
             on automation techniques.
+            <br />
+            <a href="">More</a>
           </li>
         </ul>
 
@@ -189,6 +193,7 @@ function Experiences() {
             Studies included fundamental computer science subjects such as
             software & hardware architecture and development. Also an emphasis
             on automation techniques.
+            <br />
             <a href="">More</a>
           </li>
         </ul>
@@ -223,6 +228,19 @@ function Forms() {
               <div className="CVMurtazaTemp_form_submit">
                 <button type="submit">Submit</button>
               </div>
+
+              <ul className="CVMurtazaTemp_form_section_ul">
+                <li className="CVMurtazaTemp_form_section_li">
+                  <strong>Email:</strong>
+                  <br />
+                  murtaza*****@gmail.com
+                </li>
+
+                <li className="CVMurtazaTemp_form_section_li">
+                  <strong>Phone:</strong> <br />
+                  +0306934532
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -236,30 +254,40 @@ function Footer() {
     <div id="footer" className="container-fluid text-center py-5">
       <div className="container1">
         <div className="row">
-          <div className="col-12 col-sm-12 col-md-8 mx-auto">
-            <a
-              href="https://codepen.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="CVMurtazaTemp_img-fluid" src={codepen} alt="" />
-            </a>
-            <a
-              className="px-3"
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="CVMurtazaTemp_img-fluid" src={github} alt="" />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="CVMurtazaTemp_img-fluid" src={linkedin} alt="" />
-            </a>
-          </div>
+          <a
+            href="https://codepen.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="CVMurtazaTemp_img-fluid"
+              src={codepen}
+              alt="codepen"
+            />
+          </a>
+          <a
+            className="px-3"
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="CVMurtazaTemp_img-fluid"
+              src={github}
+              alt="github"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="CVMurtazaTemp_img-fluid"
+              src={linkedin}
+              alt="linkedin"
+            />
+          </a>
         </div>
         <h5 className="pt-4">Murtaza Hassani &copy; 2021</h5>
       </div>

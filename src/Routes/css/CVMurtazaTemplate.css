@@ -56,16 +56,16 @@
   text-align: justify;
   font-size: 22px;
   height: auto;
+  display: inline-flex;
   /* width: auto; */
 }
 
 .CVMurtazaTemp_about_section_img {
   width: 300px;
-  height: 230px;
+  height: 296px;
   border: 2px solid #fff;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 16px 66px -7px #777;
+  border-radius: 50%;
 }
 
 .CVMurtazaTemp_into_about_section_pa {
@@ -86,6 +86,12 @@
 }
 .CVMurtazaTemp_img-fluid {
   color: #fff;
+  margin: 22px;
+  filter: invert(48%) sepia(85%) saturate(3322%) hue-rotate(130deg)
+    brightness(168%) contrast(161%);
+}
+.CVMurtazaTemp_img-fluid:hover {
+  color: greenyellow;
 }
 /* Skills section */
 .CVMurtazaTemp_skills_section {
@@ -211,6 +217,14 @@
   justify-content: center;
   align-self: center;
   display: flex;
+}
+.CVMurtazaTemp_form_section_ul {
+  color: #000000;
+  display: inline-block;
+  text-align: justify;
+  list-style: none;
+  padding: 13px;
+  margin: 2px;
 }
 
 .CVMurtazaTemp_form_section .CVMurtazaTemp_form_right {
