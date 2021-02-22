@@ -131,7 +131,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     opacity: 0;
     transition: all 1s;
     padding: 1em;
@@ -142,6 +142,10 @@
 }
 .CVBaldeTemp-div-hover:hover{
     opacity: 1;
+}
+.CVBaldeTemp-div-hover p{
+    color: white;
+    margin-bottom: 1em;
 }
 .CVBaldeTemp-div-hover a{
     color:  white;
