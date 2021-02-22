@@ -1,0 +1,422 @@
+
+.JallowTemplate1{
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #ccc;
+    width: 100%;
+    height: 100%;
+}
+
+/* .jallowTemp1Resume {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    margin: 0px;
+    padding: 0px;
+} */
+.jallowTemp1NavNavbar{
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    min-height: 70px;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #82bef3; */
+    background-color: #777;
+    justify-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+.jallowTemp1DivLogoSec {
+    position: relative;
+    min-height: 70px;
+    float: left;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+/* a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+} */
+.jallowTemp1ImageLogo img{
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+.jallowTemp1IconLogo {
+    display: flex;
+    font-size: 2.8rem;
+    justify-content: center;
+    margin: 0 2rem;
+}
+.jallowTemp1IconLogo .fa-mobile, .fa-tablet {
+    color: white;
+    margin: 0 .5rem;
+    padding: .5rem;
+}
+
+.jallowTemp1MenuList{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+.jallowTemp1MenuList li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    top: 10%;
+}
+.jallowTemp1MenuLink{
+    font-size: 16px;
+    margin: 0 1rem;
+    padding: 0.4em;
+    transition: 1s;
+}
+.jallowTemp1MenuLink:hover{
+    /* background-color: #03294b; */
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.jallowTemp1Checkbtn{
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* PROFILE SECTION */
+.jallowTemp1MainSection{
+    width: 100%;
+    text-align: start;
+    color: #03294b;
+    background-color: #ccc;
+}
+.jallowTemp1SubSection{
+    width: 100%;
+    background-color: #ccc;
+    /* grid-gap: 20px; */
+    /* grid-template-columns: 2fr; */
+    margin-top: 3px;
+}
+.jallowTemp1ProfileContainer{
+    width: 27%;
+    float: left;
+    /* background-color: #99c7f5; */
+    background-color: #ccc;
+    padding: 0 .5rem;
+    border-radius: 3px;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+}
+.jallowTemp1ProfileHead{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    margin: 1rem 0 2rem;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.jallowTemp1ProfileHead img {
+    background-size: cover;
+    width: 67%;
+    margin-top: .5rem;
+    border-radius: 30px;
+    justify-content: center;
+}
+.jallowTemp1ProfileName{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 5px 0px;
+    margin: 0px;
+}
+.jallowTemp1ProfileTitle{
+    color: #99c7f5!important;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+
+.jallowTemp1InfoDetails{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.jallowTemp1InfoDetails p{
+    color: #616971!important;
+}
+.jallowTemp1Contact{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #777;
+    padding: 1rem 0 0;
+    margin: 0 10px;
+}
+.jallowTemp1Contact .fa-user-tie,
+.fa-phone-alt,
+.fa-envelope,
+.fa-map,
+.fa-file{
+    font-size: 1.5rem;
+    color: #03294b;
+    margin: 0 1rem;
+}
+.jallowTemp1TestCol p{
+    display: grid;
+    padding: 5px auto;
+    color: #616971!important;
+}
+.jallowTemp1SkillsPersonal{
+    display: grid;
+    flex-direction: column;
+}
+.jallowTemp1Contact .jallowTemp1Skills {
+    font-size: 1.5rem;
+    color: #03294b!important;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.jallowTemp1ContactSkills{
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    color: #616971;
+    line-height: 1.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.jallowTemp1ContactSkills li{
+    border-bottom: 1px solid #777;
+    margin: 1rem 0;
+    padding: .2em 0;
+}
+
+/* CONTENT SECTION */
+.jallowTemp1Body{
+    width: 68%;
+    float: right;
+    /* background-color: #99c7f5; */
+    background-color: #ccc;
+    padding: 0 .5rem;
+    border-radius: 3px;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+}
+.jallowTemp1ContentSide{
+    text-align: start;
+    justify-content: center;
+    padding:0px 20px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #03294b;
+}
+.jallowTemp1ContentSubSec{
+    justify-content: center;
+    padding: 0px;
+    /* padding: 1rem 0px;  */
+    margin: 1rem 1rem 2rem;
+    border-bottom: #616971 1px solid;
+    box-shadow: 0 .1rem .1rem rgba(0, 0, 0, .1);
+}
+.jallowTemp1ContentH1{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    margin-top: 5px;
+}
+.jallowTemp1ContentTitle{
+    font-size: 20px;
+}
+.jallowTemp1ContentDate{
+    font-style: italic;
+    color: #99c7f5!important;
+}
+.jallowTemp1ContentSubSec p{
+    color: #616971;
+}
+
+.jallowTemp1ContentHobbies{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    margin-bottom: 5px;
+}
+.jallowTemp1ContentInterest {
+    font-size: 2rem;
+    color: #03294b;
+    padding: 1.5rem 0 0;
+}
+.fa-check-double, .fa-graduation-cap, .fa-stopwatch{
+    margin-right: 2rem;
+}
+.jallowTemp1ContentHobbies .fa-guitar,
+.fa-plane,
+.fa-futbol,
+.fa-book-open,
+.fa-code {
+    justify-content: space-between;
+    margin: 1rem 1em;
+}
+
+/*  */
+@media screen and (max-width: 900px) {
+    .jallowTemp1SubSection{
+        display: flex;
+        grid-gap: 20px;
+        width: 100%;
+        grid-template-columns: 2fr;
+    }
+    .jallowTemp1ProfileContainer{
+        width: 33%;
+    }
+    .jallowTemp1Body{
+        width: 63%;
+        padding: 0 .5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.jallowTemp1Checkbtn{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .jallowTemp1MenuList{
+        position: absolute;
+        height: 55vh;
+        background: #2c3e50;
+        top:  130px;
+        text-align: left;
+        justify-content: flex-start;
+        width: 100%; 
+        flex-direction: column;
+        left: -105%;
+        transition: all .5s;
+        z-index: 5;
+        display: none;
+    }
+    .jallowTemp1MenuLink {
+        width: 99%;
+        margin: 1px;
+        background-color: rgb(38, 123, 156);
+        color: black;
+        height: 5vh;
+    }
+    .jallowTemp1MenuLink a{
+        width: 99%;
+        margin-left: 2em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    } 
+    #check:checked ~ .jallowTemp1MenuList{
+        left: 0;
+    }
+    .jallowTemp1DivLogoSec {
+        margin-left: 4rem;
+    }
+    .jallowTemp1ImageLogo img{
+        margin-left: 2rem;
+    }
+
+    .jallowTemp1SubSection{
+        display: flex;
+        grid-gap: 15px;
+        width: 100%;
+        grid-template-columns: 2fr;
+    }
+    .jallowTemp1ProfileContainer{
+        width: 35%;
+    }
+    .jallowTemp1Body{
+        width: 60%;
+    }
+    .jallowTemp1Contact{
+        display: grid;
+        border-bottom: 1px solid #777;
+        padding: 1rem auto;
+    }
+    .jallowTemp1ContentHobbies .fa-guitar,
+    .fa-plane,
+    .fa-futbol,
+    .fa-book-open,
+    .fa-code {
+        align-items: center;
+        justify-content: center;
+        margin: .5rem;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .jallowTemp1ImageLogo{
+        margin-left: 3em;
+    } 
+    .jallowTemp1MenuList{
+        top: 190px
+    }
+    .jallowTemp1MenuLink{
+        height: 5vh;
+    }
+    .jallowTemp1SubSection{
+        display: grid;
+        width: 100%;
+    }
+    .jallowTemp1ProfileContainer, .jallowTemp1Body{
+        width: 97%;
+    }
+    .jallowTemp1ProfileHead{
+        display: grid;
+        flex-direction: column;
+        position: relative;
+    }
+    .jallowTemp1ProfileHead img{
+        width: 30%;
+        margin: 10px;
+    }
+    .jallowTemp1ProfileName{
+        width: 60%;
+        float: right;
+        position: absolute;
+        right: 0px;
+        top: 30%;
+    }
+    .jallowTemp1ProfileTitle{
+        width: 60%;
+        position: absolute;
+        float: right;
+        right: 0px;
+        top: 50%;
+        padding-top: .5rem;
+    }
+    .jallowTemp1Contact {
+        padding: 1rem;
+    }
+    .jallowTemp1TestCol p{
+        margin: 1rem 1px 1px;
+        /* margin-top: 1rem; */
+    }
+}

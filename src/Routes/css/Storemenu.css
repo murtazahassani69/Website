@@ -84,6 +84,7 @@
     font-size: 0.9em;
     width: 100%;
     padding: 0 ;
+    padding-left: 7px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,6 +96,7 @@ input[placeholder='Search']{
     font-size: 1.1em;
     width: 96.5%;
     padding: 8px 0;
+    padding-left: 4px;
 }
 input[placeholder='Search']::before{
     width: 4%;
