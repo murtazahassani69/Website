@@ -1,6 +1,5 @@
 import React from 'react';
-import './JallowTemplate1.css';
-// import profile from './imgs/Profile';
+import "../../../../css/JallowTemplate1.css";
 
 
 function NavbarLogo() {
