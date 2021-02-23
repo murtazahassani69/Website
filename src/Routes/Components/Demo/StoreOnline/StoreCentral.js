@@ -96,9 +96,9 @@ function NewProducts(){
             <NewCard src='https://images.unsplash.com/photo-1560253414-f65d1f5a1a37?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8bW9kZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' 
             alt='Picture' btnTxt='NEW IN'/>
              <NewCard src='https://images.unsplash.com/photo-1583759136431-9d70db2eb04c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fG1vZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' 
-            alt='Picture' btnTxt='NEW SHOES'/>
+            alt='Picture' btnTxt='NEW CLOTHES'/>
              <NewCard src='https://images.unsplash.com/photo-1603217040830-34473db521a2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fG1vZGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' 
-            alt='Picture' btnTxt='NEW CLOTHES' />
+            alt='Picture' btnTxt='NEW SHOES' />
         </div>
       </div>
     )

@@ -23,8 +23,8 @@ import pic_left from "./imgs/pic_left.jpg";
 // second menu: story of restaurant component
 function SecondMenu() {
   return (
-    <div className="res_div_second_menu_home_section">
-      <div className="res_div_second_menu_home_section_container">
+    <div className="second_menu_home_section">
+      <div className="second_menu_home_section_container">
         <div className="second_menu_section_left">
           <img src={spices_left} alt="Amnick Smart Cites - Restaurant" />
         </div>
@@ -32,10 +32,10 @@ function SecondMenu() {
         <div>
           <div className="res_second_menu_center">
             <h3 className="second_menu_h3_title"> Our story </h3>
-            <span class="res_span_dot"></span>
+            <span class="dot"></span>
 
             <hr className="second_menu_hr" />
-            <span className="res_span_dot"></span>
+            <span className="dot"></span>
             <p className="second_menu_p">
               Welcome. This is Amnick smart cities. Elegant &amp; sophisticated
               restaurant template. Amnick smart cities offers different home
@@ -128,7 +128,7 @@ function Central() {
       <h1 className="res_title_h1">WELCOME</h1>
       <p className="res_paragraph_p">
         Dear guests, you are welcomed at our restaurant. <br /> We greatly
-        appreciate your choice of dining with us and we promise to serve you
+        appreciate your choice of dining with us <br /> and we promise to serve you
         with our excellence. <br /> Welcome you and have a fine dining
         experience.
       </p>
@@ -151,7 +151,7 @@ function Menu() {
       <div className="res_foods_Menu">
         <h1 className="res_foods_h1_title">OUR MENUS </h1>
         <hr className="res_foods_hr" />
-        <div className="res_responsive">
+        <div className="responsive">
           <div className="gallery">
             <a target="_blank" href="img_5terre.jpg">
               <img src={menu} alt="Cinque Terre" width="600" height="400" />
@@ -168,7 +168,7 @@ function Menu() {
           </div>
         </div>
 
-        <div className="res_responsive">
+        <div className="responsive">
           <div className="gallery">
             <a target="_blank" href="img_lights.jpg">
               <img src={menu2} alt="Northern Lights" width="600" height="400" />
@@ -185,7 +185,7 @@ function Menu() {
           </div>
         </div>
 
-        <div className="res_responsive">
+        <div className="responsive">
           <div className="gallery">
             <a target="_blank" href="img_lights.jpg">
               <img src={menu2} alt="Northern Lights" width="600" height="400" />
@@ -202,7 +202,7 @@ function Menu() {
           </div>
         </div>
 
-        <div className="res_responsive">
+        <div className="responsive">
           <div className="gallery">
             <a target="_blank" href="img_mountains.jpg">
               <img src={menu1} alt="Restaurant" width="600" height="400" />
