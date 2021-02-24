@@ -5,7 +5,6 @@
   top: 0;
   width: 100%;
   background-color: transparent;
-  height: 5rem;
   display: flex;
   justify-content: center;
   z-index: 1000;
@@ -14,7 +13,7 @@
 .rest_menu.active {
   background-color: rgba(0, 0, 0);
   display: flex;
-  height: 3.5rem;
+  height: 6.5rem;
 }
 
 .rest_logo {
@@ -47,7 +46,7 @@
 
 .rest_menu-link:link,
 .rest_menu-link:visited {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -62,7 +61,7 @@
 @media only screen and (max-width: 1280px) {
   .rest_menu-link:link,
   .rest_menu-link:visited {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .rest_logo {
@@ -85,9 +84,9 @@
   padding-inline-start: 0px !important;
   margin-top: -2.3rem;
   background-color: rgba(0, 0, 0, 0.9);
-  width: 8rem;
+  width: 13rem;
   text-align: center;
-  margin-left: 0.4rem;
+  margin-left: -1.3rem;
   border-top: 1px solid #fff;
 }
 
@@ -107,18 +106,20 @@
 }
 
 .rest_menu-list li .rest_menu-dropdown li a {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   display: block;
   width: 100%;
-  font-weight: 400;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .rest_menu-list li .rest_menu-dropdown li a:hover {
-  background-color: #fcda9a;
+  background-color: #d09c3a;
 }
 
 .rest_button-toggle {
@@ -127,8 +128,8 @@
   border: none;
   outline: none;
   margin-right: 1%;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   align-self: center;
   margin-right: 10%;
 }
@@ -142,8 +143,8 @@
 }
 .rest_span-toggle {
   color: white;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 @media only screen and (max-width: 1056px) {
   .rest_list-toggle {
@@ -161,8 +162,8 @@
     position: fixed;
     width: 30%;
     transform: translateX(-10%);
-    right: 12%;
-    top: 5.5%;
+    right: 13%;
+    top: 7.5%;
     padding-left: 0px;
     align-items: center;
     z-index: 1000;
@@ -177,13 +178,14 @@
     width: 100%;
     transform: translateX(0);
     right: 0%;
-    top: 5.5%;
+    top: 7.5%;
+    font-size: 1.2rem;
   }
 
   .rest_menu {
     background-color: rgba(0, 0, 0);
     display: flex;
-    height: 3.5rem;
+    height: 6.5rem;
   }
 }
 
@@ -199,11 +201,12 @@
 
 .rest_list-toggle-active a {
   color: #fff;
+  padding: 10px;
 }
 
 .rest_list-toggle-active a:active,
 .rest_list-toggle-active a:hover {
-  background-color: #fcda9a;
+  background-color: #d09c3a;
 }
 
 .rest_toggle-dropdown {
