@@ -1,172 +1,169 @@
  
 /* -----------------FOOTER  */
 
-    .div-footer {
-      display: block;
-      overflow: hidden;
-      background-color: #5d5d66;
+.div-footer {
+  display: block;
+  overflow: hidden;
+  background-color: #5d5d66;
+}
+.div-footer .inner_footer{
+  padding: 20px 0;
+}
+.div-footer .inner_footer .footer-boxes{
+  float:left;
+  width:33%;
+  padding: 30px;
+  box-sizing: border-box;
+}
 
-    }
-    .div-footer .inner_footer{
-      padding: 20px 0;
-    }
-    .div-footer .inner_footer .footer-boxes{
-      float:left;
-      width:33%;
-      padding: 30px;
-      box-sizing: border-box;
-    }
-   
-    .div-footer .inner_footer h1,p, .contact,.socials a,
-    .div-footer .inner_footer h2{
-        color: white;
-    }
-    /* ------------------------------------------- */
-    #footer-logo{
-      margin-left: 10%;
-      width: 90px;
-    }
-    #footer-box1 .socials{
-      margin: 1em;
-      margin-left: 10%;
-    }
-    #footer-box1 .socials a img{
-      width: 38px;
-    }
-    
-    #footer-box1 .socials a{
-      border: 1px solid gray;
-      width: 55px;
-      height: 45px;
-      padding-top: 5px;   
-      margin-right: 5px ;
-      text-align: center;
-      display: inline-block;
-      border-radius: 5px;
-      transition: all .3s;
-    }
-    #footer-box1 .socials a:hover,
-    #footer-logo:hover{
-      border: 1px solid white;
-      color: white;
-      transition: all .3s;
-    }
-     
-    #footer-box2 h1{
-      margin: 0em;
-    }
-    #footer-box2 h1 span{
-    color: #05f7ff;
-    }
-   
-    #footer-box2 img{
-      width: 20px;
-      height: auto; 
-      margin-left: 10%;
-    }
+.div-footer .inner_footer h1,p, .contact,.socials a,
+.div-footer .inner_footer h2{
+    color: white;
+}
+/* ------------------------------------------- */
+#footer-logo{
+  margin-left: 10%;
+  width: 90px;
+}
+#footer-box1 .socials{
+  margin: 1em;
+  margin-left: 10%;
+}
+#footer-box1 .socials a img{
+  width: 38px;
+}
+
+#footer-box1 .socials a{
+  border: 1px solid gray;
+  width: 55px;
+  height: 45px;
+  padding-top: 5px;   
+  margin-right: 5px ;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all .3s;
+}
+#footer-box1 .socials a:hover{
+  border: 1px solid white;
+  color: white;
+  transition: all .3s;
+}
  
+#footer-box2 h1{
+  margin: 0em;
+}
+#footer-box2 h1 span{
+color: #05f7ff;
+}
 
-    #footer-box3 ul a{
-      display: block;
-      font-style: none;
-      margin-bottom: 5px;
-      margin-left: 15px;
-      transition: all .3s;
-      list-style: none;
-      text-decoration: none;
-    }
-    #footer-box3 ul li{
-      color:white;
-      font-size: 16pt;
-     
-    }
-    #footer-box3 ul a:hover,
-    .contact span:hover{
-      color: white;
-      margin-left: 25px; 
-      transition: all .3s;
-    }
-    
-    .div-footer .footer-bottom{
-      background-color: #343a40;
-      color: #686868;
-      text-align:center;
-      overflow: hidden;
-      width: 100vmax;
-      padding: 50px 0; 
-    }
+#footer-box2 img{
+  width: 20px;
+  height: auto; 
+  margin-left: 10%;
+}
 
 
-  /* RESPONSIVENESS*/
-  /* Mobile phones */
-  @media screen and (max-width: 450px) {
+#footer-box3 ul a{
+  display: block;
+  font-style: none;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  transition: all .3s;
+  list-style: none;
+  text-decoration: none;
+}
+#footer-box3 ul li{
+  color:white;
+  font-size: 16pt;
+ 
+}
+#footer-box3 ul a:hover,
+.contact span:hover{
+  color: white;
+  margin-left: 25px; 
+  transition: all .3s;
+}
 
-    .div-footer .inner_footer {
-      padding: 0;
-      line-height: 2rem;
-    }
-    #footer-box2 h1{
-      margin: 0em;
-      font-size: 50px;
-    }
-   
-    .div-footer .inner_footer .footer-boxes {
-      width:100%;
-     float: none;
-    }
-    #footer-box3 ul a{
-      margin-bottom: 15px;
-      margin-left: 0px;
-    }
-    .div-footer .footer-bottom{
-      padding: 10px 0;
-      width: 100%;
-    }
-    .div-footer .footer-bottom h5{
-      width: 90%;
-    }
-  }
-  
-  /* RESPONSIVENESS*/
-  /* TABLETS */
-  @media screen and (min-width: 451px) and (max-width: 900px) {
+.div-footer .footer-bottom{
+  background-color: #343a40;
+  color: #686868;
+  text-align:center;
+  overflow: hidden;
+  width: 100vmax;
+  padding: 50px 0; 
+}
 
-    .div-footer .inner_footer .footer-boxes,
-    .div-footer .footer-bottom {
-      font-size: 90%;
-    }
-    #footer-box1 .socials{
-      margin: 0;
-    }
-    #footer-box1 .socials a{
-      width: 38px;
-      margin: 2%;
-    }
-    .div-footer #footer-box2 img{
-      margin-left: 0%;
-    }
-    .div-footer .footer-bottom{
-      padding: 15px 0;
-      width: 100%;
-    }
-    .div-footer .footer-bottom h5{
-      font-size: 1rem; 
-      width: 80%;
-    }
-  }
-  
-  /* RESPONSIVENESS*/
-  /* LARGER SCREENS */
-  @media screen and (min-width: 901px) {
 
-    .div-footer .inner_footer .footer-boxes,
-    .div-footer .footer-bottom {
-      padding: 20px;
-    }
-    .div-footer .footer-bottom{
-      font-size: 1.2rem;
-      width: 100%;
-    }
-  }
-  
-  
+/* RESPONSIVENESS*/
+/* Mobile phones */
+@media screen and (max-width: 450px) {
+
+.div-footer .inner_footer {
+  padding: 0;
+  line-height: 2rem;
+}
+#footer-box2 h1{
+  margin: 0em;
+  font-size: 50px;
+}
+
+.div-footer .inner_footer .footer-boxes {
+  width:100%;
+ float: none;
+}
+#footer-box3 ul a{
+  margin-bottom: 15px;
+  margin-left: 0px;
+}
+.div-footer .footer-bottom{
+  padding: 10px 0;
+  width: 100%;
+}
+.div-footer .footer-bottom h5{
+  width: 90%;
+}
+}
+
+/* RESPONSIVENESS*/
+/* TABLETS */
+@media screen and (min-width: 451px) and (max-width: 900px) {
+
+.div-footer .inner_footer .footer-boxes,
+.div-footer .footer-bottom {
+  font-size: 90%;
+}
+#footer-box1 .socials{
+  margin: 0;
+}
+#footer-box1 .socials a{
+  width: 38px;
+  margin: 2%;
+}
+.div-footer #footer-box2 img{
+  margin-left: 0%;
+}
+.div-footer .footer-bottom{
+  padding: 15px 0;
+  width: 100%;
+}
+.div-footer .footer-bottom h5{
+  font-size: 1rem; 
+  width: 80%;
+}
+}
+
+/* RESPONSIVENESS*/
+/* LARGER SCREENS */
+@media screen and (min-width: 901px) {
+
+.div-footer .inner_footer .footer-boxes,
+.div-footer .footer-bottom {
+  padding: 20px;
+}
+.div-footer .footer-bottom{
+  font-size: 1.2rem;
+  width: 100%;
+}
+}
+
