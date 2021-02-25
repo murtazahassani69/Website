@@ -121,7 +121,7 @@
 .CVBaldeTemp-div-hover{
     border-radius: 10px;
     position: relative;
-    top: -270px;
+    top: -273px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -192,6 +192,7 @@
     text-align: center;
     opacity: .9;
     width: 60%;
+    line-height: 1.3em;
 }
 
 .CVBaldeTemp-startup{
