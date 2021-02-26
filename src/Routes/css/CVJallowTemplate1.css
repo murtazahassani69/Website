@@ -67,6 +67,7 @@
     display: flex;
     flex-direction: row;
     width: 60%;
+    /* width: 60%; */
     float: right;
     justify-content: center;
     align-items: center;
@@ -85,12 +86,12 @@
     font-size: 16px;
     margin: 0 1rem;
     padding: 0.4em;
-    transition: 1s;
+    /* transition: 1s; */
 }
 .jallowTemp1MenuLink:hover{
-    /* background-color: #03294b; */
     background-color: #ccc;
     border-radius: 10px;
+    transition: 1s;
 }
 .jallowTemp1Checkbtn{
     font-size: 40px;
@@ -118,6 +119,7 @@
     /* grid-gap: 20px; */
     /* grid-template-columns: 2fr; */
     margin-top: 3px;
+    /* margin-bottom: 1rem; */
 }
 .jallowTemp1ProfileContainer{
     width: 27%;
@@ -173,6 +175,9 @@
     border-bottom: 1px solid #777;
     padding: 1rem 0 0;
     margin: 0 10px;
+}
+.jallowTemp1Contact:last-child{
+    border-bottom: none;
 }
 .jallowTemp1Contact .fa-user-tie,
 .fa-phone-alt,
@@ -284,6 +289,12 @@
 
 /*  */
 @media screen and (max-width: 900px) {
+    .jallowTemp1DivLogoSec {
+        margin-left: 2rem;
+    }
+    .jallowTemp1ImageLogo img{
+        margin-left: 2rem;
+    }
     .jallowTemp1SubSection{
         display: flex;
         grid-gap: 20px;
@@ -300,31 +311,39 @@
 }
 
 @media screen and (max-width: 768px) {
+    /* .fa-tablet{
+        visibility: hidden;
+    } */
+    .fa-mobile, .fa-tablet{
+        visibility: hidden;
+    }
 	.jallowTemp1Checkbtn{
         display: block;
-        position: absolute;
+        /* position: absolute; */
         right: 0;
     }
     .jallowTemp1MenuList{
+        /* position: fixed; */
         position: absolute;
-        height: 55vh;
-        background: #2c3e50;
-        top:  130px;
-        text-align: left;
+        height: 100vh;
+        background: #ccc;
+        top:  60px;
+        text-align: center;
         justify-content: flex-start;
         width: 100%; 
         flex-direction: column;
-        left: -105%;
+        left: 106%;
         transition: all .5s;
         z-index: 5;
-        display: none;
+        /* display: none; */
     }
     .jallowTemp1MenuLink {
         width: 99%;
-        margin: 1px;
-        background-color: rgb(38, 123, 156);
+        margin: 10px 0;
+        background-color: #99c7f5;
         color: black;
         height: 5vh;
+        display: block;
     }
     .jallowTemp1MenuLink a{
         width: 99%;
@@ -333,11 +352,18 @@
         display: flex;
         align-items: center;
     } 
+    .jallowTemp1MenuLink a:hover, 
+    .jallowTemp1MenuLink a.active {
+        background-color: #777;
+        border-radius: 5px;
+        transition: 1s;
+    }
     #check:checked ~ .jallowTemp1MenuList{
         left: 0;
     }
+
     .jallowTemp1DivLogoSec {
-        margin-left: 4rem;
+        margin-left: 3.5rem;
     }
     .jallowTemp1ImageLogo img{
         margin-left: 2rem;
@@ -372,11 +398,18 @@
 }
 
 @media screen and (max-width: 500px) { 
+    /* .fa-tablet{
+        visibility: visible;
+    } */
+    .fa-mobile{
+        visibility: hidden;
+    }
     .jallowTemp1ImageLogo{
         margin-left: 3em;
     } 
     .jallowTemp1MenuList{
-        top: 190px
+        top: 60px;
+        left: 100%;
     }
     .jallowTemp1MenuLink{
         height: 5vh;
