@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Central from "./Demo/Restaurant/Central";
@@ -8,7 +8,7 @@ import Header from "./Demo/Restaurant/Header";
 
 function Restaurant() {
   return (
-    <Router>   
+    <Router>
       <Header />
       <Menu /> 
       <Central />

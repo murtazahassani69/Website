@@ -142,12 +142,12 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 .central-div-flex-columns {
-  box-shadow: var(--shadow);
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: var(--home-central-shadow); */
+  box-shadow: .5rem .5rem rgba(0, 0, 0, .2);
   align-items: center;
   text-align: center;
   margin: 4px;
-  box-shadow: .1rem solid #4981b3;
+  box-shadow: .1rem solid #4981B3;
   border-radius: 15px;
   transition: transform 0.2s ease-in;
 }

@@ -1,0 +1,9 @@
+.page-container{
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    font-family: monospace;
+    margin-top: 2rem;
+    padding: 2rem;
+}
