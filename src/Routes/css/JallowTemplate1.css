@@ -6,14 +6,6 @@
     height: 100%;
 }
 
-/* .jallowTemp1Resume {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    background-color: #ccc;
-    margin: 0px;
-    padding: 0px;
-} */
 .jallowTemp1NavNavbar{
     font-family: 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
@@ -21,7 +13,6 @@
     min-height: 70px;
     margin: 0px;
     padding: 0px;
-    /* background-color: #82bef3; */
     background-color: #777;
     justify-items: center;
     justify-content: center;
@@ -40,12 +31,6 @@
     justify-content: space-around;
     margin: 0 auto;
 }
-
-/* a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
-} */
 .jallowTemp1ImageLogo img{
     width: 60px;
     height: 50px;
@@ -67,7 +52,6 @@
     display: flex;
     flex-direction: row;
     width: 60%;
-    /* width: 60%; */
     float: right;
     justify-content: center;
     align-items: center;
@@ -116,19 +100,13 @@
 .jallowTemp1SubSection{
     width: 100%;
     background-color: #ccc;
-    /* grid-gap: 20px; */
-    /* grid-template-columns: 2fr; */
     margin-top: 3px;
-    /* margin-bottom: 1rem; */
 }
 .jallowTemp1ProfileContainer{
     width: 27%;
     float: left;
-    /* background-color: #99c7f5; */
-    background-color: #ccc;
     padding: 0 .5rem;
     border-radius: 3px;
-    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
 }
 .jallowTemp1ProfileHead{
     text-align: center;
@@ -222,11 +200,9 @@
 .jallowTemp1Body{
     width: 68%;
     float: right;
-    /* background-color: #99c7f5; */
     background-color: #ccc;
     padding: 0 .5rem;
     border-radius: 3px;
-    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
 }
 .jallowTemp1ContentSide{
     text-align: start;
