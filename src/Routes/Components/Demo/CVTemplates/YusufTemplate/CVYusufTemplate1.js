@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "../../../../css/CVYusufTemplate1.css";
 import Pdf from "react-to-pdf";
+import face from "./imgs/face.jpg";
 
 const ref = React.createRef();
 
@@ -41,7 +42,7 @@ function CVYusufTemplate1 (){
         <h3 className="major">Full Stack Developer</h3>
         </div>
         <div className="CVYusufTemp1-div-header-photo" >
-          <img src='https://icons-for-free.com/iconfiles/png/512/avatar+person+profile+user+icon-1320086059654790795.png' alt='Profile Picture' />                  
+          <img src={face} alt='Profile Picture' />                  
         </div>
       
       </header>
