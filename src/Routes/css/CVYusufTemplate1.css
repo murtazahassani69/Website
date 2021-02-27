@@ -1,382 +1,394 @@
 #cmd {
-    cursor: pointer;
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 150px;
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+}
+
+#CVYusufTemp-div-menu-header {
+  width: 100%;
+  margin: auto;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(227 222 222);
+  transition: 250ms linear;
   }
   
-  #CVYusufTemp-div-menu-header {
-    width: 100%;
-    margin: auto;
-    height: 12vh;
+  .CVYusufTemp-div-menu-logo-container,
+  .CVYusufTemp-div-menu-nav-links {
+  display: flex;
+  margin: 50px;
+  }
+ 
+  /* #header-img {
+  width: 100px;
+  height: 50px;
+  margin-left: -50px;
+  }
+  
+  .CVYusufTemp1-div-menu-logo {
+  margin: 12px 0 0 -10px;
+  font-size: 25px;
+  font-weight: 400;
+  } */
+  
+  nav {
+  flex: 2;
+  }
+  
+  .CVYusufTemp-div-menu-nav-links {
+  justify-content: space-evenly;
+  list-style: none;
+  }
+  
+  .CVYusufTemp-div-menu-nav-link {
+  text-decoration: none;
+  color: #111111;
+  font-size: 20px;
+  }
+  
+  .nav-toggle {
+  padding: .5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  z-index: 1000;
+  outline: none;
+  }
+  
+  .nav-open .nav-toggle {
+  position: fixed;
+  }
+  
+  .nav-open .hamburger {
+  transform: rotate(.625turn);
+  }
+  
+  .nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+  }
+  
+  .nav-open .hamburger::after {
+  opacity: 0;
+  }
+  
+  .hamburger {
+  display: none;
+  position: relative;
+  }
+  
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+  background: #111111;
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  transition: transform 250ms ease-in-out;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  }
+  
+  .hamburger::before {
+  top: 6px;
+  }
+  
+  .hamburger::after {
+  bottom: 6px;
+  }
+  
+ 
+ 
+ /* ////////////container///////////////// */
+ 
+  #CVYusufTemp1-div-main-container {
+    background-image: url(../../Routes/Components/Demo/CVTemplates/YusufTemplate/imgs/backgroundCV.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 155vh;
+
     display: flex;
-    align-items: center;
-    background-color: rgb(227 222 222);
-    transition: 250ms linear;
-    }
-    
-    .CVYusufTemp-div-menu-logo-container,
-    .CVYusufTemp-div-menu-nav-links {
-    display: flex;
-    margin: 50px;
-    }
-   
-    /* #header-img {
-    width: 100px;
-    height: 50px;
-    margin-left: -50px;
-    }
-    
-    .CVYusufTemp1-div-menu-logo {
-    margin: 12px 0 0 -10px;
-    font-size: 25px;
     font-weight: 400;
-    } */
-    
-    nav {
-    flex: 2;
-    }
-    
-    .CVYusufTemp-div-menu-nav-links {
-    justify-content: space-evenly;
-    list-style: none;
-    }
-    
-    .CVYusufTemp-div-menu-nav-link {
-    text-decoration: none;
-    color: #111111;
-    font-size: 20px;
-    }
-    
-    .nav-toggle {
-    padding: .5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 1em;
-    z-index: 1000;
-    outline: none;
-    }
-    
-    .nav-open .nav-toggle {
-    position: fixed;
-    }
-    
-    .nav-open .hamburger {
-    transform: rotate(.625turn);
-    }
-    
-    .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-    }
-    
-    .nav-open .hamburger::after {
-    opacity: 0;
-    }
-    
-    .hamburger {
-    display: none;
-    position: relative;
-    }
-    
-    .hamburger,
-    .hamburger::before,
-    .hamburger::after {
-    background: #111111;
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-    }
-    
-    .hamburger::before,
-    .hamburger::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    }
-    
-    .hamburger::before {
-    top: 6px;
-    }
-    
-    .hamburger::after {
-    bottom: 6px;
-    }
-    
-    @media (max-width: 600px) {
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #53555b;
+    margin: 0;
+    padding: 0;
+  }
   
-      #CVYusufTemp-div-nav-bar {
-        position: fixed;
-        height: 0px;
-        top: 0.3rem;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-        }
+  .CVYusufTemp1-div-page {
+    box-sizing: border-box;
+    height: 29.684cm;
+    margin: 0;
+    padding: 0;
+    width: 21.1cm;
+  }
   
-    .hamburger {
+  .CVYusufTemp1-div-page > * {
+    margin: 0;
+  }
+  
+  .CVYusufTemp1-div-header {
+    background-color: rgb(49, 63, 78);
+    padding: 12px 20px;
+    display: flex;
+  }
+  .CVYusufTemp1-div-header-name{
+    float:left;
+    width:50%;
+    box-sizing: border-box;
+    margin: 4%;
+  }
+  .CVYusufTemp1-div-header-photo{
+    text-align: right;
+    width:50%;
+  }
+  .CVYusufTemp1-div-header-photo > img{
+    width: 130px;
+  }
+ 
+
+  .CVYusufTemp1-div-header .name, 
+  .CVYusufTemp1-div-header .major {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .CVYusufTemp1-div-header .major {
+    font-weight: 100;
+    margin-top: 10px;
+  }
+  
+  .CVYusufTemp1-div-contents {
+    box-sizing: border-box;
+    display: flex;
+    height: 102%;
+    width: 100%;
+  }
+  
+  .CVYusufTemp1-div-main-section {
+    background-color: white;
+    display: inline-block;
+    width: 70%;
+  }
+  
+  .CVYusufTemp1-div-main-section > section,
+  .CVYusufTemp1-div-right-section > section {
+    padding: 20px;
+  }
+  
+  .CVYusufTemp1-div-highlights {
+    font-family: Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 100;
+    text-align: left;
+    word-spacing: normal;
+    font-variant: normal;
+  }
+  
+  li {
+    font-variant: normal;
+    font-weight: 100;
+  }
+  
+  .CVYusufTemp1-div-section-title {
+    border-bottom: 1px solid #bdbdbd;
+    color: rgb(49, 63, 78);
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .CVYusufTemp1-div-right-section {
+    background-color: #f5f5f5;
+    display: inline-block;
+    width: 30%;
+  }
+  
+  .CVYusufTemp1-div-experience-card {
+    font-family: Helvetica, sans-serif;
+    padding: 10px 0;
+  }
+  
+  .CVYusufTemp1-div-experience-card .title {
+    color: #53555b;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+  }
+  
+  .CVYusufTemp1-div-experience-card .company {
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .CVYusufTemp1-div-experience-card .company .name{
+    color: #919191;
+    font-weight: bold;
+  }
+  
+  .CVYusufTemp1-div-experience-card .company .duration{
+    color: #919191;
+    font-size: 14px;
+  }
+  
+  ul {
+    font-family: Helvetica, sans-serif;
+    font-size: small;
+    list-style: disc;
+    list-style-position: inside;
+  }
+  
+  .CVYusufTemp1-div-certificate-card {
+    color: #53555b;
+    font-family: Helvetica, sans-serif;
+    margin: 8px 0;
+  }
+  
+  .date {
+    color: #919191;
+    font-size: small;
+  }
+  
+  .CVYusufTemp1-div-education-card {
+    color: #53555b;
+    font-family: Helvetica, sans-serif;
+    margin: 8px 0;
+  }
+  
+  .CVYusufTemp1-div-education-card .institution{
+    font-size: small;
+  }
+  
+  .CVYusufTemp1-div-info-item {
+    color: #53555b;
+    font-family: Helvetica, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+  }
+  
+  .CVYusufTemp1-div-info-item .info {
     display: block;
+    font-weight: 100;
+    margin-top: 6px;
+  }
+  
+  .CVYusufTemp1-div-skill-card {
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    font-size: small;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  .CVYusufTemp1-div-skill-level-container {
+    display: flex;
+  }
+  
+  .CVYusufTemp1-div-disc {
+    background-color: #c2c2c2;
+    border-radius: 50%;
+    display: inline-block;
+    height: 12px;
+    margin-right: 2px;
+    width: 12px;
     position: relative;
-    }
-    
-    .nav-open nav {
-    transform: translateX(0);
-    }
-    
-    .nav-open .logo-container {
-    margin-top: 5px;
-    }
-      
-    .nav-open .CVYusufTemp-div-menu-nav-link {
-    margin: 2rem;
-    }
-    
-    .nav-open .nav-toggle {
-    top: 2rem;
-    }
-    .CVYusufTemp-div-menu-logo-container, 
-    .CVYusufTemp-div-menu-nav-links {
-      margin: -40px;
-    }
-    .nav-open .CVYusufTemp-div-menu-nav-links {
-      display: contents;
-      }
-      nav {
-        flex: auto;
-      }
-    }
-   
-   
-   
-   /* ////////////container///////////////// */
-   
-    
-    #CVYusufTemp1-div-main-container {
-      background-image: url(../../Routes/Components/Demo/CVTemplates/YusufTemplate/imgs/backgroundCV.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      position: absolute;
-      height: 155vh;
-      /* width: 100vm; */
+  }
   
-      display: flex;
-      font-weight: 400;
-      justify-content: center;
-      margin: 0;
-      padding-bottom: 10px;
-      width: 100%;
-      box-sizing: border-box;
-      color: #53555b;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .CVYusufTemp1-div-page {
-      box-sizing: border-box;
-      height: 29.684cm;
-      margin: 0;
-      padding: 0;
-      width: 21.1cm;
-    }
-    
-    .CVYusufTemp1-div-page > * {
-      margin: 0;
-    }
-    
-    .CVYusufTemp1-div-header {
-      background-color: rgb(49, 63, 78);
-      padding: 12px 20px;
-      display: flex;
-    }
-    .CVYusufTemp1-div-header-name{
-      float:left;
-      width:50%;
-      box-sizing: border-box;
-      margin: 4%;
-    }
-    .CVYusufTemp1-div-header-photo{
-      text-align: right;
-      width:50%;
-    }
-    .CVYusufTemp1-div-header-photo > img{
-      width: 130px;
-    }
-   
+  .fill {
+    background-color: rgb(49, 63, 78);
+  }
   
-    .CVYusufTemp1-div-header .name, 
-    .CVYusufTemp1-div-header .major {
-      color: white;
-      font-family: Helvetica, sans-serif;
-      font-weight: 400;
-      margin: 0;
-    }
+  .CVYusufTemp1-div-half-disc-left{
+    height:12px;
+    width:6px;
+    border-radius: 90px 0 0 90px;
+    background:rgb(49, 63, 78);
+  }
+  
+  .concentric-half {
+    background-color: rgb(49, 63, 78);
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+  @media (max-width: 600px) {
+
+    #CVYusufTemp-div-nav-bar {
+      position: fixed;
+      height: 0px;
+      top: 0.3rem;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(100%);
+      transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+      }
+
+  .hamburger {
+  display: block;
+  position: relative;
+  }
+  
+  .nav-open nav {
+  transform: translateX(0);
+  }
+  
+  .nav-open .logo-container {
+  margin-top: 5px;
+  }
     
-    .CVYusufTemp1-div-header .major {
-      font-weight: 100;
-      margin-top: 10px;
+  .nav-open .CVYusufTemp-div-menu-nav-link {
+  margin: 2rem;
+  }
+  
+  .nav-open .nav-toggle {
+  top: 2rem;
+  }
+  .CVYusufTemp-div-menu-logo-container, 
+  .CVYusufTemp-div-menu-nav-links {
+    margin: -40px;
+  }
+  .nav-open .CVYusufTemp-div-menu-nav-links {
+    display: contents;
     }
-    
+    nav {
+      flex: auto;
+    }
+/* ----------------page container  */
+.CVYusufTemp1-div-header .name, .CVYusufTemp1-div-header .major{
+  font-size: unset;
+}
     .CVYusufTemp1-div-contents {
-      box-sizing: border-box;
-      display: flex;
-      height: 102%;
+    display: grid;
+    }
+    .CVYusufTemp1-div-page {
+    width: 100%;
+    }
+    .CVYusufTemp1-div-main-section{
       width: 100%;
     }
-    
-    .CVYusufTemp1-div-main-section {
-      background-color: white;
-      display: inline-block;
-      width: 70%;
-    }
-    
-    .CVYusufTemp1-div-main-section > section,
-    .CVYusufTemp1-div-right-section > section {
-      padding: 20px;
-    }
-    
-    .CVYusufTemp1-div-highlights {
-      font-family: Helvetica, sans-serif;
-      font-size: small;
-      font-weight: 100;
-      text-align: left;
-      word-spacing: normal;
-      font-variant: normal;
-    }
-    
-    li {
-      font-variant: normal;
-      font-weight: 100;
-    }
-    
-    .CVYusufTemp1-div-section-title {
-      border-bottom: 1px solid #bdbdbd;
-      color: rgb(49, 63, 78);
-      font-family: Tahoma, sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-    }
-    
     .CVYusufTemp1-div-right-section {
-      background-color: #f5f5f5;
-      display: inline-block;
-      width: 30%;
-    }
-    
-    .CVYusufTemp1-div-experience-card {
-      font-family: Helvetica, sans-serif;
-      padding: 10px 0;
-    }
-    
-    .CVYusufTemp1-div-experience-card .title {
-      color: #53555b;
-      font-family: Helvetica, sans-serif;
-      font-size: 17px;
-    }
-    
-    .CVYusufTemp1-div-experience-card .company {
-      font-family: Helvetica, sans-serif;
-      font-size: 15px;
-      margin-bottom: 10px;
-    }
-    
-    .CVYusufTemp1-div-experience-card .company .name{
-      color: #919191;
-      font-weight: bold;
-    }
-    
-    .CVYusufTemp1-div-experience-card .company .duration{
-      color: #919191;
-      font-size: 14px;
-    }
-    
-    ul {
-      font-family: Helvetica, sans-serif;
-      font-size: small;
-      list-style: disc;
-      list-style-position: inside;
-    }
-    
-    .CVYusufTemp1-div-certificate-card {
-      color: #53555b;
-      font-family: Helvetica, sans-serif;
-      margin: 8px 0;
-    }
-    
-    .date {
-      color: #919191;
-      font-size: small;
-    }
-    
-    .CVYusufTemp1-div-education-card {
-      color: #53555b;
-      font-family: Helvetica, sans-serif;
-      margin: 8px 0;
-    }
-    
-    .CVYusufTemp1-div-education-card .institution{
-      font-size: small;
-    }
-    
-    .CVYusufTemp1-div-info-item {
-      color: #53555b;
-      font-family: Helvetica, sans-serif;
-      font-size: small;
-      margin-top: 10px;
-    }
-    
-    .CVYusufTemp1-div-info-item .info {
-      display: block;
-      font-weight: 100;
-      margin-top: 6px;
-    }
-    
-    .CVYusufTemp1-div-skill-card {
-      display: flex;
-      font-family: Helvetica, sans-serif;
-      font-size: small;
-      justify-content: space-between;
-      padding: 20px 0;
-    }
-    
-    .CVYusufTemp1-div-skill-level-container {
-      display: flex;
-    }
-    
-    .CVYusufTemp1-div-disc {
-      background-color: #c2c2c2;
-      border-radius: 50%;
-      display: inline-block;
-      height: 12px;
-      margin-right: 2px;
-      width: 12px;
-      position: relative;
-    }
-    
-    .fill {
-      background-color: rgb(49, 63, 78);
-    }
-    
-    .CVYusufTemp1-div-half-disc-left{
-      height:12px;
-      width:6px;
-      border-radius: 90px 0 0 90px;
-      background:rgb(49, 63, 78);
-    }
-    
-    .concentric-half {
-      background-color: rgb(49, 63, 78);
-      height: 6px;
-      width: 6px;
-      position: absolute;
-      top: 25%;
-      left: 25%;
-    }
-   
+      width: 100%;
+  }
+}
