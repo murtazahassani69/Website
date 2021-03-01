@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../css/JallowTemplate1.css';
+import '../../../../css/CVJallowTemplate1.css';
 // import profile from './imgs/Profile';
 
 
