@@ -102,9 +102,10 @@ body {
   padding-right: 10%;
 }
 
-.CVMarTemp-content h1 {
+.CVMarTemp-content-h1 {
   line-height: 1;
   margin: 0 0 5px;
+  text-transform: none;
 }
 
 .CVMarTemp-content span {
@@ -219,6 +220,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: underline 2px #0072b1;
+  text-transform: none;
 }
 
 .CVMarTemp-expertise {

@@ -16,7 +16,7 @@ function MariaTemp(){
                     <img src={user_img} alt="user" className="CVMarTemp-profile_img"/>
                 </div>
                 <div className="CVMarTemp-content">
-                    <h1><span>Hi,</span> I'm Ben Doe</h1>
+                    <h1 className="CVMarTemp-content-h1"><span>Hi,</span> I'm Ben Doe</h1>
                     <h3>Web developer</h3>
                     <div className="CVMarTemp-profile-info">
                         <p className="CVMarTemp-profile-infop"><FaMapMarkerAlt size={18} color='#0072b1'/>United Kingdom,London</p>
