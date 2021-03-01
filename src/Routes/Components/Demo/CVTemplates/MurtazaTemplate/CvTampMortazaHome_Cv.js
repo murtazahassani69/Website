@@ -4,19 +4,17 @@ import codepen from "./img/codepen.png";
 import github from "./img/github.png";
 import linkedin from "./img/linkedin.png";
 import "../../../../css/CVMurtazaTemplate.css";
-import Pdf from "react-to-pdf";
-const ref = React.createRef();
+import MurtazaTampReview from "./MurtazaTampReview";
 
 function Home_Cv() {
   return (
-    <div ref={ref}>
+    <div>
       <Background />
       <About />
       <Education />
       <Experiences />
       <SkillsSection />
       <Forms />
-      <Contact />
       <Footer />
     </div>
   );
@@ -25,7 +23,7 @@ function Home_Cv() {
 function Background() {
   return (
     <div className="CVMurtazaTemp_background">
-      <div ref={ref} className="CVMurtazaTemp_top_container">
+      <div className="CVMurtazaTemp_top_container">
         <h1>
           Hello, I'm Murtaza Hassani.
           <br />
@@ -36,13 +34,10 @@ function Background() {
           <a href="#CVMurtazaTemp_about_section_id">View my work</a>
         </button>
         <br />
-        <Pdf targetRef={ref} filename="code-example.pdf">
-          {({ toPdf }) => (
-            <button className="btn_download" onClick={toPdf}>
-              Download Pdf
-            </button>
-          )}
-        </Pdf>
+
+        <button className="btn_download">
+          <a href="/MurtazaTampReview">See an example</a>
+        </button>
       </div>
     </div>
   );
@@ -51,7 +46,6 @@ function Background() {
 function About() {
   return (
     <div
-      ref={ref}
       id="CVMurtazaTemp_about_section_id"
       className="CVMurtazaTemp_about_section"
     >
@@ -220,32 +214,7 @@ function Experiences() {
 function Forms() {
   return (
     <div id="RestaurantBookTable" className="CVMurtazaTemp_form_section">
-      <div ref={ref} className="CVMurtazaTemp_contact_section">
-        <section className="CVMurtazaTemp_into_contact_section_pa">
-          <h2 className="CVMurtazaTemp_into_contact1_section_p11">
-            Be in touch with me
-          </h2>
-          <div className="CVMurtazaTemp_contact_section_p">
-            <ul className="CVMurtazaTemp_form_section_ul">
-              <li className="CVMurtazaTemp_form_section_li">
-                <strong>Location:</strong>
-                <br />
-                A108 Adam Street, New York, NY 535022
-              </li>
-              <li className="CVMurtazaTemp_form_section_li">
-                <strong>Email:</strong>
-                <br />
-                murtaza@gmail.com
-              </li>
-
-              <li className="CVMurtazaTemp_form_section_li">
-                <strong>Call:</strong> <br />
-                +0306934532
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+      <div className="CVMurtazaTemp_contact_section"></div>
       <div className="CVMurtazaTemp_form_section_container">
         <div>
           <div className="CVMurtazaTemp_form_center">
@@ -276,14 +245,11 @@ function Forms() {
   );
 }
 
-function Contact() {
+function Footer() {
   return (
-    <div>
-      <section className="CVMurtazaTemp_into_contact1_section_pa">
-        <h2 className="CVMurtazaTemp_into_contact1_section_p11">
-          Be in touch with me
-        </h2>
-        <div>
+    <div id="footer" className="container-fluid text-center py-5">
+      <div className="container1">
+        <div className="row">
           <ul className="CVMurtazaTemp_form_section_ul">
             <li className="CVMurtazaTemp_form_section_li">
               <strong>Location:</strong>
@@ -301,17 +267,6 @@ function Contact() {
               +0306934532
             </li>
           </ul>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div id="footer" className="container-fluid text-center py-5">
-      <div className="container1">
-        <div className="row">
           <a
             href="https://codepen.io"
             target="_blank"

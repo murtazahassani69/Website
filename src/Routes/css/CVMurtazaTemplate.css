@@ -231,8 +231,8 @@
   display: flex;
 }
 .CVMurtazaTemp_form_section_ul {
-  color: #000000;
-  display: inline-block;
+  color: #ffffff;
+  display: unset;
   text-align: justify;
   list-style: none;
   padding: 13px;
@@ -295,7 +295,7 @@
 }
 
 .CVMurtazaTemp_form_section .res_input:hover {
-  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+  box-shadow: inset 1px 2px 8px rgba(255, 255, 255, 0.02);
 }
 
 .CVMurtazaTemp_form_section .res_input:focus {
@@ -398,10 +398,11 @@
 
 /* contact section */
 .CVMurtazaTemp_form_section_li {
-  color: teal;
-}
+  color: white;
+  font-weight: 700;
+  font-family: sans-serif;}
 .CVMurtazaTemp_form_section_ul {
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
 .CVMurtazaTemp_contact_section {

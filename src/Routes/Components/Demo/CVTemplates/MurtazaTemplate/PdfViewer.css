@@ -1,0 +1,17 @@
+.pdf-container {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+  }
+  
+  .controls {
+    margin: 10px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  
+  @media print {
+    .pdf-container {
+      display: none;
+    }
+  }
