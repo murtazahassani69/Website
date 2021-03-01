@@ -4,16 +4,19 @@ import codepen from "./img/codepen.png";
 import github from "./img/github.png";
 import linkedin from "./img/linkedin.png";
 import "../../../../css/CVMurtazaTemplate.css";
+import Pdf from "react-to-pdf";
+const ref = React.createRef();
 
 function Home_Cv() {
   return (
-    <div>
+    <div ref={ref}>
       <Background />
       <About />
       <Education />
       <Experiences />
       <SkillsSection />
       <Forms />
+      <Contact />
       <Footer />
     </div>
   );
@@ -22,15 +25,24 @@ function Home_Cv() {
 function Background() {
   return (
     <div className="CVMurtazaTemp_background">
-      <div className="CVMurtazaTemp_top_container">
+      <div ref={ref} className="CVMurtazaTemp_top_container">
         <h1>
           Hello, I'm Murtaza Hassani.
           <br />
           I'm a Full Stack Web Developer.
         </h1>
+
         <button className="CVMurtazaTemp_work_button " data-wow-offset="0">
           <a href="#CVMurtazaTemp_about_section_id">View my work</a>
         </button>
+        <br />
+        <Pdf targetRef={ref} filename="code-example.pdf">
+          {({ toPdf }) => (
+            <button className="btn_download" onClick={toPdf}>
+              Download Pdf
+            </button>
+          )}
+        </Pdf>
       </div>
     </div>
   );
@@ -39,6 +51,7 @@ function Background() {
 function About() {
   return (
     <div
+      ref={ref}
       id="CVMurtazaTemp_about_section_id"
       className="CVMurtazaTemp_about_section"
     >
@@ -59,6 +72,7 @@ function About() {
           Strong collaboration skills and proven history of application
           development. Wordpress and MySQL.
         </p>
+        <div></div>
       </section>
     </div>
   );
@@ -206,6 +220,32 @@ function Experiences() {
 function Forms() {
   return (
     <div id="RestaurantBookTable" className="CVMurtazaTemp_form_section">
+      <div ref={ref} className="CVMurtazaTemp_contact_section">
+        <section className="CVMurtazaTemp_into_contact_section_pa">
+          <h2 className="CVMurtazaTemp_into_contact1_section_p11">
+            Be in touch with me
+          </h2>
+          <div className="CVMurtazaTemp_contact_section_p">
+            <ul className="CVMurtazaTemp_form_section_ul">
+              <li className="CVMurtazaTemp_form_section_li">
+                <strong>Location:</strong>
+                <br />
+                A108 Adam Street, New York, NY 535022
+              </li>
+              <li className="CVMurtazaTemp_form_section_li">
+                <strong>Email:</strong>
+                <br />
+                murtaza@gmail.com
+              </li>
+
+              <li className="CVMurtazaTemp_form_section_li">
+                <strong>Call:</strong> <br />
+                +0306934532
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <div className="CVMurtazaTemp_form_section_container">
         <div>
           <div className="CVMurtazaTemp_form_center">
@@ -228,23 +268,41 @@ function Forms() {
               <div className="CVMurtazaTemp_form_submit">
                 <button type="submit">Submit</button>
               </div>
-
-              <ul className="CVMurtazaTemp_form_section_ul">
-                <li className="CVMurtazaTemp_form_section_li">
-                  <strong>Email:</strong>
-                  <br />
-                  murtaza*****@gmail.com
-                </li>
-
-                <li className="CVMurtazaTemp_form_section_li">
-                  <strong>Phone:</strong> <br />
-                  +0306934532
-                </li>
-              </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div>
+      <section className="CVMurtazaTemp_into_contact1_section_pa">
+        <h2 className="CVMurtazaTemp_into_contact1_section_p11">
+          Be in touch with me
+        </h2>
+        <div>
+          <ul className="CVMurtazaTemp_form_section_ul">
+            <li className="CVMurtazaTemp_form_section_li">
+              <strong>Location:</strong>
+              <br />
+              A108 Adam Street, New York, NY 535022
+            </li>
+            <li className="CVMurtazaTemp_form_section_li">
+              <strong>Email:</strong>
+              <br />
+              murtaza@gmail.com
+            </li>
+
+            <li className="CVMurtazaTemp_form_section_li">
+              <strong>Call:</strong> <br />
+              +0306934532
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 }
