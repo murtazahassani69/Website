@@ -7,6 +7,7 @@ import Store from "./Routes/Components/StoreOnLine";
 import TempJ1 from "./Routes/Components/TempJa1";
 import Murtaza_Tamp from "./Routes/Components/Murtaza_Tamp";
 import Error from "./Routes/Components/Error";// Notice the keyword "exact" so react just renders the default page when nothing but the '/' is on it.
+import MurtazaTampReview from './Routes/Components/Demo/CVTemplates/MurtazaTemplate/MurtazaTampReview';
 
 // Swith Component renders the first match and ignore the rest.//   {/* Mutaza and Presefoni Part */}
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/templateMa1' exact component={Store} /> 
           <Route path='/templateJ1' exact component={TempJ1} /> 
           <Route path='/Murtaza_Tamp' exact component={Murtaza_Tamp} /> 
+          <Route path='/MurtazaTampReview' exact component={MurtazaTampReview} /> 
           <Route path='/templateB1' exact component={Store} /> 
           <Route path='/templateY1' exact component={Store} /> 
           <Route path='/templateMu1' exact component={Store} /> 

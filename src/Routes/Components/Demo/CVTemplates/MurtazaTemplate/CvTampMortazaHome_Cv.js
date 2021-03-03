@@ -4,6 +4,7 @@ import codepen from "./img/codepen.png";
 import github from "./img/github.png";
 import linkedin from "./img/linkedin.png";
 import "../../../../css/CVMurtazaTemplate.css";
+import MurtazaTampReview from "./MurtazaTampReview";
 
 function Home_Cv() {
   return (
@@ -28,8 +29,14 @@ function Background() {
           <br />
           I'm a Full Stack Web Developer.
         </h1>
+
         <button className="CVMurtazaTemp_work_button " data-wow-offset="0">
           <a href="#CVMurtazaTemp_about_section_id">View my work</a>
+        </button>
+        <br />
+
+        <button className="btn_download">
+          <a href="/MurtazaTampReview">See an example</a>
         </button>
       </div>
     </div>
@@ -59,6 +66,7 @@ function About() {
           Strong collaboration skills and proven history of application
           development. Wordpress and MySQL.
         </p>
+        <div></div>
       </section>
     </div>
   );
@@ -206,6 +214,7 @@ function Experiences() {
 function Forms() {
   return (
     <div id="RestaurantBookTable" className="CVMurtazaTemp_form_section">
+      <div className="CVMurtazaTemp_contact_section"></div>
       <div className="CVMurtazaTemp_form_section_container">
         <div>
           <div className="CVMurtazaTemp_form_center">
@@ -228,19 +237,6 @@ function Forms() {
               <div className="CVMurtazaTemp_form_submit">
                 <button type="submit">Submit</button>
               </div>
-
-              <ul className="CVMurtazaTemp_form_section_ul">
-                <li className="CVMurtazaTemp_form_section_li">
-                  <strong>Email:</strong>
-                  <br />
-                  murtaza*****@gmail.com
-                </li>
-
-                <li className="CVMurtazaTemp_form_section_li">
-                  <strong>Phone:</strong> <br />
-                  +0306934532
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -254,6 +250,23 @@ function Footer() {
     <div id="footer" className="container-fluid text-center py-5">
       <div className="container1">
         <div className="row">
+          <ul className="CVMurtazaTemp_form_section_ul">
+            <li className="CVMurtazaTemp_form_section_li">
+              <strong>Location:</strong>
+              <br />
+              A108 Adam Street, New York, NY 535022
+            </li>
+            <li className="CVMurtazaTemp_form_section_li">
+              <strong>Email:</strong>
+              <br />
+              murtaza@gmail.com
+            </li>
+
+            <li className="CVMurtazaTemp_form_section_li">
+              <strong>Call:</strong> <br />
+              +0306934532
+            </li>
+          </ul>
           <a
             href="https://codepen.io"
             target="_blank"
