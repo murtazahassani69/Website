@@ -118,25 +118,9 @@
 li{
   list-style-type: none;
 }
-.CVYusufTemp2-div-page-container {
-  --main-width: 7in;
-  height: 155vh;
-  display: flex;
-  font-weight: 400;
-  justify-content: center;
-  margin: 0;
-  padding-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  color: #53555b;
-  margin: 0;
-  padding: 0;
 
-}
 .CVYusufTemp2-div-page-container {
-  --page-width: 10in;
-  --page-height: 10in;
-  --main-width: 7in;
+  --main-width: 6in;
   --decorator-horizontal-margin: 0.2in;
   --sidebar-horizontal-padding: 0.2in;
   --decorator-outer-offset-top: 10px;
@@ -147,27 +131,14 @@ li{
   --row-blocks-padding-top: 5pt;
   --date-block-width: 0.6in;
   --main-blocks-title-icon-offset-left: -19pt;
-
-  box-sizing: border-box;
-  width: var(--page-width);
-  height: var(--page-height);
-  margin: 0;
   font-family: "Open Sans", sans-serif; 
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.3;
   color: #444;
   hyphens: auto;
   text-align: left;
+  margin-bottom: 10%;
   display: flex;
-  font-weight: 400;
-  justify-content: center;
-  margin: 0;
-  padding-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  color: #53555b;
-  margin: 0;
-  padding: 0; 
 }
 
 #main{
@@ -179,12 +150,9 @@ li{
 
 #sidebar{
   float: right;
-  position: relative; 
-  width: var(--sidebar-width);
-  height: 150%;
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
-  font-size: 8.5pt;
+  min-width: fit-content;
 }
 
 /* main */
@@ -530,7 +498,7 @@ li{
 
 /* ----------------page container  */
   .CVYusufTemp2-div-page-container {
-    height: 377vh;
+    /* height: 377vh; */
     display: contents;
   width: 100%;
   }
@@ -545,6 +513,7 @@ li{
   #sidebar{
   width: 94%;
   text-align: center;
+  padding: 0.1in;
   }
 
 }

@@ -9,14 +9,13 @@ function CVYusufTemplate2 (){
 
     return (
 <>
-         {/* <div id="CVYusufTemp2-div-page-container"> */}
 
       <header className={toggle ?'nav-open':null} id="CVYusufTemp-div-menu-header">
 
-{/* <div className="CVYusufTemp2-div-menu-logo-container">
-  <img id="header-img" . src="logo.png" alt="logo"">
-  <h4 className=" CVYusufTemp2-div-menu-logo">Logo Name</h4>
-</div> */}
+          {/* <div className="CVYusufTemp2-div-menu-logo-container">
+            <img id="header-img" . src="logo.png" alt="logo"">
+            <h4 className=" CVYusufTemp2-div-menu-logo">Logo Name</h4>
+            </div> */}
 
 <button className="nav-toggle" onClick={()=>{setToggle(!toggle)}} aria-label="toggle navigation">
   <span className="hamburger"></span>
@@ -31,7 +30,9 @@ function CVYusufTemplate2 (){
     </nav>
 </header>
 
-<Pdf targetRef={ref} filename="resume.pdf">
+<Pdf targetRef={ref} filename="resume.pdf"paperSize="A4"
+                    margin="2cm">
+            
         {({ toPdf }) => <button id="cmd" onClick={toPdf}>Generate Pdf</button>}
       </Pdf>
 
@@ -98,14 +99,15 @@ function CVYusufTemplate2 (){
     </div>
     <div className="details">
       <header>
-        <h3 className="CVYusufTemp2-div-h">Yet Another Job Position</h3>
-        <span className="place">Some Workplace</span>
-        <span className="location">Some City, Some Country</span>
+        <h3 className="CVYusufTemp2-div-h">Junior Developer</h3>
+        <span className="place">Frontend</span>
+        <span className="location">Athens, Greece</span>
       </header>
       <div>
         <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+          <li>As a Front-end Developer be responsible for designing and implementing highly-performant, 
+              customized and responsive applications that meet business process and application requirements.</li>
+          <li> Responsible for designing, building and maintaining responsive front-end web and mobile applications</li>
         </ul>
         </div>
     </div>
@@ -117,7 +119,7 @@ function CVYusufTemplate2 (){
   </h2>
   <section className="blocks">
     <div className="date">
-      <span>2015</span><span>2016</span>
+      <span>2015</span>
     </div>
     <div className="decorator">
     </div>
@@ -129,14 +131,14 @@ function CVYusufTemplate2 (){
       <div>
         <ul>
           <li>This web application is a prototype platform that will allow the
-registration of users as NGO representatives and independent
-mentors and the creation of profiles for NGOs and the users
-themselves.</li>
+              stration of users as NGO representatives and independent
+              mentors and the creation of profiles for NGOs and the users
+              themselves.</li>
           <li>Each registered user will be able to see a list of all NGO
-profiles and user profiles, whereas administrator users will be able to
-approve registrations and created profiles before publishing on the
-platform, and also edit and delete them via an exclusive menu
-available only to them.</li>
+              profiles and user profiles, whereas administrator users will be able to
+              approve registrations and created profiles before publishing on the
+              platform, and also edit and delete them via an exclusive menu
+              available only to them.</li>
           <li>It coded with react and mongo DB</li>
         </ul>
       </div>
@@ -144,7 +146,7 @@ available only to them.</li>
   </section>
   <section className="blocks">
     <div className="date">
-      <span>2014</span><span>2015</span>
+      <span>2014</span> 
     </div>
     <div className="decorator">
     </div>
@@ -172,12 +174,15 @@ available only to them.</li>
     </div>
     <div className="details">
       <header>
-        <h3 className="CVYusufTemp2-div-h">Some Project 3</h3>
-        <span className="place">Some workplace</span>
+        <h3 className="CVYusufTemp2-div-h">Social Media App Project</h3>
+        <span className="place">A kind of Instangram with react </span>
       </header>
       <div>
         <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec mi ante. Etiam odio eros, placerat eu metus id, gravida eleifend odio</li>
+          <li> Created React App to make a dynamic UI of posts, likes, and messages</li>
+          <li>Firebase, AWS Amplify, or Hasura (using GraphQL with subscriptions) for real-time data</li>
+          <li>Serverless functions like AWS Lambda or Firebase Functions for notifications</li>
+          <li>Cloudinary or Firebase storage for uploading pictures or video</li>
         </ul>
       </div>
     </div>
@@ -227,7 +232,7 @@ available only to them.</li>
       <header>
         <h3 className="CVYusufTemp2-div-h">B.S. in Existential Science (Double Major)</h3>
         <span className="place">Inexistent University</span>
-        <span className="location">Some City, Some Country</span>
+        <span className="location">Mechanicsburg, Pennsylvania</span>
       </header>
       <div>President's Scholarship</div>
     </div>
@@ -273,14 +278,19 @@ available only to them.</li>
   <h1>
     Skills
   </h1>
-  <ul>
-    <li>Object-Oriented Programming(OOP)</li>
-    <li>Java</li>
-  </ul>
-  <ul>
-    <li>Agila Methodologies</li>
-    <li>Test Automation</li>
-  </ul>
+    <ul>
+          <li>Java</li>
+          <li>OO-Programming</li> 
+          <li>Agila Methodologies</li>
+          <li>Test Automation</li> 
+    </ul>
+    <ul>
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Problem solving</li>
+          <li>Leadership</li>
+          <li>Organisation</li>
+    </ul>
 </div>
  
 </section>
