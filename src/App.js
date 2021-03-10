@@ -5,6 +5,7 @@ import Home from "./Routes/Components/Home";
 import Restaurant from "./Routes/Components/Restaurant";
 import Store from "./Routes/Components/StoreOnLine";
 import TempJ1 from "./Routes/Components/TempJa1";
+import MariaTemplate from './Routes/Components/MariaTemplate';
 import TempJ2 from "./Routes/Components/TempJa2";
 import TempB1 from "./Routes/Components/TempBo1";
 import TempMu1 from "./Routes/Components/TempMu1";
@@ -21,7 +22,7 @@ function App() {
           <Route path='/' exact component={Home} />   
           <Route path='/restaurant' exact component={Restaurant} /> 
           <Route path='/store' exact component={Store} /> 
-          <Route path='/templateMa1' exact component={Store} /> 
+          <Route path='/templateMa1' exact component={MariaTemplate} /> 
           <Route path='/templateJ1' exact component={TempJ1} /> 
           <Route path='/templateJ2' exact component={TempJ2} /> 
           <Route path='/templateB1' exact component={TempB1} /> 

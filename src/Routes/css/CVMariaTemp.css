@@ -1,40 +1,17 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-body {
+.CVMarTemp-container {
   background-image: linear-gradient(to bottom, rgb(255 255 255 / 80%), rgb(255 255 255 / 97%)), url(./../Components/Demo/CVTemplates/MariaTemplate/imgs/mar-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
+  box-sizing: border-box;
   font-family: "Bind", sans-serif;
-}
-
-@media only screen and (max-width: 1650px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-.CVMarTemp-container {
-  padding: 0;
   display: grid;
   grid-template-columns: minmax(min-content, 10vw) repeat(3, minmax(min-content, 1fr));
   grid-template-rows: repeat(8, minmax(min-content, 1fr));
-  font-size: 14px;
-  line-height: 1.8em;
+  font-size: 12px;
   font-weight: 300;
+  line-height: 1;
 }
 
 @media only screen and (max-width: 950px) {
@@ -65,7 +42,6 @@ body {
 .CVMarTemp-right {
   grid-row: 1/-1;
   grid-column: 3/-1;
-  margin-top: 60px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -87,14 +63,12 @@ body {
 .CVMarTemp-profile {
   padding-top: 1rem;
   border-radius: 50%;
-  height: 20rem;
-  width: 20rem;
 }
 
 .CVMarTemp-profile_img {
   border-radius: 50%;
-  height: 18rem;
-  width: 18rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 .CVMarTemp-content {
@@ -110,8 +84,8 @@ body {
 
 .CVMarTemp-content span {
   font-weight: 600;
-  line-height: 1.4;
-  font-size: 20px;
+  line-height: 1;
+  font-size: 18px;
   color: #0072b1;
 }
 
@@ -120,24 +94,44 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  margin-top: 2rem;
 }
 
 .CVMarTemp-profile-infop {
   text-align: left;
   color: black;
+  margin: 0;
+}
+
+.CVMarTemp-content-btn {
+  background-color: #0072b1;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  color: #bebece;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.CVMarTemp-content-btn:link,
+.CVMarTemp-content-btn:visited {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.CVMarTemp-content-btn:hover,
+.CVMarTemp-content-btn:active {
+  transform: translateY(-3px);
+  color: white;
 }
 
 .CVMarTemp-description1 {
   border-top: 1px solid grey;
-  margin-top: 2rem;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   color: inherit;
   text-align: start;
 }
 
 .CVMarTemp-description2 {
-  padding-top: 2rem;
   color: inherit;
   text-align: start;
 }
@@ -156,12 +150,14 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+  padding-left: 0;
+  margin: 0;
+  line-height: 1;
 }
 
 .CVMarTemp-socialicons-link:link,
 .CVMarTemp-socialicons-link:visited {
   display: block;
-  padding-right: 1rem;
   transition: all 0.2s;
 }
 
@@ -174,7 +170,6 @@ body {
 .CVMarTemp-services {
   display: grid;
   grid-template-columns: repeat(2, minmax(15rem, 1fr));
-  grid-gap: 6rem;
   align-items: start;
 }
 
@@ -182,7 +177,7 @@ body {
   .CVMarTemp-services {
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
     align-self: center;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 }
 
@@ -190,7 +185,7 @@ body {
   .CVMarTemp-services {
     grid-template-columns: 1fr;
     align-self: center;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
   }
 }
 
@@ -201,9 +196,8 @@ body {
   margin: 1rem;
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-row-gap: 1rem;
-  grid-column-gap: 0.5rem;
   align-items: center;
+  grid-column-gap: 0.3rem;
 }
 
 .CVMarTemp-service-text {
@@ -241,18 +235,13 @@ body {
 
 .CVMarTemp-section {
   border-radius: 6px;
-  margin: 5rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   text-align: start;
   padding: 2rem;
   background-color: #f1f1f1;
   box-shadow: 7px 8px #e6e6e6c2;
-}
-
-.CVMarTemp-section:first-child {
-  margin-top: 0;
 }
 
 .CVMarTemp-experiences-h2 {
@@ -264,7 +253,7 @@ body {
 }
 
 .CVMarTemp-experience {
-  margin: 3rem;
+  margin: 1rem;
   padding-left: 1rem;
   border-left: 1px solid black;
   position: relative;
@@ -295,15 +284,13 @@ body {
 .CVMarTemp-interests {
   display: grid;
   grid-template-columns: repeat(2, minmax(15rem, 1fr));
-  grid-gap: 2rem;
-  align-items: center;
+  align-items: start;
 }
 
 @media only screen and (max-width: 1250px) {
   .CVMarTemp-interests {
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
     align-self: center;
-    grid-gap: 2rem;
   }
 }
 
@@ -311,7 +298,6 @@ body {
   .CVMarTemp-interests {
     grid-template-columns: 1fr;
     align-self: center;
-    grid-gap: 2rem;
   }
 }
 
@@ -322,12 +308,14 @@ body {
   margin: 1rem;
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-row-gap: 1rem;
-  grid-column-gap: 0.5rem;
   align-items: center;
+  grid-column-gap: 0.3rem;
 }
 
 .CVMarTemp-interest-text {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: black;
   grid-column: 2/3;
 }
 
@@ -335,5 +323,5 @@ body {
   padding-top: 0.1rem;
   grid-column: 3/5;
   color: black;
-  font-size: 1.2rem;
+  font-size: 10px;
 }

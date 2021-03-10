@@ -43,9 +43,9 @@ function Menu() {
                     <li><a href="#" >Gallery</a></li>
                     <li><a href="#" >Menu</a>
                         <ul className="rest_toggle-dropdown">
-                            <li><a href="#">Sub-1</a></li>
-                            <li><a href="#">Sub-2</a></li>
-                            <li><a href="#">Sub-3</a></li>
+                            <li><a href="#">Menu-1</a></li>
+                            <li><a href="#">Menu-2</a></li>
+                            <li><a href="#">Menu-3</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Contact</a></li>

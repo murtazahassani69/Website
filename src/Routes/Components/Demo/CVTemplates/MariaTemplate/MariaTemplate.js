@@ -18,16 +18,17 @@ function MariaTemp(){
                 <div className="CVMarTemp-content">
                     <h1 className="CVMarTemp-content-h1"><span>Hi,</span> I'm Ben Doe</h1>
                     <h3>Web developer</h3>
+                    <button className="CVMarTemp-content-btn" onclick="">Download pdf</button>
                     <div className="CVMarTemp-profile-info">
                         <p className="CVMarTemp-profile-infop"><FaMapMarkerAlt size={18} color='#0072b1'/>United Kingdom,London</p>
                         <p className="CVMarTemp-profile-infop"><TiMail size={18} color='#0072b1'/>xxxx@wwww.com</p>
                         <p className="CVMarTemp-profile-infop"><ImPhone size={18} color='#0072b1'/>+44 00 0000 0000</p>
                     </div>
                     <p className="CVMarTemp-description1">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin libero nunc consequat interdum. In hendrerit gravida rutrum quisque. Egestas maecenas pharetra convallis posuere. Ut eu sem integer vitae justo eget magna fermentum iaculis. 
+                        Creative Front-End Developer offering 9+ years of experience providing high-impact web solutions for diverse industry organizations. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Aspiring to combine broad background with strong technical skills to excel as a Front-End Developer. 
                     </p>
                     <p className="CVMarTemp-description2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin libero nunc consequat interdum. In hendrerit gravida rutrum quisque. Egestas maecenas pharetra convallis posuere. Ut eu sem integer vitae justo eget magna fermentum iaculis.</p>
+                    Designed and developed about 60 user-friendly responsive websites within 10 years, with high proficiency. Working closely to the client for requirement gathering and analysis and provided desired solution to client in time limits.</p>
                </div>
                <div className="CVMarTemp-sign">
                     <img src={user_sign} alt="user" className="CVMarTemp-sign_img"/>
@@ -42,29 +43,28 @@ function MariaTemp(){
             
             
             <div className="CVMarTemp-right"> 
-
                 <section className="CVMarTemp-section">
                     <h2 className="CVMarTemp-section-h2">My Services</h2>
                     <div className="CVMarTemp-services">
                         <div className="CVMarTemp-service">
                         <TiChevronRight size={20} color='#0072b1'/>
                             <h4 className="CVMarTemp-h4 ">Web development</h4>
-                            <p className="CVMarTemp-service-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p className="CVMarTemp-service-text">Client-focused, customer-centric, creating website solutions that deliver tangible business results.</p>
                         </div>
                         <div className="CVMarTemp-service">
                         <TiChevronRight size={20} color='#0072b1'/>
                             <h4 className="CVMarTemp-h4">Web design</h4>
-                            <p className="CVMarTemp-service-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p className="CVMarTemp-service-text">Designing engaging and responsive landing pages.Optimising sites for maximum speed and scalability.</p>
                         </div>
                         <div className="CVMarTemp-service">
                         <TiChevronRight size={20} color='#0072b1'/>
                             <h4 className="CVMarTemp-h4">Mobile App development</h4>
-                            <p className="CVMarTemp-service-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p className="CVMarTemp-service-text">Full-cycle mobile app development services. This includes expert business analysis, design and development.</p>
                         </div>
                         <div className="CVMarTemp-service">
                         <TiChevronRight size={20} color='#0072b1'/>
                             <h4 className="CVMarTemp-h4">Digital Marketing</h4>
-                            <p className="CVMarTemp-service-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p className="CVMarTemp-service-text">Search Engine Optimization (SEO), Search Engine Marketing (SEM),Website Strategy,Social Media Marketing.</p>
                         </div>                    
                     </div>
                 </section>
@@ -156,23 +156,23 @@ function MariaTemp(){
                 <div className="CVMarTemp-interests">
                     <div className="CVMarTemp-interest">
                         <FaRunning size={20} color='#0072b1'/>
-                        <h4 className="CVMarTemp-interest-h4">Sports</h4>
-                        <p className="CVMarTemp-interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 className="CVMarTemp-h4">Sports</h4>
+                        <p className="CVMarTemp-interest-text">Skiing,running, football.</p>
                     </div>
                     <div className="CVMarTemp-interest">
                     <ImBooks size={20} color='#0072b1'/>
-                        <h4 className="CVMarTemp-interest-h4">Books</h4>
-                        <p className="CVMarTemp-interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <h4 className="CVMarTemp-h4">Books</h4>
+                        <p className="CVMarTemp-interest-text">I'm always interested in what's going on in the literary world.</p>
                     </div>
                     <div className="CVMarTemp-interest">
                     <FaHandsHelping size={20} color='#0072b1'/>
-                        <h4 className="CVMarTemp-interest-h4">Volunteer Work</h4>
-                        <p className="CVMarTemp-interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 className="CVMarTemp-h4">Volunteer Work</h4>
+                        <p className="CVMarTemp-interest-text">I'm always happy to help.</p>
                     </div>
                     <div className="CVMarTemp-interest">
                     <FaUmbrellaBeach size={20} color='#0072b1'/>
-                        <h4 className="CVMarTemp-interest-h4">Travel</h4>
-                        <p className="CVMarTemp-interest-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h4 className="CVMarTemp-h4">Travel</h4>
+                        <p className="CVMarTemp-interest-text">I have been to 30 countries so far.</p>
                     </div>
                  </div>
              </section>
