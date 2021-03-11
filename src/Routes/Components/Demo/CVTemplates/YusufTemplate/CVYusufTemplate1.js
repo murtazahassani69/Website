@@ -16,7 +16,7 @@ function CVYusufTemplate1 (){
         <h4 className=" CVYusufTemp1-div-menu-logo">Logo Name</h4>
       </div> */}
 
-      <button className="nav-toggle" onClick={()=>{setToggle(!toggle);console.log(toggle)}} aria-label="toggle navigation">
+      <button className="nav-toggle" onClick={()=>setToggle(!toggle)} aria-label="toggle navigation">
         <span className="hamburger"></span>
       </button>
 
@@ -38,18 +38,17 @@ function CVYusufTemplate1 (){
     <div className="CVYusufTemp1-div-page" id="toPrint" ref={ref}>
       <header className="CVYusufTemp1-div-header">
         <div className="CVYusufTemp1-div-header-name">
-         <h1 className="name">Joey Karate</h1>
-        <h3 className="major">Full Stack Developer</h3>
+          <h1 className="name">Joey Karate</h1>
+          <h3 className="major">Full Stack Developer</h3>
         </div>
         <div className="CVYusufTemp1-div-header-photo" >
           <img src={face} alt='Profile Picture' />                  
         </div>
-      
       </header>
       <section className="CVYusufTemp1-div-contents">
         <section className="CVYusufTemp1-div-main-section">
           <section className="CVYusufTemp1-div-highlights">
-          I am full stack developer. I can work with both the front and back ends of a website. I can tackle projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.
+            I am full stack developer. I can work with both the front and back ends of a website. I can tackle projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.
           </section>
           <section className="experience">
             <div className="CVYusufTemp1-div-section-title">Experience</div>
@@ -66,7 +65,6 @@ function CVYusufTemplate1 (){
                 </ul>
               </div>
             </div>
-
             <div className="CVYusufTemp1-div-experience-card">
               <div className="title">Frontend Developer</div>
               <div className="company">
@@ -105,18 +103,17 @@ function CVYusufTemplate1 (){
           <section className="personal-info">
             <div className="CVYusufTemp1-div-section-title">Personal Info</div>
             <div className="CVYusufTemp1-div-info-item">
-              <strong>Title</strong>
-              <span className="info">Strong organizational and project management skills.</span>
+              <strong>Strong organizational and project management skills</strong>
               <span className="info">Proficiency with fundamental front end languages such as HTML, CSS and JavaScript.</span>
               <span className="info">Familiarity with JavaScript frameworks such as Angular JS, React and Amber.</span>
             </div>
             <div className="CVYusufTemp1-div-info-item">
-              <strong>Title</strong>
-              <span className="info">Information Line</span>
+              <strong>Communication</strong>
+              <span className="info">Teamwork</span>
             </div>
             <div className="CVYusufTemp1-div-info-item">
-              <strong>Title</strong>
-              <span className="info">Information Line</span>
+              <strong>Leadership</strong>
+              <span className="info">Ability to work under pressure.</span>
             </div>
           </section>
           <section className="skills">
@@ -134,10 +131,10 @@ function CVYusufTemplate1 (){
             <div className="CVYusufTemp1-div-skill-card">
               <span>frontend</span>
               <div className="CVYusufTemp1-div-skill-level-container">
-                <div className="CVYusufTemp1-div-disc fill"></div>
-                <div className="CVYusufTemp1-div-disc fill"></div>
-                <div className="CVYusufTemp1-div-disc fill"></div>
-                <div className="CVYusufTemp1-div-disc">
+                  <div className="CVYusufTemp1-div-disc fill"></div>
+                  <div className="CVYusufTemp1-div-disc fill"></div>
+                  <div className="CVYusufTemp1-div-disc fill"></div>
+                  <div className="CVYusufTemp1-div-disc">
                   <div className="CVYusufTemp1-div-half-disc-left"></div>
                 </div>
                 <div className="CVYusufTemp1-div-disc">
@@ -150,10 +147,7 @@ function CVYusufTemplate1 (){
       </section>
     </div>
   </div>
-
-
-
 </>
-    )
+  )
 }
 export default CVYusufTemplate1;

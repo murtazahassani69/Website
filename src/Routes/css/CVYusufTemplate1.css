@@ -1,4 +1,4 @@
-#cmd {
+#CVYusufTemp-cmd {
   cursor: pointer;
   height: 30px;
   position: absolute;
@@ -108,8 +108,6 @@
   bottom: 6px;
   }
   
- 
- 
  /* ////////////container///////////////// */
  
   #CVYusufTemp1-div-main-container {
@@ -118,18 +116,16 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    height: 155vh;
+    height: 145%;
 
     display: flex;
     font-weight: 400;
     justify-content: center;
-    margin: 0;
     padding-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
     color: #53555b;
-    margin: 0;
-    padding: 0;
+
   }
   
   .CVYusufTemp1-div-page {
@@ -138,6 +134,7 @@
     margin: 0;
     padding: 0;
     width: 21.1cm;
+    margin-bottom: 10%;
   }
   
   .CVYusufTemp1-div-page > * {
@@ -162,7 +159,6 @@
   .CVYusufTemp1-div-header-photo > img{
     width: 130px;
   }
- 
 
   .CVYusufTemp1-div-header .name, 
   .CVYusufTemp1-div-header .major {
@@ -180,7 +176,6 @@
   .CVYusufTemp1-div-contents {
     box-sizing: border-box;
     display: flex;
-    height: 102%;
     width: 100%;
   }
   
