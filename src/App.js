@@ -7,6 +7,7 @@ import Store from "./Routes/Components/StoreOnLine";
 import TempJ1 from "./Routes/Components/TempJa1";
 import TempJ2 from "./Routes/Components/TempJa2";
 import TempB1 from "./Routes/Components/TempBo1";
+import TempB2 from "./Routes/Components/TempBo2";
 import TempMa1 from "./Routes/Components/TempMa1";
 import TempMu1 from "./Routes/Components/TempMu1";
 import TempY1 from "./Routes/Components/TempYu1";
@@ -26,6 +27,7 @@ function App() {
           <Route path='/templateJ1' exact component={TempJ1} /> 
           <Route path='/templateJ2' exact component={TempJ2} /> 
           <Route path='/templateB1' exact component={TempB1} /> 
+          <Route path='/templateB2' exact component={TempB2} /> 
           <Route path='/templateY1' exact component={TempY1} /> 
           <Route path='/templateY2' exact component={TempY2} /> 
           <Route path='/templateMu1' exact component={TempMu1} /> 

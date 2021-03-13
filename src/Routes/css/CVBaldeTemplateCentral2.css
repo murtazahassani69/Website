@@ -1,0 +1,584 @@
+.CVBaldeTemp2-main{
+    width: 100%;
+    height: 100vh;
+    font-family: Trebuchet MS, consolas, Comic Sans MS ;
+}
+.CVBaldeTemp2-header{
+    display: flex;
+}
+
+.CVBaldeTemp2-head{
+    width: 90px;
+    height: 100vh;
+}
+
+.CVBaldeTemp2-menu{
+    width: 100%; 
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.CVBaldeTemp2-menu-ul{
+    color: white;
+    font-weight: bold;
+    padding-left: 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    transform: rotate(90deg);
+    margin: 0;
+}
+
+.CVBaldeTemp2-menu-ul li{
+    padding-left: 30%;
+    padding-right: 30%;
+    cursor: pointer;
+    height: 240%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CVBaldeTemp2-menu-ul li:hover {
+    background-color: rgb(10, 51, 75);
+}
+
+#CVBaldeTemp2-check{
+    display: none;
+}
+
+.CVBaldeTemp2-menu .checkbtn2{
+    color: orangered;
+    display: none;
+    font-size: 3em;
+    animation: CVB-TOGGLE 1s infinite;
+}
+@keyframes CVB-TOGGLE {
+    from{
+       opacity: 0.5;
+       font-size: 2.8em;
+    }
+    to{
+       opacity: 1;
+       font-size: 3em;
+     }
+}
+
+.CVBaldeTemp2-content{
+    background: rgb(10, 51, 75);
+    width: 93%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.CVBaldeTemp2-content-whiteCircle{
+    height: 250px;
+    width: 230px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: CVB-biggerWhite 2s;
+}
+@keyframes CVB-biggerWhite {
+    from{
+        height: 0;
+        width: 0;
+    }
+    to{
+        height: 250px;
+        width: 230px;
+     }
+}
+
+.CVBaldeTemp2-content-whiteCircle img{
+    height: 280px;
+    width: 200px;
+    border-radius: 50%;
+    animation: CVB-biggerImg 4s;
+}
+
+@keyframes CVB-biggerImg {
+    0%{
+        height: 0;
+        width: 0;
+    }
+    50%{
+        height: 0;
+        width: 0;
+    }
+    100%{
+        height: 280px;
+        width: 200px;
+     }
+}
+
+.CVBaldeTemp2-content-hello{
+    
+    color: white;
+    height: 60px;
+    width: 100px;
+    background-color: orange;
+    position: relative;
+    top: -270px;
+    left: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: CVB-Hello 5s;
+}
+@keyframes CVB-Hello {
+    0%{
+        background-color: rgb(10, 51, 75);
+        color: rgb(10, 51, 75);
+    }
+    50%{
+       background-color: rgb(10, 51, 75);
+       color: rgb(10, 51, 75);
+    }
+    100%{
+        background-color: orange;
+        color: white
+     }
+}
+
+.CVBaldeTemp2-content-name{
+    color: white;
+    background-color: orange;
+    position: relative;
+    top: -40px;
+    animation: CVB-nameShow 7s;
+    padding: 0.5em;
+}
+@keyframes CVB-nameShow {
+    0%{
+       background-color: rgb(10, 51, 75);
+       color: rgb(10, 51, 75);
+    }
+    50%{
+        background-color: rgb(10, 51, 75);
+        color: rgb(10, 51, 75);
+    }
+    100%{
+        background-color: orange;
+        color: white;
+     }
+}
+.CVBaldeTemp2-content-name1{
+    position: relative;
+    animation: CVB-nameShow1 8s;
+    top: -30px;
+    color: white;
+    font-size: 1.3em;
+}
+@keyframes CVB-nameShow1 {
+    0%{
+        color: rgb(10, 51, 75);
+        top: 50px
+    }
+    50%{
+        top: 25px;
+        color: rgb(10, 51, 75);
+    }
+    100%{
+        color: white;
+        top: -30px
+     }
+}
+
+.CVBaldeTemp2-content22{
+    width: 97%;
+    height: 100vh;
+    background-color: rgb(10, 51, 75);
+    z-index: -10;
+}
+.CVBaldeTemp2-content22 h1{
+    font-size: 33px;
+    background-color: orange;
+    margin: 0 0 0.2em 0;
+    padding: 1em;
+    color: white;
+    animation: CVB-ABOUT 5s;
+}
+
+@keyframes CVB-ABOUT {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.CVBaldeTemp2-content2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -10;
+    height: 91vh;
+}
+.CVBaldeTemp2-content2-left, .CVBaldeTemp2-content2-right{
+    z-index: -5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+.CVBaldeTemp2-content2-left{
+    animation: CVB-fromLeft 4s ;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+.CVBaldeTemp2-content2-right{
+    animation: CVB-fromRight 8s ;
+    text-align: right;
+}
+.CVBaldeTemp2-content2-left span, .CVBaldeTemp2-content2-right span{
+    color: white;
+    background-color: gray;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 90%;
+}
+
+@keyframes CVB-fromLeft {
+    from{
+        left: -200%;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes CVB-fromRight {
+    0%{
+       right: -200%;
+    }
+    50%{
+        right: -200%;
+    }
+    100%{
+        right: 0;
+     }
+}
+
+.CVBaldeTemp2-content3{
+    width: 100%;
+    background-color: rgb(10, 51, 75);
+}
+
+.CVBaldeTemp2-content3-title{
+    animation: CVB-titleShow 2s ;
+    width: 100%;
+    background-color: orange;
+    padding: 0.6em;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+@keyframes CVB-titleShow {
+    0%{
+       height: 0;
+       opacity: 0;
+    }
+    30%{
+        opacity: 0;
+     }
+    100%{
+        height: 12.5%;
+        color: white
+     }
+}
+
+.CVBaldeTemp2-content3-per{
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+}
+
+.CVBaldeTemp2-content3-per .options{
+    width: 150px;
+    text-align: left;
+    animation: CVB-options 4s;
+    color: white
+}
+@keyframes CVB-options {
+    0%{
+      color: rgb(10, 51, 75);
+    }
+    50%{
+        color: rgb(10, 51, 75);
+      }  
+    100%{
+        color: white;
+    }
+}
+
+.CVBaldeTemp2-content3-per .per{    
+    background-color: grey;
+    width: 35%;
+    height: 25px;
+    display: flex;
+    margin: 0.5em;
+    animation: CVB-per 6s;
+}
+@keyframes CVB-per {
+    0%{
+       width: 0;
+    }
+    60%{
+        width: 0;
+     }
+    100%{
+        width: 35%;
+     }
+}
+span.CVBaldeTemp2-content3-per1, 
+span.CVBaldeTemp2-content3-per2, 
+span.CVBaldeTemp2-content3-per3,
+span.CVBaldeTemp2-content3-per4,
+span.CVBaldeTemp2-content3-per5{
+    background-color: greenyellow;
+    height: 25px;
+}
+span.CVBaldeTemp2-content3-per1{
+    width: 90%;
+}
+span.CVBaldeTemp2-content3-per2{
+    width: 80%;
+}
+span.CVBaldeTemp2-content3-per3{
+    width: 70%;
+}
+span.CVBaldeTemp2-content3-per4{
+    width: 50%;
+}
+span.CVBaldeTemp2-content3-per5{
+    width: 30%;
+}
+
+.CVBaldeTemp2-content3-per-number{
+    animation: CVB-number 8s;
+    color: white;
+}
+@keyframes CVB-number {
+    0%{
+       opacity: 0;
+    }
+    70%{
+        opacity: 0;
+     }
+    100%{
+        opacity: 1;
+     }
+}
+
+.CVBaldeTemp2-content44{
+    width: 100%;
+    background-color: rgb(10, 51, 75);
+}
+
+.CVBaldeTemp2-content44 h1{
+    animation: CVB-PROJECT 2s ;
+    background-color: orange;
+    padding: 1.2em 0 1.2em 0;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1em;
+    line-height: 1.5em;  
+    width: 100%; 
+    text-align: center;
+}
+@keyframes CVB-PROJECT {
+    0%{
+       height: 0;
+       opacity: 0;
+    }
+    30%{
+        opacity: 0;
+     }
+    100%{
+        height: 6.5%;
+        color: white
+     }
+}
+
+.CVBaldeTemp2-content4{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CVBaldeTemp2-content4 img{
+    height: 35vh;
+    width: 28vw;
+}
+.CVBaldeTemp2-content4 img:first-child{
+    animation: CVB-SHA 2s;
+}
+.CVBaldeTemp2-content4 img:nth-child(2){
+    animation: CVB-AMN 5s;
+}
+
+.CVBaldeTemp2-content4 img:last-child{
+    animation: CVB-PER 8s;
+}
+@keyframes CVB-SHA {
+    from{
+        height: 0;
+    }
+    to{
+        height: 35vh;
+    }
+}
+
+@keyframes CVB-AMN {
+    0%{
+        height: 0;
+    }
+    50%{
+        height: 0;
+    }
+    100%{
+        height: 35vh;
+    }
+}
+
+@keyframes CVB-PER {
+    0%{
+        height: 0;
+    }
+    70%{
+        height: 0;
+    }
+    100%{
+        height: 35vh;
+    }
+}
+
+.CVBaldeTemp2-content5{
+    width: 100%;
+    background-color: rgb(10, 51, 75);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CVBaldeTemp2-content5-bloc1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CVBaldeTemp2-content5-bloc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.CVBaldeTemp2-content5-title{
+    padding: 2.5em 0;
+    font-weight: bold;
+    background-color: orange;
+    width: 95vw;
+}
+
+.CVBaldeTemp2-content5-title h3{
+    animation: CVB-CONTITLE 2s;
+    margin: 0;
+    font-size: 2em;
+    color: white;
+    width: 100%;
+}
+
+@keyframes CVB-CONTITLE{
+    
+    from{
+        left: 150%;
+        color: orange;
+    }
+ 
+    to{
+        left: 0;
+        color: white
+    }
+}
+
+.CVBaldeTemp2-content5-title h3, .CVBaldeTemp2-content5-bloc span{
+   position: relative;
+   left: 0;
+   width: 100%;
+}
+
+.CVBaldeTemp2-content5-bloc span{
+    animation: CVB-CONTSPAN 8s;
+    text-align: center;
+    margin-left: 1em;
+    font-size: 2em;
+    color: white;
+}
+
+@keyframes CVB-CONTSPAN{
+    
+    0%{
+        left: 150%;
+        color: rgb(10, 51, 75);
+    }
+
+    40%{
+        color: rgb(10, 51, 75);
+    }
+ 
+    100%{
+        left: 0;
+        color: white
+    
+    }
+}
+
+.CVBaldeTemp2-content5-bloc img{
+    height: 5em;
+    border-radius: 50%;
+    animation: CVB-SOC 5s;
+}
+
+@keyframes CVB-SOC{
+    0%{
+        height: 0;
+    }
+    50%{
+        height: 0;
+    }
+    100%{
+        height: 5em;
+    }
+}
