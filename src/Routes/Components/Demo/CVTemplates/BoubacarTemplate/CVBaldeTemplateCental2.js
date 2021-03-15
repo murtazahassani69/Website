@@ -8,48 +8,65 @@ function Menu() {
     const [bloc3, setBloc3]=useState(false)
     const [bloc4, setBloc4]=useState(false)
     const [bloc5, setBloc5]=useState(false)
+    const [bloc6, setBloc6]=useState(false)
+    const [readV, setReadV]=useState(false)
     const[bloc, setBloc]=useState(0)
     const [click, setClick]=useState(false)
-    const  [myTime, setMyTime]=useState(()=>{
-        setTimeout(()=>{
-            setBloc(bloc+1)
-        }, 10000)
-    });
     const style= {backgroundColor: 'orange'}
     
     useEffect(()=>{
         
-        if(click && myTime!==undefined){
-            setMyTime(clearTimeout(myTime))
-        }
-        setMyTime(setTimeout(()=>{
+        let myTime = setTimeout(()=>{
             setBloc(bloc+1)
-        }, 10000))
+        }, 10000)
+        if(click && myTime!==undefined){
+            clearTimeout(myTime)
+
+            if(!readV){
+                setTimeout(()=>{
+                    setBloc(bloc+1)
+                }, 10000) 
+                // setReadV(true)
+            }
+           
+        }
 
         setClick(false)
      
         switch(bloc){
             case 0: {
-                setBloc1(true); setBloc2(false);  setBloc3(false); setBloc4(false); setBloc5(false)
+                setBloc1(true); setBloc2(false);  setBloc3(false); setBloc4(false); setBloc5(false); setBloc6(false)
             }; break;
             case 1: {
-                setBloc1(false); setBloc2(true);  setBloc3(false); setBloc4(false); setBloc5(false)
+                setBloc1(false); setBloc2(true);  setBloc3(false); setBloc4(false); setBloc5(false); setBloc6(false)
             }; break;
             case 2: {
-                setBloc1(false); setBloc2(false);  setBloc3(true); setBloc4(false); setBloc5(false)
+                setBloc1(false); setBloc2(false);  setBloc3(true); setBloc4(false); setBloc5(false); setBloc6(false)
             }; break;
             case 3: {
-                setBloc1(false); setBloc2(false);  setBloc3(false); setBloc4(true); setBloc5(false)
+                setBloc1(false); setBloc2(false);  setBloc3(false); setBloc4(true); setBloc5(false); setBloc6(false)
             }; break;
             case 4: {
-                setBloc1(false); setBloc2(false);  setBloc3(false); setBloc4(false); setBloc5(true)
+                setBloc1(false); setBloc2(false);  setBloc3(false); setBloc4(false); setBloc5(true); setBloc6(false)
             }; break;
-            default: {setBloc(0); setClick(true)}
+            default: {
+                if(!readV){
+                    setBloc(0); clearTimeout(myTime)
+                }else{
+                    setBloc1(false); setBloc2(false);  setBloc3(false); setBloc4(false); setBloc5(false); setBloc6(true)
+                    setReadV(false)
+                    console.log(myTime)
+                } 
+            }
         }
         return ()=>{clearTimeout(myTime)}
     }, [bloc])
 
     function onClick(value){
+        console.log(value)
+        if(value===5){
+            setReadV(true)
+        }
         setClick(true);
         setBloc(value);
     }
@@ -61,6 +78,7 @@ function Menu() {
                     <input type="checkbox" id='CVBaldeTemp2-check'/>
                     <label htmlFor="CVBaldeTemp2-check" className='checkbtn2'>&#9776;</label>
                     <ul className='CVBaldeTemp2-menu-ul'>
+                        <li onClick={()=>onClick(5)}  style={{backgroundColor: bloc6 && 'orange'}}>VIDEO</li>
                         <li onClick={()=>onClick(0)} style={{backgroundColor: bloc1 && 'orange'}}>HOME</li>
                         <li onClick={()=>onClick(1)} style={{backgroundColor: bloc2 && 'orange'}}>ABOUT</li>
                         <li onClick={()=>onClick(2)} style={{backgroundColor: bloc3 && 'orange'}}>SKILLS</li>
@@ -69,6 +87,7 @@ function Menu() {
                     </ul>
                 </div>
             </div>
+            { bloc6 && <Video /> }
             { bloc1 && <Content1 /> }
             { bloc2 && <Content2 /> }
             { bloc3 && <Content3 /> }
@@ -183,7 +202,22 @@ function Content1() {
                 
             </div>
       )
-  }
+}
+
+function Video(){
+    return(
+        <div className='CVBaldeTemp2-video'>
+            <div className='CVBaldeTemp2-video-title'>
+                <h3>SHORT VIDEO ABOUT ME</h3>
+            </div>
+            <div className='CVBaldeTemp2-video-iframe'>
+                <iframe src="http://www.youtube.com/embed/W7qWa52k-nE"
+                    frameBorder="0" allowFullScreen></iframe>
+            </div>
+        </div>
+    )
+    
+}
 
 function Central() {
   return (
