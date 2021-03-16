@@ -23,10 +23,9 @@ function Menu() {
             clearTimeout(myTime)
 
             if(!readV){
-                setTimeout(()=>{
+                myTime = setTimeout(()=>{
                     setBloc(bloc+1)
                 }, 10000) 
-                // setReadV(true)
             }
            
         }
@@ -55,7 +54,6 @@ function Menu() {
                 }else{
                     setBloc1(false); setBloc2(false);  setBloc3(false); setBloc4(false); setBloc5(false); setBloc6(true)
                     setReadV(false)
-                    console.log(myTime)
                 } 
             }
         }
@@ -63,7 +61,6 @@ function Menu() {
     }, [bloc])
 
     function onClick(value){
-        console.log(value)
         if(value===5){
             setReadV(true)
         }
