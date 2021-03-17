@@ -1,0 +1,255 @@
+* {        
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;    
+}
+body, html{
+  height: 100%;
+}
+body {
+  font-family: 'Josefin Sans', sans-serif;
+} 
+img{
+  margin: 15px auto;
+  width: 60px;  
+  height: auto;  
+}  
+#logoAndTitle{
+  display: flex;
+  flex-direction: column;
+}
+#title{
+  color: #6b2b42;
+  text-align: center;
+  padding: 30px;
+}
+/* Navbar */
+.navbar {
+  font-size: 18px;
+  /* background: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); */
+  background: linear-gradient(260deg,#0303aa 10%,#6b2b42 100%);
+  background: -webkit-linear-gradient(260deg,#0303aa 10%,#6b2b42 100%);
+  background: -moz-linear-gradient(260deg,#0303aa 10%,#6b2b42 100%);
+  background: -o-linear-gradient(260deg, #0303aa 10%,#6b2b42 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+.main-nav {
+  list-style-type: none;
+}
+.nav-links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+.main-nav li a {
+  transition: font-size 0.5s ease;
+  -webkit-transition: font-size 0.5s ease;
+  -moz-transition: font-size 0.5s ease;
+  -o-transition: font-size 0.5s ease;
+  -ms-transition: font-size 0.5s ease;
+}    
+.active {
+  display: block;
+}
+.nav-links:hover {
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+} 
+.bg{
+  background-image: url(images/banner-1.jpg);
+  background-image: url(images/binary-2.jpg);
+  /*background-image: url(images/explosion-binary.jpg);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  position: relative;    
+
+}   
+#intro{
+  padding: 50px;
+}
+@media screen and (min-width: 480px) {
+ 
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+  .main-nav li {
+      margin: 0;
+  }
+  .nav-links {
+      margin-left: 40px;
+  }     
+}
+/* Search Box */
+
+.search{       
+border: 2px solid #C3CCEC;
+overflow: auto;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+box-shadow: 6px 10px 10px  #e0e6e7;  
+}
+.search input[type="text"]{
+border: 0px;
+width: 75%;
+padding: 10px 10px;
+
+}
+.search input[type="text"]:focus{
+outline: 0;
+}
+.search input[type="submit"]{
+border: 1px;
+background: none;
+background-color: #04175A;
+color: #fff;
+float: right;
+width: 25%;
+padding: 10px;
+border-radius-top-right: 5px;
+-moz-border-radius-top-right: 5px;
+-webkit-border-radius-top-right: 5px;
+border-radius-bottom-right: 5px;
+-moz-border-radius-bottom-right: 5px;
+-webkit-border-radius-bottom-right: 5px;
+cursor:pointer;
+}
+
+/*  Media Query for Search Box */
+@media only screen and (max-width : 324px){
+/*.search{
+  display: flex;
+  flex-direction: column-reverse;    
+}*/ 
+.search input[type="text"]{
+  width: 100%;    
+}
+.search input[type="submit"]{
+  width: 100%;
+}
+
+#title{
+  font-size: 24px;
+}
+.bg{
+  height: 30px;
+}
+}
+@media only screen and (min-width : 150px){	
+.search{
+  width: 80%;
+  margin: 0 auto;    
+}
+.bg{                   
+  height: 180px;
+}    
+}
+@media only screen and (min-width : 781px){   
+.search{
+  width: 65%;
+  margin: 0 auto;
+}
+.bg{                   
+  height: 280px;
+} 
+
+}
+/*media query for logo and title*/
+
+@media only screen and (min-width : 530px){
+img{
+  margin: 25px;
+ 
+}
+#logoAndTitle{
+       display: flex;
+      flex-direction: row;
+     justify-content: flex-start;
+}
+
+}
+/*body*/
+.image-box{
+margin: 10px auto;
+}
+
+.flex-container{
+width: 60%;
+margin: 0 auto;
+
+}
+.box{
+border: 2px solid #E8EAF1;
+border-radius: 6px;
+margin: 30px auto;     
+text-align: center;
+box-shadow: 8px 8px #b4b3bb;
+}
+h2 {
+  transition: font-size 0.5s ease;
+  -webkit-transition: font-size 0.5s ease;
+  -moz-transition: font-size 0.5s ease;
+  -o-transition: font-size 0.5s ease;
+  -ms-transition: font-size 0.5s ease;
+}    
+
+.active {
+  display: block;
+}
+h2:hover {
+  color: rgb(110, 37, 37);
+  font-size: 20px;
+  font-weight: 700;
+  cursor:pointer;
+}
+
+
+@media only screen and (max-width : 550px){
+h2{
+  font-size: 15px;    
+}
+.box{
+  height: 130px;
+}
+
+}
+@media only screen and (min-width : 550px){
+h2{
+  font-size: 18px;
+}
+}
+@media only screen and (min-width : 650px){
+.flex-container{
+display: flex; 
+width: 85%;
+}
+
+.image-box{
+  width: 130px;
+}
+.box{
+width: 180px;
+height: 235px; 
+}
+}
+

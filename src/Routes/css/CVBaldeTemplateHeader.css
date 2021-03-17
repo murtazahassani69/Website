@@ -1,13 +1,17 @@
 .CVBaldeTemp-div-menu{
     height: 7.5rem;
-    width: 100%;
-    padding: 1.2rem 6rem;
+    margin: auto;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .CVBaldeTemp-div-logo{
     height: 3.5rem;
+}
+.CVBaldeTemp-div-toggle{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .CVBaldeTemp-div-menu-right-text, .CVBaldeTemp-div-menu-right-button, .CVBaldeTemp-div-logo{
@@ -116,19 +120,19 @@
     .CVBaldeTemp-div-menu-right{
         position: absolute;
         width: 100%;
-        height: 15.5vh;
+        height: 17vh;
         top: 70px;
         padding: 0;
         display: none;
         z-index: 3;
-        background-color: rgb(252, 252, 252);
+        background-color: white
     }
     .CVBaldeTemp-div-toggle label{
         display: block;
     }
     .CVBaldeTemp-div-menu-right-text, .CVBaldeTemp-div-menu-right-button{
+        margin-top: 0.5em;
         width: 200px;
-        height: 50px;
     }
     #CVBaldeTemp-check:checked ~ .CVBaldeTemp-div-menu-right{
         display: flex;

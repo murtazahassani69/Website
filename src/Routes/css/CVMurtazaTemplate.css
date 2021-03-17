@@ -38,7 +38,19 @@
 .CVMurtazaTemp_work_button:focus {
   outline: 0;
 }
+.btn_download {
+  background-color: #f8f9fa;
+  padding: 11px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-family: auto;
+  font-weight: 700;  
+}
 
+.btn_download:hover {
+  background-color: #3138ff;
+  color: #f8f9fa;
+}
 /* About section */
 .CVMurtazaTemp_about_section {
   background-color: hsl(0deg 0% 100%);
@@ -117,6 +129,24 @@
   display: flex;
   font-family: cursive;
   margin: 6px;
+}
+
+.CVMurtazaTemp-pdf-container {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.CVMurtazaTemp-controls {
+  margin: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+@media print {
+  .CVMurtazaTemp-pdf-container {
+    display: none;
+  }
 }
 
 /* Devices responsive */
@@ -219,8 +249,8 @@
   display: flex;
 }
 .CVMurtazaTemp_form_section_ul {
-  color: #000000;
-  display: inline-block;
+  color: #ffffff;
+  display: unset;
   text-align: justify;
   list-style: none;
   padding: 13px;
@@ -248,6 +278,9 @@
   border: none;
   font-size: 20px;
   font-weight: 900;
+  background-color: #3138ff;
+  color: #fff;
+
 }
 .CVMurtazaTemp_form_section .CVMurtazaTemp_form_submit button:hover {
   box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
@@ -280,7 +313,7 @@
 }
 
 .CVMurtazaTemp_form_section .res_input:hover {
-  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+  box-shadow: inset 1px 2px 8px rgba(255, 255, 255, 0.02);
 }
 
 .CVMurtazaTemp_form_section .res_input:focus {
@@ -348,6 +381,12 @@
     display: form-cell;
     background-size: 100%;
   }
+  .CVMurtazaTemp_contact_section {
+    position:fixed;
+  }
+  .CVMurtazaTemp_contact1_section {
+    display: flex;
+  }
   .CVMurtazaTemp_form_section_container {
     padding-left: 43px;
   }
@@ -370,4 +409,47 @@
     display: flex;
     max-width: auto !important;
   }
+  .CVMurtazaTemp_contact_section {
+    display: flex;
+  }
+}
+
+/* contact section */
+.CVMurtazaTemp_form_section_li {
+  color: white;
+  font-weight: 700;
+  font-family: sans-serif;}
+.CVMurtazaTemp_form_section_ul {
+  box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+.CVMurtazaTemp_contact_section {
+  display: grid;
+  width: auto;
+  height: auto;
+  margin-top: 15%;
+}
+
+.CVMurtazaTemp_into_about_section_pa {
+  margin-top: 12px;
+} 
+.CVMurtazaTemp_contact_section_p {
+  display: grid;
+}
+.CVMurtazaTemp_into_contact1_section_pa {
+  width: 100%;
+  height:auto;
+  position:relative;
+  display: none;
+}
+.CVMurtazaTemp_into_contact1_section_p11 {
+  font-family: 'Courier New', Courier, monospace;
+}
+/* Devices responsive */
+@media screen and (max-width: 768px) {
+  .CVMurtazaTemp_into_contact1_section_pa {
+    display: grid;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    }
 }
