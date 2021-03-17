@@ -15,7 +15,7 @@ function Home_Cv() {
       <Experiences />
       <SkillsSection />
       <Forms />
-      <Footer />
+      <SecondFooter />
     </div>
   );
 }
@@ -245,65 +245,96 @@ function Forms() {
   );
 }
 
+// footer section
 function Footer() {
   return (
-    <div id="footer" className="container-fluid text-center py-5">
-      <div className="container1">
-        <div className="row">
-          <ul className="CVMurtazaTemp_form_section_ul">
-            <li className="CVMurtazaTemp_form_section_li">
-              <strong>Location:</strong>
-              <br />
-              A108 Adam Street, New York, NY 535022
-            </li>
-            <li className="CVMurtazaTemp_form_section_li">
-              <strong>Email:</strong>
-              <br />
-              murtaza@gmail.com
-            </li>
+    <>
+      <div class="Murtaza_Tamp_footer">
+        <div class="Murtaza_Tamp_footer_inner_div">
+          <div
+            id="Murtaza_Tamp_footer_box_div"
+            class="Murtaza_Tamp_footer_boxes_div"
+          >
+            <h1>
+              <span>Contact</span> Info
+            </h1>
+            <p>
+              {" "}
+              <span>
+                <i class="fas fa-phone"></i>&nbsp;+306947323829
+              </span>
+              <br></br>
+              <span>
+                <i class="fas fa-at"></i>&nbsp;johnsmith@gmail.com
+              </span>
+            </p>
+          </div>
+          <div
+            id="Murtaza_Tamp_footer_boxs_12"
+            class="Murtaza_Tamp_footer_boxes_div"
+          >
+            <div class="Murtaza_Tamp_footer_social_links">
+              <br></br>
+              <a href="#" class="Murtaza_Tamp_social_icons">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" class="Murtaza_Tamp_social_icons">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="Murtaza_Tamp_social_icons">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="Murtaza_Tamp_social_icons">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            
+          </div>
 
-            <li className="CVMurtazaTemp_form_section_li">
-              <strong>Call:</strong> <br />
-              +0306934532
-            </li>
-          </ul>
-          <a
-            href="https://codepen.io"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="CVMurtazaTemp_img-fluid"
-              src={codepen}
-              alt="codepen"
-            />
-          </a>
-          <a
-            className="px-3"
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="CVMurtazaTemp_img-fluid"
-              src={github}
-              alt="github"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              className="CVMurtazaTemp_img-fluid"
-              src={linkedin}
-              alt="linkedin"
-            />
-          </a>
         </div>
-        <h5 className="pt-4">Murtaza Hassani &copy; 2021</h5>
       </div>
+    </>
+  );
+}
+function SecondFooter() {
+  return (
+    <div className="Second_Murtaza_Footer_Container">
+      <div className="blocks">
+      <div
+      id="Murtaza_Tamp_footer_box_div"
+      class="Murtaza_Tamp_footer_boxes_div"
+    >
+      <h1>
+        <span>Contact</span> Info
+      </h1>
+      <p>
+        {" "}
+        <span>
+          <i class="fas fa-phone"></i>&nbsp;+306947323829
+        </span>
+        <br></br>
+        <span>
+          <i class="fas fa-at"></i>&nbsp;johnsmith@gmail.com
+        </span>
+      </p>
+    </div>
+
+      </div>
+      <div className="Murtaza_Tamp_footer_social_links">
+      <br></br>
+      <a href="#" class="Murtaza_Tamp_social_icons">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="Murtaza_Tamp_social_icons">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" class="Murtaza_Tamp_social_icons">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="Murtaza_Tamp_social_icons">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
     </div>
   );
 }
