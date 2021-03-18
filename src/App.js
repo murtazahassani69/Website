@@ -6,6 +6,7 @@ import Restaurant from "./Routes/Components/Restaurant";
 import Store from "./Routes/Components/StoreOnLine";
 import JallowTemplate1 from './Routes/Components/JallowTemplate1';
 import CVTemplateJallow2 from './Routes/Components/JallowTemplate1';
+import CVAnimateJallow from './Routes/Components/TempAnimateJa3'
 import Error from "./Routes/Components/Error";
 // Notice the keyword "exact" so react just renders the default page when nothing but the '/' is on it.
 
@@ -20,6 +21,7 @@ function App() {
           <Route path='/store' exact component={Store} /> 
           <Route path='/jallow' exact component={JallowTemplate1} />
           <Route path='/jallow-cv' exact component={CVTemplateJallow2} />
+          <Route path='/jallow-animate' exact component={CVAnimateJallow} />
           <Route path='*' component={Error}/>
         </Switch>
       </div>
