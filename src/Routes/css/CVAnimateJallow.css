@@ -533,6 +533,8 @@
     position: relative;
     width: 100%;
     max-width: 1200px;
+    padding: .5rem;
+    background-color: #fff;
 }
 .JAnimatedFigure img{
     width: 100%;
@@ -649,7 +651,7 @@
     justify-content: space-around;
 }
 .JAnimatedBlogContent{
-    flex-basis: 28%;
+    flex-basis: 30%;
     box-sizing: border-box;
     text-align: center;
     position: relative;
@@ -659,11 +661,12 @@
 }
 .JAnimatedContent{
     width: 100%;
-    height: 90%;
+    height: 100%;
     box-sizing: border-box;
     background-color: #49413a;
-    padding: 12px 12px 30px;
-    margin-bottom: 40px;
+    border-radius: 4px;
+    /* padding: 12px 12px 30px; */
+    /* margin-bottom: 40px; */
 }
 .JAnimatedContent img{
     width: 100%;
@@ -679,6 +682,45 @@
     font-size: 20px;
     padding: 3px 0px;
     margin: 0px;
+}
+.JAnimatedBlogContent::before, 
+.JAnimatedBlogContent::after{
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    background: linear-gradient(135deg, #e1a87a, #f77104);
+    z-index: -1;
+
+    animation: none;
+}
+.JAnimatedBlogContent::before{
+    top: -8px;
+    left: 0;
+}
+.JAnimatedBlogContent::after{
+    bottom: -8px;
+    right: 0;
+}
+
+@keyframes stroke{
+    0%{
+        height: 8px;
+        width: 0px;
+    }
+    50%{
+        height: 8px;
+        width: calc(100% + 8px);
+    }
+    100%{
+        height: calc(100% + 16px);
+        width: calc(100% + 8px);
+    }
+}
+.JAnimatedBlogContent:hover::before, 
+.JAnimatedBlogContent:hover::after{
+    animation: stroke 1s linear;
+    animation-fill-mode: forwards;
 }
 
 /* FOOTER */
@@ -831,6 +873,11 @@
         line-height: 1.3em;
     }
 
+    .JAniLaptopPlayer{
+        width: 80%;
+        height: 80vh;
+    }
+
     .JAnimatedServContent{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -865,5 +912,9 @@
     
     .JAnimatedCard:nth-child(2){
         margin-top: 0px;
+    }
+    .JAniLaptopPlayer{
+        width: 90%;
+        height: 55vh;
     }
 }
