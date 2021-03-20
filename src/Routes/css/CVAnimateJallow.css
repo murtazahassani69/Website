@@ -222,6 +222,41 @@
     margin-left: 8px;
 }
 
+/* PROFILE SECTION */
+.JAnimatedProfile{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7e6d8;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10vh 0;
+}
+.JAnimatedProfileCont{
+    width: 50%;
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #f1f1f1;
+}
+.JAnimatedProfileTitle{
+    font-size: 1.5rem;
+    color: #121212;
+    text-transform: uppercase;
+    letter-spacing: .10rem;
+    padding: 2rem 0;
+    text-decoration: underline;
+}
+.JAnimatedProfileText{
+    color: #121212;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding: 0 1rem;
+}
+.JAnimatedProfileText em{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* PASSION */
 .JAnimatedPassion{
     position: relative;
@@ -339,12 +374,14 @@
     border: 1px solid #e1a87a;
     text-transform: uppercase;
     background-color: transparent;
+    font-weight: 600;
 }
 .fa-long-arrow-alt-right{
     padding-left: 5px;
 }
 .JAnimatedServBtn a:hover{
     background-color: #e1a87a;
+    color: black;
 }
 
 /* PROJECT */
@@ -393,14 +430,14 @@
     border: 5px solid #fff;
     text-transform: uppercase;
     background-color: #49413a;
-    /* background-color: transparent; */
+    font-weight: 600;
 }
 .fa-long-arrow-alt-right{
     padding-left: 5px;
 }
 .JAnimatedProBtn a:hover{
     background-color: #e1a87a;
-    color: #fff;
+    color: black;
 }
 
 .JAnimatedMiddle{
@@ -508,6 +545,7 @@
     color: #121212;
     padding: 0 3.5rem;
     margin-bottom: 3rem;
+    padding: 0 11rem;
 }
 /* .JAnimatedFigure{
     width: 100%;
@@ -601,18 +639,18 @@
     line-height: 3.5rem;
 }
 .JAnimatedLifeContent{
-    background-color: #e7e6e6;
+    /* background-color: #e7e6e6; */
     display: grid;
     width: 100%;
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .JAnimatedLifeColumn{
     width: 100%;
     padding-bottom: 3rem;
     transition: transform 0.2s ease-in;
-    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .2);
     border-radius: 5px;
+    background-color: #e7e6e6;
 }
 .JAnimatedLifeColumn img{
     width: 100%;
@@ -810,7 +848,14 @@
 }
 
 /* MEDIA */
-
+@media screen and (max-width: 900px){
+    .JAnimatedBlogContent{
+        margin-bottom: 4rem;
+    }
+    .JAnimatedAbtDescript{
+        padding: 0 5rem;
+    }
+}
 @media screen and (max-width: 768px){
     .CVTCheckIcon{
         display: block;
@@ -888,6 +933,12 @@
     .JAnimatedCard:nth-child(2){
         margin-top: 15rem;
     }
+    .JAnimatedBlogContent{
+        margin-bottom: 4rem;
+    }
+    .JAnimatedBlogContent:nth-child(3){
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -916,5 +967,9 @@
     .JAniLaptopPlayer{
         width: 90%;
         height: 55vh;
+    }
+    .JAnimatedBlogContent{
+        /* margin-bottom: 4rem; */
+        flex-basis: 70%;
     }
 }
