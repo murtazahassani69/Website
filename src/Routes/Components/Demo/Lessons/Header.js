@@ -4,8 +4,13 @@ import './css/Lesons.css';
 
 function Header() {
   return (
-    <div> 
-        <img  alt ="plate1" src={logoHeader} ></img>
+    <div className="bg">
+      <div className="search">
+        <form class="search-form">
+          <input type="text" placeholder="Search"></input>
+          <input type="submit" value="Submit"></input>
+        </form>
+      </div>
     </div>
   );
 }

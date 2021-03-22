@@ -406,6 +406,10 @@ li{
 .side-block{
   margin-top: 0.5in; 
 }
+#sidebar .far{
+  font-size: 1rem;
+  margin: 0rem;
+}
 
 #contact ul{
   margin-top: 0.05in;

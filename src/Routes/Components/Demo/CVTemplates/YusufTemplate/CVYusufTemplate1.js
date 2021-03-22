@@ -31,7 +31,7 @@ function CVYusufTemplate1 (){
 
     <div id="CVYusufTemp1-div-main-container">
        <Pdf targetRef={ref} filename="resume.pdf">
-        {({ toPdf }) => <button id="cmd" onClick={toPdf}>Generate Pdf</button>}
+        {({ toPdf }) => <button id="CVYusufTemp-cmd" onClick={toPdf}>Generate Pdf</button>}
       </Pdf>
      
 

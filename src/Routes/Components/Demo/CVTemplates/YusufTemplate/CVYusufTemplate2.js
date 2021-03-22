@@ -33,7 +33,7 @@ function CVYusufTemplate2 (){
 <Pdf targetRef={ref} filename="resume.pdf"paperSize="A4"
                     margin="2cm">
             
-        {({ toPdf }) => <button id="cmd" onClick={toPdf}>Generate Pdf</button>}
+        {({ toPdf }) => <button id="CVYusufTemp-cmd" onClick={toPdf}>Generate Pdf</button>}
       </Pdf>
 
 {/* --------------container part----------------- */}
@@ -270,7 +270,7 @@ function CVYusufTemplate2 (){
   <ul>
     <li><i className="fa fa-globe"></i>&nbsp; johndoe.gtld</li>
     <li><i className="fab fa-linkedin-in"></i>&nbsp; linkedin.com/in/josef</li>
-    <li><i className="fa fa-envelope"></i>&nbsp; me@josefkara.gtld</li>
+    <li><i className="far fa-envelope"></i>&nbsp;&nbsp; me@josefkara.gtld</li>
     <li><i className="fa fa-phone"></i> &nbsp;800.000.0000</li>
   </ul>
 </div>
