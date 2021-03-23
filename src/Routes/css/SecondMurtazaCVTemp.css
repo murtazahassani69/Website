@@ -458,16 +458,18 @@ Projects
   margin: 0 auto -50px;
 }
 .Second_MurtazaCV_Temp_footer_ {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgb(87 121 217);
   color: white;
   text-align: center;
+  height: 9vh;
+  padding-top: 11px;
+
 }
 .Second_MurtazaCV_Temp_section_h2 {
-  color: #10bfbf;
+  color: #0bffe8;
   font-size: 37px;
 }
 .Second_MurtazaCV_Temp_next_icon {
@@ -482,7 +484,7 @@ Projects
   scroll-behavior: smooth;
 }
 .second_murtaza_temp_typist {
-  color: #10bfbf;
+  color: #0bffe8;
   font-size: 19px;
   text-shadow: 0px 2px 5px black;
   font-family: fantasy;
