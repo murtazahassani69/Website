@@ -4,7 +4,6 @@ import Central from './Demo/CVTemplates/BoubacarTemplate/CVBaldeTemplateCentral'
 import Footer from './Demo/CVTemplates/BoubacarTemplate/CVBaldeTemplateFooter'
 import '../css/CVBaldeTemplateMain.css';
 
-
 function TempBo1() {
   return (
         <div className="CVBaldeTemp-div-main">
