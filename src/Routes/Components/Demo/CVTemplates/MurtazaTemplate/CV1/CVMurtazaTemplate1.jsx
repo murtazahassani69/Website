@@ -251,6 +251,19 @@ function Footer() {
     <>
       <div class="Murtaza_Tamp_footer">
         <div class="Murtaza_Tamp_footer_inner_div">
+          <div class="Murtaza_Tamp_footer_social_links">
+            <br></br>
+            <a href="#" class="Murtaza_Tamp_social_icons">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <br />
+            <a href="#" class="Murtaza_Tamp_social_icons">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="Murtaza_Tamp_social_icons">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
           <div
             id="Murtaza_Tamp_footer_box_div"
             class="Murtaza_Tamp_footer_boxes_div"
@@ -272,25 +285,7 @@ function Footer() {
           <div
             id="Murtaza_Tamp_footer_boxs_12"
             class="Murtaza_Tamp_footer_boxes_div"
-          >
-            <div class="Murtaza_Tamp_footer_social_links">
-              <br></br>
-              <a href="#" class="Murtaza_Tamp_social_icons">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="#" class="Murtaza_Tamp_social_icons">
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a href="#" class="Murtaza_Tamp_social_icons">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="Murtaza_Tamp_social_icons">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-            
-          </div>
-
+          ></div>
         </div>
       </div>
     </>
@@ -300,43 +295,43 @@ function SecondFooter() {
   return (
     <div className="Second_Murtaza_Footer_Container">
       <div className="blocks">
-      <div
-      id="Murtaza_Tamp_footer_box_div"
-      class="Murtaza_Tamp_footer_boxes_div"
-    >
-      <h1>
-        <span>Contact</span> Info
-      </h1>
-      <p>
-        {" "}
-        <span>
-          <i class="fas fa-phone"></i>&nbsp;+306947323829
-        </span>
-        <br></br>
-        <span>
-          <i class="fas fa-at"></i>&nbsp;johnsmith@gmail.com
-        </span>
-      </p>
-    </div>
-
+        <div
+          id="Murtaza_Tamp_footer_box_div"
+          class="Murtaza_Tamp_footer_boxes_div"
+        >
+          <h1>
+            <span>Contact</span> Info
+          </h1>
+          <p>
+            {" "}
+            <span>
+              <i class="fas fa-phone"></i>&nbsp;+306947323829
+            </span>
+            <br></br>
+            <span>
+              <i class="fas fa-at"></i>&nbsp;johnsmith@gmail.com
+            </span>
+          </p>
+        </div>
       </div>
       <div className="Murtaza_Tamp_footer_social_links">
-      <br></br>
-      <a href="#" class="Murtaza_Tamp_social_icons">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="#" class="Murtaza_Tamp_social_icons">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="#" class="Murtaza_Tamp_social_icons">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" class="Murtaza_Tamp_social_icons">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
+        <br></br>
+        <a href="#" class="Murtaza_Tamp_social_icons">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="Murtaza_Tamp_social_icons">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="Murtaza_Tamp_social_icons">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="Murtaza_Tamp_social_icons">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </div>
   );
 }
 
 export default Home_Cv;
+
