@@ -1,0 +1,65 @@
+.Web_home_Page {
+    background: url("../imgs//backround-tecnology.png")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Web_home_Page_h1 {
+  color: white;
+  font-size: 47px;
+  margin-top: 10%;
+  background: #0d1568a8;
+  padding: 46px;
+  font-weight: 800;
+  font-family: fantasy;
+}
+.Web_home_second_hero {
+  background-color: rgba(0 49 255 / 55%);
+  height: auto;
+  bottom: 0px;
+  transform: rotateY( 
+45deg
+);
+  margin-top: 14%;
+}
+.Web_home_Page_h2 {
+  color: aliceblue;
+  /* padding: 32px; */
+  font-weight: 800;
+  font-family: none;
+  font-size: 41px;
+  line-height: 41px;
+}
+
+.Web_home_second_hero_H1 {
+  color: white;
+  font-size: 50px;
+  padding-top: 25px;
+  font-weight: 800;
+  font-family: fantasy;
+}
+
+
+@media only screen and (max-width: 968px) {
+  .Web_home_second_hero {
+    height:auto;
+  padding:3px;
+  }
+  .Web_home_Page_h2 {
+    padding: 1px;
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: 19px;
+  }
+  .Web_home_Page_h1 {
+    padding: 36px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 30px;
+    font-family: serif;
+    }
+}
