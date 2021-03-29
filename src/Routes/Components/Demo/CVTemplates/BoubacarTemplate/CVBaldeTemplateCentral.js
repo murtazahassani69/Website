@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../../../../css/CVBaldeTemplateCentral.css';
 
 
@@ -24,6 +24,8 @@ function Introduce() {
     );
 }
 function Skills() {
+
+
     const column1Ul = ["Balsamiq Mockups", "Figma", "Invision", "Marvel", "Pen & Paper", "Sketch", "Webflow", "Zeplin"]
     const column2Ul = ["Atom", "Bitbucket", "Bootstrap", "Bulma", "Codekit", "Codepen", "Github", "Gitlab", "Terminal"]
     const column3Ul = ["5 years experience", "26 short courses", "42 bootcamps", "125+ students", "1,400+ mentor sessions", "60+ group critiques", "12,000+ comments"]

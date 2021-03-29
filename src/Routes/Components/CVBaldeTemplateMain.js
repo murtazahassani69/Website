@@ -4,7 +4,8 @@ import Central from './Demo/CVTemplates/BoubacarTemplate/CVBaldeTemplateCentral'
 import Footer from './Demo/CVTemplates/BoubacarTemplate/CVBaldeTemplateFooter'
 import '../css/CVBaldeTemplateMain.css';
 
-function TempBo1() {
+
+function Main() {
   return (
         <div className="CVBaldeTemp-div-main">
             <Header />
@@ -14,4 +15,4 @@ function TempBo1() {
   );
 }
 
-export default TempBo1;
+export default Main;
