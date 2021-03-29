@@ -31,7 +31,7 @@
 .templateDisplay-footer-menu-link, .templateDisplay-footer-socialMedia-link{
     text-align: left;
     color: white;
-    width: 65%;
+    width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,18 @@
     font-size: 0.6em;
 }
 
+@media only screen and (max-width: 992px) {
+    .templateDisplay-footer-menu-link, .templateDisplay-footer-socialMedia-link{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .templateDisplay-footer-menu-link, .templateDisplay-footer-socialMedia-link{
+        width: 85%;
+    }
+}
+
 @media only screen and (max-width: 578px) {
     .templateDisplay-footer{
         font-size: .9em;
@@ -78,7 +90,7 @@
     }
 
     .templateDisplay-footer-socialMedia, .templateDisplay-footer-menu{
-        width: 100%;
+        width: 90%;
     }
 
     .templateDisplay-footer-socialMedia{
