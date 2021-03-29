@@ -34,8 +34,8 @@ function Menu() {
                     <ul className="CVBaldeTemp-div-menu-right">
                         <li className="CVBaldeTemp-div-menu-right-text">Mentorship</li>
                         <li className="CVBaldeTemp-div-menu-right-button">Say Hello</li>
-                        <a href={`/templateB1Pdf`}>
-                        <li className="CVBaldeTemp-div-menu-right-text">Pdf</li></a>
+                        <a href={`/templateB1Pdf`}><li className="CVBaldeTemp-div-menu-right-text">Pdf</li></a>
+                        <a href={`http://localhost:3000`}><li className="CVBaldeTemp-div-menu-right-text">Back</li></a>
                     </ul>
                 </nav>
           </div>
