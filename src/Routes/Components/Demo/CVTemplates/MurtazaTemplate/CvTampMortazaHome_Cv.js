@@ -294,7 +294,7 @@ function Footer() {
 function SecondFooter() {
   return (
     <div className="Second_Murtaza_Footer_Container">
-      <div className="blocks">
+      <div className="blocks_murtaza_temp">
         <div
           id="Murtaza_Tamp_footer_box_div"
           class="Murtaza_Tamp_footer_boxes_div"
