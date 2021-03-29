@@ -70,7 +70,7 @@
 
 .CVBaldeTemp2-content{
     background: rgb(10, 51, 75);
-    width: 93%;
+    width: 95%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -122,8 +122,7 @@
      }
 }
 
-.CVBaldeTemp2-content-hello{
-    
+.CVBaldeTemp2-content-hello{    
     color: white;
     height: 60px;
     width: 100px;
@@ -225,7 +224,7 @@
     flex-direction: column;
     align-items: center;
     z-index: -10;
-    height: 91vh;
+    height: 87vh;
 }
 .CVBaldeTemp2-content2-left, .CVBaldeTemp2-content2-right{
     z-index: -5;
