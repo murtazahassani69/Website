@@ -39,8 +39,11 @@ function Web_hero_Page() {
       <div className="Web_home_second_hero">
         <h2 className="Web_home_second_hero_H1">Welcome </h2>
         <h4 className="Web_home_Page_h2">
-          Explore over 200 unique resume templates to create eye-catching and
-          professional documents for any industry.
+          Here, we offer you the findness, simple and excellent resume templates
+          that you can find in the internet, and use for all you job searches.{" "}
+          <br />
+          We're wishing you GoodLuck on your job search after selecting one of
+          the resumes tha'ts matchest your need!
         </h4>
       </div>
       <Jump_to_next_page />
@@ -55,8 +58,8 @@ function Jump_to_next_page() {
         <sup>&darr;</sup>
       </div>
 
-      <a href="#RestaurantBookTable" className="jump_to_next_page_button">
-        <span className="jump_to_next_page_span">Book Now</span>
+      <a href="#section_1" className="jump_to_next_page_button">
+        <span className="jump_to_next_page_span">See now</span>
       </a>
     </div>
   );
@@ -126,7 +129,7 @@ function DisplayTemp({ img, heading, paragph }) {
 
 function DisplayResAni() {
   return (
-    <section className="JaTAniCentral">
+    <section id="section_1" className="JaTAniCentral">
       <div className="JaTAniCentralContainer">
         <p className="JaTempDisplayText">
           <span>
