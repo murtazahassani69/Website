@@ -26,7 +26,7 @@ function Central() {
 // Hey Guys I made some new changes in this section.
 function Web_home_Page() {
   return (
-    <div className="Web_home_Page">
+    <div className="Web_home_Page_Section">
       <h1 className="Web_home_Page_h1">Your in the right location: </h1>
       <Web_hero_Page />
     </div>
@@ -57,7 +57,6 @@ function Jump_to_next_page() {
       <div className="jump_to_next_page">
         <sup>&darr;</sup>
       </div>
-
       <a href="#section_1" className="jump_to_next_page_button">
         <span className="jump_to_next_page_span">See now</span>
       </a>

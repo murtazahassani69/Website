@@ -519,9 +519,8 @@
     }
 }
 
-
 /* Central css styles */
-.Web_home_Page {
+.Web_home_Page_Section {
     background: url("../imgs//backround-tecnology.png")
     no-repeat center center fixed;
   -webkit-background-size: cover;
