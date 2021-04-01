@@ -1,4 +1,6 @@
+ 
 #CVYusufTemp-cmd {
+ 
   cursor: pointer;
   height: 30px;
   position: absolute;
@@ -10,7 +12,7 @@
 #CVYusufTemp-div-menu-header {
   width: 100%;
   margin: auto;
-  height: 12vh;
+  height: 10vh;
   display: flex;
   align-items: center;
   background-color: rgb(227 222 222);
@@ -50,7 +52,7 @@
   font-size: 20px;
   }
   
-  .nav-toggle {
+  .CVYusufTemp-nav-toggle {
   padding: .5em;
   background: transparent;
   border: 0;
@@ -61,19 +63,19 @@
   outline: none;
   }
   
-  .nav-open .nav-toggle {
+  .CVYusufTemp-nav-open .CVYusufTemp-nav-toggle {
   position: fixed;
   }
   
-  .nav-open .hamburger {
+  .CVYusufTemp-nav-open .hamburger {
   transform: rotate(.625turn);
   }
   
-  .nav-open .hamburger::before {
+  .CVYusufTemp-nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
   }
   
-  .nav-open .hamburger::after {
+  .CVYusufTemp-nav-open .hamburger::after {
   opacity: 0;
   }
   
@@ -111,7 +113,7 @@
  /* ////////////container///////////////// */
  
   #CVYusufTemp1-div-main-container {
-    background-image: url(../../Routes/Components/Demo/CVTemplates/YusufTemplate/imgs/backgroundCV.jpg);
+    background-image: url(../../Routes/Components/Demo/CVTemplates/YusufTemplate/CVTemplate/imgs/backgroundCV.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -345,26 +347,26 @@
   position: relative;
   }
   
-  .nav-open nav {
+  .CVYusufTemp-nav-open nav {
   transform: translateX(0);
   }
   
-  .nav-open .logo-container {
+  .CVYusufTemp-nav-open .logo-container {
   margin-top: 5px;
   }
     
-  .nav-open .CVYusufTemp-div-menu-nav-link {
+  .CVYusufTemp-nav-open .CVYusufTemp-div-menu-nav-link {
   margin: 2rem;
   }
   
-  .nav-open .nav-toggle {
+  .CVYusufTemp-nav-open .CVYusufTemp-nav-toggle {
   top: 2rem;
   }
   .CVYusufTemp-div-menu-logo-container, 
   .CVYusufTemp-div-menu-nav-links {
     margin: -40px;
   }
-  .nav-open .CVYusufTemp-div-menu-nav-links {
+  .CVYusufTemp-nav-open .CVYusufTemp-div-menu-nav-links {
     display: contents;
     }
     nav {

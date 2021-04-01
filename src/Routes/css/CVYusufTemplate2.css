@@ -49,7 +49,7 @@
   font-size: 20px;
   } */
   
-  /* .nav-toggle {
+  /* .CVYusufTemp-nav-toggle {
   padding: .5em;
   background: transparent;
   border: 0;
@@ -60,19 +60,19 @@
   outline: none;
   } */
   
-  /* .nav-open .nav-toggle {
+  /* .CVYusufTemp-nav-open .CVYusufTemp-nav-toggle {
   position: fixed;
   }
   
-  .nav-open .hamburger {
+  .CVYusufTemp-nav-open .hamburger {
   transform: rotate(.625turn);
   }
   
-  .nav-open .hamburger::before {
+  .CVYusufTemp-nav-open .hamburger::before {
   transform: rotate(90deg) translateX(-6px);
   }
   
-  .nav-open .hamburger::after {
+  .CVYusufTemp-nav-open .hamburger::after {
   opacity: 0;
   }
   
@@ -110,6 +110,7 @@
  
  /* ////////////container///////////////// */
 
+ 
  .CVYusufTemp2-div-h{
   margin: 0;
   color: #000;
@@ -138,7 +139,7 @@ li{
   hyphens: auto;
   text-align: left;
   margin-bottom: 10%;
-  display: flex;
+  display: inline-flex;
 }
 
 #main{
@@ -186,7 +187,7 @@ li{
 
 /*** categorial blocks ***/
 
-.main-block{
+.CVYusufTemp2-main-block{
   margin-top: 0.1in;
 }
 
@@ -238,12 +239,12 @@ li{
 
 /**** individual row blocks (date - decorator - details) ****/
 
-.blocks{
+.CVYusufTemp2-blocks{
   display: flex;
   flex-flow: row nowrap;
 }
 
-.blocks > div{
+.CVYusufTemp2-blocks > div{
   padding-top: var(--row-blocks-padding-top);
 }
 
@@ -288,7 +289,7 @@ li{
   height: var(--decorator-outer-dim);
   border-radius: calc(var(--decorator-outer-dim) / 2);
   background-color: #fff;
-}
+}inline-block
 
 .decorator::after{
   position: absolute;
@@ -302,7 +303,7 @@ li{
   background-color: #555;
 }
 
-.blocks:last-child .decorator{ /* slightly shortens it */
+.CVYusufTemp2-blocks:last-child .decorator{ /* slightly shortens it */
   margin-bottom: 0.25in;
 }
 
@@ -322,15 +323,15 @@ li{
   font-size: 11pt;
 }
 
-.main-block:not(.concise) .details div{
+.CVYusufTemp2-main-block:not(.concise) .details div{
   margin: 0.18in 0 0.1in 0; 
 }
 
-.main-block:not(.concise) .blocks:last-child .details div{
+.CVYusufTemp2-main-block:not(.concise) .blocks:last-child .details div{
   margin-bottom: 0;
 }
 
-.main-block.concise .details div:not(.concise){
+.CVYusufTemp2-main-block.concise .details div:not(.concise){
   /* use padding to work around the fact that margin doesn't affect floated
      neighboring elements */
   padding: 0.05in 0 0.07in 0;
@@ -403,8 +404,12 @@ li{
   font-size: 11pt;
 }
 
-.side-block{
+.CVYusufTemp2-side-block{
   margin-top: 0.5in; 
+}
+#sidebar .far{
+  font-size: 1rem;
+  margin: 0rem;
 }
 
 #contact ul{
@@ -447,13 +452,16 @@ li{
   font-style: normal;
 }
 
-.main-block .concise li{
+.CVYusufTemp2-main-block .concise li{
   font-size: 11pt;
 }
 
 
-@media ( max-width: 600px) {
-
+@media ( max-width: 650px) {
+  
+  #CVYusufTemp-div-menu-header {
+    height: 14vh;
+  }
   /* #CVYusufTemp-div-nav-bar {
   position: fixed;
   height: 0px;
@@ -470,26 +478,26 @@ li{
     position: relative;
     }
     
-    .nav-open nav {
+    .CVYusufTemp-nav-open nav {
     transform: translateX(0);
     }
     
-    .nav-open .logo-container {
+    .CVYusufTemp-nav-open .logo-container {
     margin-top: 5px;
     }
       
-    .nav-open .CVYusufTemp-div-menu-nav-link {
+    .CVYusufTemp-nav-open .CVYusufTemp-div-menu-nav-link {
     margin: 2rem;
     }
     
-    .nav-open .nav-toggle {
+    .CVYusufTemp-nav-open .CVYusufTemp-nav-toggle {
     top: 2rem;
     }
     .CVYusufTemp-div-menu-logo-container, 
     .CVYusufTemp-div-menu-nav-links {
       margin: -40px;
     }
-    .nav-open .CVYusufTemp-div-menu-nav-links {
+    .CVYusufTemp-nav-open .CVYusufTemp-div-menu-nav-links {
       display: contents;
       }
       nav {
@@ -516,4 +524,12 @@ li{
   padding: 0.1in;
   }
 
+} 
+@media screen and (min-width:651px) and ( max-width: 750px) {
+
+  #sidebar{
+  width: 44%;
+  text-align: left;
+  padding: 0.1in;
+  }
 }
