@@ -1,5 +1,8 @@
 import React from 'react';
 import '../../../css/TempDisplayCental.css';
+// import { Link } from 'react-router-dom';  
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import TempJ1 from './img/temp-j1.png';
 import TempMa1 from './img/temp-ma1.png';
@@ -13,7 +16,7 @@ import TempJ3 from './img/temp-j3.png';
 import TempB2 from './img/temp-b2.png';
 import TempY3 from './img/temp-y3.png';
 import TempMu2 from './img/temp-mu2.png';
-import TempMa2 from './img/temp-j2.png';
+import TempMa2 from './img/rp_1.png';
 
 function Central() {
   return (
@@ -30,47 +33,58 @@ function DisplayRes(){
       <div className='JATDCentralContainer'>
         <p className='JaTempDisplayText'>
           Here, we offer you the findness, simple and excellent resume templates that you can find in the internet, and use for all you job searches. <br />
-          We're wishing you GoodLuck on your job search after selecting one of the resumes tha'ts matchest your need!
+          We're wishing you GoodLuck on your job search after selecting one of the resumes tha'ts matches your need!
         </p>
         <div className='JATDCentralContent'>
-          <DisplayTemp img={TempJ1}
+          <a href='/templateJ1' id='JaTAniTag'><DisplayTemp img={TempJ1}
+          // path='templateJ1'
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayTemp img={TempMa1}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateMa1' id='JaTAniTag'><DisplayTemp img={TempMa1}
+          // path='templateMa1'
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayTemp img={TempY1}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateY1' id='JaTAniTag'><DisplayTemp img={TempY1}
+          // path='templateY1'
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayTemp img={TempY2}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateY2' id='JaTAniTag'><DisplayTemp img={TempY2}
+          // path='templateY2'
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayTemp img={TempB1}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateB1' id='JaTAniTag'><DisplayTemp img={TempB1}
+          // path='templateB1'
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayTemp img={TempMu1}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateMu1' id='JaTAniTag'><DisplayTemp img={TempMu1}
+          // path='templateMu1'
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayTemp img={TempJ2}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateJ2' id='JaTAniTag'><DisplayTemp img={TempJ2}
+          // path='templateJ2'
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
         </div>
       </div>
     </section>
   )
 }
 
-function DisplayTemp ({img, heading, paragph}) {
+function DisplayTemp (props) {
+  AOS.init({
+    offset: 300,
+    duration: 1000
+  })
+  
   return(
     <div className='JATDcentralSection'>
-      <a href=''>
-        {/* /templateJ1 */}
-        <div className='JaDTemplateIamge'>
-          <img src={img} alt='' />
+      {/* <Link to={props.path}> */}
+        <div className='JaDTemplateIamge' data-aos="fade-in">
+          <img src={props.img} alt='' />
         </div>
-      </a>
-      <h3 className='JaDTemplateHead'>{heading}</h3>
-      <p className='JaDTemplateText'>{paragph}</p>
+      {/* </Link> */}
+      <h3 className='JaDTemplateHead'>{props.heading}</h3>
+      <p className='JaDTemplateText'>{props.paragph}</p>
     </div>
   )
 }
@@ -81,42 +95,40 @@ function DisplayResAni () {
       <div className='JaTAniCentralContainer'>
         <p className='JaTempDisplayText'>
           <span>Thank You for scrolling down! And again!<br /></span>
-          Here, we offer you the findness, simple and excellent resume templates that you can find in the internet, and use for all you job searches. <br />
-          We're wishing you GoodLuck on your job search after selecting one of the resumes tha'ts matchest your need!
+          Here, you can select the most styled, animated and excellent resume templates that you can find in the internet, and use for all you job searches. <br />
+          We're wishing you GoodLuck on your job search after selecting one of the resumes tha'ts matches your need!
         </p>
         <div className='JaTAniCentralContent'>
-          <DisplayAniTemp img={TempJ3}
+          <a href='/templateJ3' id='JaTAniTag'><DisplayAniTemp img={TempJ3}
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayAniTemp img={TempB2}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateB2' id='JaTAniTag'><DisplayAniTemp img={TempB2}
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayAniTemp img={TempY3}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateY3' id='JaTAniTag'><DisplayAniTemp img={TempY3}
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayAniTemp img={TempMu2}
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateMu2' id='JaTAniTag'><DisplayAniTemp img={TempMu2}
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
-          <DisplayAniTemp img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfT5VH2ZnqIk34Szx0sKBwgTJef9bAYuOog&usqp=CAU'
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
+          <a href='/templateJ2' id='JaTAniTag'><DisplayAniTemp img={TempMa2}
           heading='Your Prefered Resume Template'
-          paragph='$ git checkout templateDisplay Switched to branch templateDisplay' />
+          paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
         </div>
+        <a href="#" class="scroll-up"><i class="fa fa-angle-double-up"></i></a>
       </div>
     </section>
   )
 }
 
-function DisplayAniTemp ({img, heading, paragph}) {
+function DisplayAniTemp (props) {
   return(
     <div className='JaTAniSection'>
-      <a href=''>
-        {/* /templateJ1 */}
-        <div className='JaTAniTemplateIamge'>
-          <img src={img} alt='' />
+        <div className='JaTAniTemplateIamge' data-aos="fade-down">
+          <img src={props.img} alt='' />
         </div>
-      </a>
-      <h3 className='JaTAniTemplateHead'>{heading}</h3>
-      <p className='JaTAniTemplateText'>{paragph}</p>
+      <h3 className='JaTAniTemplateHead'>{props.heading}</h3>
+      <p className='JaTAniTemplateText'>{props.paragph}</p>
     </div>
   )
 }
