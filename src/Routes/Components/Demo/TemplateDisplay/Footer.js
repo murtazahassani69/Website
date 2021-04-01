@@ -24,6 +24,9 @@ function Footer() {
                 </div>
             </div>
         </div>
+        <div className='templateDisplay-footer-copyRight'>
+            <p>© Amnick Web Development Team 2021</p>
+        </div>
     </div>
   );
 }
