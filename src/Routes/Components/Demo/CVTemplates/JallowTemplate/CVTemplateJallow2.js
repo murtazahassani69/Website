@@ -3,9 +3,16 @@ import Pdf from "react-to-pdf";
 import P_img1 from './imgs/p-img1.jpg';
 import "../../../../css/CVTemplateJallow2.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const ref = React.createRef();
 
 function CVTemplateJallow2() {
+  AOS.init({
+    offset: 300,
+    duration: 1000
+  })
   return (
     <>
       <div id="jallowCVTContainer">
@@ -26,6 +33,10 @@ function CVTemplateJallow2() {
               <label htmlFor='check' className='jallowCVTCheckIcon'>&#9776;</label>
 
                 <ul className='jallowCVTNavList'>
+                  <li className='jallowCVTNavItem jallowTempBack'>
+                    <a href='http://localhost:3000/templates' className='jallowCVTNavLink'>Back</a>
+                  </li>
+
                   <li className='jallowCVTNavItem'>
                     <a href='#experience' className='jallowCVTNavLink'>Experience</a>
                   </li>
@@ -53,7 +64,7 @@ function CVTemplateJallow2() {
               </div>
             </nav>
 
-            <section className='jallowCVTProfSection ProfSectionJallow'>
+            <section className='jallowCVTProfSection ProfSectionJallow' data-aos="fade-down">
               <div className='jallowCVTProfContent'>
                 <div className='jallowCVTProfImg'>
                   <img src={P_img1} alt='Profile' width='250px' />
@@ -94,7 +105,7 @@ function CVTemplateJallow2() {
             </div>
 
             <section className='jallowCVTSection'>
-              <div className='jallowCVTSectionProfile'>
+              <div className='jallowCVTSectionProfile' data-aos="fade-left">
                 <h2 className='jallowCVTSectionTitle'>Profile</h2>
                 <p className='jallowCVTProfileDescription'>
                 I started my career as a freelance couple of years ago later got the opportunity to work at some of the big Tech Companies, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
@@ -103,7 +114,7 @@ function CVTemplateJallow2() {
             </section>
 
             {/* <!--========== EXPERIENCE ==========--> */}
-            <section className='jallowCVTExpSection'>
+            <section className='jallowCVTExpSection' data-aos="fade-right">
               <h2 className="jallowCVTSectionTitle">Experience</h2>
 
               <div className='jalowCVTExpContainer'>
@@ -149,7 +160,7 @@ function CVTemplateJallow2() {
               </div>
             </section>
 
-            <section className='jallowCVTEduSection'>
+            <section className='jallowCVTEduSection' data-aos="fade-left">
               <h2 className="jallowCVTSectionTitle">Education</h2>
 
               <div className='jalowCVTEduContainer'>
@@ -199,7 +210,7 @@ function CVTemplateJallow2() {
             </section>
 
             {/* <!--========== INTERESTS ==========--> */}
-            <section className='jallowCVTCliSection'>
+            <section className='jallowCVTCliSection' data-aos="fade-right">
               <h2 className="jallowCVTSectionTitle">Client</h2>
 
               <div className='jallowCVTCliContainer'>
@@ -227,7 +238,7 @@ function CVTemplateJallow2() {
             </section>
 
             {/* <!--========== SKILLS ==========--> */}
-            <section className='jallowCVTSkillSection jallowCVTSkills'>
+            <section className='jallowCVTSkillSection jallowCVTSkills' data-aos="fade-left">
               <h2 className="jallowCVTSectionTitle jallowCVTSkillsTitle">skills</h2>
 
               <div className='jallowCVTSkillContent'>
@@ -263,7 +274,7 @@ function CVTemplateJallow2() {
               </div>
             </section>
 
-            <section className='jallowCVTExpertSection'>
+            <section className='jallowCVTExpertSection' data-aos="fade-right">
               <h2 className="jallowCVTSectionTitle">Expertise</h2>
 
               <div className='jallowCVTExpertContent'>
@@ -284,7 +295,7 @@ function CVTemplateJallow2() {
               </div>
             </section>
 
-            <section className='jallowCVTContactSection  ProfSectionJallow'>
+            <section className='jallowCVTContactSection  ProfSectionJallow' data-aos="fade-left">
             <h2 className="jallowCVTSectionTitle">Contact Me</h2>
 
               <div className='jallowCVTContactFolder'>
