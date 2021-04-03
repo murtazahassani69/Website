@@ -64,8 +64,9 @@
     padding: 2rem 0.5rem;
     margin-top: 1rem;
     margin-bottom: 2.5rem;
-    border-radius: 2px;
-    background-color: rgb(233, 217, 153);
+    border-radius: 10px;
+    background-color: rgb(224, 242, 243);
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 #JaTAniTag{
@@ -79,6 +80,7 @@
 .JaTAniTemplateIamge img{
     width: 90%;
     height: 230px;
+    border-radius: 10px;
 }
 
 .JaDTemplateIamge img:hover,
