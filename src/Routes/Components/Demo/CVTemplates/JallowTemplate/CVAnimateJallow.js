@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../../../css/CVJallowTemplareAn1.css";
+import "../../../../css/CVJallowTemplateAn1.css";
 import Brand from './imgs/Animate-imgs/brand-dark.png';
 
 import Background from './imgs/Animate-imgs/bck3.mp4';
@@ -25,13 +25,19 @@ import Vlog1 from './imgs/Animate-imgs/bp1.jpg';
 import Vlog2 from './imgs/Animate-imgs/bp2.jpg';
 import Vlog3 from './imgs/Animate-imgs/bp3.jpg';
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function CVAnimateJallow() {
+    AOS.init({
+        offset: 300,
+        duration: 1000
+    })
     return (
         <div className='JAnimateCVTemp'>
             <Header />
             <SectionHeader />
+            <Name />
             <Passion />
             <Projects />
             <About />
@@ -49,7 +55,7 @@ function Header() {
     return(
         <header className='JAnimatedHeader'>
             <div className='JAnimatedHeaderInner JAnimatedHeaderInContent'>
-                <div className='JAnimatedHeaderMenu'>
+                <div className='JAnimatedHeaderMenu' data-aos="fade-down">
                     <a className='JAnimatedBrand'><img src={Brand} alt='Brand' /></a>
                 </div>
 
@@ -59,11 +65,11 @@ function Header() {
 
 
                     <div className='JAnimatedNavItem'> 
-                        <a href='#codeshop' className='JAnimatedNavList'>Code shop</a>
-                        <a href='#portfolio' className='JAnimatedNavList'>Portfolio</a>
-                        <a href='#resume' className='JAnimatedNavList'>Resume</a>
-                        <a href='#about' className='JAnimatedNavList'>About</a>
-                        <a href='#blog' className='JAnimatedNavList'>Blog</a>
+                        <a href='#' className='JAnimatedNavList'>Code shop</a>
+                        <a href='#' className='JAnimatedNavList'>Portfolio</a>
+                        <a href='#' className='JAnimatedNavList'>Resume</a>
+                        <a href='#' className='JAnimatedNavList'>About</a>
+                        <a href='#' className='JAnimatedNavList'>Blog</a>
                     </div>
                 </nav>
             </div>
@@ -78,11 +84,29 @@ function SectionHeader () {
                 <video className='JAnimatedVideo' src={Background}autoPlay loop muted />
                 <h1 className='JAnimatedSectHeading'>Squarespace <br /><span>Developer.</span></h1>
                 <div className="JAnimatedHeadBtns">
-                    <a className='JAnimatedBtns1' href='#codeshop'>HIRE ME TODAY</a>
-                    <a className='JAnimatedBtns2'>WATCH VIDEO<i className="far fa-play-circle" /></a>
+                    <a className='JAnimatedBtns1'>HIRE ME TODAY</a>
+                    <a href='#JAniLaptopVidPlayer' className='JAnimatedBtns2'>WATCH VIDEO<i className="far fa-play-circle" /></a>
+                    {/* <a href='#JAniLaptopVidPlayer' --btn	id='JAniLaptopVidPlayer' --video */}
                 </div>
             </div>
         </section>
+    )
+}
+
+function Name(){
+    // AOS.init({
+    //     offset: 400,
+    //     duration:1000
+    // })
+    return(
+        <section className='JAnimatedProfile'>
+              <div className='JAnimatedProfileCont' data-aos="fade-down">
+                <h2 className='JAnimatedProfileTitlex'>Hi, I'm John square</h2>
+                <p className='JAnimatedProfileText'>
+                I'm a passionate business owners who truly love what i do. I built amazing websites for all your needs,with clients international. Check out my <em>Squarespace Project,</em> one of the best i like. I started my business because I honestly enjoy coming to work every day to create something beautiful that has the ability to impact others.
+                </p>
+              </div>
+            </section>
     )
 }
 
@@ -90,12 +114,12 @@ function Passion(){
     return(
         <section className='JAnimatedPassion'>
             <div className='JAnimatedPassContent'>
-                <div className='JAnimatedPassImg'>
+                <div className='JAnimatedPassImg' data-aos="fade-right">
                     <img src={Coffee} alt='' width='200px' height='300' />
                 </div>
                 <div className='JAnimatedPassSect'>
-                    <h2 className='JAnimatedPassTitle'>My passion and focus is Squarespace development</h2>
-                    <p className='JAnimatedPassDes'>Let's be honest and cut through the marketing fluff. You need a website that looks amazing and actually works. Bottom line, that's what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email).</p>
+                    <h2 className='JAnimatedPassTitle' data-aos="fade-left">My passion and focus is Squarespace development</h2>
+                    <p className='JAnimatedPassDes' data-aos="fade-left">Let's be honest and cut through the marketing fluff. You need a website that looks amazing and actually works. Bottom line, that's what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email).</p>
                 </div>
             </div>
         </section>
@@ -109,17 +133,17 @@ function Services(){
                 <h2 className="JAnimatedServTitle">I also provide high-quality Squarespace plugins, snippets, training and more.</h2>
 
                 <div className='JAnimatedServContent'>
-                    <div className='JAnimatedServColumn'>
+                    <div className='JAnimatedServColumn' data-aos="fade-right">
                         <h4 className='JAnimatedServHeader'>code snippets</h4>
                         <p className='JAnimatedServDescription'>These are exclusively made for Squarespace sites and will offer custom design options with easy to understand instructions.</p>
                     </div>
 
-                    <div className='JAnimatedServColumn'>
+                    <div className='JAnimatedServColumn' data-aos="fade-up">
                         <h4 className='JAnimatedServHeader'>video training</h4>
                         <p className='JAnimatedServDescription'>The training will go over some great insights to help users understand how to get the most out of their Squarespace site.</p>
                     </div>
 
-                    <div className='JAnimatedServColumn'>
+                    <div className='JAnimatedServColumn' data-aos="fade-left">
                         <h4 className='JAnimatedServHeader'>tips & tricks</h4>
                         <p className='JAnimatedServDescription'>Learn from my mistakes and let me show you how to accomplish unique sections of your Squarespace site that will impress.</p>
                     </div>
@@ -135,14 +159,13 @@ function Services(){
 
 function Projects(){
     return(
-        <a id='portfolio'>
         <section className='JAnimatedProjects'>
-            <div className='JAnimatedProContainer'>
+            <div className='JAnimatedProContainer' data-aos="fade-right">
                 <h2 className='JAnimatedProTitle'>Squarespace projects.</h2>
                 <p className='JAnimatedProDescrip'>Work with local, as well as, international clients has become an amazing opportunity that I don't take for granted. Take a look at my latest Squarespace projects that I’ve been busy working on.</p>
 
-                <div className='JAnimatedProContent'>
-                    <div className="JAnimatedCard JAnimatedMiddle ">
+                <div className='JAnimatedProContent' data-aos="fade-left">
+                    <div className="JAnimatedCard JAnimatedMiddle">
                         <div className="JAnimatedFrontCard">
                             <img src={CoffeeShop} />
                         </div>
@@ -155,7 +178,7 @@ function Projects(){
                         </div>
                     </div>
 
-                    <div className="JAnimatedCard JAnimatedMiddle ">
+                    <div className="JAnimatedCard JAnimatedMiddle">
                         <div className="JAnimatedFrontCard">
                             <img src={PhotoSquare} />
                         </div>
@@ -168,7 +191,7 @@ function Projects(){
                         </div>
                     </div>
 
-                    <div className="JAnimatedCard JAnimatedMiddle ">
+                    <div className="JAnimatedCard JAnimatedMiddle">
                         <div className="JAnimatedFrontCard">
                             <img src={WeddingDJ} />
                         </div>
@@ -189,20 +212,18 @@ function Projects(){
 
             </div>
         </section>
-        </a>
     )
 }
 
 function About(){
     return(
-        <a id='about'>
         <section className='JAnimatedAbout'>
-            <div className='JAnimatedAbtContent'>
+            <div className='JAnimatedAbtContent' data-aos="fade-down">
                 <h2 className='JAnimatedAbtHead'>Understanding My Passion</h2>
                 <p className='JAnimatedAbtDescript'>There's something to be said about working with passionate business owners that truly love what they do. I’m no different. I started my business because I honestly enjoy coming to work every day to create something beautiful that has the ability to impact others.</p>
                 
                 <div className='JAniLaptopPlayer'>
-                    <figure className='JAnimatedFigure'>
+                    <figure className='JAnimatedFigure' id='JAniLaptopVidPlayer'>
                         <img src={Laptop} />
                         <iframe className='JAnimatedVideoPlayer' src={Developer} autoPlay muted alt='youtube vid'></iframe>
                     </figure>
@@ -210,15 +231,13 @@ function About(){
 
             </div>
         </section>
-        </a>
     )
 }
 
 function Office (){
     return(
-        <a id='codeshop'>
         <section className='JAnimatedOffice'>
-            <div className='JAnimatedOffContainer'>
+            <div className='JAnimatedOffContainer' data-aos="fade-up">
                 <h5 className='JAnimatedOffTitle'>FULL-TIME SQUARESPACE DEVELOPER</h5>
                 <p className='JAnimatedOffDescript'>Need help from a Squarespace expert? <br />Let’s discuss your needs in detail.</p>
 
@@ -227,14 +246,13 @@ function Office (){
                 </div>
             </div>
         </section>
-        </a>
     )
 }
 
 function LifeDesign(){
     return(
         <section className='JAnimatedLifeDesign'>
-            <div className='JAnimatedLifeContainer'>
+            <div className='JAnimatedLifeContainer' data-aos="fade-right">
                 <h2 className="JAnimatedLifeTitle">My life as a Squarespace designer.</h2>
 
                 <div className='JAnimatedLifeContent'>
@@ -257,7 +275,7 @@ function LifeDesign(){
                         <img src={Img6} alt='image' width='220px' height='240px' />
                     </div>
                     <div className='JAnimatedLifeColumn'>
-                        <img src={Img7} alt='image' width='220px' height='240px' />
+                        <img src={Img10} alt='image' width='220px' height='240px' />
                     </div>
                     <div className='JAnimatedLifeColumn'>
                         <img src={Img8} alt='image' width='220px' height='240px' />
@@ -266,7 +284,7 @@ function LifeDesign(){
                         <img src={Img9} alt='image' width='220px' height='240px' />
                     </div>
                     <div className='JAnimatedLifeColumn'>
-                        <img src={Img10} alt='image' width='220px' height='240px' />
+                        <img src={Img7} alt='image' width='220px' height='240px' />
                     </div>
                 </div>
 
@@ -280,9 +298,8 @@ function LifeDesign(){
 
 function BlogPost() {
     return(
-        <a id='blog'>
         <section className='JAnimatedBlog'>
-            <div  className='JAnimatedBlogPost'>
+            <div  className='JAnimatedBlogPost' data-aos="fade-left">
                 <h2 className='JAnimatedBlogTitle'>My latest blog posts</h2>
                 <div className='JAnimatedVlogCon'>
                     <div className='JAnimatedBlogContent'>
@@ -316,7 +333,6 @@ function BlogPost() {
 
             </div>
         </section>
-        </a>
     )
 }
 
@@ -332,11 +348,11 @@ function Footer(){
                 <nav className='JAnimatedFootNav'>
                     <div className='JAnimatedFootItem'>
                         <a href='#' className='JAnimatedFootLink'>Home</a>
-                        <a href='#codeshop' className='JAnimatedFootLink'>Code shop</a>
-                        <a href='#portfolio' className='JAnimatedFootLink'>Portfolio</a>
-                        <a href='#about' className='JAnimatedFootLink'>About</a>
+                        <a href='#' className='JAnimatedFootLink'>Code shop</a>
+                        <a href='#' className='JAnimatedFootLink'>Portfolio</a>
+                        <a href='#' className='JAnimatedFootLink'>About</a>
                         <a href='#' className='JAnimatedFootLink'>Resume</a>
-                        <a href='#blog' className='JAnimatedFootLink'>Blog</a>
+                        <a href='#' className='JAnimatedFootLink'>Blog</a>
                         <a href='#' className='JAnimatedFootLink'>Press</a>
                         <a href='#' className='JAnimatedFootLink'>Contact</a>
                     </div>

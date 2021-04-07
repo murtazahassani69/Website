@@ -125,14 +125,14 @@ const VideoPlayer_Section = () => {
       <article className="Mur_video_play_section_video">
         <iframe
         
-          src="https://www.youtube.com/embed/wO_5YFXQE7A"
+          src="https://www.youtube.com/embed/Op7sI9ETays"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
         <h4>
           {" "}
-          <a href="https://youtu.be/wO_5YFXQE7A">
+          <a href="https://youtu.be/Op7sI9ETays">
             Watch Video for more information
           </a>{" "}
         </h4>
