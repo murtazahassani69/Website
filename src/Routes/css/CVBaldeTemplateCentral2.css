@@ -29,6 +29,12 @@
     width: 100%;
     height: 100%;
 }
+.CVBaldeTemp2-menu-ul-back a{
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    opacity: 0.9;
+}
 
 .CVBaldeTemp2-menu-ul li{
     cursor: pointer;
@@ -596,8 +602,24 @@ span.CVBaldeTemp2-content3-per5{
 }
 
 .CVBaldeTemp2-video-iframe iframe{
-    /* width: 568px;
-    height: 315px */
     width: 600px;
     height: 335px;
+}
+
+.CVBaldeTemp2-video-pdf{
+    margin-top: 2em;
+}
+
+.CVBaldeTemp2-video-pdf a{
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    padding: 1em;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.CVBaldeTemp2-video-pdf a:hover{
+   border: solid 2px white;
 }

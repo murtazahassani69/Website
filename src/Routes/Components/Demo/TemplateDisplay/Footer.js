@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../css/TemplateDisplayFooter.css';
+import '../../../css/TemplateDisplayFooter.css'
 
 function Footer() {
   return (
@@ -23,6 +23,9 @@ function Footer() {
                     <a href='#'><img src='https://insatpress.tn/wp-content/uploads/2019/08/YfpFOL-logo-instagram-free-transparent.png' alt='Instagam' /><span>Instagram</span></a>
                 </div>
             </div>
+        </div>
+        <div className='templateDisplay-footer-copyRight'>
+            <p>© Amnick Web Development Team 2021</p>
         </div>
     </div>
   );

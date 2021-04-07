@@ -85,7 +85,8 @@ function SectionHeader () {
                 <h1 className='JAnimatedSectHeading'>Squarespace <br /><span>Developer.</span></h1>
                 <div className="JAnimatedHeadBtns">
                     <a className='JAnimatedBtns1'>HIRE ME TODAY</a>
-                    <a className='JAnimatedBtns2'>WATCH VIDEO<i className="far fa-play-circle" /></a>
+                    <a href='#JAniLaptopVidPlayer' className='JAnimatedBtns2'>WATCH VIDEO<i className="far fa-play-circle" /></a>
+                    {/* <a href='#JAniLaptopVidPlayer' --btn	id='JAniLaptopVidPlayer' --video */}
                 </div>
             </div>
         </section>
@@ -222,7 +223,7 @@ function About(){
                 <p className='JAnimatedAbtDescript'>There's something to be said about working with passionate business owners that truly love what they do. I’m no different. I started my business because I honestly enjoy coming to work every day to create something beautiful that has the ability to impact others.</p>
                 
                 <div className='JAniLaptopPlayer'>
-                    <figure className='JAnimatedFigure'>
+                    <figure className='JAnimatedFigure' id='JAniLaptopVidPlayer'>
                         <img src={Laptop} />
                         <iframe className='JAnimatedVideoPlayer' src={Developer} autoPlay muted alt='youtube vid'></iframe>
                     </figure>

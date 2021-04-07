@@ -191,6 +191,7 @@
     padding: 13px 46px;
     margin: 7px;
     border-radius: 10px;
+    color: #fff;
 
     opacity: 0;
     animation: button 5s ease-in-out;
