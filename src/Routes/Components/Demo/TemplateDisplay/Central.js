@@ -7,12 +7,13 @@ import TempY2 from "./imgs/temp-y2.png";
 import TempB1 from "./imgs/temp-b1.png";
 import TempMu1 from "./imgs/temp-mu1.png";
 import TempJ2 from "./imgs/temp-j2.png";
-
 import TempJ3 from "./imgs/temp-j3.png";
 import TempB2 from "./imgs/temp-b2.png";
 import TempY3 from "./imgs/temp-y3.png";
 import TempMu2 from "./imgs/temp-mu2.png";
 import TempMa2 from "./imgs/temp-j2.png";
+import { FaBeer } from 'react-icons/fa';
+
 
 function Central() {
   return (

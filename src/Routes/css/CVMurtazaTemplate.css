@@ -10,7 +10,46 @@
   padding: 10px;
   border-bottom-left-radius: 122vh;
 }
+.CVMurtazaTemp_go_back_icon {
+  color: white;
+  font-size: 53px;
+  display: inherit;
+  max-width: 18%;
+  cursor: pointer;
+  margin-left: 43px;
+  margin-top: auto;
+  float: left;
+}
+.CVMurtazaTemp_go_back_icon:hover {
+  color: rgb(97 10 75);
+}
+.CVMurtazaTemp_go_back_div {
+  width: 0%;
+  display: unset;
+}
 
+
+/* SECOND CV  BACK ICON */
+
+.Second_CV_Murtaza_Temp_go_back_icon {
+  color: #002eff;
+  font-size: 61px;
+  display: inherit;
+  max-width: 18%;
+  cursor: pointer;
+  padding-left: 112px;
+  margin-top: 23px;
+  float: left;
+  animation: bounce 2s ease-in-out infinite;
+
+}
+.Second_CV_Murtaza_Temp_go_back_icon:hover {
+  color: rgb(97 10 75);
+}
+.Second_CV_Murtaza_Temp_go_back_div {
+  width: 0%;
+  display: unset;
+}
 .CVMurtazaTemp_top_container {
   justify-content: center;
   letter-spacing: 2px;
@@ -389,7 +428,7 @@
   height: 26vh;
 }
 .Murtaza_Tamp_footer_boxes_div {
-  text-align: -webkit-left;
+  text-align: center;
   color: white;
 }
 .blocks_murtaza_temp {
