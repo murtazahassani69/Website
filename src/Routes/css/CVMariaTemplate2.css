@@ -1,0 +1,54 @@
+.CVMarTemp-container2 {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 75em) {
+  .CVMarTemp-container2 {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .CVMarTemp-container2 {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .CVMarTemp-container2 {
+    font-size: 75%;
+  }
+}
+
+.CVMarTemp2-navigation__checkbox {
+  display: none;
+}
+
+.CVMarTemp2-navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(#000, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.CVMarTemp2-navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
