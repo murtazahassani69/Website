@@ -3,6 +3,8 @@ import { FaBars,FaArrowDown } from "react-icons/fa";
 import { useGlobalContext } from "./Context";
 import { services, projects } from "./Data";
 import Typist from 'react-typist';
+import { ImArrowLeft2 } from "react-icons/im";
+
 
 const Home = () => {
   const { openSidebar, openModal } = useGlobalContext();
@@ -15,7 +17,16 @@ const Home = () => {
         >
           <FaBars />
         </button>
+
         <section className="Second_MurtazaCV_Temp_home_section">
+        <div className="Second_CV_Murtaza_Temp_go_back_div">
+        {" "}
+        <a href="/templates">
+          <h2 className="Second_CV_Murtaza_Temp_go_back_icon">
+            <ImArrowLeft2 />{" "}
+          </h2>
+        </a>
+      </div>
           <div className="Second_home_intro">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaiw7r4q5i9NAP8F0G9XUhUOkratFhncgHTQ&usqp=CAU"
