@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import '../../../../css/CVMariaTemplate.css';
 import user_img from "./imgs/default-user.png";
 import user_sign from "./imgs/signature.png";
@@ -43,6 +44,7 @@ function MariaTemp(){
             
             
             <div className="CVMarTemp-right"> 
+            <Link className="CVMarTemp-header-back" to='/templates'>&larr; </Link>
                 <section className="CVMarTemp-section">
                     <h2 className="CVMarTemp-section-h2">My Services</h2>
                     <div className="CVMarTemp-services">

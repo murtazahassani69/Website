@@ -167,6 +167,22 @@
   transform: translateY(-3px);
 }
 
+.CVMarTemp-header-back {
+  padding: 0.5px;
+  cursor: pointer;
+  border: 1px solid #0072b1;
+  border-radius: 5px;
+  color: #0072b1;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 50px;
+}
+
+.CVMarTemp-header-back:hover {
+  background-color: #0072b1;
+  color: #fff;
+}
+
 .CVMarTemp-services {
   display: grid;
   grid-template-columns: repeat(2, minmax(15rem, 1fr));
