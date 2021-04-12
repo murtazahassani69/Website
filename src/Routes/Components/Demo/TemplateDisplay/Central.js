@@ -27,52 +27,11 @@ function Central() {
   );
 }
 
-// Hey Guys I made some new changes in this section.
-function Web_home_Page() {
-  return (
-    <div className="Web_home_Page_Section">
-      <h1 className="Web_home_Page_h1">Your in the right location: </h1>
-      <Web_hero_Page />
-    </div>
-  );
-}
-
-function Web_hero_Page() {
-  return (
-    <>
-      <div className="Web_home_second_hero">
-        <h2 className="Web_home_second_hero_H1">Welcome </h2>
-        <h4 className="Web_home_Page_h2">
-          Here, we offer you the findness, simple and excellent resume templates
-          that you can find in the internet, and use for all you job searches.{" "}
-          <br />
-          We're wishing you GoodLuck on your job search after selecting one of
-          the resumes tha'ts matchest your need!
-        </h4>
-      </div>
-      <Jump_to_next_page />
-    </>
-  );
-}
-
-function Jump_to_next_page() {
-  return (
-    <div>
-      <div className="jump_to_next_page">
-        <sup>&darr;</sup>
-      </div>
-      <a href="#section_1" className="jump_to_next_page_button">
-        <span className="jump_to_next_page_span">See now</span>
-      </a>
-    </div>
-  );
-}
 
 function DisplayRes() {
   return (
     <section className="JaTDCentral">
       <div className="JATDCentralContainer">
-        <Web_home_Page />
         <div className="JATDCentralContent">
           <DisplayTemp
             img={TempJ1}

@@ -33,14 +33,14 @@
 
 .Second_CV_Murtaza_Temp_go_back_icon {
   color: #002eff;
-  font-size: 61px;
+  font-size: 37px;
   display: inherit;
   max-width: 18%;
   cursor: pointer;
   padding-left: 112px;
-  margin-top: 23px;
+  margin-top: 34px;
   float: left;
-  animation: bounce 2s ease-in-out infinite;
+  /* animation: bounce 2s ease-in-out infinite; */
 
 }
 .Second_CV_Murtaza_Temp_go_back_icon:hover {
