@@ -19,6 +19,7 @@ const Home = () => {
         </button>
 
         <section className="Second_MurtazaCV_Temp_home_section">
+        <div className="Second_home_intro">
         <div className="Second_CV_Murtaza_Temp_go_back_div">
         {" "}
         <a href="/templates">
@@ -27,7 +28,6 @@ const Home = () => {
           </h2>
         </a>
       </div>
-          <div className="Second_home_intro">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaiw7r4q5i9NAP8F0G9XUhUOkratFhncgHTQ&usqp=CAU"
               className="Second_MurtazaCV_Temp_intro_img"
