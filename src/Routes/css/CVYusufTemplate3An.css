@@ -443,24 +443,47 @@
           }
   
         }
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 750px) {
           ul{
             font-size: small;
             padding: 2%;
-            padding-inline-start: 6px;
+            padding-inline-start: 20px;
           }
           .navButtons {
            
             font-size: 1rem;
             margin-bottom:2px; 
+            margin-left: 2%;
            
           }
           .main-nav__link{
-            padding-right: 12px;
+            padding-right: 2%;
           }        
           .main-nav__item {
             position: relative;
-            padding-right: 12px;
+            padding-right: 2%;
+          }
+
+        }
+        @media screen and (max-width: 450px) {
+          ul{
+            font-size: x-small;
+            padding: 1%;
+            padding-inline-start: 2px;
+          }
+          .navButtons {
+           
+            font-size: .5rem;
+            margin-bottom:1px; 
+            margin-left: 1%;
+           
+          }
+          .main-nav__link{
+            padding-right: 1%;
+          }        
+          .main-nav__item {
+            position: relative;
+            padding-right: 1%;
           }
 
         }

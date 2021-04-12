@@ -10,6 +10,11 @@ const Wrapper = styled.div`
     font-size: 1.4rem;
     margin-bottom:4px; 
     color:red; 
+    cursor: pointer;
+    margin-left:40px;
+    @media only screen and (max-width: 27.5em) {
+      margin-left:6%;
+    }
   }
   
 `;

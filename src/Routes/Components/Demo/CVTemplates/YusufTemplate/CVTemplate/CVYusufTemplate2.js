@@ -10,14 +10,14 @@ function CVYusufTemplate2 (){
     return (
 <>
 
-      <header className={toggle ?'nav-open':null} id="CVYusufTemp-div-menu-header">
+      <header className={toggle ?'CVYusufTemp-nav-open':null} id="CVYusufTemp-div-menu-header">
 
           {/* <div className="CVYusufTemp2-div-menu-logo-container">
             <img id="header-img" . src="logo.png" alt="logo"">
             <h4 className=" CVYusufTemp2-div-menu-logo">Logo Name</h4>
             </div> */}
 
-<button className="nav-toggle" onClick={()=>{setToggle(!toggle)}} aria-label="toggle navigation">
+<button className="CVYusufTemp-nav-toggle" onClick={()=>{setToggle(!toggle)}} aria-label="toggle navigation">
   <span className="hamburger"></span>
 </button>
 
@@ -33,7 +33,9 @@ function CVYusufTemplate2 (){
 <Pdf targetRef={ref} filename="resume.pdf"paperSize="A4"
                     margin="2cm">
             
+ 
         {({ toPdf }) => <button id="CVYusufTemp-cmd" onClick={toPdf}>Generate Pdf</button>}
+ 
       </Pdf>
 
 {/* --------------container part----------------- */}
@@ -43,11 +45,11 @@ function CVYusufTemplate2 (){
         <h1 className="CVYusufTemp2-div-h">Josef Kara</h1>
       <span className="subtitle">Full stack Developer &amp; instructor</span>
     </header>
-<section className="main-block">
+<section className="CVYusufTemp2-main-block">
   <h2 className="CVYusufTemp2-div-h">
     <i className="fa fa-suitcase"></i> Experiences
   </h2>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2020</span><span>present</span>
     </div>
@@ -70,7 +72,7 @@ function CVYusufTemplate2 (){
         </div>
     </div>
   </section>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2015</span><span>2020</span>
     </div>
@@ -91,7 +93,7 @@ function CVYusufTemplate2 (){
       </div>
     </div>
   </section>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2013</span><span>2014</span>
     </div>
@@ -113,11 +115,11 @@ function CVYusufTemplate2 (){
     </div>
   </section>
 </section>
-<section className="main-block">
+<section className="CVYusufTemp2-main-block">
   <h2 className="CVYusufTemp2-div-h">
     <i className="fa fa-folder-open"></i> Software Development Projects
   </h2>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2015</span>
     </div>
@@ -144,7 +146,7 @@ function CVYusufTemplate2 (){
       </div>
     </div>
   </section>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2014</span> 
     </div>
@@ -166,7 +168,7 @@ function CVYusufTemplate2 (){
       </div>
     </div>
   </section>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2014</span>
     </div>
@@ -188,11 +190,11 @@ function CVYusufTemplate2 (){
     </div>
   </section>
 </section>
-<section className="main-block concise">
+<section className="CVYusufTemp2-main-block concise">
   <h2 className="CVYusufTemp2-div-h">
     <i className="fa fa-graduation-cap"></i> Education
   </h2>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2009</span><span>2014</span>
     </div>
@@ -207,7 +209,7 @@ function CVYusufTemplate2 (){
       <div>Relationship of the number with the answer to life, the universe and everything</div>
     </div>
   </section>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2005</span><span>2009</span>
     </div>
@@ -222,7 +224,7 @@ function CVYusufTemplate2 (){
       <div>President's Scholarship</div>
     </div>
   </section>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
       <span>2005</span><span>2009</span>
     </div>
@@ -237,7 +239,7 @@ function CVYusufTemplate2 (){
       <div>President's Scholarship</div>
     </div>
   </section>
-  <section className="blocks">
+  <section className="CVYusufTemp2-blocks">
     <div className="date">
     </div>
     <div className="decorator">
@@ -263,18 +265,20 @@ function CVYusufTemplate2 (){
 </section>
 </section>
 <section id="sidebar">
-<div className="side-block" id="contact">
+<div className="CVYusufTemp2-side-block" id="contact">
   <h1 className="CVYusufTemp2-div-h">
     Contact Info
   </h1>
   <ul>
     <li><i className="fa fa-globe"></i>&nbsp; johndoe.gtld</li>
     <li><i className="fab fa-linkedin-in"></i>&nbsp; linkedin.com/in/josef</li>
+ 
     <li><i className="far fa-envelope"></i>&nbsp;&nbsp; me@josefkara.gtld</li>
+ 
     <li><i className="fa fa-phone"></i> &nbsp;800.000.0000</li>
   </ul>
 </div>
-<div className="side-block" id="skills">
+<div className="CVYusufTemp2-side-block" id="skills">
   <h1>
     Skills
   </h1>

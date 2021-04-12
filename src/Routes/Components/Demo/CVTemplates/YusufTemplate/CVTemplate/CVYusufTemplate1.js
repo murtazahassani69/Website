@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import "../../../../../css/CVYusufTemplate1.css";
 import Pdf from "react-to-pdf";
+ 
 import face from "./imgs/face.jpg";
+ 
 
 const ref = React.createRef();
 
@@ -9,14 +11,14 @@ function CVYusufTemplate1 (){
    const [toggle, setToggle] = useState(false);
     return(
     <>
-      <header className={toggle ?'nav-open':null}id="CVYusufTemp-div-menu-header">
+      <header className={toggle ?'CVYusufTemp-nav-open':null}id="CVYusufTemp-div-menu-header">
 
       {/* <div className="CVYusufTemp1-div-menu-logo-container">
         <img id="header-img" . src="logo.png" alt="logo"">
         <h4 className=" CVYusufTemp1-div-menu-logo">Logo Name</h4>
       </div> */}
 
-      <button className="nav-toggle" onClick={()=>setToggle(!toggle)} aria-label="toggle navigation">
+      <button className="CVYusufTemp-nav-toggle" onClick={()=>setToggle(!toggle)} aria-label="toggle navigation">
         <span className="hamburger"></span>
       </button>
 
@@ -28,13 +30,11 @@ function CVYusufTemplate1 (){
             </ul>
           </nav>
    </header>
-
-    <div id="CVYusufTemp1-div-main-container">
-       <Pdf targetRef={ref} filename="resume.pdf">
+     <Pdf targetRef={ref} filename="resume.pdf">
         {({ toPdf }) => <button id="CVYusufTemp-cmd" onClick={toPdf}>Generate Pdf</button>}
-      </Pdf>
-     
-
+    </Pdf>
+    
+    <div id="CVYusufTemp1-div-main-container">
     <div className="CVYusufTemp1-div-page" id="toPrint" ref={ref}>
       <header className="CVYusufTemp1-div-header">
         <div className="CVYusufTemp1-div-header-name">
