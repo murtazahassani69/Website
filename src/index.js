@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import icon from './Routes/imgs/tab_logo.png';
+import { AppProvider } from '../src/Routes/Components/Demo/CVTemplates/MurtazaTemplate/CV2/Context';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +14,9 @@ ReactDOM.render(
     <title>Amnick WebDev</title>
     <link rel="shortcut icon" href={icon} />
   </Helmet>
+  <AppProvider>
     <App />
+  </AppProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

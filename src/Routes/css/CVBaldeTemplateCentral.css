@@ -1,0 +1,520 @@
+.CVBaldeTemp-div-central *{
+    box-sizing: border-box;
+}
+.CVBaldeTemp-div-blue{
+    background-color: #7510F7;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1.5rem;
+    z-index: -1;
+}
+.CVBaldeTemp-div-blue1{
+    display: flex;
+    justify-content: center;
+}
+.CVBaldeTemp-div-blue2{
+    width: 60%;
+}
+.CVBaldeTemp-div-blue2 p{ 
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.CVBaldeTemp-div-skills{
+    z-index: 2;
+    padding: 6em;
+    margin-top: -200px;
+}
+.CVBaldeTemp-div-container{
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 20px #7510F7;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.CVBaldeTemp-div-column{
+    padding: 3em 2em;
+}
+.CVBaldeTemp-div-column:nth-child(2){
+    border-right: 1px solid #7510F7;
+    border-left: 1px solid #7510F7;
+}
+.CVBaldeTemp-div-column h1{
+    opacity: 0.9;
+    font-size: 1.3em;
+}
+
+.CVBaldeTemp-div-column-figure img{
+    height: 48px;
+}
+.CVBaldeTemp-div-column ul{
+    list-style-type: none;
+    padding: 0;
+}
+.CVBaldeTemp-div-column-text{
+    line-height: 2rem;
+    font-size: 1.1em;
+    padding-bottom: 1em;
+    margin-top: .5em;
+    color: black;
+}
+.CVBaldeTemp-div-column-title{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #7510F7;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+.CVBaldeTemp-div-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6em;
+    border-bottom: 1px solid #7510F7;
+}
+
+.CVBaldeTemp-div-work p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 1em;
+    color: black;
+}
+
+.CVBaldeTemp-div-work-btn1 a{
+    color: #7510F7;
+    border: 2px solid #7510F7;
+    font-weight: bold;
+    padding: .8em 2em;
+    font-size: 1.25rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 1s;
+}
+.CVBaldeTemp-div-work-btn1 .fab{
+    margin-right: 0.5em;
+}
+.CVBaldeTemp-div-work-btn1 a:hover{
+    background: #7510F7;
+    color: white;
+}
+
+.CVBaldeTemp-div-work-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .6em;
+}
+.CVBaldeTemp-div-work-pictures{
+    padding: 2em 5em;
+}
+
+.CVBaldeTemp-div-work-figure{
+    height: 35vh;
+}
+.CVBaldeTemp-div-work-figure img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.CVBaldeTemp-div-hover{
+    border-radius: 10px;
+    position: relative;
+    top: -273px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 0, 3, 0.8);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 1s;
+    padding: 1em;
+    font-weight: bold;
+}
+.CVBaldeTemp-div-work-figure img:hover{
+    transform: scale(1.2);
+}
+.CVBaldeTemp-div-hover:hover{
+    opacity: 1;
+}
+
+.CVBaldeTemp-div-hover p{
+    color: white;
+    margin-bottom: 1em;
+}
+
+.CVBaldeTemp-div-hover a{
+    color:  white;
+    border: 2px solid #7510F7;
+    font-weight: 400;
+    padding: .3em;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 1s;
+}
+.CVBaldeTemp-div-hover a:hover{
+    background: #7510F7;
+}
+.CVBaldeTemp-div-hover-click{
+    margin-left: 0.5em;
+}
+.CVBaldeTemp-div-collabore{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+.CVBaldeTemp-div-collabore-imgs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.CVBaldeTemp-div-collabore-img img{
+    width: 100%;
+    height: 100%;
+}
+.CVBaldeTemp-div-collabore-img{
+    width: 23%;
+}
+.CVBaldeTemp-collabore-title {
+    display: flex;
+    justify-content: center;
+}
+.CVBaldeTemp-collabore-title h1{
+    text-align: center;
+    opacity: .9;
+    width: 60%;
+    line-height: 1.3em;
+}
+
+.CVBaldeTemp-startup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 1em 5em 1em;
+    margin-top: -170px;
+}
+.CVBaldeTemp-div-startup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.CVBaldeTemp-div-startup1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    border-radius: 15px;
+}
+.CVBaldeTemp-div-startup-bloc-text{
+    color: black;
+}
+.CVBaldeTemp-startup-bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    height: 35vh;
+    padding: 2em 1em;
+    text-align: center;
+    box-shadow: 4px 4px 20px #7510F7;
+    border-radius: 15px;
+    margin-bottom: 2em;
+    background-color: rgb(243, 235, 243);
+}
+
+.CVBaldeTemp-startup-bloc img{
+    height: 2em;
+}
+.CVBaldeTemp-startup-bloc a{
+    text-decoration: none;
+}
+.CVBaldeTemp-startup-bloc .fas{
+    padding-right: 0.5em;
+}
+.CVBaldeTemp-div-startup2{
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 3em;
+}
+.CVBaldeTemp-div-startup2 p{ 
+    font-size: 1.2em;
+    margin-bottom: 3em;
+    color: black;
+}
+.CVBaldeTemp-div-startup2 a{
+    border: 2px solid #7510F7;
+    text-decoration: none;
+    padding: 0.7em 2em;
+    border-radius: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.CVBaldeTemp-div-startup2 a:hover{
+    color: white;
+    background-color: #7510F7;
+    transition: background 1s;
+}
+
+.CVBaldeTemp-testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    border-top: 1px solid #7510F7;
+    padding-bottom: 5em;
+}
+.CVBaldeTemp-testimonial p{
+    color: black;
+    font-size: 1.2em;
+}
+.CVBaldeTemp-testimonial h1{
+    margin-bottom: 0;
+}
+.CVBaldeTemp-div-testimonial{
+    z-index: 3;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.CVBaldeTemp-div-testimonial-shift{
+    padding: 2em;
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    height: 100%;
+    z-index: -5;
+    background-color: rgb(243, 235, 243);
+    box-shadow: 1px 5px 3px #7510F7;
+}
+.CVBaldeTemp-div-testimonial-shift img{
+    height: 13vh;
+    border-radius: 47%;
+}
+.CVBaldeTemp-div-testimonial #i1, .CVBaldeTemp-div-testimonial #i2{
+    display: none;
+}
+
+.CVBaldeTemp-div-testimonial-nav{
+    width: 100%;
+    height: 11px;
+    bottom: 5%;
+    position: absolute;
+    text-align: center;
+    z-index: 50;
+}
+
+.CVBaldeTemp-div-testimonial-nav .dots{
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgb(177, 192, 134)
+}
+
+.CVBaldeTemp-div-testimonial #i1:checked ~ #CVBaldeTemp-div-testimonial-shift-one,
+.CVBaldeTemp-div-testimonial #i2:checked ~ #CVBaldeTemp-div-testimonial-shift-two
+{
+    z-index: 20;
+}
+.CVBaldeTemp-div-testimonial #i1:checked ~ .CVBaldeTemp-div-testimonial-nav #dot1,
+.CVBaldeTemp-div-testimonial #i2:checked ~ .CVBaldeTemp-div-testimonial-nav #dot2
+{
+    background-color: #7510F7;
+}
+.CVBaldeTemp-start{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CVBaldeTemp-div-start{
+    color: #fff;
+    width: 95%;
+    background-color: #1a0535;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    padding: 3em 2em;
+}
+.CVBaldeTemp-div-start1{
+    width: 33%;
+    text-align: center;
+}
+.CVBaldeTemp-div-start1 a{
+    padding: 0.5em 2em;
+    border: 2px solid blue;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+.CVBaldeTemp-div-start1 a:hover{
+    background-color: #7510F7;
+}
+@media only screen and (max-width: 1200px) {
+    .CVBaldeTemp-div-work-pictures{
+        padding: 2em 1.5em;
+    }
+    
+    .CVBaldeTemp-div-work-figure{
+        height: 35vh;
+    }
+    .CVBaldeTemp-div-startup1{
+        width: 95%;
+    }
+
+}
+@media only screen and (max-width: 992px) {
+    .CVBaldeTemp-div-skills{
+        padding: 5em 1em 6em 1em;
+    }
+    .CVBaldeTemp-div-blue2{
+        width: 75%;
+    }
+    .CVBaldeTemp-div-work-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .CVBaldeTemp-collabore-title h1{
+        font-size: 1.7em;
+        width: 80%;
+    }
+    .CVBaldeTemp-div-startup1{
+        width: 100%;
+    }
+    .CVBaldeTemp-div-testimonial-shift{
+        width: 100%;
+    }
+    .CVBaldeTemp-div-start{
+        justify-content: space-between;
+        padding: 2em 0.5em;
+    }
+    .CVBaldeTemp-div-start h1{
+        font-size: 1.7em;
+    }
+    .CVBaldeTemp-div-start1 a{
+        padding: 0.7em 3.5em;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .CVBaldeTemp-div-blue2{
+        width: 100%;
+    }
+    .CVBaldeTemp-div-blue2 h1{ 
+        font-size: 1.6rem;
+    }
+    .CVBaldeTemp-div-blue2 p{ 
+        font-size: 1.2rem;
+    }
+    .CVBaldeTemp-div-container{
+        flex-direction: column;
+    }
+    .CVBaldeTemp-div-column{
+        padding: 3em 5em;
+    }
+    .CVBaldeTemp-div-column:nth-child(2){
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid #7510F7;
+        border-bottom: 1px solid #7510F7;
+    }
+    .CVBaldeTemp-div-collabore-img{
+        width: 40%;
+        margin: 0.5em;
+    }
+    .CVBaldeTemp-div-collabore-imgs{
+        justify-content: center;
+    }
+    .CVBaldeTemp-startup-bloc{
+        width: 48%;
+    }
+    .CVBaldeTemp-div-testimonial-shift{
+        padding: 1em;
+    }
+    .CVBaldeTemp-div-start{
+        flex-direction: column;
+    }
+    .CVBaldeTemp-div-start1{
+        width: 60%;
+    }
+    .CVBaldeTemp-div-start1 p, .CVBaldeTemp-div-start1 h1{
+        margin-top: 0;
+    }
+    .CVBaldeTemp-div-start1 h1{
+        margin-bottom: 0.7em;
+    }
+    .CVBaldeTemp-div-start1 p{
+        margin-bottom: 2em;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .CVBaldeTemp-div-blue{
+        padding: 1rem 0.5rem;
+    }
+    .CVBaldeTemp-div-blue2 h1{ 
+        font-size: 1.3rem;
+    }
+    .CVBaldeTemp-div-blue2 p{ 
+        font-size: 1rem;
+    }
+    .CVBaldeTemp-div-work-btn1 a{
+        padding: .5em 0.5em;
+    }
+    .CVBaldeTemp-div-work-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .CVBaldeTemp-div-collabore-img{
+        width: 45%;
+        margin: 0.5em;
+    }
+    .CVBaldeTemp-div-collabore-imgs{
+        justify-content: space-around;
+    }
+    
+    .CVBaldeTemp-collabore-title h1{
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .CVBaldeTemp-startup-bloc{
+        padding: 2em 3em;
+        width: 98%;
+    }
+    .CVBaldeTemp-div-startup2 a{
+        padding: 0.7em 1em;
+        font-size: 1.1em;
+    }
+    .CVBaldeTemp-div-testimonial{
+        height: 60vh;
+    }
+    .CVBaldeTemp-div-testimonial p{
+        font-size: 1em;
+    }
+    .CVBaldeTemp-div-start1{
+        width: 80%;
+    }
+    .CVBaldeTemp-div-start1 a{
+        padding: 0.7em 2em;
+    }
+}

@@ -1,0 +1,614 @@
+/* PAGE */
+.jallowCVTPage{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 100%;
+}
+.jallowCVTResume{
+    color: #182151;
+    box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+}
+#jallowCVTemp1Pdf{
+    position: absolute;
+    font-size: 14px;
+    top: 18px;
+    right: 10px;
+    padding: 7px 10px;
+    margin-right: 5px;
+    color: #364285;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 2px solid #364285;
+    cursor: pointer;
+}
+  
+/* NAVBAR */
+.jallowCVTNavContainer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+    transition: .3s;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .2);
+}
+.jallowCVTNavDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.jallowCVTNavLogo{
+    font-size: 1.2rem;
+    color: #182153;
+    font-weight: 700;
+    margin-left: 25px;
+}
+.jallowCVTNavLogo:hover{
+    color: #bdbec0;
+}
+.jallowCVTNavMenu{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    transition: .3s;
+}
+.jallowCVTNavList{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.jallowTempBack a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
+}
+.jallowCVTNavItem{
+    margin: 8px 3px;
+    padding: 10px 7px;
+    text-align: center;
+}
+.jallowCVTNavLink{
+    font-size: 14px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #182153;
+}
+.jallowCVTNavLink:hover{
+    color: #bdbec0;
+}
+.jallowCVTCheckIcon{
+    position: absolute;
+    font-size: 30px;
+    color: #182151;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* HEADER SECTION */
+.jallowCVTProfSection{  
+    width: 100%;
+    position: relative;
+    display: grid;
+    background-color: #182153;
+    padding-top: 5rem;
+}
+.ProfSectionJallow{
+    display: flex;
+    justify-content: center;
+}
+.jallowCVTProfContent{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    background-color: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.jallowCVTProfSection{
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+.jallowCVTProfImg{
+    background-color: #F1F1F1;
+    width: 100%;
+    display: block;
+}
+.jallowCVTProfImg img{
+    width: 100%;
+}
+
+.jallowCVTProfInformation{
+    color: #182151;
+    display: grid;
+    text-align: start;
+    margin-left: 1rem;
+}
+.jallowCVTProfName{
+    font-size: 2rem;
+    letter-spacing: .1px;
+    margin-bottom: 0px;
+    margin-left: 2.2rem;
+}
+.jallowCVTProfTitle{
+    font-size: 15px;
+    letter-spacing: .1px;
+    color: #182151;
+    margin-left: 2.3rem;
+}
+.jallowCVTProfInfo{
+    list-style: none;
+    margin-top: 2rem;
+}
+.jallowCVTProfList{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    color: #182151;
+    margin-bottom: .2rem;
+    padding-bottom: .5rem;
+}
+
+.jallowCVTSocialTop{
+    display: grid;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #182153;
+    grid-template-columns: 1fr;
+}
+.jallowCVTSocialLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jallowCVTSocialLink .fab{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+.jallowCVTSocialLink .fab:hover{
+    color: #bdbec0;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+/* PROFILE SECTION */
+.jallowCVTSection{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    color: #182153;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.jallowCVTSectionProfile{
+    width: 60%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.jallowCVTSectionTitle{
+    font-size: 1.5rem;
+    color: #182151;
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    padding: 2.5rem 0;
+    border-bottom: 2px solid #f1f1f1;
+}
+.jallowCVTProfileDescription{
+    color: #182151;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+/* EXPERIENCE & Education */
+.jallowCVTExpSection, 
+.jallowCVTEduSection, 
+.jallowCVTCliSection,
+.jallowCVTSkillSection,
+.jallowCVTExpertSection,
+.jallowCVTContactSection{
+    padding: 0 1.5rem 2rem;
+    display: grid;
+    border-bottom: 1px solid #F1F1F1;
+}
+.jalowCVTExpContainer, .jalowCVTEduContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.jalowCVTExpContent, .jalowCVTEduContent{
+    display: flex;
+    width: 60%;
+    text-align: start;
+}
+.jalowCVTExpTime, .jalowCVTEduTime{
+    padding-right: 2rem;
+}
+.jalowCVTExpRounder, .jalowCVTEduRounder{
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-top: 1.6rem;
+    background-color: #182151;
+}
+.jalowCVTExpLine, .jalowCVTEduLine{
+    display: block;
+    width: 2px;
+    height: 60%;
+    background-color: #182151;
+    transform: translate(7px, 0);
+}
+.jalowCVTExpData, .jalowCVTEduData{
+    gap: .5rem;
+    color: #182151;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.jalowCVTExpTitle, .jalowCVTEduTitle{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+}
+.jalowCVTExpCompany, .jalowCVTEduCompany{
+    color: #3b99f8;
+    font-size: .8rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.jalowCVTExpDescription, .jalowCVTEduDescription{
+    color: #182151;
+    font-size: 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 7px;
+}
+
+/* CLIENTS SECTION */
+.jallowCVTCliContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    margin: 1.5rem 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.jallowCVTCliContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #182153;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.jallowCVTClliIcon{
+    font-size: 2.5rem;
+    margin-bottom: .25rem;
+}
+.jallowCVTCliName{
+    font-size: 1rem;
+}
+
+/* SKILLS SECTION */
+.jallowCVTSkills{
+    background-color: #182153;
+}
+.jallowCVTSkillsTitle{
+    background-color: #182153;
+    color: #fff;
+}
+.jallowCVTSkillContent{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.jallowCVTSkillData{
+    width: 60%;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+.jallowCVTSkillName{
+    display: flex;
+    color: #fff;
+    background-color: #424e94;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+.jallowCVTSkillCircle{
+    font-size: 20px;
+    width: 65%;
+    padding: .8rem 0;
+    background-color:#7a82b3;
+}
+
+/* EXPERTISE SECTION */
+.jallowCVTExpertContent{
+    margin: 0 2rem 1rem;
+    padding: .5rem 2rem 1rem;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.jallowCVTExpertDiv{
+    box-shadow: .1rem .5rem rgba(0, 0, 0, .1);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 5px;
+}
+.jallowCVTExpertTitle{
+    font-size: 20px;
+    color: #241a36;
+}
+.jallowCVTExpertDescription{
+    color: #241a36;
+}
+
+/* CONTACT SECTION */
+.jallowCVTContactSection{
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+}
+.jallowCVTContactSection .jallowCVTSectionTitle{
+    border-bottom: 2px solid #FFFFFF;
+}
+.jallowCVTContactFolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+.jallowCVTContactContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;
+    border-right: 2px solid #FFFFFF;
+}
+.jallowCVTContactForm{
+    align-items: center;
+    display: grid;
+    flex-direction: column;
+    background-color: #F1F1F1;
+}
+.jallowCVTContactForm label{
+    text-align: start;
+}
+.jallowCVTContactForm input{
+    text-align: start;
+    margin-bottom: 1rem;
+    padding: .4rem;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 3px;
+}
+.jallowCVTContactForm textarea{
+    height: 100px;
+}
+.jallowCVTContactFormBtn{
+    display: block;
+    color: #FFFFFF;
+    background-color: #182153;
+    padding: .6rem 0;
+    font-size: 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: 0px;
+}
+.jallowCVTContactFormBtn:hover{
+    color: #bdbec0;
+    transition: .3s ease;
+}
+
+.jallowCVTContactInformation{
+    color: #182151;
+    display: inline-block;
+    text-align: start;
+    margin-left: 1rem;
+}
+.jallowCVTContactName{
+    font-size: 1.4rem;
+    letter-spacing: .8px;
+    margin-bottom: 0px;
+    margin-left: 2.1rem;
+}
+.jallowCVTContactTitle{
+    color: #182151;
+    font-size: 13px;
+    letter-spacing: .2px;
+    margin-left: 2.3rem;
+}
+.jallowCVTContactInfor{
+    margin-top: 3rem;
+    list-style: none;
+}
+.jallowCVTContactList{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    color: #182151;
+    margin-bottom: 0;
+    padding-bottom: .5rem;
+}
+.jallowCVTHR{
+    margin: 3rem 0 .5rem 2.7rem;
+}
+.jallowCVTSocialBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 1rem 2rem;
+    margin-top: 1rem;
+}
+.jallowCVTSocialBottom .fab{
+    color: #182153;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+.jallowCVTSocialBottom .fab:hover{
+    color: #bdbec0;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.storeCopyright{
+    font-size: 12px;
+    color: #182153;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* MEDIA @ 900*/
+@media screen and (max-width: 900px){
+    #jallowCVTemp1Pdf {
+        position: absolute;
+        font-size: .8rem;
+        top: 18px;
+        right: 150px;
+        padding: 6px 10px;
+        margin-right: 15px;
+    }
+      
+    .jallowCVTNavDiv{
+        width: 50%;
+        align-items: center;
+    }
+
+    .jallowCVTCheckIcon{
+        display: block;
+        right: 0;
+    }
+    .jallowCVTNavList{
+        position: absolute;
+        display: block;
+        background-color: #182151;
+        width: 100%; 
+        height: 90vh;
+        left:  -40px;
+        top: -106%;
+        margin-top: 70px;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all .5s;
+        z-index: 5;
+    }
+    .jallowCVTNavItem {
+        display: block;
+        width: 99%;
+        height: 8vh;
+        margin: 10px 0;
+        background-color: #add2f7;
+    }
+    .jallowCVTNavItem .jallowCVTNavLink{
+        display: flex;
+        font-size: 20px;
+        color: #0c0c0c;
+        width: 99%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    } 
+    .jallowCVTNavItem .jallowCVTNavLink:hover, 
+    .jallowCVTNavItem .jallowCVTNavLink.active {
+        color: #182151;
+        font-size: 25px;
+        transition: 2s;
+    }
+    #check:checked ~ .jallowCVTNavList{
+        top: 0;
+    }
+}
+
+/* MEDIA @ 768 */
+@media screen and (max-width: 768px){
+    .jallowCVTProfName{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .jallowCVTProfTitle{
+        font-size: 12px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .jallowCVTProfInfo{
+        margin-top: 0px;
+    }
+    .jallowCVTProfList{
+        margin-bottom: .2rem;
+        padding-bottom: .2rem;
+    }
+    .jallowCVTProfContact{
+        font-size: 12px;
+    }
+
+    .jallowCVTCliContainer{
+        display: grid;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+        margin: 1.5rem 1rem;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+    
+    .jallowCVTSkillContent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+    .jallowCVTSkillName{
+        margin-bottom: .5rem;
+        padding: .1rem 0;
+    }
+    .jallowCVTSkillCircle{
+        font-size: 17px;
+        width: 100%;
+        padding: .4rem 0;
+    }
+
+    .jallowCVTCliContent{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    
+    .jallowCVTContactFolder{
+        display: grid;
+    }
+    .jallowCVTContactContent{
+        border: none;
+        padding: 0px;
+        margin-bottom: 2rem;
+    }
+    .jallowCVTHR{
+        margin: 0px;
+    }
+}
