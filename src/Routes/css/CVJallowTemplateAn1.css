@@ -38,9 +38,9 @@
     display: flex;
     text-align: start;
     align-items: flex-start;
+    margin-left: -40px; 
 }
-.JAnimatedBrand img{ 
-    /* background-color: #fff!important; */
+.JAnimatedBrand img{
     background: linear-gradient(120deg,#fff  20%,#e1a87a9f);
     border-radius: 30px;
     width: 50px;
@@ -49,7 +49,7 @@
 .JAnimatedNav{
     font-weight: 600;
     font-size: 13.5px;
-    letter-spacing: .16em;
+    letter-spacing: .10em;
     text-transform: uppercase;
     line-height: 1em;
     width: 100%;
@@ -57,6 +57,7 @@
 .JAnimatedNavItem{
     padding: 8px 16px;
     margin: 0px .5rem;
+    margin-right: 40px;
 }
 .JAnimatedNavList{
     color: #fff;
@@ -67,8 +68,27 @@
     padding: .7em ;
     text-decoration: none;
     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .9);
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid;
 
     animation: menu 5s 1;
+}
+.JAnimatedButton{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+}
+.JAnimatedPDF{
+    font-weight: 600;
+    font-size: 13.5px;
+    letter-spacing: .10em;
+    color: white;
+    background-color: #f7af75;
+    text-transform: none;
+    padding: 8px;
+    border-radius: 10px;
 }
 .JAnimatedNavList:hover, .JAnimatedIconsItem:hover{
     border-radius: 3px;

@@ -342,9 +342,7 @@
     border: 1px solid transparent;
   }
 }
-
-
-
+ 
 .TempYu3An-bg-video {
     position: fixed;
     top: 0;
@@ -360,7 +358,6 @@
     object-fit: cover;
   }
   
-        
         .main-nav__item {
           position: relative;
           padding-right: 42px;
@@ -368,12 +365,7 @@
         .main-nav__link{
           padding-right: 42px;
         }
-      
-        ul {
-          list-style: none;
-          font-size: smaller;
-        }
-      
+ 
         .main-nav__item::before {
           content: "";
           position: absolute;
@@ -444,46 +436,25 @@
   
         }
         @media screen and (max-width: 750px) {
-          ul{
-            font-size: small;
-            padding: 2%;
-            padding-inline-start: 20px;
-          }
-          .navButtons {
-           
-            font-size: 1rem;
-            margin-bottom:2px; 
-            margin-left: 2%;
-           
-          }
+    
           .main-nav__link{
-            padding-right: 2%;
+            padding-right: 0%;
+            padding-left: 10%;
           }        
           .main-nav__item {
             position: relative;
-            padding-right: 2%;
+            padding-right: 0%;
+            padding-left: 10%;
           }
 
         }
         @media screen and (max-width: 450px) {
-          ul{
-            font-size: x-small;
-            padding: 1%;
-            padding-inline-start: 2px;
-          }
-          .navButtons {
-           
-            font-size: .5rem;
-            margin-bottom:1px; 
-            margin-left: 1%;
-           
-          }
+
           .main-nav__link{
-            padding-right: 1%;
+            padding-left: 3%;
           }        
           .main-nav__item {
-            position: relative;
-            padding-right: 1%;
+            padding-left: 3%;
           }
 
         }

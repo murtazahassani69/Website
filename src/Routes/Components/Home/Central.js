@@ -1,6 +1,8 @@
 import React from 'react';
 import storePic from '../../imgs/store.png';
 import restaurantPic from '../../imgs/restaurant.png';
+import Templates_cv from '../../imgs/templates_cv.png';
+import Templates from '../../imgs/templates.png';
 import '../../css/HomeCentral.css';
 import {Link} from 'react-router-dom';
 
@@ -71,17 +73,18 @@ function Central() {
           <p>View a sample demo from a restaurant. This page is currently static</p>
         </div></a>
 
-        <div class="central-div-box">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKfT5VH2ZnqIk34Szx0sKBwgTJef9bAYuOog&usqp=CAU" alt="" width="350px" height="200px" class="central-div-img"></img>
-          <h3>Development</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. !</p>
-        </div>
+        <a href={`/templates`}><div class="central-div-box">
+          <img src={Templates_cv}alt="" width="350px" height="200px" class="central-div-img"></img>
+          {/* <img src={Templates}alt="" width="350px" height="200px" class="central-div-img"></img> */}
+          <h3>Resume Templates</h3>
+          <p>View the demo of CV templates. This page is currently static</p>
+        </div></a>
 
-        <div class="central-div-box">
+        {/* <div class="central-div-box">
           <img src="https://www.practicalparenting.com.au/media/12522/01_03_19-pitbull-landscape.jpg" alt="" width="350px" height="200px" class="central-div-img"></img>
           <h3>Support</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
-        </div>
+        </div> */}
       </div>
 
       <hr class="central-hr-horizonal"></hr>

@@ -6,10 +6,8 @@ const ref = React.createRef();
 
 function CVYusufTemplate2 (){
   const [toggle, setToggle] = useState(false);
-
     return (
 <>
-
       <header className={toggle ?'CVYusufTemp-nav-open':null} id="CVYusufTemp-div-menu-header">
 
           {/* <div className="CVYusufTemp2-div-menu-logo-container">
@@ -23,26 +21,20 @@ function CVYusufTemplate2 (){
 
     <nav id="CVYusufTemp-div-nav-bar">
       <ul className="CVYusufTemp-div-menu-nav-links">
-        <li><a className="CVYusufTemp-div-menu-nav-link" href="#">Home</a></li>
-        <li><a className="CVYusufTemp-div-menu-nav-link" href="#">Services</a></li>
-        <li><a className="CVYusufTemp-div-menu-nav-link" href="#">About</a></li>
+        <li><a className="CVYusufTemp-div-menu-nav-link" href="/">Home</a></li>
+        <li><a className="CVYusufTemp-div-menu-nav-link" href="/templates">Back to Template</a></li>
+        <li><Pdf targetRef={ref} filename="resume.pdf"paperSize="A4" margin="2cm">
+        {({ toPdf }) => <a className="CVYusufTemp-div-menu-nav-link" onClick={toPdf}href="#section">Download PDF</a>} 
+      </Pdf></li>
       </ul>
     </nav>
 </header>
-
-<Pdf targetRef={ref} filename="resume.pdf"paperSize="A4"
-                    margin="2cm">
-            
- 
-        {({ toPdf }) => <button id="CVYusufTemp-cmd" onClick={toPdf}>Generate Pdf</button>}
- 
-      </Pdf>
 
 {/* --------------container part----------------- */}
 <div className="CVYusufTemp2-div-page-container" id="toPrint" ref={ref}>
   <section id="main">
     <header id="title">
-        <h1 className="CVYusufTemp2-div-h">Josef Kara</h1>
+        <h1 className="CVYusufTemp2-div-h1">Josef Kara</h1>
       <span className="subtitle">Full stack Developer &amp; instructor</span>
     </header>
 <section className="CVYusufTemp2-main-block">
@@ -266,7 +258,7 @@ function CVYusufTemplate2 (){
 </section>
 <section id="sidebar">
 <div className="CVYusufTemp2-side-block" id="contact">
-  <h1 className="CVYusufTemp2-div-h">
+  <h1 className="CVYusufTemp2-div-h1">
     Contact Info
   </h1>
   <ul>

@@ -33,6 +33,7 @@ function CVAnimateJallow() {
         offset: 300,
         duration: 1000
     })
+
     return (
         <div className='JAnimateCVTemp'>
             <Header />
@@ -51,7 +52,7 @@ function CVAnimateJallow() {
     )
 }
 
-function Header() {
+function Header() { 
     return(
         <header className='JAnimatedHeader'>
             <div className='JAnimatedHeaderInner JAnimatedHeaderInContent'>
@@ -65,11 +66,15 @@ function Header() {
 
 
                     <div className='JAnimatedNavItem'> 
+                        <a href='http://localhost:3000/templates' className='JAnimatedNavList'>Back</a>
                         <a href='#' className='JAnimatedNavList'>Code shop</a>
                         <a href='#' className='JAnimatedNavList'>Portfolio</a>
                         <a href='#' className='JAnimatedNavList'>Resume</a>
                         <a href='#' className='JAnimatedNavList'>About</a>
                         <a href='#' className='JAnimatedNavList'>Blog</a>
+                    </div>
+                    <div className='JAnimatedButton'>
+                        <a href='#' className='JAnimatedPDF'>Dowload PDF</a>
                     </div>
                 </nav>
             </div>
@@ -86,7 +91,6 @@ function SectionHeader () {
                 <div className="JAnimatedHeadBtns">
                     <a className='JAnimatedBtns1'>HIRE ME TODAY</a>
                     <a href='#JAniLaptopVidPlayer' className='JAnimatedBtns2'>WATCH VIDEO<i className="far fa-play-circle" /></a>
-                    {/* <a href='#JAniLaptopVidPlayer' --btn	id='JAniLaptopVidPlayer' --video */}
                 </div>
             </div>
         </section>
@@ -94,10 +98,6 @@ function SectionHeader () {
 }
 
 function Name(){
-    // AOS.init({
-    //     offset: 400,
-    //     duration:1000
-    // })
     return(
         <section className='JAnimatedProfile'>
               <div className='JAnimatedProfileCont' data-aos="fade-down">
@@ -378,7 +378,7 @@ function Footer(){
                 </div>
             </div>
         </footer>
-    )
-}
+    ) 
+} 
 
-export default CVAnimateJallow;
+export default CVAnimateJallow; 

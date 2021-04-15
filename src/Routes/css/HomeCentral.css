@@ -20,7 +20,7 @@
   background:  #68a0d2;
   color: #fff;
   letter-spacing: 0.5px;
-  padding: 0.6rem 1.3rem;
+  padding: 0.6rem 1rem;
   text-decoration: none;
   border: 0;
   border-radius: 4px;
@@ -56,7 +56,7 @@
 /* grid-boxes */
 .central-div-grid-boxes {
   margin: 2rem .5rem;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -74,6 +74,9 @@
   box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
   width: 350px;
   height: 200px;
+}
+.central-div-grid-box p{
+  margin-bottom: 1.5rem;
 }
 
 /* border */
@@ -102,7 +105,7 @@
 /* Boxes */
 .central-div-boxes {
   margin: 1rem .5rem 2.5rem .5rem;
-  padding: 1rem 0 2.5rem 0;
+  padding: 1rem 2rem 2.5rem;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -115,6 +118,11 @@
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: .1rem solid #4981b3;
+  /* height: 400px; */
+}
+.central-div-box h3{
+  color: black;
+  padding: .5rem 0;
 }
 
 /* web-tools */

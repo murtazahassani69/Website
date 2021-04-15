@@ -5,6 +5,7 @@ import github from "./imgs/github.png";
 import linkedin from "./imgs/linkedin.png";
 import "../../../../../css/CVMurtazaTemplate.css";
 import MurtazaTampReview from "./MurtazaTampReview";
+import { ImArrowLeft2 } from "react-icons/im";
 
 function Home_Cv() {
   return (
@@ -23,6 +24,14 @@ function Home_Cv() {
 function Background() {
   return (
     <div className="CVMurtazaTemp_background">
+      <div className="CVMurtazaTemp_go_back_div">
+        {" "}
+        <a href="/templates">
+          <h2 className="CVMurtazaTemp_go_back_icon">
+            <ImArrowLeft2 />{" "}
+          </h2>
+        </a>
+      </div>
       <div className="CVMurtazaTemp_top_container">
         <h1>
           Hello, I'm Murtaza Hassani.
@@ -31,7 +40,7 @@ function Background() {
         </h1>
 
         <button className="CVMurtazaTemp_work_button " data-wow-offset="0">
-          <a href="#CVMurtazaTemp_about_section_id">View my work</a>
+          <a href="#CVMurtazaTemp_about_section_id">Scroll Down</a>
         </button>
         <br />
 

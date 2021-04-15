@@ -147,6 +147,4 @@ function Footer(){
    )
 }
 
-
-
 export default MariaTemp2;

@@ -1,14 +1,4 @@
  
-#CVYusufTemp-cmd {
- 
-  cursor: pointer;
-  height: 30px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 150px;
-}
-
 #CVYusufTemp-div-menu-header {
   width: 100%;
   margin: auto;
@@ -37,7 +27,7 @@
   font-weight: 400;
   } */
   
-  nav {
+  #CVYusufTemp-div-nav-bar {
   flex: 2;
   }
   
@@ -200,12 +190,7 @@
     word-spacing: normal;
     font-variant: normal;
   }
-  
-  li {
-    font-variant: normal;
-    font-weight: 100;
-  }
-  
+   
   .CVYusufTemp1-div-section-title {
     border-bottom: 1px solid #bdbdbd;
     color: rgb(49, 63, 78);
@@ -246,14 +231,7 @@
     color: #919191;
     font-size: 14px;
   }
-  
-  ul {
-    font-family: Helvetica, sans-serif;
-    font-size: small;
-    list-style: disc;
-    list-style-position: inside;
-  }
-  
+   
   .CVYusufTemp1-div-certificate-card {
     color: #53555b;
     font-family: Helvetica, sans-serif;
@@ -347,7 +325,7 @@
   position: relative;
   }
   
-  .CVYusufTemp-nav-open nav {
+  .CVYusufTemp-nav-open, #CVYusufTemp-div-nav-bar {
   transform: translateX(0);
   }
   
@@ -369,7 +347,7 @@
   .CVYusufTemp-nav-open .CVYusufTemp-div-menu-nav-links {
     display: contents;
     }
-    nav {
+    #CVYusufTemp-div-nav-bar {
       flex: auto;
     }
 /* ----------------page container  */

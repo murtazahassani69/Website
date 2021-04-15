@@ -10,11 +10,11 @@
 }
 #jallowCVTemp1Pdf{
     position: absolute;
-    font-size: 1rem;
+    font-size: 14px;
     top: 18px;
-    right: 20px;
-    padding: 8px 12px;
-    margin: 0px 10px;
+    right: 10px;
+    padding: 7px 10px;
+    margin-right: 5px;
     color: #364285;
     background-color: transparent;
     border-radius: 3px;
@@ -44,7 +44,7 @@
     font-size: 1.2rem;
     color: #182153;
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .jallowCVTNavLogo:hover{
     color: #bdbec0;
@@ -62,6 +62,10 @@
     display: flex;
     align-items: center;
     list-style: none;
+}
+.jallowTempBack a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid;
 }
 .jallowCVTNavItem{
     margin: 8px 3px;

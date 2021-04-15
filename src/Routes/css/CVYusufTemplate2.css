@@ -116,10 +116,6 @@
   color: #000;
 }
 
-li{
-  list-style-type: none;
-}
-
 .CVYusufTemp2-div-page-container {
   --main-width: 6in;
   --decorator-horizontal-margin: 0.2in;
@@ -170,13 +166,13 @@ li{
   line-height: 1.2;
 }
 
-#title h1{
+.CVYusufTemp2-div-h1{
   font-weight: 300;
   font-size: 25pt;
   line-height: 1.5;
 }
 
-#title h1 strong{
+.CVYusufTemp2-div-h1 strong{
   margin: auto 2pt auto 4pt;
   font-weight: 600;
 }
@@ -288,7 +284,7 @@ li{
   width: var(--decorator-outer-dim);
   height: var(--decorator-outer-dim);
   border-radius: calc(var(--decorator-outer-dim) / 2);
-  background-color: #fff;
+  background-color: rgb(238, 9, 9);
 }inline-block
 
 .decorator::after{
