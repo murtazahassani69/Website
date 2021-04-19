@@ -1,0 +1,42 @@
+.firstSectionContainer {
+  background: linear-gradient(to bottom, #eff6fc, #ffffff);
+  padding: 2rem 0 2rem 0;
+}
+
+.firstSectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.one-card {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.one-card > h4 {
+  font-size: 1.2rem;
+}
+
+.imgContainer {
+  width: 60%;
+}
+.card-image {
+  width: 100%;
+  height: 25vh;
+  max-height: 25vh;
+}
+
+.cardText {
+  width: 70%;
+  text-align: center;
+  font-size: 1rem;
+}

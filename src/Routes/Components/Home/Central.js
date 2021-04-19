@@ -6,6 +6,7 @@ import Templates from '../../imgs/templates.png';
 import '../../css/HomeCentral.css';
 import { Link } from 'react-router-dom';
 import mariaDB from '../../imgs/mariaDB.png';
+import FirstSectionCards from '../FirstSectionCards';
 
 function Central() {
   const tools = [
@@ -75,60 +76,7 @@ function Central() {
 
       {/* <!-- first section --> */}
 
-      <div id='central-div-container'>
-        <div class='central-div-grid-boxes'>
-          <div class='central-div-grid-box'>
-            <img
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAX8mMzrPY6fvqdLsC_QNLaakpUx22CnN6cA&usqp=CAU'
-              alt=''
-              class='central-div-img'
-            ></img>
-            <h4>Amazing. Incredible</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum
-              expedita est asperiores at nobis eligendi corporis repellendus
-              natus distinctio!
-            </p>
-            <a href='#' class='central-div-btn'>
-              Our Innovation
-            </a>
-          </div>
-
-          <div class='central-div-grid-box'>
-            <img
-              src='https://d1t2cyxhsn73kx.cloudfront.net/image/article/teamwork.jpg'
-              alt=''
-              class='central-div-img'
-            ></img>
-            <h4>Incredible how we work</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum
-              expedita est asperiores at nobis eligendi corporis repellendus
-              natus distinctio!
-            </p>
-            <a href='#' class='central-div-btn'>
-              Our Story
-            </a>
-          </div>
-
-          <div class='central-div-grid-box'>
-            <img
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgDlvgZ2dp9P70KYHluP4qPHdKdeI_0nsXHg&usqp=CAU'
-              alt=''
-              class='central-div-img'
-            ></img>
-            <h4>Incredible Vision</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum
-              expedita est asperiores at nobis eligendi corporis repellendus
-              natus distinctio!
-            </p>
-            <a href='#' class='central-div-btn'>
-              Our Vision
-            </a>
-          </div>
-        </div>
-      </div>
+      <FirstSectionCards />
 
       {/* border */}
       <hr class='central-hr-horizonal'></hr>
@@ -218,68 +166,7 @@ function Central() {
       </div>
 
       {/* designing and development tools */}
-      <div class='central-div-columns-container'>
-        {displayTools()}
-        {/* <div class="central-div-flex-columns">
-        <img src="https://img.icons8.com/ios-filled/100/000000/jquery.png"
-            alt="" width="100px" class="central-div-img"></img>
-          <p><strong>Jquery</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-          <img src="https://img.icons8.com/nolan/100/react-native.png"
-            alt="" class="central-div-img"></img>
-          <p><strong>Reactjs</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-          <img src="https://img.icons8.com/color/100/000000/nodejs.png"
-            alt="" class="central-div-img"></img>
-          <p><strong>Nodejs</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-          <img src="https://img.icons8.com/color/100/000000/javascript-logo-1.png"
-            alt="" class="central-div-img"></img>
-          <p><strong>Javascript</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-          <img src="https://img.icons8.com/nolan/100/html-5.png"
-            alt="" class="central-div-img"></img>
-          <p><strong>HTML5</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-          <img src="https://img.icons8.com/color/100/000000/css3.png"
-            alt="" class="central-div-img"></img>
-          <p><strong>CSS3</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-        <img src="https://img.icons8.com/color/100/000000/mongodb.png"
-          alt="" class="central-div-img"></img> 
-          <p><strong>MongoDB</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-        <img src="https://img.icons8.com/nolan/100/mysql.png"
-          alt="" class="central-div-img"></img> 
-          <p><strong>mySql</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-        <img src="https://img.icons8.com/color/100/000000/adobe-photoshop.png"
-          alt="" class="central-div-img"></img> 
-          <p><strong>Photoshop</strong></p>
-        </div>
-
-        <div class="central-div-flex-columns">
-        <img src="https://img.icons8.com/windows/100/4a90e2/figma.png"
-          alt="" class="central-div-img"></img> 
-          <p><strong>Figma</strong></p>
-        </div> */}
-      </div>
+      <div class='central-div-columns-container'>{displayTools()}</div>
     </div>
   );
 }
