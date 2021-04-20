@@ -9,7 +9,16 @@ const Wrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .btnDown {
+  #CVYusufTemp-btnBack {
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    background-color: burlywood;
+  }
+  .CVYusufTemp-btnPDF {
     background-color: transparent;
     padding: .3rem 2rem;
     position: relative;
@@ -67,11 +76,14 @@ const Wrapper = styled.div`
 `;
 
 class home extends Component {
+ 
   render() {
     return (
       <Wrapper>
          <p>&nbsp;</p>
-        
+         <button id="CVYusufTemp-btnBack" onClick={() => {window.location.href="/templates"}}>
+           <i class="fas fa-arrow-circle-left"></i>&nbsp; Back to Templates</button>  
+
         <iframe className="iframeV"
           title="video about me"
           width="560"
@@ -84,7 +96,7 @@ class home extends Component {
         
         <Header />
   
-        <button className="btnDown ">Download PDF</button>        
+        <button className="CVYusufTemp-btnPDF">Download PDF</button>        
                   
       </Wrapper>
     );
