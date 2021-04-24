@@ -1,0 +1,27 @@
+
+.cv_tem_murtaza_header_top {
+    background-color:#4e2abbe0;
+      overflow: hidden;
+    }
+    
+    .cv_tem_murtaza_header_top .cv_tem_murtaza_header_a_ {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .cv_tem_murtaza_header_active{
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .cv_tem_murtaza_header_top .cv_tem_murtaza_header_a_:hover {
+      background-color: #92c7ff;
+      color: black;
+    }
+  

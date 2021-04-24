@@ -18,7 +18,6 @@ function CVYusufTemplate2 (){
 <button className="CVYusufTemp-nav-toggle" onClick={()=>{setToggle(!toggle)}} aria-label="toggle navigation">
   <span className="hamburger"></span>
 </button>
-
     <nav id="CVYusufTemp-div-nav-bar">
       <ul className="CVYusufTemp-div-menu-nav-links">
         <li><a className="CVYusufTemp-div-menu-nav-link" href="/">Home</a></li>

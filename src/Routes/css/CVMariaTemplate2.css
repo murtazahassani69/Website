@@ -1,424 +1,423 @@
 .CVMarTemp-container2 {
-    font-size: 62.5%;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    line-height: 2px;
-    color: #777;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 2px;
+  color: #777;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 75em) {
+  .CVMarTemp-container2 {
+    font-size: 56.25%;
   }
-  
-  @media only screen and (max-width: 75em) {
-    .CVMarTemp-container2 {
-      font-size: 56.25%;
-    }
+}
+@media only screen and (max-width: 56.25em) {
+  .CVMarTemp-container2 {
+    font-size: 50%;
   }
-  @media only screen and (max-width: 56.25em) {
-    .CVMarTemp-container2 {
-      font-size: 50%;
-    }
+}
+@media only screen and (min-width: 112.5em) {
+  .CVMarTemp-container2 {
+    font-size: 75%;
   }
-  @media only screen and (min-width: 112.5em) {
-    .CVMarTemp-container2 {
-      font-size: 75%;
-    }
+}
+
+.CVMarTemp2-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  height: max-content;
+  z-index: 1000;
+  height: 7vh;
+}
+
+.CVMarTemp2-header-name {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+.CVMarTemp2-header-fname {
+  font-size: 16px;
+  margin: 0;
+}
+
+.CVMarTemp2-header-proffesion {
+  font-size: 12px;
+  text-align: start;
+  margin-top: -9px;
+}
+
+.CVMarTemp2-header-right {
+  display: flex;
+  justify-content: center;
+}
+.CVMarTemp2-header-btn {
+  padding: 0.5px;
+  cursor: pointer;
+  border: 1px solid darkcyan;
+  border-radius: 5px;
+  color: darkcyan;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.CVMarTemp2-header-btn:hover {
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.CVMarTemp2-header-icons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.CVMarTemp-socialicons-link:link,
+.CVMarTemp-socialicons-link:visited {
+  display: block;
+  transition: all 0.2s;
+}
+
+.CVMarTemp-socialicons-link:hover,
+.CVMarTemp-socialicons-link:active {
+  background-color: rgba(#fff, 0.05);
+  transform: translateY(-3px);
+}
+
+.CVMarTemp2-header-back {
+  padding: 0.5px;
+  cursor: pointer;
+  border: 1px solid darkcyan;
+  border-radius: 5px;
+  color: darkcyan;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 50px;
+}
+
+.CVMarTemp2-header-back:hover {
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.CVMarTemp2-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Components/Demo/CVTemplates/MariaTemplate/imgs/marlaptop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  color: white;
+  opacity: 0.8;
+}
+
+.CVMarTemp2-center-div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+
+  border-radius: 5px;
+}
+
+.CVMarTemp2-heading {
+  display: block;
+  text-transform: initial;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
   }
-  
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.CVMarTemp2-heading2 {
+  border-right: solid 3px rgba(0, 139, 139);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+}
+
+@keyframes animated-text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes animated-cursor {
+  0% {
+    border-right-color: rgba(0, 139, 139);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+.CVMarTemp2-center-btn {
+  background: none;
+  color: #fff;
+  background-color: darkcyan;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.CVMarTemp2-center-btn:hover {
+  background-color: white;
+  color: darkcyan;
+  border: 1.5px solid darkcyan;
+
+  font-weight: 600;
+}
+
+.CVMarTemp2-description {
+  display: flex;
+  position: relative;
+}
+
+.CVMarTemp2-descr-left {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  width: 50%;
+  padding: 55px;
+  clip-path: polygon(0% 0%, 91% -2%, 100% 50%, 91% 100%, 0% 100%);
+  justify-content: center;
+  align-items: center;
+  background-color: darkcyan;
+}
+
+.CVMarTemp2-descr-leftp {
+  padding: 10px;
+}
+
+.CVMarTemp2-descr-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.CVMarTemp2-video {
+  overflow: hidden;
+  display: block;
+  box-shadow: 60px -16px darkcyan;
+}
+
+@media only screen and (max-width: 1000px) {
   .CVMarTemp2-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    height: max-content;
-    z-index: 1000;
-    height: 7vh;
+    height: 10vh;
   }
-  
-  .CVMarTemp2-header-name {
-    display: flex;
-    flex-direction: column;
-    margin-right: 16px;
-  }
-  
-  .CVMarTemp2-header-fname {
-    font-size: 16px;
-    margin: 0;
-  }
-  
-  .CVMarTemp2-header-proffesion {
-    font-size: 12px;
-    text-align: start;
-    margin-top: -9px;
-  }
-  
-  .CVMarTemp2-header-right {
-    display: flex;
-    justify-content: center;
-  }
-  .CVMarTemp2-header-btn {
-    padding: 0.5px;
-    cursor: pointer;
-    border: 1px solid darkcyan;
-    border-radius: 5px;
-    color: darkcyan;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 10px;
-  }
-  
-  .CVMarTemp2-header-btn:hover {
-    background-color: darkcyan;
-    color: #fff;
-  }
-  
-  .CVMarTemp2-header-icons {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    padding-left: 0;
-    margin: 0;
-    line-height: 1;
-  }
-  
-  .CVMarTemp-socialicons-link:link,
-  .CVMarTemp-socialicons-link:visited {
-    display: block;
-    transition: all 0.2s;
-  }
-  
-  .CVMarTemp-socialicons-link:hover,
-  .CVMarTemp-socialicons-link:active {
-    background-color: rgba(#fff, 0.05);
-    transform: translateY(-3px);
-  }
-  
-  .CVMarTemp2-header-back {
-    padding: 0.5px;
-    cursor: pointer;
-    border: 1px solid darkcyan;
-    border-radius: 5px;
-    color: darkcyan;
-    font-size: 20px;
-    font-weight: 800;
-    margin-left: 50px;
-  }
-  
-  .CVMarTemp2-header-back:hover {
-    background-color: darkcyan;
-    color: #fff;
-  }
-  
-  .CVMarTemp2-center {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../Components/Demo/CVTemplates/MariaTemplate/imgs/marlaptop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    color: white;
-    opacity: 0.8;
-  }
-  
-  .CVMarTemp2-center-div {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-  
-    border-radius: 5px;
-  }
-  
-  .CVMarTemp2-heading {
-    display: block;
-    text-transform: initial;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  }
-  
-  @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-  
-    80% {
-      transform: translateX(1rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-  
-  .CVMarTemp2-heading2 {
-    border-right: solid 3px rgba(0, 139, 139);
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: "Source Code Pro", monospace;
-    font-size: 28px;
-    color: rgba(255, 255, 255, 0.7);
-    animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  }
-  
-  @keyframes animated-text {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 300px;
-    }
-  }
-  
-  @keyframes animated-cursor {
-    0% {
-      border-right-color: rgba(0, 139, 139);
-    }
-    100% {
-      border-right-color: transparent;
-    }
-  }
-  
-  .CVMarTemp2-center-btn {
-    background: none;
-    color: #fff;
-    background-color: darkcyan;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-  }
-  
-  .CVMarTemp2-center-btn:hover {
-    background-color: white;
-    color: darkcyan;
-    border: 1.5px solid darkcyan;
-  
-    font-weight: 600;
-  }
-  
+
   .CVMarTemp2-description {
-    display: flex;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .CVMarTemp2-descr-left {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    width: 50%;
-    padding: 55px;
-    clip-path: polygon(0% 0%, 91% -2%, 100% 50%, 91% 100%, 0% 100%);
-    justify-content: center;
-    align-items: center;
-    background-color: darkcyan;
+    width: 100%;
+    clip-path: none;
   }
-  
-  .CVMarTemp2-descr-leftp {
-    padding: 10px;
-  }
-  
-  .CVMarTemp2-descr-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
-  
+
   .CVMarTemp2-video {
-    overflow: hidden;
-    display: block;
-    box-shadow: 60px -16px darkcyan;
+    margin-top: 30px;
   }
-  
-  @media only screen and (max-width: 1000px) {
-    .CVMarTemp2-header {
-      height: 10vh;
-    }
-  
-    .CVMarTemp2-description {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .CVMarTemp2-descr-left {
-      width: 100%;
-      clip-path: none;
-    }
-  
-    .CVMarTemp2-video {
-      margin-top: 30px;
-    }
+}
+
+.CVMarTemp2-portofolio {
+  color: black;
+}
+
+.CVMarTemp2-portofolio-p {
+  font-size: 25px;
+  color: darkcyan;
+  font-weight: 600;
+  font-family: "eurostile", sans-serif;
+  letter-spacing: 2px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  margin-bottom: 0px;
+}
+
+.CVMarTemp2-portofolio-p2 {
+  color: black;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.CVMarTemp2-portofolio-p2 a {
+  color: darkcyan;
+}
+
+.CVMarTemp2-portofolio-all {
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
+  align-items: center;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.CVMarTemp2-portofolio-prj {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in;
+  cursor: pointer;
+  min-height: 230px;
+}
+
+.CVMarTemp2-portofolio-prj:hover,
+.CVMarTemp2-portofolio-prj:focus {
+  transform: translateY(-15px);
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 5px 0 5px darkcyan;
   }
-  
-  .CVMarTemp2-portofolio {
-    color: black;
-  }
-  
-  .CVMarTemp2-portofolio-p {
-    font-size: 25px;
-    color: darkcyan;
-    font-weight: 600;
-    font-family: "eurostile", sans-serif;
-    letter-spacing: 2px;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    margin-bottom: 0px;
-  }
-  
-  .CVMarTemp2-portofolio-p2 {
-    color: black;
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  
-  .CVMarTemp2-portofolio-p2 a {
-    color: darkcyan;
-  }
-  
-  .CVMarTemp2-portofolio-all {
-    background-color: #f1f1f1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 25px;
-    align-items: center;
-    padding: 15px;
-    overflow: hidden;
-  }
-  
-  .CVMarTemp2-portofolio-prj {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in;
-    cursor: pointer;
-    min-height: 230px;
-  }
-  
-  .CVMarTemp2-portofolio-prj:hover,
-  .CVMarTemp2-portofolio-prj:focus {
-    transform: translateY(-15px);
-    animation: pulse 1s;
-  }
-  
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 5px 0 5px darkcyan;
-    }
-  }
-  
-  .CVMarTemp2-portofolio-img {
-    width: 100%;
-    height: 150px;
-  }
-  
-  .CVMarTemp2-portofolio-img:hover {
-    opacity: 0.5;
-  }
-  
-  .CVMarTemp2-portofolio-fig {
-    margin: 4px;
-    position: relative;
-  }
-  
-  .CVMarTemp2-portofolio-span {
-    color: darkcyan;
-    font-weight: 600;
-    font-size: 20px;
-  }
-  
-  .CVMarTemp2-fig-p {
-    color: ;
-    position: absolute;
-    width: 100%;
-    padding-bottom: 2px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #777;
-  }
-  
-  .CVMarTemp2-footer {
-    background-color: darkcyan;
-    color: #fff;
-  }
-  
-  .CVMarTemp2-footer-div {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
-  .CVMarTemp2-footer-p {
-    font-size: 20px;
-    padding-top: 20px;
-  }
-  
-  .CVMarTemp2-footer-nav {
-    border-top: 1px solid gray;
-    display: inline-block;
-    width: 50%;
-    margin-right: 40px;
-    margin-left: 40px;
-  }
-  
+}
+
+.CVMarTemp2-portofolio-img {
+  width: 100%;
+  height: 150px;
+}
+
+.CVMarTemp2-portofolio-img:hover {
+  opacity: 0.5;
+}
+
+.CVMarTemp2-portofolio-fig {
+  margin: 4px;
+  position: relative;
+}
+
+.CVMarTemp2-portofolio-span {
+  color: darkcyan;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.CVMarTemp2-fig-p {
+  color: ;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #777;
+}
+
+.CVMarTemp2-footer {
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.CVMarTemp2-footer-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.CVMarTemp2-footer-p {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.CVMarTemp2-footer-nav {
+  border-top: 1px solid gray;
+  display: inline-block;
+  width: 50%;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.CVMarTemp2-footer-list {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  font-size: 12px;
+}
+
+.CVMarTemp2-footer-item {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 2px;
+  list-style: none;
+}
+
+.CVMarTemp2-footer-link {
+  display: inline-block;
+  color: darkcyan;
+}
+
+.CVMarTemp2-footer-item:link,
+.CVMarTemp2-footer-item:visited {
+  display: block;
+  transition: all 0.2s;
+}
+
+.CVMarTemp2-footer-item:hover,
+.CVMarTemp2-footer-item:active {
+  background-color: rgba(#fff, 0.05);
+  transform: translateY(-3px);
+}
+
+.CVMarTemp2-footer-cpw {
+  width: 50%;
+  border-top: 1px solid gray;
+  margin-right: 40px;
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px) {
   .CVMarTemp2-footer-list {
-    display: flex;
-    justify-content: center;
-    margin-right: 30px;
+    font-size: 10px;
+    flex-direction: column;
+    width: max-content;
+  }
+  .CVMarTemp2-footer-cpw {
     font-size: 12px;
   }
-  
-  .CVMarTemp2-footer-item {
-    background-color: white;
-    border-radius: 5px;
-    padding: 1px;
-    margin: 2px;
-    list-style: none;
-  }
-  
-  .CVMarTemp2-footer-link {
-    display: inline-block;
-    color: darkcyan;
-  }
-  
-  .CVMarTemp2-footer-item:link,
-  .CVMarTemp2-footer-item:visited {
-    display: block;
-    transition: all 0.2s;
-  }
-  
-  .CVMarTemp2-footer-item:hover,
-  .CVMarTemp2-footer-item:active {
-    background-color: rgba(#fff, 0.05);
-    transform: translateY(-3px);
-  }
-  
-  .CVMarTemp2-footer-cpw {
-    width: 50%;
-    border-top: 1px solid gray;
-    margin-right: 40px;
-    margin-left: 40px;
-    font-size: 14px;
-  }
-  
-  @media only screen and (max-width: 1000px) {
-    .CVMarTemp2-footer-list {
-      font-size: 10px;
-      flex-direction: column;
-      width: max-content;
-    }
-    .CVMarTemp2-footer-cpw {
-      font-size: 12px;
-    }
-  }
-  
+}

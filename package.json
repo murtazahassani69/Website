@@ -27,6 +27,7 @@
     "react-to-pdf": "0.0.13",
     "react-transition-group": "^4.4.1",
     "react-typist": "^2.0.5",
+    "reactstrap": "^8.9.0",
     "styled-components": "^5.2.1"
   },
   "scripts": {
