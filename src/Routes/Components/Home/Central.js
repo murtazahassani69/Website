@@ -5,67 +5,11 @@ import Templates_cv from '../../imgs/templates_cv.png';
 import Templates from '../../imgs/templates.png';
 import '../../css/HomeCentral.css';
 import { Link } from 'react-router-dom';
-import mariaDB from '../../imgs/mariaDB.png';
-import FirstSectionCards from '../FirstSectionCards';
-
+import FirstSectionCards from './Central/FirstSectionCards/FirstSectionCards';
+import ToolsWeUse from './Central/ToolsWeUse/ToolsWeUse';
 function Central() {
-  const tools = [
-    {
-      tool: 'Jquery',
-      link: 'https://img.icons8.com/ios-filled/100/000000/jquery.png',
-    },
-    {
-      tool: 'Reactjs',
-      link: 'https://img.icons8.com/nolan/100/react-native.png',
-    },
-    {
-      tool: 'Nodejs',
-      link: 'https://img.icons8.com/color/100/000000/nodejs.png',
-    },
-    {
-      tool: 'Javascript',
-      link: 'https://img.icons8.com/color/100/000000/javascript-logo-1.png',
-    },
-    {
-      tool: 'HTML5',
-      link: 'https://img.icons8.com/nolan/100/html-5.png',
-    },
-    {
-      tool: 'CSS3',
-      link: 'https://img.icons8.com/color/100/000000/css3.png',
-    },
-    {
-      tool: 'MongoDB',
-      link: 'https://img.icons8.com/color/100/000000/mongodb.png',
-    },
-    {
-      tool: 'mySql',
-      link: 'https://img.icons8.com/nolan/100/mysql.png',
-    },
-    // {
-    //   tool: 'Photoshop',
-    //   link: 'https://img.icons8.com/color/100/000000/adobe-photoshop.png',
-    // },
-    {
-      tool: 'MariaDB',
-      link: `${mariaDB}`,
-    },
-  ];
-
-  const displayTools = () => {
-    return tools.map((el, i) => {
-      return (
-        <div class='central-div-flex-columns' key={i}>
-          <img src={el.link} alt={el.tool} class='central-div-img' />
-          <p>
-            <strong>{el.tool}</strong>
-          </p>
-        </div>
-      );
-    });
-  };
   return (
-    <div>
+    <div className='central_home-container'>
       {/* <!-- Main page --> */}
 
       <div class='central-div-welcome-content'>
@@ -93,8 +37,9 @@ function Central() {
       </div>
 
       {/* <!-- Boxes div --> */}
-      <div class='central-div-boxes'>
-        <a href={`/store`}>
+      {/* <div class='central-div-boxes'> */}
+      <div class='central-boxes-container'>
+        {/*<a href={`/store`}>
           <div class='central-div-box'>
             <img
               src={storePic}
@@ -126,10 +71,27 @@ function Central() {
               static
             </p>
           </div>
-        </a>
+        </a> */}
 
-        <a href={`/templates`}>
-          <div class='central-div-box'>
+        <div class='central-div-box'>
+          <a href={`/restaurant`}>
+            <img
+              src={Templates_cv}
+              alt=''
+              width='350px'
+              height='200px'
+              class='central-div-img'
+            ></img>
+            <h3>Live Templates</h3>
+            <p>
+              View a sample demo from a restaurant. This page is currently
+              static
+            </p>
+          </a>
+        </div>
+
+        <div class='central-div-box'>
+          <a href={`/templates`}>
             <img
               src={Templates_cv}
               alt=''
@@ -140,14 +102,15 @@ function Central() {
             {/* <img src={Templates}alt="" width="350px" height="200px" class="central-div-img"></img> */}
             <h3>Resume Templates</h3>
             <p>View the demo of CV templates. This page is currently static</p>
-          </div>
-        </a>
+          </a>
+        </div>
         {/* <div class="central-div-box">
           <img src="https://www.practicalparenting.com.au/media/12522/01_03_19-pitbull-landscape.jpg" alt="" width="350px" height="200px" class="central-div-img"></img>
           <h3>Support</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
         </div> */}
       </div>
+      {/* </div> */}
 
       <hr class='central-hr-horizonal'></hr>
 
@@ -166,7 +129,7 @@ function Central() {
       </div>
 
       {/* designing and development tools */}
-      <div class='central-div-columns-container'>{displayTools()}</div>
+      <ToolsWeUse />
     </div>
   );
 }

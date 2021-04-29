@@ -1,9 +1,32 @@
+.central_home-container {
+  width: 100%;
+  background: #eff6fc;
+}
+
+.central-cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.central-card-image {
+  width: 100%;
+  height: 25vh;
+  max-height: 25vh;
+}
+
+.central-cardText {
+  width: 70%;
+  text-align: center;
+  font-size: 1rem;
+}
+
 .central-div-welcome-content p,
 .central-div-grid-box p,
 .central-div-port-text,
 .central-div-box p,
 .central-div-web-tools-text,
-.central-div-flex-columns p {
+p {
   color: #616971 !important;
 }
 
@@ -42,7 +65,7 @@
 
 /* welcome text */
 .central-div-welcome-content {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding-top: 1rem;
   text-align: center;
 }
@@ -104,12 +127,18 @@
 }
 
 /* Boxes */
+.central-boxes-container {
+  display: flex;
+  justify-content: center;
+}
+
 .central-div-boxes {
   margin: 1rem 0.5rem 2.5rem 0.5rem;
   padding: 1rem 2rem 2.5rem;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  width: 60%;
+
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 }
 
 .central-div-box {
@@ -119,6 +148,8 @@
   text-align: center;
   padding: 1.5rem 2rem;
   box-shadow: 0.1rem solid #4981b3;
+  width: 20%;
+  margin: 1rem;
   /* height: 400px; */
 }
 .central-div-box h3 {
@@ -142,32 +173,51 @@
 }
 
 /* designing and development tools */
-.central-div-columns-container {
-  display: grid;
+.central-tools-container {
+  position: relative;
   width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+  margin: 4.5rem 3rem 0rem 3rem;
+}
+
+.central-tools-img {
+  position: relative;
+  width: 15vw;
+  margin: 1.5rem;
+  align-self: center;
+}
+
+/*---- FirstSectionCard ---------*/
+
+.central-firstSectionContainer {
+  width: 100%;
+  padding: 2rem 0 2rem 0;
+}
+
+.central-firstSectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 2rem;
-  padding: 0.5rem 0 2rem 0;
-  grid-gap: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-.central-div-flex-columns {
-  /* box-shadow: var(--home-central-shadow); */
-  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+
+.central-imgContainer {
+  width: 60%;
+}
+
+/* ---------------------------- */
+
+.central-one-card {
+  width: 30%;
+  display: flex;
+  flex-flow: column nowrap;
   align-items: center;
-  text-align: center;
-  margin: 4px;
-  box-shadow: 0.1rem solid #4981b3;
-  border-radius: 15px;
-  transition: transform 0.2s ease-in;
 }
 
-.central-div-flex-columns:last-child > img {
-  padding: 0.5rem 0.3rem 0 0.1rem;
-  /* padding-top: 0.5rem; */
-}
-
-.central-div-flex-columns:hover {
-  transform: translateY(-15px);
+.central-one-card > h4 {
+  font-size: 1.2rem;
 }
 
 /* @media queries 768 & 500 */

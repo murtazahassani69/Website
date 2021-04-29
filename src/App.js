@@ -17,6 +17,7 @@ import TempMu2 from "./Routes/Components/TempMu2";
 import TempY1 from "./Routes/Components/TempYu1";
 import TempY2 from "./Routes/Components/TempYu2";
 import TempY3 from "./Routes/Components/TempYu3An";
+import SignUp from "./Routes/Components/UserSignUp";
 import Error from "./Routes/Components/Error";// Notice the keyword "exact" so react just renders the default page when nothing but the '/' is on it.
 
 // Swith Component renders the first match and ignore the rest.//   {/* Mutaza and Presefoni Part */}
@@ -40,7 +41,8 @@ function App() {
           <Route path='/templateY2' exact component={TempY2} /> 
           <Route path='/templateY3' exact component={TempY3} /> 
           <Route path='/templateMu1' exact component={TempMu1} /> 
-          <Route path='/templateMu2' exact component={TempMu2} /> 
+          <Route path='/templateMu2' exact component={TempMu2} />
+          <Route path='/signUp' exact component={SignUp} /> 
           <Route path='*' component={Error}/>
         </Switch>
       </div>

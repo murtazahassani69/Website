@@ -9,7 +9,7 @@ function Templates() {
     return (
         <Router>
             <Menu />
-            <Header />
+            <Header /> 
             <Central />
             <Footer />
         </Router>
