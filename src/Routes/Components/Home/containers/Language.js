@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext } from "react";
 
-import { languageOptions, dictionaryList } from "./Language/index";
+import { languageOptions, dictionaryList } from "../languages";
 
 // create the language context with default selected language
 export const LanguageContext = createContext({
