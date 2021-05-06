@@ -66,8 +66,6 @@ class home extends Component {
   render() {
     return (
       <Wrapper>
-        <p>&nbsp; </p>
-          
         <iframe className="iframeV"
         title="video about me"
         width="560"

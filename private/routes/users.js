@@ -38,12 +38,12 @@ router.post('/', (req, res) => {
     '${req.body.firstName}',
     '${req.body.lastName}',
     '${req.body.email}',
-    ${req.body.password},
-    ${req.body.language},
-    ${req.body.dateOfBirth},
-    ${req.body.profession},
-    ${req.body.lookingJobAt},
-    ${req.body.gender})`,
+    '${req.body.password}',
+    '${req.body.language}',
+    '${req.body.dateOfBirth}',
+    '${req.body.profession}',
+    '${req.body.lookingJobAt}',
+    '${req.body.gender}')`,
       () => {
         res.send('Posted successfully.');
       }
@@ -63,12 +63,12 @@ router.put('/:id', (req, res) => {
     street_no='${req.body.firstName}',
     region='${req.body.lastName}',
     zipcode='${req.body.email}',
-    country_id=${req.body.password},
-    country_id=${req.body.language},
-    country_id=${req.body.dateOfBirth},
-    country_id=${req.body.profession},
-    country_id=${req.body.lookingJobAt},
-    state_id=${req.body.gender}
+    country_id='${req.body.password}',
+    country_id='${req.body.language}',
+    country_id='${req.body.dateOfBirth}',
+    country_id='${req.body.profession}',
+    country_id='${req.body.lookingJobAt}',
+    state_id='${req.body.gender}'
     WHERE id=${req.params.id}
     `,
       () => {
