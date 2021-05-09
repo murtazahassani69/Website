@@ -4,10 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "../../css/HomeMenu.css";
 import logo_img from "../../imgs/footer_logo.png";
-import greek_logo from "../../imgs/greek_logo.jpg";
-import en_flag from "../../imgs/en_flag.png";
+import logo_6 from "../../imgs/new.png";
 import { LanguageContext } from "./containers/Language";
-
 import { languageOptions } from "./languages";
 
 function Menu() {
@@ -15,6 +13,7 @@ function Menu() {
   const handleClick = () => {
     setToggle((prev) => !prev);
   };
+
   console.log(toggle);
   const navBarOpts = [
     {
@@ -22,16 +21,16 @@ function Menu() {
       link: "/",
     },
     {
-      name: "About us",
-      link: "/store",
-    },
-    {
       name: "Services",
-      link: "/",
+      link: "/ServicesId",
     },
     {
-      name: "Our Work",
-      link: "/restaurant",
+      name: "Portfolio",
+      link: "/portfolio_more",
+    },
+    {
+      name: "About Us",
+      link: "/store",
     },
   ];
 
@@ -48,7 +47,18 @@ function Menu() {
   return (
     <>
       <div className="menu_navbar-container">
-        <img src={logo_img} alt="eskinous logo" className="menu__navbar-logo" />
+        <a href="/">
+          <img
+            src={logo_img}
+            alt="eskinous logo"
+            className="menu__navbar-logo"
+          />
+          <img
+            src={logo_6}
+            alt="eskinous logo"
+            className="menu__navbar_logo1"
+          />
+        </a>
         <div className="menu__navbar-opts-container">{mapNavOpts}</div>
 
         <div className="dropdown_flag">

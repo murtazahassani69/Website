@@ -15,6 +15,13 @@
     cursor: pointer;
   }
   
+  .menu__navbar_logo1 {
+    max-width: 5vw;
+    margin: 0.3rem 0 0.3rem 1rem;
+    cursor: pointer;
+    border-radius: 93px;
+  }
+  
   .menu__navbar-opts-container {
     width: 35%;
     display: flex;
@@ -113,7 +120,7 @@
     font-family: -webkit-body;
     margin-right: 14px;
     border-radius: 2px;
-    padding: 10px;
+    padding: 7px;
     border: transparent;
     width: 100%;
   }
