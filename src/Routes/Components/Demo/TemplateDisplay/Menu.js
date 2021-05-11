@@ -131,6 +131,7 @@ function Menu() {
   
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
   const handleLanguageChange = (e) => userLanguageChange(e.target.value);
+  
   // const onClick = e => {
   //   e.preventDefault();
   //   setToggle(!false);
@@ -182,18 +183,31 @@ function Menu() {
       </Nav>
       <Overlay toggle={!toggle}>
         <OverlayMenu toggle={!toggle}>
-          <NavbarLinks>
-            <StyledLink to="/">Home</StyledLink>
-          </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink to="">About us</StyledLink>
-          </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink to="">Services</StyledLink>
-          </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink to="/restaurant">Our Work</StyledLink>
-          </NavbarLinks>
+        <NavbarLinks>
+        <StyledLink href="/">Home</StyledLink>
+      </NavbarLinks>
+      <NavbarLinks>
+      <StyledLink href="/signUp">Sign-Up</StyledLink>
+      </NavbarLinks>
+      <NavbarLinks>
+        <StyledLink href="/login">Sign-In</StyledLink>
+      </NavbarLinks>
+      <NavbarLinks>
+        <StyledLink href="#TemplatesFooterId">About us</StyledLink>
+      </NavbarLinks>
+      <div className="dropdown_flag">
+      <select
+        className="dropdown-content_flag"
+        onChange={handleLanguageChange}
+        value={userLanguage}
+      >
+        {Object.entries(languageOptions).map(([id, name]) => (
+          <option key={id} value={id}>
+            {name}
+          </option>
+        ))}
+      </select>
+    </div>
         </OverlayMenu>
       </Overlay>
     </>
