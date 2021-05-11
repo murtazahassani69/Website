@@ -152,10 +152,10 @@ function Menu() {
             <StyledLink href="/">Home</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink href="#FirstServicesId">Services</StyledLink>
+          <StyledLink href="/signUp">Sign-Up</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink href="#PortfolioId">Portfolio</StyledLink>
+            <StyledLink href="/login">Sign-In</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
             <StyledLink href="#TemplatesFooterId">About us</StyledLink>

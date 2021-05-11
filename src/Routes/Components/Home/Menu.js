@@ -5,6 +5,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "../../css/HomeMenu.css";
 import logo_img from "../../imgs/footer_logo.png";
 import logo_6 from "../../imgs/new.png";
+import logos_6 from "../../imgs/logo_6.png";
 import { LanguageContext } from "./containers/Language";
 import { languageOptions } from "./languages";
 
