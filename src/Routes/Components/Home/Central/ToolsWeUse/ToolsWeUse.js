@@ -55,15 +55,15 @@ const ToolsWeUse = () => {
   ];
 
   const displayTools = () => {
-    return tools.map((el) => {
+    return tools.map((el, i) => {
       return (
-        <div className='central-tools-img' key={el.name}>
+        <div className='central-tools-img' key={i}>
           <img src={el.link} alt={el.tool} />
         </div>
       );
     });
   };
-  return <div class='central-tools-container'>{displayTools()}</div>;
+  return <div className='central-tools-container'>{displayTools()}</div>;
 };
 
 export default ToolsWeUse;

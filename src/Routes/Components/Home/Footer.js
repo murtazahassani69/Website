@@ -1,11 +1,5 @@
 import React from 'react';
-import footer_img from '../../imgs/footer_logo.png';
-import facebook from '../../imgs/facebook.png';
-import instagram from '../../imgs/instagram.jpg';
-import twitter from '../../imgs/twitter.jpg';
-import youtube from '../../imgs/youtube.jpg' ;
-import phone from '../../imgs/phone.jpg';
-import mail from '../../imgs/mail.jpg';
+import footer_img from '../../imgs/logo_NoFrame.jpg';
 import '../../css/HomeFooter.css';
 
 function Footer() {
@@ -14,38 +8,36 @@ function Footer() {
             <div  class="inner_footer">
                 <div id="footer-box1" class="footer-boxes">
                     <a href="#" ><img id="footer-logo" src={footer_img} alt="logo" ></img></a>
-                    
+
                     <div class="socials">
-                        <br></br>
-                        <a href="#"><img src={facebook} alt='facebook' ></img></a>
-                        <a href="#"><img src={instagram}alt='instagram' ></img></a>
-                        <a href="#"><img src={twitter} alt='twitter' ></img></a>
-                        <a href="#"><img src={youtube} alt='youtube' ></img></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
                 <div id="footer-box2" class="footer-boxes">
-                    <h1><span>YuKa </span> Center</h1>
-                    <p>we help lienholders and law firms
-                            work better together.      
+                    <h1><span>EKSI-</span>NOUS</h1>
+                    <p>We help future bosses of business. Together, we make better.
                     </p>
                     <div class="contact">
-                        <span><img src={phone}alt='phone'></img>&nbsp;+306988083143</span><br></br>
-                        <span><img src={mail}alt='mail'></img>&nbsp;info@yuka.com</span>
+                        <a href="mailto:someone@example.com"><span><i class="fas fa-at"></i> Contact us</span></a>
+                        <br></br>
                     </div>
                 </div>
                 <div id="footer-box3" class="footer-boxes">
                     <h2>Quick Links</h2>
                     <ul>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Services</li></a>
-                        <a href="#"><li>Gallery</li></a>
-                        <a href="#"><li>Terms</li></a>
+                        <a href='/about'><li>About us</li></a>
+                        <a href='#services'><li>Services</li></a>
+                        <a href='#portfolio'><li>Portfolio</li></a>
+                        <a href='/Login'><li>Sign in</li></a>
                     </ul>
                 </div>    
             </div>
             <div class="footer-bottom">
-                <h5> &copy;2020 yuka.com | Designed by YuKa </h5>
+                <h5> &copy;2021 eksinous.com | Designed by YuKa </h5>
             </div>
         </div>
     );

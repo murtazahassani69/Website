@@ -186,6 +186,8 @@ function Menu() {
     },
   ];
 
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+  const handleLanguageChange = (e) => userLanguageChange(e.target.value);
   const mapNavOpts = navBarOpts.map((el) => (
     <div key={el.name} onClick={() => setToggle(false)}>
       <NavLink to={el.link} className="menu__navbar-active">
@@ -196,6 +198,7 @@ function Menu() {
 
   return (
     <>
+
       <Nav>
         <a href="/">
           <Logo src={logo_img} alt="logo" />
@@ -214,7 +217,6 @@ function Menu() {
           <NavbarLinks>
             <StyledLink href="#learnAboutUs">About us</StyledLink>
           </NavbarLinks>
-
           <div className="language-select">
             <div className="">
               <div className="dropdown">

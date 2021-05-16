@@ -7,6 +7,10 @@ import "../../css/HomeCentral.css";
 import { Link } from "react-router-dom";
 import FirstSectionCards from "./Central/FirstSectionCards/FirstSectionCards";
 import ToolsWeUse from "./Central/ToolsWeUse/ToolsWeUse";
+import ToolsWeUse from './Central/ToolsWeUse/ToolsWeUse';
+import Portfolio from './Central/Portfolio/Portfolio';
+
+
 function Central() {
   return (
     <div  id="portfolio_more" className="central_home-container">
@@ -15,14 +19,17 @@ function Central() {
       <div  class="central-div-welcome-content">
         <h1>Welcome to the StartUP Team</h1>
         <hr class="central-hr-welcome"></hr>
+      <div class='central-div-welcome-content'>
+        <h1 id="services">Welcome to the StartUP Team</h1>
+        <hr class='central-hr-welcome'></hr>
         <p>For all your professional web designing and development</p>
       </div>
 
       {/* <!-- first section --> */}
-
       <FirstSectionCards />
 
       {/* border */}
+
       <hr class="central-hr-horizonal"></hr>
 
       {/* <!-- port --> */}
@@ -30,6 +37,14 @@ function Central() {
       <div class="central-div-port">
         <h1 class="central-div-port-head">portfolio</h1>
         <p class="central-div-port-text">
+
+      <hr id="portfolio" class='central-hr-horizonal'></hr>
+
+      {/* <!-- portfolio --> */}
+      <div class='central-div-port'>
+        <h1 class='central-div-port-head'>portfolio</h1>
+        <p class='central-div-port-text'>
+
           <strong>
             Our Team of expert can help you bring your ideas in to light!
           </strong>
@@ -114,6 +129,10 @@ function Central() {
 
       <hr class="central-hr-horizonal"></hr>
 
+      <Portfolio />
+
+      <hr class='central-hr-horizonal'></hr>
+
       {/* web-tools */}
       <div id="learnAboutUs" className="central-div-web-tools">
         <h3 class="central-div-web-tools-head">
@@ -127,7 +146,6 @@ function Central() {
           </strong>
         </p>
       </div>
-
       {/* designing and development tools */}
       <ToolsWeUse />
     </div>

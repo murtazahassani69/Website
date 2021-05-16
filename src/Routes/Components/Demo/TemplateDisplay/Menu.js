@@ -130,6 +130,9 @@ const OverlayMenu = styled.ul`
 
 function Menu() {
   const [toggle, setToggle] = useState(false);
+  
+  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
+  const handleLanguageChange = (e) => userLanguageChange(e.target.value);
   // const onClick = e => {
   //   e.preventDefault();
   //   setToggle(!false);
@@ -177,10 +180,16 @@ function Menu() {
             <StyledLink href="/">Home</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
+
           <StyledLink href="/signUp">Sign-Up</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
             <StyledLink href="/login">Sign-In</StyledLink>
+            <StyledLink href="#FirstServicesId">Services</StyledLink>
+          </NavbarLinks>
+          <NavbarLinks>
+            <StyledLink href="#PortfolioId">Portfolio</StyledLink>
+
           </NavbarLinks>
           <NavbarLinks>
             <StyledLink href="#TemplatesFooterId">About us</StyledLink>
@@ -226,6 +235,7 @@ function Menu() {
       </Nav>
       <Overlay toggle={!toggle}>
         <OverlayMenu toggle={!toggle}>
+
         <NavbarLinks>
         <StyledLink href="/">Home</StyledLink>
       </NavbarLinks>
@@ -238,7 +248,18 @@ function Menu() {
       <NavbarLinks>
         <StyledLink href="#TemplatesFooterId">About us</StyledLink>
       </NavbarLinks>
-      
+          <NavbarLinks>
+            <StyledLink to="/">Home</StyledLink>
+          </NavbarLinks>
+          <NavbarLinks>
+            <StyledLink to="">About us</StyledLink>
+          </NavbarLinks>
+          <NavbarLinks>
+            <StyledLink to="">Services</StyledLink>
+          </NavbarLinks>
+          <NavbarLinks>
+            <StyledLink to="/restaurant">Our Work</StyledLink>
+          </NavbarLinks>
         </OverlayMenu>
       </Overlay>
     </>

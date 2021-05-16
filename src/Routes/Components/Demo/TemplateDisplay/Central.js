@@ -17,7 +17,6 @@ import TempB2 from "./imgs/temp-b2.png";
 import TempY3 from "./imgs/temp-y3.png";
 import TempMu2 from "./imgs/temp-mu2.png";
 import TempMa2 from "./imgs/rp_1.png";
-
 import { useTranslation } from "react-i18next";
 
 function Central() {
@@ -37,7 +36,6 @@ function DisplayRes() {
       <div className="JATDCentralContainer">
         <p className="JaTempDisplayText">
           {t("DisplayTemplatesWelcome")}
-
         </p>
         <div id="FirstServicesId" className="JATDCentralContent">
           <a href="/templateJ1" id="JaTAniTag">

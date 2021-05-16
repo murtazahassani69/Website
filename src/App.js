@@ -20,11 +20,11 @@ import TempY2 from "./Routes/Components/TempYu2";
 import TempY3 from "./Routes/Components/TempYu3An";
 import SignUp from "./Routes/Components/UserSignUp";
 import Error from "./Routes/Components/Error";// Notice the keyword "exact" so react just renders the default page when nothing but the '/' is on it.
+import { LanguageProvider } from './Routes/Components/Home/Containers/Language';
 
 // Swith Component renders the first match and ignore the rest.// 
 function App() {
   return (
-    
     <Router>
       <div className="App"> 
         <Switch>
@@ -50,7 +50,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-
   );
 }
 

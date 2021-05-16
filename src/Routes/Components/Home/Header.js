@@ -17,11 +17,23 @@ function Header() {
           <div className="header-button">
             <NavLink to="/" activeClassName="header-active-title-btn">
               {t("Explore_message")}
-            </NavLink>
+    <>
+      <Particles className='header-particles' params={particlesConfig} />
+
+      <div className='header-background-img'>
+        <div className='header-title'>
+          <div className='header-text'>
+            Let's get started together in the world of buisness.
+          </div>
+
+          <div className='header-button'>
+            <NavLink to='/' activeClassName='header-active-title-btn'>
+              Sign up
+       </NavLink>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

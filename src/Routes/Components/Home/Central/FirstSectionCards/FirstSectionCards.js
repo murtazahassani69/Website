@@ -7,7 +7,7 @@ import checkPay from '../../../../imgs/check-pay.svg';
 const FirstSectionCards = () => {
   const cardsInfo = [
     {
-      title: 'Log in / Sign up',
+      title: 'Sign in / Sign up',
       description: `Create an account if you don't already have one. It takes only one minute.`,
       btn: 'Our Inovation',
       image: `${login}`,
@@ -28,12 +28,16 @@ const FirstSectionCards = () => {
 
   const displayCards = cardsInfo.map((el, i) => {
     return (
-      <div key={i} class='central-one-card'>
-        <div className='central-imgContainer'>
-          <img src={el.image} alt={`${el.title}`} className='central-card-image' />
+      <div key={i} className='central-services-one-card'>
+        <div className='central-services-imgContainer'>
+          <img
+            src={el.image}
+            alt={`${el.title}`}
+            className='central-services-card-image'
+          />
         </div>
-        <h4>{el.title}</h4>
-        <div className='central-cardText'>{el.description}</div>
+        <h3 className='central-services-card-title'>{el.title}</h3>
+        <p className='central-services-cardText'>{el.description}</p>
         {/* <a href='#' class='central-div-btn'>
           {el.btn}
         </a> */}
@@ -41,11 +45,16 @@ const FirstSectionCards = () => {
     );
   });
   return (
+
     <div id="ServicesId" className='central-firstSectionContainer'>
       <div className='central-firstSectionTitle'>
+
+    <div className='central-firstSectionContainer'>
+      <h3 className='central-firstSectionTitle'>
+
         Enjoy our services in three simple steps
-      </div>
-      <div className='central-cards-container'>{displayCards}</div>
+      </h3>
+      <div className='central-firstSection-cards-container'>{displayCards}</div>
     </div>
   );
 };
