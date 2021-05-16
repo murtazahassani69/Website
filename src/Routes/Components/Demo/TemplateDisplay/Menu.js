@@ -1,10 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo_img from "../../../imgs/footer_logo.png";
 import logo_6 from "../../../imgs/new.png";
-import { LanguageContext } from "../../Home/containers/Language";
-import { languageOptions } from "../../Home/languages";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
 
 const Nav = styled.nav`
   min-height: 9vh;
@@ -128,14 +130,36 @@ const OverlayMenu = styled.ul`
 
 function Menu() {
   const [toggle, setToggle] = useState(false);
-  
-  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
-  const handleLanguageChange = (e) => userLanguageChange(e.target.value);
-  
   // const onClick = e => {
   //   e.preventDefault();
   //   setToggle(!false);
   // };
+
+/*=====================+
+ |LANGUAGES TRANSLATION|
+ +=====================*/
+ const languages = [
+  {
+    code: "gr",
+    name: "GR",
+    country_code: "gr",
+  },
+  {
+    code: "en",
+    name: "EN",
+    country_code: "gb",
+  },
+];
+
+  const currentLanguageCode = cookies.get("i18next") || "en";
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    console.log("Setting page stuff");
+    document.body.dir = currentLanguage.dir || "ltr";
+    document.title = t("app_title");
+  }, [currentLanguage, t]);
 
   return (
     <>
@@ -161,19 +185,38 @@ function Menu() {
           <NavbarLinks>
             <StyledLink href="#TemplatesFooterId">About us</StyledLink>
           </NavbarLinks>
-          <div className="dropdown_flag">
-          <select
-            className="dropdown-content_flag"
-            onChange={handleLanguageChange}
-            value={userLanguage}
-          >
-            {Object.entries(languageOptions).map(([id, name]) => (
-              <option key={id} value={id}>
-                {name}
-              </option>
-            ))}
-          </select>
-        </div>
+          <div className="language-select">
+            <div className="">
+              <div className="dropdown">
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  {languages.map(({ code, name, country_code }) => (
+                    <li key={country_code}>
+                      <a
+                        href="#"
+                        className={classNames("dropdown-item", {
+                          disabled: currentLanguageCode === code,
+                        })}
+                        onClick={() => {
+                          i18next.changeLanguage(code);
+                        }}
+                      >
+                        <span
+                          className={`flag-icon flag-icon-${country_code} mx-2`}
+                          style={{
+                            opacity: currentLanguageCode === code ? 0.7 : 1,
+                          }}
+                        ></span>
+                        {name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
         </Navbar>
         <NavIcon onClick={() => setToggle(!toggle)}>
           <Line toggle={!toggle} />
@@ -195,19 +238,7 @@ function Menu() {
       <NavbarLinks>
         <StyledLink href="#TemplatesFooterId">About us</StyledLink>
       </NavbarLinks>
-      <div className="dropdown_flag">
-      <select
-        className="dropdown-content_flag"
-        onChange={handleLanguageChange}
-        value={userLanguage}
-      >
-        {Object.entries(languageOptions).map(([id, name]) => (
-          <option key={id} value={id}>
-            {name}
-          </option>
-        ))}
-      </select>
-    </div>
+      
         </OverlayMenu>
       </Overlay>
     </>

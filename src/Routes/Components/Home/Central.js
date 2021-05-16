@@ -9,10 +9,10 @@ import FirstSectionCards from "./Central/FirstSectionCards/FirstSectionCards";
 import ToolsWeUse from "./Central/ToolsWeUse/ToolsWeUse";
 function Central() {
   return (
-    <div className="central_home-container">
+    <div  id="portfolio_more" className="central_home-container">
       {/* <!-- Main page --> */}
 
-      <div class="central-div-welcome-content">
+      <div  class="central-div-welcome-content">
         <h1>Welcome to the StartUP Team</h1>
         <hr class="central-hr-welcome"></hr>
         <p>For all your professional web designing and development</p>
@@ -27,7 +27,7 @@ function Central() {
 
       {/* <!-- port --> */}
 
-      <div id="portfolio_more" class="central-div-port">
+      <div class="central-div-port">
         <h1 class="central-div-port-head">portfolio</h1>
         <p class="central-div-port-text">
           <strong>
@@ -115,7 +115,7 @@ function Central() {
       <hr class="central-hr-horizonal"></hr>
 
       {/* web-tools */}
-      <div className="central-div-web-tools">
+      <div id="learnAboutUs" className="central-div-web-tools">
         <h3 class="central-div-web-tools-head">
           We built all what you need, for quality web Design and development
           Services?
