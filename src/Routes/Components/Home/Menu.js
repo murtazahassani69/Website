@@ -139,12 +139,10 @@ const OverlayMenu = styled.ul`
 const languages = [
   {
     code: "gr",
-    name: "GR",
     country_code: "gr",
   },
   {
     code: "en",
-    name: "EN",
     country_code: "gb",
   },
 ];
@@ -164,7 +162,6 @@ function Menu() {
     setToggle((prev) => !prev);
   };
 
-  console.log(toggle);
   const navBarOpts = [
     {
       name: "Home",
@@ -221,7 +218,7 @@ function Menu() {
                   className="dropdown-menu"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  {languages.map(({ code, name, country_code }) => (
+                  {languages.map(({ code, country_code }) => (
                     <li key={country_code}>
                       <a
                         href="#"
@@ -238,7 +235,6 @@ function Menu() {
                             opacity: currentLanguageCode === code ? 0.7 : 1,
                           }}
                         ></span>
-                        {name}
                       </a>
                     </li>
                   ))}
