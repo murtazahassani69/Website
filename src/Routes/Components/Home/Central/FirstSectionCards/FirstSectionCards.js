@@ -56,6 +56,8 @@ const FirstSectionCards = () => {
       </h3>
       <div className='central-firstSection-cards-container'>{displayCards}</div>
     </div>
+    </div>
+    </div>
   );
 };
 

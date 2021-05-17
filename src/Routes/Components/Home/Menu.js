@@ -80,7 +80,6 @@ const NavIcon = styled.button`
   border: none;
   outline: none;
   margin-right: 1%;
-
   @media (min-width: 769px) {
     display: none;
   }
@@ -157,7 +156,6 @@ function Menu() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    console.log("Setting page stuff");
     document.body.dir = currentLanguage.dir || "ltr";
     document.title = t("app_title");
   }, [currentLanguage, t]);
@@ -186,8 +184,7 @@ function Menu() {
     },
   ];
 
-  const { userLanguage, userLanguageChange } = useContext(LanguageContext);
-  const handleLanguageChange = (e) => userLanguageChange(e.target.value);
+
   const mapNavOpts = navBarOpts.map((el) => (
     <div key={el.name} onClick={() => setToggle(false)}>
       <NavLink to={el.link} className="menu__navbar-active">

@@ -70,6 +70,8 @@ function Footer() {
         <p>© Amnick Web Development Team 2021</p>
       </div>
     </div>
+    </div>
+    </div>
   );
 }
 

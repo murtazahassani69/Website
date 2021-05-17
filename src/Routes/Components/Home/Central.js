@@ -7,7 +7,6 @@ import "../../css/HomeCentral.css";
 import { Link } from "react-router-dom";
 import FirstSectionCards from "./Central/FirstSectionCards/FirstSectionCards";
 import ToolsWeUse from "./Central/ToolsWeUse/ToolsWeUse";
-import ToolsWeUse from './Central/ToolsWeUse/ToolsWeUse';
 import Portfolio from './Central/Portfolio/Portfolio';
 
 
@@ -36,7 +35,8 @@ function Central() {
 
       <div class="central-div-port">
         <h1 class="central-div-port-head">portfolio</h1>
-        <p class="central-div-port-text">
+        <p class="central-div-port-text"> 
+        </p>
 
       <hr id="portfolio" class='central-hr-horizonal'></hr>
 
@@ -44,11 +44,11 @@ function Central() {
       <div class='central-div-port'>
         <h1 class='central-div-port-head'>portfolio</h1>
         <p class='central-div-port-text'>
-
           <strong>
             Our Team of expert can help you bring your ideas in to light!
           </strong>
         </p>
+      </div>
       </div>
 
       {/* <!-- Boxes div --> */}
@@ -148,6 +148,7 @@ function Central() {
       </div>
       {/* designing and development tools */}
       <ToolsWeUse />
+    </div>
     </div>
   );
 }
