@@ -9,7 +9,16 @@ const Wrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .btnDown {
+  #CVYusufTemp-btnBack {
+    cursor: pointer;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    background-color: burlywood;
+  }
+  .CVYusufTemp-btnPDF {
     background-color: transparent;
     padding: .3rem 2rem;
     position: relative;
@@ -26,20 +35,20 @@ const Wrapper = styled.div`
       font-size: 1rem;
     }
   }
-  .btnDown:hover:enabled::before {
+  .CVYusufTemp-btnPDF:hover:enabled::before {
     height: 80%;
     border-top: none;
     border-bottom: none;
     border-left: 0.2rem solid #e84545;
   }
-  .btnDown:hover:enabled::after {
+  .CVYusufTemp-btnPDF:hover:enabled::after {
     transform: scale(1);
     background: none;
     opacity: 1;
     border: 10px solid #8f8d20;
     animation: removeBorder 1s forwards;
   }
-  .btnDown::before {
+  .CVYusufTemp-btnPDF::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -52,7 +61,7 @@ const Wrapper = styled.div`
     transition: all 0.2s ease-out;
     border-left: 0.5rem solid #7d6569;
   }
-  .btnDown::after {
+  .CVYusufTemp-btnPDF::after {
     content: "";
     opacity: 0;
     background-color: #e84545;
@@ -67,11 +76,14 @@ const Wrapper = styled.div`
 `;
 
 class home extends Component {
+ 
   render() {
     return (
       <Wrapper>
-         <p>&nbsp;</p>
-        
+       
+         <button id="CVYusufTemp-btnBack" onClick={() => {window.location.href="/templates"}}>
+           <i class="fas fa-arrow-circle-left"></i>&nbsp; Back to Templates</button>  
+
         <iframe className="iframeV"
           title="video about me"
           width="560"
@@ -81,10 +93,9 @@ class home extends Component {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
-        
         <Header />
   
-        <button className="btnDown ">Download PDF</button>        
+        <button className="CVYusufTemp-btnPDF">Download PDF</button>        
                   
       </Wrapper>
     );

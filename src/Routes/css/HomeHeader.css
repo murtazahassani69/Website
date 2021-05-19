@@ -1,208 +1,136 @@
-
-
-/* background image  */
-
-.header_img_center {
-  /* background: url("../images/ba.jpg") fixed center center; */
-  background-size: cover;
-  padding: 196px 0px;
-
-  background-image: url("../imgs/tecno.jpg");
-  background-position: center center;
+.header-background-img {
+  background-image: url('../imgs/tecno.jpg');
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1024px) {
-  .header_img_center {
-    background-attachment: scroll;
-  }
-}
-
-/* background image  */
-
-.header_img_center {
-  /* background: url("../images/ba.jpg") fixed center center; */
-  background-size: cover;
-  padding: 196px 0px;
-
-  background-image: url("../imgs/tecno.jpg");
   background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 10em 0em 10em 4em;
 }
 
-
-
-@media (max-width: 1024px) {
-  .header_img_center {
-    background-attachment: scroll;
-  }
+.header-particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-
-
-/* background image  */
-
-.header_img_center {
-  /* background: url("../images/ba.jpg") fixed center center; */
-  background-size: cover;
-  padding: 196px 0px;
-  background-image: url("../imgs/tecno.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-@media (max-width: 1024px) {
-  .header_img_center {
-    background-attachment: scroll;
-  }
-}
-
-.header_img_center h1{
-  margin: 20px;
-  font-size: 50px;
-  align-items: center;
-  font-family: fangsong;
-  font-weight: bolder;
-  line-height: 100px;
-  border-radius: 0px;
-  color: white;
-}
-
-.header_img_center .header_title {
-  background: rgb(0 0 0 / 40%);
-  color: #fff;
-  animation-duration: 0.5s;
-  /* margin-top: 108px; */
-  justify-content: center;
-  text-align: -webkit-match-parent;
-  padding: 5rem
-}
-.header_img_center h4 {
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  font-size: 20px;
-  font-family: initial;
-  font-weight: bolder;
-}
-.header_img_center p {
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  text-align: center;
-  font-size: 26px;
-  font-family: initial;
-}
-
-.header_button {
-  font-family: 'Circular-Loom';
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid rgb(157, 216, 255);
-  color: rgb(0, 0, 0);
-  border-style: none;
-  outline: none;
-  justify-content: center;
+.header-title {
   position: relative;
+  text-align: left;
+  width: 75%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.header-text {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 5rem;
+  padding-bottom: 2rem;
+}
+
+.header-button {
+  width: 30%;
+  min-height: 3rem;
+  margin-top: 5rem;
+  background: #80baff;
+  border-radius: 20px;
+  color: #0c2067;
+  padding-top: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
   cursor: pointer;
 }
-.header_button:hover {
-  background: #6092a3;
-  border: 2px solid #0af02d;
-  color: #fff;
+
+.header-active-title-btn {
+  color: #0c2067;
 }
 
-@media only screen and (max-width: 800px) {
-  .header_img_center h1 {
-    font-size: 32px;
-  }
-  .header_img_center h4 {
-    font-size: 23px;
-  }
-  .header_img_center p {
-    font-size: 16px;
-  }
-}
+/* MEDIA QUERIES */
 
-
-.header_img_center h4 {
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  font-size: 20px;
-  font-family: initial;
-  font-weight: bolder;
-}
-.header_img_center p {
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  text-align: center;
-  font-size: 26px;
-  font-family: initial;
-}
-
-.header_button:hover {
-  background: #6092a3;
-  border: 2px solid #0af02d;
-  color: #fff;
-}
-
-@media only screen and (max-width: 800px) {
-  .header_img_center h1 {
-    font-size: 32px;
+@media screen and (max-width: 1024px) {
+  .header-background-img {
+    padding-bottom: 14em;
   }
-  .header_img_center h4 {
-    font-size: 23px;
+
+  .header-title {
+    width: 70%;
   }
-  .header_img_center p {
-    font-size: 16px;
+
+  .header-text {
+    width: 100%;
+
+    font-size: 3rem;
+  }
+
+  .header-button {
+    width: 47%;
   }
 }
 
-.header_img_center h4 {
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  font-size: 20px;
-  font-family: initial;
-  font-weight: bolder;
-}
-.header_img_center p {
-  color: rgb(255, 255, 255);
-  margin: 20px;
-  text-align: center;
-  font-size: 26px;
-  font-family: initial;
+@media screen and (max-width: 832px) {
+  .header-title {
+    width: 75%;
+  }
+
+  .header-text {
+    width: 100%;
+    line-height: 3.8rem;
+    font-size: 2.3rem;
+  }
+  .header-button {
+    margin-top: 2rem;
+    width: 50%;
+  }
 }
 
-.header_button:hover {
-  background: #6092a3;
-  border: 2px solid #0af02d;
-  color: #fff;
+@media screen and (max-width: 616px) {
+  .header-title {
+    width: 100%;
+  }
+
+  .header-text {
+    width: 98%;
+    line-height: 3.5rem;
+    font-size: 1.9rem;
+    /* margin-right: 2rem; */
+  }
+
+  .header-button {
+    width: 40%;
+    margin-top: 1.2rem;
+  }
 }
 
-@media only screen and (max-width: 800px) {
-  .header_img_center h1 {
-    font-size: 32px;
+@media screen and (max-width: 425px) {
+  .header-background-img {
+    padding-left: 2rem;
   }
-  .header_img_center h4 {
-    font-size: 23px;
+}
+
+@media screen and (max-width: 406px) {
+  .header-title {
+    width: 100%;
   }
-  .header_img_center p {
-    font-size: 16px;
+
+  .header-text {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 3rem;
   }
-  .header_img_center .header_title  {
-  margin-top: -38px;
-  padding: 1px
+
+  .header-button {
+    min-height: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .header-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 }

@@ -1,0 +1,129 @@
+/* userSignUp
+=============== */
+.temp-div-signUp-container{
+  min-height: 100vh; 
+  width: 100vw; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background: url(../imgs/signUp-back.jpg) no-repeat; 
+  background-size: cover; 
+  background-position: center;
+  perspective: 1000px; 
+  background-color: darkkhaki;
+}
+.temp-div-signUp-mx-4-card {
+  width: 43ch;
+  height: 80ch;
+  background: #988484;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgb(0 0 0 / 30%);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+/*form*/
+#temp-div-signUp-form{ 
+height:668px; 
+width:350px; 
+margin: 10px 0px 0px 10px;
+background: rgba(255,255,255,.1); 
+text-align: center;
+align-items: center;
+border-radius: 5px;
+box-shadow: 0 5px 15px rgba(0,0,0,.3);
+border-top: 1px solid rgba(255,255,255,.3);
+border-left: 1px solid rgba(255,255,255,.3);    
+backdrop-filter: blur(10px);
+transform-style: preserve-3d; 
+}
+
+/*Form input box*/
+.temp-div-signUp-mb-3 {     
+outline: none; 
+border: none; 
+height:40px;
+width: 80%;
+background: rgba(0,0,0,.1);
+color: rgba(20 4 4 / 70%);
+box-shadow: 0 0 5px rgba(0,0,0,.5) inset;
+font-size: 15px;
+padding: 0 10px;
+margin: 10px 0 0 25px;
+letter-spacing: 1px;
+border-radius: 15px;
+background-color: darkkhaki;
+} 
+.temp-div-signUp-mb-4 {  
+outline: none; 
+border: none; 
+height:36px;
+width: 86%;;
+color: rgba(20 4 4 / 70%);
+box-shadow: 0 0 5px rgba(0,0,0,.5) inset;
+font-size: 18px;
+padding: 0 80px;
+margin: 10px 0 0 2px;
+letter-spacing: 1px;
+border-radius: 15px;
+background-color: darkkhaki;
+}
+
+.tempForm-signup-input{
+font-size: 1.2em;
+margin-top: 7px;
+}
+.tempForm-signup-inputRadio{
+height:32px; 
+width:35px; 
+vertical-align: middle;
+margin-right: 15px;
+}
+/*Form submit*/
+#temp-form-submit-btn{ 
+width:90%; 
+cursor: pointer; 
+background:linear-gradient(90deg, deeppink, blueviolet); 
+margin-top: 22px; 
+border-radius: 50px; 
+} 
+#temp-form-submit-btn:hover { 
+letter-spacing: 4px; 
+}        
+
+
+/*Login/Register warning popup*/
+.LoginRegister-popup {  
+  position: fixed;  
+  width: 100%;  
+  height: 100%;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  margin: auto;  
+  background-color: rgba(109, 101, 101, 0.5);  
+}  
+
+.LoginRegister-popup-inner {  
+  position: absolute;  
+  left: 1%;  
+  right: 1%;  
+  top: 50%;  
+  bottom: 25%;  
+  margin: auto;  
+  border-radius: 10px;  
+  background:rgba(123, 46, 143, 0.425);  
+  font-style: italic;
+  text-align: center;  
+}
+.LoginRegister-popup-inner h1{
+  color:rgb(29, 164, 168);
+  font-weight: 1000;
+  font-size: 1em;
+}
+.LoginRegister-popup-inner h6{
+  color:white;
+}

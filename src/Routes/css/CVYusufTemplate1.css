@@ -108,8 +108,6 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    height: 145%;
-
     display: flex;
     font-weight: 400;
     justify-content: center;
@@ -117,7 +115,6 @@
     width: 100%;
     box-sizing: border-box;
     color: #53555b;
-
   }
   
   .CVYusufTemp1-div-page {

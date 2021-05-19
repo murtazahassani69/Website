@@ -1,31 +1,40 @@
-import React from 'react';
-import '../../css/HomeHeader.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import Particles from "react-particles-js";
+import particlesConfig from "../../../config/particlesConfig";
+import "../../css/HomeHeader.css";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t } = useTranslation();
   return (
-    <div className="home_header_center">
-    <div>
-      <div styles="border-radius: 0px" className="header_img_center">
-        <div className="header_title">
-          <h1>Welcome to Amnick!</h1>
-          <h4>
-            We are a combination of City <br />
-            Leaders/Mayors from around the world.
-          </h4>
-          <div>
-            <p>
-              Whatever your life’s goals, <br /> our financial professionals
-              <br />
-              can help design a strategy tailored to your specific needs.
-              <br />
-            </p>
+    <div className="header-container ">
+      <Particles className="header-particles" params={particlesConfig} />
+
+      <div className="header-background-img">
+        <div className="header-title">
+          <div className="header-text">{t("Welcome_message")}</div>
+          <div className="header-button">
+            <NavLink to="/" activeClassName="header-active-title-btn">
+              {t("Explore_message")}
+    <>
+      <Particles className='header-particles' params={particlesConfig} />
+
+      <div className='header-background-img'>
+        <div className='header-title'>
+          <div className='header-text'>
+            Let's get started together in the world of buisness.
           </div>
-          <button className="header_button">Explore</button>
+
+          <div className='header-button'>
+            <NavLink to='/' activeClassName='header-active-title-btn'>
+              Sign up
+       </NavLink>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-    );
+    </>
+  );
 }
 
 export default Header;

@@ -22,18 +22,17 @@ function CVYusufTemplate1 (){
         <span className="hamburger"></span>
       </button>
 
-          <nav id="CVYusufTemp-div-nav-bar">
-            <ul className="CVYusufTemp-div-menu-nav-links">
-              <li><a className="CVYusufTemp-div-menu-nav-link" href="#">Home</a></li>
-              <li><a className="CVYusufTemp-div-menu-nav-link" href="#">Services</a></li>
-              <li><a className="CVYusufTemp-div-menu-nav-link" href="#">About</a></li>
-            </ul>
-          </nav>
+      <nav id="CVYusufTemp-div-nav-bar">
+        <ul className="CVYusufTemp-div-menu-nav-links">
+          <li><a className="CVYusufTemp-div-menu-nav-link" href="/">Home</a></li>
+          <li><a className="CVYusufTemp-div-menu-nav-link" href="/templates">Back to Template</a></li>
+          <li><Pdf targetRef={ref} filename="resume.pdf"paperSize="A4" margin="2cm">
+            {({ toPdf }) => <a className="CVYusufTemp-div-menu-nav-link" onClick={toPdf}href="#section">Download PDF</a>} 
+            </Pdf></li>
+        </ul>
+      </nav>
    </header>
-     <Pdf targetRef={ref} filename="resume.pdf">
-        {({ toPdf }) => <button id="CVYusufTemp-cmd" onClick={toPdf}>Generate Pdf</button>}
-    </Pdf>
-    
+     
     <div id="CVYusufTemp1-div-main-container">
     <div className="CVYusufTemp1-div-page" id="toPrint" ref={ref}>
       <header className="CVYusufTemp1-div-header">

@@ -7,23 +7,9 @@ const Wrapper = styled.div`
   .navButtons {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-bottom:4px; 
     color:red; 
-    cursor: pointer;
-    margin-left:40px;
-    @media only screen and (max-width: 60em) {
-      margin-left:17%;
-      margin-bottom:0px;
-      justify-content: center;
-    }
-    @media only screen and (max-width: 35em) {
-      font-size: 1rem;
-      margin-left:18%;
-    }
-    @media only screen and (max-width: 23em) {
-      font-size: .8rem;
-      margin-left:10%;
-    }
   }
   
 `;
