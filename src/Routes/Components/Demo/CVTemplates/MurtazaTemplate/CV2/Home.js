@@ -27,6 +27,7 @@ const Home = () => {
           </h2>
         </a>
       </div>
+      
           <div className="Second_home_intro">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaiw7r4q5i9NAP8F0G9XUhUOkratFhncgHTQ&usqp=CAU"
