@@ -19,8 +19,8 @@ function Footer() {
 
                 <div id="footer-box2" class="footer-boxes">
                     <h1><span>EKSI-</span>NOUS</h1>
-                    <p>We help future bosses of business. Together, we make better.
-                    </p>
+                    <h4 className="footer-box2-text" >We help future bosses of business. Together, we make better.
+                    </h4>
                     <div class="contact">
                         <a href="mailto:someone@example.com"><span><i class="fas fa-at"></i> Contact us</span></a>
                         <br></br>

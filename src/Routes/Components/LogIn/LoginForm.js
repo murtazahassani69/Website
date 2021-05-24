@@ -18,11 +18,10 @@ const LoginForm = () => {
                 </label>
             </fieldset>
             <div className="login-div">
-                <span>No account?</span>
+                <span>No account?   </span>
                 <Link to="/">Create One!</Link>
             </div>
             <button className="login-btn" type="submit">Log in</button>
-
             </form>
         </div>
      );

@@ -16,8 +16,6 @@ function Central() {
       {/* <!-- Main page --> */}
 
       <div  class="central-div-welcome-content">
-        <h1>Welcome to the StartUP Team</h1>
-        <hr class="central-hr-welcome"></hr>
       <div class='central-div-welcome-content'>
         <h1 id="services">Welcome to the StartUP Team</h1>
         <hr class='central-hr-welcome'></hr>
@@ -29,17 +27,8 @@ function Central() {
 
       {/* border */}
 
-      <hr class="central-hr-horizonal"></hr>
-
-      {/* <!-- port --> */}
-
       <div class="central-div-port">
-        <h1 class="central-div-port-head">portfolio</h1>
-        <p class="central-div-port-text"> 
-        </p>
-
       <hr id="portfolio" class='central-hr-horizonal'></hr>
-
       {/* <!-- portfolio --> */}
       <div class='central-div-port'>
         <h1 class='central-div-port-head'>portfolio</h1>

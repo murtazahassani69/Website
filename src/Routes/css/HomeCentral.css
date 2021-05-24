@@ -177,8 +177,9 @@ p {
 
 /*--------- Portfolio ----------- */
 .central-port-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 4rem;
 }
 
@@ -187,6 +188,11 @@ p {
   margin: 1rem 0;
   padding: 2rem 0 0;
 }
+
+.central-port-active-link {
+  color: black;
+}
+
 .central-div-port-head {
   text-transform: uppercase;
   font-size: 2rem;
@@ -209,14 +215,14 @@ p {
 }
 
 .central-port-imgContainer {
-  width: 70%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .central-port-imgContainer > img {
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   border-radius: 10px;
 }
 

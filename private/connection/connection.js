@@ -1,11 +1,20 @@
-const { Pool } = require('pg')
 
-const pool = new Pool({
-  user: process.env.DB_USER,
+require('dotenv').config();
+const mysql = require('mysql');
+
+
+const pool = mysql.createConnection({
   host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
   password: process.env.DB_PASS,
-  port: process.env.DB_PORT
+  database: process.env.DB_NAME,
+  multipleStatements: true,
+});
+
+pool.connect(err=> {
+  let msg = !err ? 'connected successfully' : "connection error";
+  console.log(`mysql: ${msg}`);
 })
 
 module.exports = pool;

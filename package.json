@@ -2,6 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.1.4",
@@ -26,6 +27,7 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.6.0",
     "react-dom": "^16.13.1",
+    "mysql": "^2.18.1",
     "react-feather": "^2.0.9",
     "react-flags-select": "^2.1.2",
     "react-helmet": "^6.1.0",
@@ -35,6 +37,7 @@
     "react-parallax": "^3.1.2",
     "react-particles-js": "^3.4.1",
     "react-pdf": "^5.2.0",
+    "react-responsive": "^8.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-spring": "^8.0.27",
