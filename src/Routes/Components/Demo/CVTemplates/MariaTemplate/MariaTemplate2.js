@@ -7,7 +7,6 @@ import MarProj2 from "./imgs/marproj2.jpg";
 import MarProj3 from "./imgs/marproj3.jpg";
 import MarProj4 from "./imgs/marproj4.jpg";
 import MarProj5 from "./imgs/marproj5.jpg";
-import { Link} from "react-router-dom";
 
 function MariaTemp2(){
     return(
@@ -36,7 +35,7 @@ function Header(){
           <div className="CVMarTemp2-header-icon"><a href="#" className="CVMarTemp-socialicons-link" ><FaFacebookSquare size={20} color='#4169E1'/></a></div>
         </div>
         <a className="CVMarTemp2-header-btn" href="mailto:sdsd@sdsdsdsd.com">Contact me</a>
-        <Link className="CVMarTemp2-header-back" to='/templates'>&larr; </Link>
+        <a className="CVMarTemp2-header-back" href='/templates'>&larr;Back</a>
       </div>
     </div>
   )

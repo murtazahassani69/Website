@@ -1,7 +1,9 @@
 import React from 'react';
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import About from "./Routes/Components/About";
 import Home from "./Routes/Components/Home";
+import LiveCVDisplay from "./Routes/Components/LiveCVDisplay";
 import LogIn from "./Routes/Components/LogIn";
 import Restaurant from "./Routes/Components/Restaurant";
 import Store from "./Routes/Components/StoreOnLine";
@@ -28,6 +30,8 @@ function App() {
       <div className="App"> 
         <Switch>
           <Route path='/' exact component={Home} /> 
+          <Route path='/about' exact component={About} /> 
+          <Route path='/livecvdisplay' exact component={LiveCVDisplay} />
           <Route path='/login' exact component={LogIn} />  
           <Route exact  path='/restaurant'  component={Restaurant} /> 
           <Route path='/store' exact component={Store} /> 

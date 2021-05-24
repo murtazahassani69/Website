@@ -1,16 +1,16 @@
 import React from 'react';
 import '../../../../css/HomeCentral.css';
-import Templates_cv from '../../../../imgs/templates_cv.png';
+import Templates_cv from '../../../../imgs/templates_cv.jpg';
+import Templates_cv2 from '../../../../imgs/templates_cv2.jpg';
 // import storePic from '../../../../imgs/store.png';
 // import restaurantPic from '../../../../imgs/restaurant.png';
 
 const Portfolio = () => {
   const cardInfo = [
     {
-      img: `${Templates_cv}`,
+      img: `${Templates_cv2}`,
       title: 'Live Templates',
-      text:
-        'View a sample demo from a restaurant. This page is currently static',
+      text: 'View a sample demo from a restaurant. This page is currently static',
       link: '/templates',
     },
     // {
@@ -30,8 +30,7 @@ const Portfolio = () => {
     {
       img: `${Templates_cv}`,
       title: 'Resume Templates',
-      text:
-        'View a sample demo from a restaurant. This page is currently static',
+      text: 'View a sample demo from a restaurant. This page is currently static',
       link: '/templates',
     },
     // {
@@ -45,11 +44,13 @@ const Portfolio = () => {
 
   const displayCards = cardInfo.map((el, i) => (
     <div key={i} className='central-port-one-card'>
-      <div className='central-port-imgContainer'>
-        <img src={el.img} alt={el.title} />
-      </div>
-      <h2>{el.title}</h2>
-      <p>{el.text}</p>
+      <a href={el.link} className='central-port-active-link'>
+        <div className='central-port-imgContainer'>
+          <img src={el.img} alt={el.title} />
+        </div>
+        <h2>{el.title}</h2>
+        <p>{el.text}</p>
+      </a>
     </div>
   ));
   return <div className='central-port-container'>{displayCards}</div>;

@@ -1,13 +1,15 @@
 const express = require('express');
-const pool = require('../connection/connection');
-
 const router = express.Router();
+const pool = require('../connection/connection');
 
 /* GET method */
 router.get('/', (req, res) => {
-  try {
-    pool.query('SELECT * FROM users', (error, results) => {
-        res.send(results);
+  try{
+    pool.query('SELECT * FROM users', function (error, results, fields) {
+            if (error) {
+                res.send(error);
+            }
+            res.send(results);
     });
   } catch (error) {
     if (error) console.error(`Error: ${error.message}`);

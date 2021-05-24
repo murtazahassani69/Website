@@ -50,7 +50,6 @@ const NavbarLinks = styled.li`
 
 const StyledLink = styled.a`
   color: #171819;
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
@@ -87,19 +86,19 @@ const Line = styled.span`
   transition: width 0.4s ease-in-out;
 
   :nth-child(2) {
-    width: ${({ toggle }) => (toggle ? "70%" : "40%")};
+    width: ${({ toggle }) => (toggle ? '70%' : '40%')};
   }
 `;
 
 const Overlay = styled.div`
-  height: ${({ toggle }) => (toggle ? "0" : "100vh")};
+  height: ${({ toggle }) => (toggle ? '0' : '100vh')};
   position: fixed;
   display: flex;
   width: 36vw;
   right: 0;
   top: 9vh;
   background: #fff;
-  box-shadow: ${({ toggle }) => (toggle ? "0" : "8px 0px 5px 9px grey")};
+  box-shadow: ${({ toggle }) => (toggle ? '0' : '8px 0px 5px 9px grey')};
   transition: height 0.4s linear;
 
   @media (min-width: 769px) {
@@ -113,7 +112,7 @@ const OverlayMenu = styled.ul`
   width: inherit;
   left: 50%;
   top: 45%;
-  display: ${({ toggle }) => (toggle ? "none" : "")};
+  display: ${({ toggle }) => (toggle ? 'none' : '')};
   transform: translate(-50%, -50%);
 
   li {
@@ -163,17 +162,13 @@ function Menu() {
   return (
     <>
       <Nav>
-        <a href="/">
-          <Logo src={logo_img} alt="logo" />
+        <a href='/'>
+          <Logo src={logo_img} alt='logo' />
         </a>
-        <img
-        src={logo_6}
-        alt="eskinous logo"
-        className="menu__navbar_logo1"
-      />
+        <img src={logo_6} alt='eskinous logo' className='menu__navbar_logo1' />
         <Navbar>
           <NavbarLinks>
-            <StyledLink href="/">Home</StyledLink>
+            <StyledLink href='/'>Home</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
 
@@ -188,7 +183,7 @@ function Menu() {
 
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink href="#TemplatesFooterId">About us</StyledLink>
+            <StyledLink href='#TemplatesFooterId'>About us</StyledLink>
           </NavbarLinks>
           <div className="language-select">
             <div className="">
@@ -245,16 +240,16 @@ function Menu() {
         <StyledLink href="#TemplatesFooterId">About us</StyledLink>
       </NavbarLinks>
           <NavbarLinks>
-            <StyledLink to="/">Home</StyledLink>
+            <StyledLink to='/'>Home</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink to="">About us</StyledLink>
+            <StyledLink to=''>About us</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink to="">Services</StyledLink>
+            <StyledLink to=''>Services</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink to="/restaurant">Our Work</StyledLink>
+            <StyledLink to='/restaurant'>Our Work</StyledLink>
           </NavbarLinks>
         </OverlayMenu>
       </Overlay>

@@ -22,13 +22,15 @@
 /* ------------------------------------------- */
 #footer-logo{
   width: 90px;
+  border: 5px solid #80baff;
+  border-radius: 20%;
 }
 #footer-box1 .socials{
   margin: 1em;
   margin-left: 10%;
   color: #fff;
   font-size: 1.7rem;
-  margin-top: 25px;
+  margin-top: 5px;
   padding: 3px;
   justify-content: space-between;
 }
@@ -37,7 +39,7 @@
 }
 
 #footer-box1 .socials a{
-  border: 1px solid gray;
+  border: 1px solid #80baff;
   width: 50px;
   height: 39px;
   padding-top: 5px;   
@@ -48,7 +50,7 @@
   transition: all .3s;
 }
 #footer-box1 .socials a:hover{
-  border: 1px solid white;
+  border: 1px solid rgb(232 113 113);
   color: white;
   transition: all .3s;
 }
@@ -57,9 +59,11 @@
   margin: 0em;
 }
 #footer-box2 h1 span,#footer-box2 a{
-color: #05f7ff;
+color: #80baff;
 }
-
+.footer-box2-text{
+  color: #eba86e;
+}
 #footer-box2 img{
   width: 20px;
   height: auto; 
@@ -89,11 +93,14 @@ color: #05f7ff;
 #footer-box3 ul li{
   color:white;
   font-size: 16pt;
- 
+}
+#footer-box3 ul li:hover{
+  color: rgb(232 113 113);
+    font-size: 16pt;
 }
 #footer-box3 ul a:hover,
 .contact span:hover{
-  color: white;
+  color: rgb(232 113 113);
   margin-left: 25px; 
   transition: all .3s;
 }

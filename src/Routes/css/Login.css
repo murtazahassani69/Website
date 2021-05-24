@@ -2,7 +2,7 @@
 
 .login-wrapper {
   display: flex;
-  margin:0 auto;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -31,9 +31,11 @@
 
 .login-field {
   border: 0;
+  width: 100%;
 }
 
 .login-label {
+  opacity: 0.7;
 }
 
 .login-input {
@@ -67,11 +69,20 @@ login-input:focus {
 }
 
 
-
 .login-btn {
   border: 0;
   border-radius: 5px;
   color: #fff;
+  background-color: #0067b8;
+  padding: 6px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  width: 25%;
+}
+
+.login-btn:hover {
+  cursor: pointer;
   border-color: #0067b8;
   background-color: #0067b8;
   padding: 6px;
