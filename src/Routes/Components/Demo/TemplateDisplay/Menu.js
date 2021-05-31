@@ -173,7 +173,6 @@ function Menu() {
     document.title = t("app_title");
   }, [currentLanguage, t]);
 
-
   return (
     <>
       <Nav>
