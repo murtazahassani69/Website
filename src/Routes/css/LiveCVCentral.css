@@ -1,11 +1,21 @@
+.liveCV-CentralPage{
+    background-color: beige;
+  
+}
 .liveCV-central-head{
     height: 25px;
-    margin-top: 8%;
+    margin-top: 14vh;
+    animation: fadeIn 1.4s ease-out forwards, moveInLeft 1.4s ease-out;
 }
 .liveCV-central-headdown{
     width: 80%;
-    border: double;
+    border: revert;
 }
+
+.liveCV-TempDisplayText{
+animation: fadeIn 1.4s ease-out forwards, moveInRight 1.4s ease-out;
+}
+
 .liveCV-central-carousContent{
     overflow: hidden;
     width: 100%;
@@ -40,8 +50,11 @@
 .owl-item {
     width: 500px;
 }
+.owl-carousel {
+    height: 292px;
+}
 .liveCV-central-shiftImg{
-    height: 40vh;
+    height: 30vh;
     margin: 0.5em;
 }
 .liveCV-central-shiftImg img{
@@ -52,20 +65,45 @@
     font-size: 1rem;
     text-align: center;
 }
- 
+
+ /* MEDIA QUERY */
+
 @media screen and (max-width: 768px) {
  
    .liveCV-central-shiftImg{
-       height: 60vh;
+       height: 247px;
    }
+   .owl-carousel{
+    height: 258px;
+   }
+   .liveCV-central-head{
+    height: 30px;
+    margin-top: 15%;
+    }
+
 }
 @media screen and (max-width: 500px) {
      
     .liveCV-central-shiftImg {
         width: 90%;
     }
-
-    .liveCV-central-shiftImg img{
-        width: 100%;
-    }  
+    .owl-carousel {
+        height: 235px;
+    }
+    .liveCV-central-head{
+        height: 40px;
+        margin-top: 20%;
+    }
 }
+
+@media screen and (min-width: 1024px) {
+ 
+    .liveCV-central-shiftImg{
+        height: 238px;
+    }
+    .owl-carousel{
+     height: 258px;
+    }
+ 
+ }
+ 
