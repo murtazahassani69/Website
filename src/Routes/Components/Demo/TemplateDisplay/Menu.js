@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo_img from "../../../imgs/footer_logo.png";
-import logo_6 from "../../../imgs/new.png";
+import logo_6 from "../../../imgs/logo_NoFrame.jpg";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import cookies from "js-cookie";
@@ -49,7 +49,23 @@ const NavbarLinks = styled.li`
 `;
 
 const StyledLink = styled.a`
-  color: #171819;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  background-image: linear-gradient(rgb(211, 199, 199), rgb(211, 199, 199));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  :hover {
+    cursor: pointer;
+    background-size: 100% 3px;
+  }
+`;
+
+const StyledLink1 = styled.a`
+  color: #ffff;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
@@ -138,16 +154,14 @@ function Menu() {
  |LANGUAGES TRANSLATION|
  +=====================*/
  const languages = [
-  {
-    code: "gr",
-    name: "GR",
-    country_code: "gr",
-  },
-  {
-    code: "en",
-    name: "EN",
-    country_code: "gb",
-  },
+   {
+     code: "en",
+     country_code: "gb",
+    },
+    {
+      code: "gr",
+      country_code: "gr",
+    },
 ];
 
   const currentLanguageCode = cookies.get("i18next") || "en";
@@ -158,6 +172,7 @@ function Menu() {
     document.body.dir = currentLanguage.dir || "ltr";
     document.title = t("app_title");
   }, [currentLanguage, t]);
+
 
   return (
     <>
@@ -176,11 +191,6 @@ function Menu() {
           </NavbarLinks>
           <NavbarLinks>
             <StyledLink href="/login">Sign-In</StyledLink>
-            <StyledLink href="#FirstServicesId">Services</StyledLink>
-          </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink href="#PortfolioId">Portfolio</StyledLink>
-
           </NavbarLinks>
           <NavbarLinks>
             <StyledLink href='#TemplatesFooterId'>About us</StyledLink>
@@ -209,7 +219,6 @@ function Menu() {
                             opacity: currentLanguageCode === code ? 0.7 : 1,
                           }}
                         ></span>
-                        {name}
                       </a>
                     </li>
                   ))}
@@ -219,40 +228,64 @@ function Menu() {
           </div>
         </Navbar>
         <NavIcon onClick={() => setToggle(!toggle)}>
-          <Line toggle={!toggle} />
-          <Line toggle={!toggle} />
-          <Line toggle={!toggle} />
-        </NavIcon>
-      </Nav>
-      <Overlay toggle={!toggle}>
-        <OverlayMenu toggle={!toggle}>
-
-        <NavbarLinks>
-        <StyledLink href="/">Home</StyledLink>
-      </NavbarLinks>
-      <NavbarLinks>
-      <StyledLink href="/signUp">Sign-Up</StyledLink>
-      </NavbarLinks>
-      <NavbarLinks>
-        <StyledLink href="/login">Sign-In</StyledLink>
-      </NavbarLinks>
-      <NavbarLinks>
-        <StyledLink href="#TemplatesFooterId">About us</StyledLink>
-      </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink to='/'>Home</StyledLink>
-          </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink to=''>About us</StyledLink>
-          </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink to=''>Services</StyledLink>
-          </NavbarLinks>
-          <NavbarLinks>
-            <StyledLink to='/restaurant'>Our Work</StyledLink>
-          </NavbarLinks>
-        </OverlayMenu>
-      </Overlay>
+        <Line toggle={!toggle} />
+        <Line toggle={!toggle} />
+        <Line toggle={!toggle} />
+      </NavIcon>
+    </Nav>
+    <div
+      className={
+        toggle
+          ? "menu-dropdown-container"
+          : "menu-dropdown-container-inactive"
+      }
+    >
+    <div className="menu-dropdown-opts-cont">
+    {" "}
+    <NavbarLinks>
+      <StyledLink1 href="/">Home</StyledLink1>
+    </NavbarLinks>
+    <NavbarLinks>
+      <StyledLink1 href="/signUp">Sign-Up</StyledLink1>
+    </NavbarLinks>
+    <NavbarLinks>
+      <StyledLink1 href="/login">Sign-In</StyledLink1>
+    </NavbarLinks>
+    <NavbarLinks>
+      <StyledLink1 href="#TemplatesFooterId">About us</StyledLink1>
+    </NavbarLinks>
+    <div className="language-select">
+      <div className="">
+        <div className="dropdown">
+          <ul
+            className="dropdown-menu"
+            aria-labelledby="dropdownMenuButton"
+          >
+          {languages.map(({ code, country_code }) => (
+            <li key={country_code}>
+            <a
+            href="#"
+            className={classNames("dropdown-item", {
+              disabled: currentLanguageCode === code,
+            })}
+            onClick={() => {
+              i18next.changeLanguage(code);
+            }}
+            >
+                  <span
+                    className={`flag-icon flag-icon-${country_code} mx-2`}
+                    style={{
+                      opacity: currentLanguageCode === code ? 0.7 : 1,
+                    }}
+                  ></span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>    </div>
     </>
   );
 }
