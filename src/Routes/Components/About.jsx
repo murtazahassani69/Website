@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import AboutMenu from "./About/AboutMenu";
+import {  BrowserRouter as Router } from 'react-router-dom';
+
 // import AboutMenu1 from './Home/About/AboutMenu';
+import AboutMenu from "./About/AboutMenu";
 import MenuToggle from './About/MenuToggle';
 import AboutHead from './About/AboutHead';
 import AboutCenterTop from './About/AboutCenterTop';
 import AboutCenter from './About/AboutCenter';
 import AboutCenterBottom from './About/AboutCenterBottom';
-import HomeFooter from './Home/Footer';
-import {  BrowserRouter as Router } from 'react-router-dom';
+import TemplateDisplayFooter from '../Components/Demo/TemplateDisplay/Footer';
 
 
 function About() {
@@ -31,7 +32,7 @@ function About() {
                 <AboutCenterTop />
                 <AboutCenter />
                 <AboutCenterBottom />
-                <HomeFooter />
+                <TemplateDisplayFooter />
             </div>
         </Router>
     )

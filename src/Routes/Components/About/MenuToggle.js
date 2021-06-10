@@ -44,13 +44,14 @@ const ToggleMenu = styled.div`
     grid-template-rows: repeat(6, 20px);
 
     @media screen and (max-width: ${deviceSize.tablet}px) {
-        grid-template-rows: repeat(6, 20px);
+        grid-template-rows: repeat(6, 18px);
     }
 `;
 
-const ToggleLink = styled(Link)`
+// const ToggleLink = styled(Link)`
+const ToggleLink = styled.a`
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -70,8 +71,9 @@ const ToggleBtnWrap = styled.div`
     justify-content: center;
 `;
 
-const ToggleBtn = styled(Link)`
-    font-size: 1rem;
+// const ToggleBtn = styled(Link)`
+const ToggleBtn = styled.a`
+    font-size: 1.3rem;
     color: #fff;
     background: #2a9d8f;;
     white-space: nowrap;
@@ -99,16 +101,24 @@ function MenuToggle({ isOpen, aboutToggle }) {
             </ToggleIcon>
             <ToggleWrapper>
                 <ToggleMenu>
-                    <ToggleLink to='/' onClick={aboutToggle}>Home</ToggleLink>
+                    {/* <ToggleLink to='/' onClick={aboutToggle}>Home</ToggleLink> */}
+                    <ToggleLink href='/' onClick={aboutToggle}>Home</ToggleLink>
                 </ToggleMenu>
                 <ToggleMenu>
-                    <ToggleLink to='/signUp' onClick={aboutToggle}>Sign Up</ToggleLink>
+                    {/* <ToggleLink to='/templates' onClick={aboutToggle}>Templates</ToggleLink> */}
+                    <ToggleLink href='/templates' onClick={aboutToggle}>CV_Templates</ToggleLink>
                 </ToggleMenu>
                 <ToggleMenu>
-                    <ToggleLink to='/login' onClick={aboutToggle}>Sign In</ToggleLink>
+                    {/* <ToggleLink to='/signUp' onClick={aboutToggle}>Sign Up</ToggleLink> */}
+                    <ToggleLink href='/signUp' onClick={aboutToggle}>Sign Up</ToggleLink>
+                </ToggleMenu>
+                <ToggleMenu>
+                    {/* <ToggleLink to='/login' onClick={aboutToggle}>Sign In</ToggleLink> */}
+                    <ToggleLink href='/login' onClick={aboutToggle}>Sign In</ToggleLink>
                 </ToggleMenu>
                 <ToggleBtnWrap>
-                    <ToggleBtn to='/contact' onClick={aboutToggle}>Contact Us</ToggleBtn>
+                    {/* <ToggleBtn to='/contact' onClick={aboutToggle}>Contact Us</ToggleBtn> */}
+                    <ToggleBtn href="mailto:sdsd@sdsdsdsd.com" onClick={aboutToggle}>Contact Us</ToggleBtn>
                 </ToggleBtnWrap>
             </ToggleWrapper>
         </ToggleContainer>

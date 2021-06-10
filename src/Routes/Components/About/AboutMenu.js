@@ -54,7 +54,7 @@ const AboutNavLogo = styled(Link)`
 `;
 
 
-const MobileIcon = styled.div`
+const AboutMobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: ${deviceSize.tablet}px){
@@ -69,12 +69,12 @@ const MobileIcon = styled.div`
     }
 `;
 
-const FaBarsToggle = styled(FaBars)`
+const AboutFaBarsToggle = styled(FaBars)`
     color: #fff;
     cursor: pointer;
 `;
 
-const AboutNavMenu = styled.ul`
+const AboutNavMenu = styled.div`
     display: flex;
     align-items: center;
     text-align: center;
@@ -89,16 +89,25 @@ const AboutNavItem = styled.div`
     display: flex;
 `;
 
-const AboutNavLinks = styled.li`
+// const AboutNavLinks = styled(Link)`     
+const AboutNavLinks = styled.a`     
     color: #fff;
     font-size: 1rem;
     text-decoration: none;
     height: 100%;
-    padding: 0 1rem;
+    margin: 0 1rem;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     &.active {
         border-bottom: 3px solid #2a9d8f;
+    }
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: #2a9d8f;
+        border-bottom: 3px solid #fff;
+        padding-bottom: 2px;
     }
 `;
 
@@ -112,7 +121,8 @@ const AboutNavBtn = styled.div`
     }
 `;
 
-const AboutBtnLink =styled(Link)`
+// const AboutBtnLink =styled(Link)`
+const AboutBtnLink =styled.a`
     font-size: 1rem;
     color: #fff;
     font-weight: 500;

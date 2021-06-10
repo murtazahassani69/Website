@@ -1,6 +1,6 @@
 .templateDisplay-footer{
     background-color: black;
-    font-family: Comic Sans MS ;
+    font-family:'Courier New', Courier, monospace ;
     font-size: 1.1em;
 }
 
@@ -16,6 +16,15 @@
     margin: auto;
     display: flex;
     justify-content: center;
+}
+.templateDisplay-footerLogo-div{
+    color: royalblue;
+}
+
+.templateDisplay-footerLogo-text{
+    font-style: oblique;
+    color: wheat;
+    padding-top: 1em;
 }
 
 .templateDisplay-footer-socialMedia, .templateDisplay-footer-menu{
@@ -78,6 +87,12 @@
     .templateDisplay-footer-menu-link, .templateDisplay-footer-socialMedia-link{
         width: 85%;
     }
+    #templateDisplay-footer-box{
+        width: 27%;
+    }
+    #templateDisplay-footer-box:nth-child(2){
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 578px) {
@@ -95,5 +110,14 @@
 
     .templateDisplay-footer-socialMedia{
         margin-top: 4em;
+    }
+  
+    #templateDisplay-footer-box{
+        margin: 30px 0 30px 0;
+        width: 90%;
+    }
+ 
+    #templateDisplay-footer-box:nth-child(2){
+        width: 90%;
     }
 }
