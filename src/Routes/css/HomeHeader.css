@@ -1,17 +1,10 @@
-.header-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .header-background-img {
-  width: 100%;
   background-image: url('../imgs/tecno.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  padding: 10em 10em 10em 4em;
+  padding: 10em 0em 10em 4em;
 }
 
 .header-particles {
@@ -59,8 +52,12 @@
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
+  .header-background-img {
+    padding-bottom: 14em;
+  }
+
   .header-title {
-    width: 65%;
+    width: 70%;
   }
 
   .header-text {
@@ -76,13 +73,12 @@
 
 @media screen and (max-width: 832px) {
   .header-title {
-    width: 70%;
+    width: 75%;
   }
 
   .header-text {
     width: 100%;
     line-height: 3.8rem;
-
     font-size: 2.3rem;
   }
   .header-button {
@@ -91,16 +87,16 @@
   }
 }
 
-@media screen and (max-width: 591px) {
+@media screen and (max-width: 616px) {
   .header-title {
     width: 100%;
   }
 
   .header-text {
-    width: 100%;
+    width: 98%;
     line-height: 3.5rem;
-
     font-size: 1.9rem;
+    /* margin-right: 2rem; */
   }
 
   .header-button {
@@ -109,18 +105,32 @@
   }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 425px) {
+  .header-background-img {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 406px) {
   .header-title {
-    width: 120%;
+    width: 100%;
   }
 
   .header-text {
     width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 3rem;
   }
 
   .header-button {
     min-height: 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .header-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 }

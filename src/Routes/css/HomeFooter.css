@@ -1,10 +1,9 @@
- 
-/* -----------------FOOTER  */
+/*HOME -----------------FOOTER  */
 
 .div-footer {
   display: block;
   overflow: hidden;
-  background-color: #5d5d66;
+  background-color: #434350;
 }
 .div-footer .inner_footer{
   padding: 20px 0;
@@ -22,12 +21,16 @@
 }
 /* ------------------------------------------- */
 #footer-logo{
-  margin-left: 10%;
   width: 90px;
 }
 #footer-box1 .socials{
   margin: 1em;
   margin-left: 10%;
+  color: #fff;
+  font-size: 1.7rem;
+  margin-top: 25px;
+  padding: 3px;
+  justify-content: space-between;
 }
 #footer-box1 .socials a img{
   width: 38px;
@@ -35,8 +38,8 @@
 
 #footer-box1 .socials a{
   border: 1px solid gray;
-  width: 55px;
-  height: 45px;
+  width: 50px;
+  height: 39px;
   padding-top: 5px;   
   margin-right: 5px ;
   text-align: center;
@@ -53,7 +56,7 @@
 #footer-box2 h1{
   margin: 0em;
 }
-#footer-box2 h1 span{
+#footer-box2 h1 span,#footer-box2 a{
 color: #05f7ff;
 }
 
@@ -62,13 +65,23 @@ color: #05f7ff;
   height: auto; 
   margin-left: 10%;
 }
-
-
+#footer-box2 .contact{
+  cursor:help;
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #05f7ff;
+}
+#footer-box3 h2{
+  margin-top: 7px;
+}
+#footer-box3 ul{
+  padding-left: 0;
+}
 #footer-box3 ul a{
   display: block;
   font-style: none;
   margin-bottom: 5px;
-  margin-left: 15px;
   transition: all .3s;
   list-style: none;
   text-decoration: none;
@@ -86,7 +99,7 @@ color: #05f7ff;
 }
 
 .div-footer .footer-bottom{
-  background-color: #343a40;
+  background-color: #343911;
   color: #686868;
   text-align:center;
   overflow: hidden;
@@ -137,7 +150,7 @@ color: #05f7ff;
   margin: 0;
 }
 #footer-box1 .socials a{
-  width: 38px;
+  width: 45px;
   margin: 2%;
 }
 .div-footer #footer-box2 img{
@@ -149,7 +162,7 @@ color: #05f7ff;
 }
 .div-footer .footer-bottom h5{
   font-size: 1rem; 
-  width: 80%;
+  width: 90%;
 }
 }
 
@@ -159,7 +172,7 @@ color: #05f7ff;
 
 .div-footer .inner_footer .footer-boxes,
 .div-footer .footer-bottom {
-  padding: 20px;
+  padding: 0px;
 }
 .div-footer .footer-bottom{
   font-size: 1.2rem;

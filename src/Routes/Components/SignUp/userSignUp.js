@@ -44,8 +44,8 @@ const UserSignUp = (props) => {
               <CardBody className='p-4'>
                 <Form id="temp-div-signUp-form">
                   <div className="mb-2 pageheading">
-                    <div className='col-sm-12 btn btn-primary'>
-                              Sign Up
+                    <div className='col-sm-12 btn btn-primary' onClick={() => {window.location.href="/templates"}}>
+                      <i class="fas fa-arrow-circle-left"></i>&nbsp;  Back to Templates
                     </div>
                   </div>
                   <InputGroup className=' temp-div-signUp-mb-3'>
