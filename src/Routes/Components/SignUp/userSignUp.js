@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Button, Card, CardBody, Col, Container,
   Form, Input, InputGroup, Row } from 'reactstrap'
@@ -6,6 +6,24 @@ import '../../css/UserSignUp.css'
 
 import ModelPopup from './ModelPopup'
 
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
+
+
+// Language implementation
+const languages = [
+  {
+    code: "en",
+    country_code: "gb",
+  },
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+];
 const UserSignUp = (props) => {
   const initialInputState = { name: '',lastName: '', email: '', password:'', password2:'',
   gender: '',dateOfBird: '',country: '',language: '',profession: '',lookingJobAt: '', }
@@ -17,6 +35,12 @@ const UserSignUp = (props) => {
     text:'register',
     ext:'ext'
   })
+
+  // language implementation
+  const currentLanguageCode = cookies.get("i18next") || "en";
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  const { t } = useTranslation();
+
 
   const handleChange= ( e ) => {
     e.preventDefault()
@@ -35,6 +59,13 @@ const UserSignUp = (props) => {
     }
   }
 
+  // language implementation
+  useEffect(() => {
+    document.body.dir = currentLanguage.dir || "ltr";
+    document.title = t("app_title");
+  }, [currentLanguage, t]);
+
+
   return(
     <div className="temp-div-signUp-container" >
       <Container>
@@ -45,8 +76,39 @@ const UserSignUp = (props) => {
                 <Form id="temp-div-signUp-form">
                   <div className="mb-2 pageheading">
                     <div className='col-sm-12 btn btn-primary' onClick={() => {window.location.href="/templates"}}>
-                      <i class="fas fa-arrow-circle-left"></i>&nbsp;  Back to Templates
+                      <i class="fas fa-arrow-circle-left"></i>&nbsp;
+                      {t("sign_up_go_back")}
+
                     </div>
+                    <div className="language-select">
+                <div className="dropdown">
+                  <ul
+                    className="dropdown-menu-sign-up"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    {languages.map(({ code, country_code }) => (
+                      <li key={country_code}>
+                        <a
+                          href="#"
+                          className={classNames("dropdown-item", {
+                            disabled: currentLanguageCode === code,
+                          })}
+                          onClick={() => {
+                            i18next.changeLanguage(code);
+                          }}
+                        >
+                          <span
+                            className={`flag-icon flag-icon-${country_code} mx-2`}
+                            style={{
+                              opacity: currentLanguageCode === code ? 0.7 : 1,
+                            }}
+                          ></span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
                   </div>
                   <InputGroup className=' temp-div-signUp-mb-3'>
                     <Input

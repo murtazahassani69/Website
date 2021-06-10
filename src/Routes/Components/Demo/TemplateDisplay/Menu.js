@@ -155,12 +155,12 @@ function Menu() {
  +=====================*/
  const languages = [
    {
+     code: "gr",
+     country_code: "gr",
+   },
+   {
      code: "en",
      country_code: "gb",
-    },
-    {
-      code: "gr",
-      country_code: "gr",
     },
 ];
 
@@ -192,7 +192,7 @@ function Menu() {
             <StyledLink href="/login">Sign-In</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink href='#TemplatesFooterId'>About us</StyledLink>
+            <StyledLink href='/about'>About us</StyledLink>
           </NavbarLinks>
           <div className="language-select">
             <div className="">

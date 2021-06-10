@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { Component, useEffect } from 'react';
 import Pdf from "react-to-pdf";
 import profile1 from './imgs/profile1.png'
 import "../../../../css/CVJallowTemplate1.css";
+
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
 
 const ref = React.createRef();
 
@@ -28,7 +34,29 @@ function Toggle() {
     )
 }
 
+// Language implementation
+const languages = [
+    {
+      code: "en",
+      country_code: "gb",
+    },
+    {
+      code: "gr",
+      country_code: "gr",
+    },
+  ];
 function Menu() {
+    // language implementation
+    const currentLanguageCode = cookies.get("i18next") || "en";
+    const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+    const { t } = useTranslation();
+  
+        // language implementation
+    useEffect(() => {
+      document.body.dir = currentLanguage.dir || "ltr";
+      document.title = t("app_title");
+    }, [currentLanguage, t]);
+  
     return(
         <div>
             <Toggle />
@@ -36,7 +64,37 @@ function Menu() {
                 <li className='jallowTemp1MenuLink jallowTempBack'><a href='http://localhost:3000/templates'>Back</a></li>
                 <li className='jallowTemp1MenuLink'><a href='#'>Resume</a></li>
                 <li className='jallowTemp1MenuLink'><a href='#'>Portfolio</a></li>
+                <div className="language-select">
+                <div className="dropdown">
+                  <ul
+                    className="dropdown-menu-templateJ1"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    {languages.map(({ code, country_code }) => (
+                      <li key={country_code}>
+                        <a
+                          href="#"
+                          className={classNames("dropdown-item", {
+                            disabled: currentLanguageCode === code,
+                          })}
+                          onClick={() => {
+                            i18next.changeLanguage(code);
+                          }}
+                        >
+                          <span
+                            className={`flag-icon flag-icon-${country_code} mx-2`}
+                            style={{
+                              opacity: currentLanguageCode === code ? 0.7 : 1,
+                            }}
+                          ></span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </ul>
+            
         </div>
     )
 }

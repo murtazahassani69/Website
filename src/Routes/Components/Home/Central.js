@@ -78,7 +78,7 @@ function Central() {
         </a> */}
 
         <div class="central-div-box">
-          <a href="/templates">
+          <a href="/livecvdisplay">
             <img
               src={Templates_cv}
               alt=""

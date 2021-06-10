@@ -2,6 +2,25 @@ import React, { useEffect, useState } from 'react';
 import '../../../../css/CVBaldeTemplateCentral2.css';
 import '../../../../css/CVBaldeTemplateCentral2Mq.css';
 
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
+
+
+// Language implementation
+const languages = [
+    {
+      code: "en",
+      country_code: "gb",
+    },
+    {
+      code: "gr",
+      country_code: "gr",
+    },
+  ];
+  
 function Menu() {
     const [bloc1, setBloc1]=useState(true)
     const [bloc2, setBloc2]=useState(false)
@@ -105,6 +124,15 @@ function Menu() {
 }
 
 function Content1() {
+    const currentLanguageCode = cookies.get("i18next") || "en";
+    const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+    const { t } = useTranslation();
+  
+    useEffect(() => {
+      document.body.dir = currentLanguage.dir || "ltr";
+      document.title = t("app_title");
+    }, [currentLanguage, t]);
+  
     return (
         <div className='CVBaldeTemp2-content'>
             <div className='CVBaldeTemp2-content-profile'>
@@ -112,15 +140,49 @@ function Content1() {
                     <img src='https://image.shutterstock.com/image-vector/blank-avatar-photo-place-holder-260nw-1095249842.jpg' alt='Picture' />
                 </div>
                 <div className='CVBaldeTemp2-content-hello'>
-                    <span>HELLO</span>
+                    <span>
+                    {t("BOUBACAR_cv_tam_flags_title")}
+                    </span>
                 </div>
             </div>
             <div className='CVBaldeTemp2-content-name'>
-                <span>MY NAME IS</span>
+                <span>
+                {t("BOUBACAR_cv_tam_flags_paragraph")}
+         </span>
             </div>
             <div className='CVBaldeTemp2-content-name1'>
+            
                 <span>BOUBACAR BALDE</span>
             </div>
+            <div className="language-select">
+                <div className="dropdown">
+                  <ul
+                    className="dropdown-menu-jallow"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    {languages.map(({ code, country_code }) => (
+                      <li key={country_code}>
+                        <a
+                          href="#"
+                          className={classNames("dropdown-item", {
+                            disabled: currentLanguageCode === code,
+                          })}
+                          onClick={() => {
+                            i18next.changeLanguage(code);
+                          }}
+                        >
+                          <span
+                            className={`flag-icon flag-icon-${country_code} mx-2`}
+                            style={{
+                              opacity: currentLanguageCode === code ? 0.7 : 1,
+                            }}
+                          ></span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
         </div>
     );
   }

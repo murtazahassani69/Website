@@ -182,7 +182,7 @@ function Menu() {
             <StyledLink href="#portfolio_more">Portfolio</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink href="#learnAboutUs">About us</StyledLink>
+            <StyledLink href="/about">About us</StyledLink>
           </NavbarLinks>
           <div className="language-select">
             <div className="">

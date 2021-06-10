@@ -58,6 +58,8 @@
     padding: 8px 16px;
     margin: 0px .5rem;
     margin-right: 40px;
+    margin-right: 40px;
+    display: -webkit-inline-box;
 }
 .JAnimatedNavList{
     color: #fff;

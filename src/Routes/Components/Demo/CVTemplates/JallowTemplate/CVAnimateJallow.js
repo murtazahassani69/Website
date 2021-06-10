@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import "../../../../css/CVJallowTemplateAn1.css";
 import Brand from './imgs/Animate-imgs/brand-dark.png';
 
@@ -28,6 +28,13 @@ import Vlog3 from './imgs/Animate-imgs/bp3.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
+
 function CVAnimateJallow() {
     AOS.init({
         offset: 300,
@@ -52,49 +59,135 @@ function CVAnimateJallow() {
     )
 }
 
+// Language implementation
+
+const languages = [
+    {
+      code: "en",
+      country_code: "gb",
+    },
+    {
+      code: "gr",
+      country_code: "gr",
+    },
+  ];
+  
 function Header() { 
-    return(
-        <header className='JAnimatedHeader'>
-            <div className='JAnimatedHeaderInner JAnimatedHeaderInContent'>
-                <div className='JAnimatedHeaderMenu' data-aos="fade-down">
-                    <a className='JAnimatedBrand'><img src={Brand} alt='Brand' /></a>
+    const currentLanguageCode = cookies.get("i18next") || "en";
+    const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+    const { t } = useTranslation();
+  
+    useEffect(() => {
+      document.body.dir = currentLanguage.dir || "ltr";
+      document.title = t("app_title");
+    }, [currentLanguage, t]);
+  
+    return (
+      <header className="JAnimatedHeader">
+        <div className="JAnimatedHeaderInner JAnimatedHeaderInContent">
+          <div className="JAnimatedHeaderMenu" data-aos="fade-down">
+            <a className="JAnimatedBrand">
+              <img src={Brand} alt="Brand" />
+            </a>
+          </div>
+
+          <nav className="JAnimatedNav">
+            <input type="checkbox" id="check" />
+            <label htmlFor="check" className="CVTCheckIcon">
+              <i class="fas fa-bars"></i>
+            </label>
+
+            <div className="JAnimatedNavItem">
+              <a
+                href="http://localhost:3000/templates"
+                className="JAnimatedNavList"
+              >
+                Back
+              </a>
+              <a href="#" className="JAnimatedNavList">
+                Code shop
+              </a>
+              <a href="#" className="JAnimatedNavList">
+                Portfolio
+              </a>
+              <a href="#" className="JAnimatedNavList">
+                Resume
+              </a>
+              <a href="#" className="JAnimatedNavList">
+                About
+              </a>
+              <a href="#" className="JAnimatedNavList">
+                Blog
+              </a>
+              <div className="language-select">
+                <div className="dropdown">
+                  <ul
+                    className="dropdown-menu-jallow"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    {languages.map(({ code, country_code }) => (
+                      <li key={country_code}>
+                        <a
+                          href="#"
+                          className={classNames("dropdown-item", {
+                            disabled: currentLanguageCode === code,
+                          })}
+                          onClick={() => {
+                            i18next.changeLanguage(code);
+                          }}
+                        >
+                          <span
+                            className={`flag-icon flag-icon-${country_code} mx-2`}
+                            style={{
+                              opacity: currentLanguageCode === code ? 0.7 : 1,
+                            }}
+                          ></span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-
-                <nav className='JAnimatedNav'>
-                    <input type='checkbox' id='check' />
-                    <label htmlFor='check' className='CVTCheckIcon'><i class="fas fa-bars"></i></label>
-
-
-                    <div className='JAnimatedNavItem'> 
-                        <a href='http://localhost:3000/templates' className='JAnimatedNavList'>Back</a>
-                        <a href='#' className='JAnimatedNavList'>Code shop</a>
-                        <a href='#' className='JAnimatedNavList'>Portfolio</a>
-                        <a href='#' className='JAnimatedNavList'>Resume</a>
-                        <a href='#' className='JAnimatedNavList'>About</a>
-                        <a href='#' className='JAnimatedNavList'>Blog</a>
-                    </div>
-                    <div className='JAnimatedButton'>
-                        <a href='#' className='JAnimatedPDF'>Dowload PDF</a>
-                    </div>
-                </nav>
+              </div>
             </div>
-        </header>
-    )
+            <div className="JAnimatedButton">
+              <a href="#" className="JAnimatedPDF">
+                Dowload PDF
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+    );
 }
 
 function SectionHeader () {
-    return(
-        <section className='JAnimatedSectHead'>
-            <div className="JAnimatedSectContent">
-                <video className='JAnimatedVideo' src={Background}autoPlay loop muted />
-                <h1 className='JAnimatedSectHeading'>Squarespace <br /><span>Developer.</span></h1>
-                <div className="JAnimatedHeadBtns">
-                    <a className='JAnimatedBtns1'>HIRE ME TODAY</a>
-                    <a href='#JAniLaptopVidPlayer' className='JAnimatedBtns2'>WATCH VIDEO<i className="far fa-play-circle" /></a>
-                </div>
-            </div>
-        </section>
-    )
+    const { t } = useTranslation();
+
+    return (
+      <section className="JAnimatedSectHead">
+        <div className="JAnimatedSectContent">
+          <video
+            className="JAnimatedVideo"
+            src={Background}
+            autoPlay
+            loop
+            muted
+          />
+          <h1 className="JAnimatedSectHeading">
+            {t("jallow_cv_title")}
+            <br />
+            <span> {t("jallow_cv_title_1")}</span>
+          </h1>
+          <div className="JAnimatedHeadBtns">
+            <a className="JAnimatedBtns1">HIRE ME TODAY</a>
+            <a href="#JAniLaptopVidPlayer" className="JAnimatedBtns2">
+              WATCH VIDEO
+              <i className="far fa-play-circle" />
+            </a>
+          </div>
+        </div>
+      </section>
+    );
 }
 
 function Name(){

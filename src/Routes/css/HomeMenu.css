@@ -70,8 +70,17 @@
   .dropdown-menu {
   display: flex;
 }
-.flag-icon {
+.flag-icon1{  
+  
   margin: 5px;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+  margin: 2px;
 }
   .menu-dropdown-container {
     display: block;
@@ -122,13 +131,8 @@
 }
 .flag-icon {
   margin: 5px;
-  background: green;
 }
 }
-
-/*===============+
- |SELECT LANGUAGE|
- +===============*/
 
 .flag-icon {
   display: flex;
@@ -137,6 +141,37 @@
 .dropdown-menu {
   display: flex;
   position: absolute;
+  list-style: none;
+  font-size: 26px;
+  margin-left: -19px;
+}
+.dropdown-menu-jallow{
+  display: flex;
+  position: absolute;
+  list-style: none;
+  font-size: 26px;
+  margin-top: 6px;
+}
+.dropdown-menu-sign-up{
+  display: inline-flex;
+  /* position: fixed; */
+  list-style: none;
+  font-size: 26px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  margin-left: -34px;
+}
+.dropdown-menu-templateJ1{
+  display: flex;
+  list-style: none;
+  font-size: medium;
+  float: right;
+}
+
+
+.dropdown-menu-about {
+  display: flex;
+  /* position: absolute; */
   list-style: none;
   font-size: 26px;
   margin-left: -19px;
@@ -230,3 +265,6 @@
   }
 }
 
+.about-flag-right {
+  background: firebrick;
+}
