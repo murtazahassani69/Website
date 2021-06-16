@@ -1,6 +1,7 @@
+
 import React from 'react';
 import '../../../css/TemplateDisplayFooter.css'
-import footer_img from '../../../imgs/logo_NoFrame.jpg';
+import footer_img from "../../../imgs/logo_NoFrame.jpg";
 
 function Footer() {
   return (

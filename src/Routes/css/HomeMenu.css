@@ -97,25 +97,42 @@
  |SELECT LANGUAGE|
  +===============*/.flag-icon {
   display: flex;
-}.dropdown-menu {
+}
+
+.dropdown-menu {
   display: flex;
   position: absolute;
   list-style: none;
   font-size: 26px;
   margin-left: -19px;
-}.dropdown-item {
+}
+.dropdown-menu-maria-cv {
+  display: inline-flex;
+  position: absolute;
+  list-style: none;
+  font-size: 19px;
+  margin-top: -11px;
+}
+
+.dropdown-item {
   color: white;
-}.menu__navbar_logo1 {
+}
+
+.menu__navbar_logo1 {
   max-width: 5vw;
   margin: 0.3rem 0 0.3rem 1rem;
   cursor: pointer;
   border-radius: 93px;
-}/* MEDIA QUERIES */@media screen and (max-width: 1024px) {
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
   .menu_navbar-container {
     width: 95.4%;
     width: 100%;
   }
-}@media screen and (max-width: 769px) {
+}
+@media screen and (max-width: 769px) {
   .menu__navbar-burger-menu {
     display: block;
     color: white;

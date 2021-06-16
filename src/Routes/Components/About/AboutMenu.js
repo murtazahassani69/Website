@@ -175,9 +175,9 @@ function AboutMenu({ aboutToggle }) {
               {/* Eksi-Nous */}
               <img src={EksiNousLogo} />
             </AboutNavLogo>
-            <MobileIcon onClick={aboutToggle}>
-              <FaBarsToggle />
-            </MobileIcon>
+            <AboutMobileIcon  onClick={aboutToggle}>
+              <AboutFaBarsToggle />
+            </AboutMobileIcon >
             <AboutNavMenu>
               <AboutNavItem>
                 <AboutNavLinks to="/">Home</AboutNavLinks>
