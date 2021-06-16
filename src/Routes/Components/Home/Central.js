@@ -130,7 +130,7 @@ function Central() {
         </h3>
         <p class="central-div-web-tools-text">
           <strong>
-            Here is some of the best web languages, framework/library and
+            Here are some of the best web languages, framework/library and
             designing we used
           </strong>
         </p>

@@ -109,15 +109,15 @@ exports.up = function(knex, Promise){
 
 exports.down = function(knex, Promise){
   return knex.schema
-  .dropTable('users')
-  .dropTable('userTypes')
   .dropTable('purchases')
-  .dropTable('cvTemplates')
-  .dropTable('countries')
-  .dropTable('languages')
-  .dropTable('professions')
+  .dropTable('users')
   .dropTable('cities')
   .dropTable('states')
+  .dropTable('countries')
   .dropTable('subscriptions')
   .dropTable('genders')
+  .dropTable('professions')
+  .dropTable('languages')
+  .dropTable('cvTemplates')
+  .dropTable('userTypes')
 };
