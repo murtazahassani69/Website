@@ -13,21 +13,34 @@ const axios = require('axios').default;
 function Home() {
   const [countries, setCountries] = useState([]);
   
+  /*
   const fetchCountries = async() => {
     try{
       setCountries(await (await axios.get('http://localhost:8080/countries')).data);
     } catch(error){
       console.log(`${error}`);
     }
+  } */
+
+  const postCountry = async(newCountry) => {
+    try{
+      await (await axios.post('http://localhost:8080/countries', newCountry)).data;
+    } catch(error){
+      console.log(`${error}`);
+    }
+  } 
+
+  const newCountry = {
+    creationDate: "2021-10-2",
+    countryName: "Disneyland"
   }
 
   useEffect(() => {
     console.log("REACHED");
-    fetchCountries();
+    // fetchCountries();
+    postCountry(newCountry);
     console.log("END");
     }, []);
-
-    console.log(countries);
 
   return (
     <Router>  
