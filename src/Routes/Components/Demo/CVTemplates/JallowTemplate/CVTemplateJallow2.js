@@ -1,4 +1,4 @@
-import React from 'react';
+import React,  {useEffect} from "react";
 import Pdf from "react-to-pdf";
 import P_img1 from './imgs/p-img1.jpg';
 import "../../../../css/CVJallowTemplate2.css";
@@ -6,13 +6,42 @@ import "../../../../css/CVJallowTemplate2.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
+
 const ref = React.createRef();
 
+// Language implementation
+const languages = [
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+  {
+    code: "en",
+    country_code: "gb",
+  },
+];
 function CVTemplateJallow2() {
   AOS.init({
     offset: 300,
     duration: 1000
   })
+
+            // language implementation
+            const currentLanguageCode = cookies.get("i18next") || "en";
+            const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+            const { t } = useTranslation();
+          
+                // language implementation
+            useEffect(() => {
+              document.body.dir = currentLanguage.dir || "ltr";
+              document.title = t("app_title");
+            }, [currentLanguage, t]);
+          
   return (
     <>
       <div id="jallowCVTContainer">
@@ -60,6 +89,30 @@ function CVTemplateJallow2() {
                   <li className='jallowCVTNavItem'>
                     <a href='#contact' className='jallowCVTNavLink'>Contact</a>
                   </li>
+
+                  <li className='flag_container'>
+                  <ul className="CVBaldeTemp_div_ul_1">
+                  {languages.map(({ code, country_code }) => (
+                    <li key={country_code}  className="CVBaldeTemp_div_ul_li_1"> 
+                      <a
+                        href="#!"
+                        className={classNames("dropdown-item", {
+                          disabled: currentLanguageCode === code,
+                        })}
+                        onClick={() => {
+                          i18next.changeLanguage(code);
+                        }}
+                      >
+                        <span
+                          className={`flag-icon flag-icon-${country_code} mx-2`}
+                          style={{
+                            opacity: currentLanguageCode === code ? 0.7 : 1,
+                          }}
+                        ></span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>                  </li>
                 </ul>
               </div>
             </nav>
@@ -106,9 +159,12 @@ function CVTemplateJallow2() {
 
             <section className='jallowCVTSection'>
               <div className='jallowCVTSectionProfile' data-aos="fade-left">
-                <h2 className='jallowCVTSectionTitle'>Profile</h2>
+                <h2 className='jallowCVTSectionTitle'>           
+                 {t("TAMPLET_JALLOW_2_JOB_TITLE")}
+                </h2>
                 <p className='jallowCVTProfileDescription'>
-                I started my career as a freelance couple of years ago later got the opportunity to work at some of the big Tech Companies, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+                {t("TAMPLET_JALLOW_2_ABOUT")}
+
                 </p>
               </div>
             </section>

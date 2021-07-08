@@ -432,3 +432,21 @@
         margin: 1rem 1px 1px;
     }
 }
+
+.jallow_cv_template {
+    font-size: 24px;
+    display: -webkit-box;
+}
+.jallow_cv_template .jallow_cv_template_li{
+    margin: 2px;
+}
+
+
+.murtaza_cv_animation {
+    font-size: 24px;
+    display: -webkit-box;
+    margin-left: -13px;
+}
+.murtaza_cv_animation .murtaza_cv_animation_li{
+    margin: 2px;
+}
