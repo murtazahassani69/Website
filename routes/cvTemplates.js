@@ -34,6 +34,7 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   try {
     pool.query(
+
       `INSERT INTO cvtemplates (creationDate, cvType) 
        VALUES (
     '${req.body.creationDate}',

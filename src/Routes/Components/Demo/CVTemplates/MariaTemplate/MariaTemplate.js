@@ -74,7 +74,7 @@ function MariaTemp(){
             
             <div className="CVMarTemp-right"> 
             <a className="CVMarTemp-header-back" href='/templates'>&larr;Back</a>
-   
+
                 <ul
                   className="dropdown-menu-maria-cv"
                   aria-labelledby="dropdownMenuButton"
@@ -100,7 +100,6 @@ function MariaTemp(){
                     </li>
                   ))}
                 </ul>
-        
                 <section className="CVMarTemp-section">
                     <h2 className="CVMarTemp-section-h2">My Services</h2>
                     <div className="CVMarTemp-services">

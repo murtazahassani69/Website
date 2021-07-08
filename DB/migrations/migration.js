@@ -5,7 +5,6 @@ exports.up = function(knex, Promise){
   .createTable('userTypes', table =>{
     table.increments('id');
     table.date('creationDate', 45).notNullable();
-    table.varchar('fullName', 100).notNullable();
     table.varchar('userType', 100).notNullable();
     table.varchar('description', 100).notNullable();
   })
@@ -27,13 +26,11 @@ exports.up = function(knex, Promise){
   .createTable('genders', table => {
     table.increments('id');
     table.date('creationDate', 45).notNullable();
-    table.varchar('fullName', 100).notNullable();
     table.varchar('gender', 45).notNullable();
   })
   .createTable('subscriptions', table => {
     table.increments('id');
     table.date('subscriptionDate', 45).notNullable();
-    // table.varchar('fullName').notNullable();
     table.varchar('subscribe', 100).notNullable();
     table.integer('cvTemplateId').unsigned().nullable();
     table.foreign('cvTemplateId').references('cvTemplates.id');
@@ -41,10 +38,8 @@ exports.up = function(knex, Promise){
   .createTable('countries', table => {
     table.increments('id');
     table.date('creationDate', 45).notNullable();
-    table.varchar('countryName', 100).notNullable();
-    // table.varchar('continent').notNullable();
-    // table.integer('cityId').references('id').inTable('cities');
-    // table.integer('stateId').references('id').inTable('states');
+    table.varchar('country', 100).notNullable();
+ 
   })
   .createTable('states', table => {
     table.increments('id');
@@ -60,7 +55,6 @@ exports.up = function(knex, Promise){
     table.varchar('cityName', 100).notNullable();
     table.integer('stateId').unsigned().nullable();
     table.foreign('stateId').references('states.id');
-    // table.integer('countryId').references('id').inTable('countries');
   })
   .createTable('users', table =>{
     table.increments('id');
@@ -90,8 +84,6 @@ exports.up = function(knex, Promise){
   .createTable('purchases', table =>{
     table.increments('id');
     table.date('creationDate', 45).notNullable();
-    table.varchar('fullName', 100).notNullable();
-    table.varchar('cvType', 100).notNullable();
     table.float('amount', 45).notNullable(); 
     table.integer('userId').unsigned().nullable();
     table.foreign('userId').references('users.id');

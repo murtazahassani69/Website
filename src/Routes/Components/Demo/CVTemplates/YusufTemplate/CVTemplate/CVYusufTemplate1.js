@@ -103,7 +103,6 @@ function CVYusufTemplate1 (){
         <section className="CVYusufTemp1-div-main-section">
           <section className="CVYusufTemp1-div-highlights">
             {t("YUSUF_TAMP_ABOUT")}
-
           </section>
           <section className="experience">
             <div className="CVYusufTemp1-div-section-title">Experience</div>
