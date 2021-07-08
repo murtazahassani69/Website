@@ -57,17 +57,15 @@ function CVYusufTemplate1 (){
           <li><Pdf targetRef={ref} filename="resume.pdf"paperSize="A4" margin="2cm">
             {({ toPdf }) => <a className="CVYusufTemp-div-menu-nav-link" onClick={toPdf}href="#section">Download PDF</a>} 
             </Pdf></li>
-          <li><div className="language-select">
-          <div className="">
             <div className="dropdown">
               <ul
-                className="dropdown-menu"
+                className="cv_u_s_template_ul"
                 aria-labelledby="dropdownMenuButton"
               >
                 {languages.map(({ code, name, country_code }) => (
-                  <li key={country_code}>
+                  <li key={country_code}                 className="cv_u_s_template_li"                  >
                     <a
-                      href="#"
+                      href="#!"
                       className={classNames("dropdown-item", {
                         disabled: currentLanguageCode === code,
                       })}
@@ -86,8 +84,6 @@ function CVYusufTemplate1 (){
                 ))}
               </ul>
             </div>
-          </div>
-        </div></li>
         </ul>
       </nav>
    </header>
@@ -106,7 +102,7 @@ function CVYusufTemplate1 (){
       <section className="CVYusufTemp1-div-contents">
         <section className="CVYusufTemp1-div-main-section">
           <section className="CVYusufTemp1-div-highlights">
-            {t("Yusuf_tamp_about")}
+            {t("YUSUF_TAMP_ABOUT")}
 
           </section>
           <section className="experience">

@@ -10,14 +10,14 @@ import classNames from "classnames";
 
 // Language implementation
 const languages = [
-    {
-      code: "en",
-      country_code: "gb",
-    },
-    {
-      code: "gr",
-      country_code: "gr",
-    },
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+  {
+    code: "en",
+    country_code: "gb",
+  },
   ];
 const LoginForm = () => {
   // language implementation

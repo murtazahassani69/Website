@@ -467,3 +467,12 @@
     padding-left: 5%;
   }
 }
+.dropdown__MY_CV {
+  font-size: 29px;
+  display: inline-flex;
+  margin-left: -35px;
+}
+.dropdown__MY_CV .dropdown__MY_CV_li {
+  margin: 12px;
+  text-align: center;
+}

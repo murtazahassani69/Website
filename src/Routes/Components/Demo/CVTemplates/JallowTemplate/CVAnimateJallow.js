@@ -62,14 +62,14 @@ function CVAnimateJallow() {
 // Language implementation
 
 const languages = [
-    {
-      code: "en",
-      country_code: "gb",
-    },
-    {
-      code: "gr",
-      country_code: "gr",
-    },
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+  {
+    code: "en",
+    country_code: "gb",
+  },
   ];
   
 function Header() { 
@@ -119,14 +119,14 @@ function Header() {
               <a href="#" className="JAnimatedNavList">
                 Blog
               </a>
-              <div className="language-select">
                 <div className="dropdown">
                   <ul
-                    className="dropdown-menu-jallow"
-                    aria-labelledby="dropdownMenuButton"
+                    className="dropdown-menu-in-jallow-cv"
                   >
                     {languages.map(({ code, country_code }) => (
-                      <li key={country_code}>
+                      <li key={country_code}                     
+                      className="dropdown-menu-in-jallow-cv-li"
+                      >
                         <a
                           href="#"
                           className={classNames("dropdown-item", {
@@ -146,7 +146,6 @@ function Header() {
                       </li>
                     ))}
                   </ul>
-                </div>
               </div>
             </div>
             <div className="JAnimatedButton">

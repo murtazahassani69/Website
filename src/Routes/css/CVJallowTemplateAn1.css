@@ -996,3 +996,15 @@
         flex-basis: 70%;
     }
 }
+
+.dropdown-menu-in-jallow-cv{
+    display: flex;
+    font-size: 25px;
+    margin-top: 3px;
+    justify-content: center;
+    align-items: self-start;
+    /* position: fixed; */
+}
+.dropdown-menu-in-jallow-cv .dropdown-menu-in-jallow-cv-li{
+    margin: 5px;
+}

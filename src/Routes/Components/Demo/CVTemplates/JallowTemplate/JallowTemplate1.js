@@ -36,14 +36,14 @@ function Toggle() {
 
 // Language implementation
 const languages = [
-    {
-      code: "en",
-      country_code: "gb",
-    },
-    {
-      code: "gr",
-      country_code: "gr",
-    },
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+  {
+    code: "en",
+    country_code: "gb",
+  },
   ];
 function Menu() {
     // language implementation
@@ -64,23 +64,21 @@ function Menu() {
                 <li className='jallowTemp1MenuLink jallowTempBack'><a href='http://localhost:3000/templates'>Back</a></li>
                 <li className='jallowTemp1MenuLink'><a href='#'>Resume</a></li>
                 <li className='jallowTemp1MenuLink'><a href='#'>Portfolio</a></li>
-                <div className="language-select">
-                <div className="dropdown">
+           
                   <ul
-                    className="dropdown-menu-templateJ1"
-                    aria-labelledby="dropdownMenuButton"
+                    className="jallow_cv_template"
                   >
                     {languages.map(({ code, country_code }) => (
-                      <li key={country_code}>
+                      <li key={country_code} className="jallow_cv_template_li">
                         <a
-                          href="#"
+                          href="#!"
                           className={classNames("dropdown-item", {
                             disabled: currentLanguageCode === code,
                           })}
                           onClick={() => {
                             i18next.changeLanguage(code);
                           }}
-                        >
+                        >   
                           <span
                             className={`flag-icon flag-icon-${country_code} mx-2`}
                             style={{
@@ -91,8 +89,6 @@ function Menu() {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
             </ul>
             
         </div>

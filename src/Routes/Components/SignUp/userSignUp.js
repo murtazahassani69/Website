@@ -16,12 +16,12 @@ import classNames from "classnames";
 // Language implementation
 const languages = [
   {
-    code: "en",
-    country_code: "gb",
-  },
-  {
     code: "gr",
     country_code: "gr",
+  },
+  {
+    code: "en",
+    country_code: "gb",
   },
 ];
 const UserSignUp = (props) => {
@@ -80,16 +80,13 @@ const UserSignUp = (props) => {
                       {t("sign_up_go_back")}
 
                     </div>
-                    <div className="language-select">
-                <div className="dropdown">
                   <ul
-                    className="dropdown-menu-sign-up"
-                    aria-labelledby="dropdownMenuButton"
+                    className="dropdown_menu_sign_up"
                   >
                     {languages.map(({ code, country_code }) => (
-                      <li key={country_code}>
+                      <li key={country_code} className="dropdown_menu_sign_up_li">
                         <a
-                          href="#"
+                          href="#!"
                           className={classNames("dropdown-item", {
                             disabled: currentLanguageCode === code,
                           })}
@@ -107,8 +104,6 @@ const UserSignUp = (props) => {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
                   </div>
                   <InputGroup className=' temp-div-signUp-mb-3'>
                     <Input
