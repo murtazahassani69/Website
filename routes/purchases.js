@@ -31,7 +31,7 @@ router.get('/:id', (req, res) => {
 });
 
 /* POST method */
-router.post('/', [admin], (req, res) => {
+router.post('/', (req, res) => {
   try {
     pool.query(
       `INSERT INTO purchases (creationDate, fullName, cvType, amount, intNumber, floatNumber) 

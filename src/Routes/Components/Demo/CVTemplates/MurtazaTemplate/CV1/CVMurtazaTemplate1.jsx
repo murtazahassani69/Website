@@ -1,11 +1,14 @@
-import React from "react";
+import React,  {useState, useEffect} from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
-import codepen from "./imgs/codepen.png";
-import github from "./imgs/github.png";
-import linkedin from "./imgs/linkedin.png";
 import "../../../../../css/CVMurtazaTemplate.css";
-import MurtazaTampReview from "./MurtazaTampReview";
 import { ImArrowLeft2 } from "react-icons/im";
+
+
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
 
 function Home_Cv() {
   return (
@@ -21,7 +24,32 @@ function Home_Cv() {
   );
 }
 
+// Language implementation
+const languages = [
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+  {
+    code: "en",
+    country_code: "gb",
+  },
+];
+
 function Background() {
+  const [toggle, setToggle] = useState(false);
+  // language implementation
+  const currentLanguageCode = cookies.get("i18next") || "en";
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  const { t } = useTranslation();
+
+      // language implementation
+  useEffect(() => {
+    document.body.dir = currentLanguage.dir || "ltr";
+    document.title = t("app_title");
+  }, [currentLanguage, t]);
+
+
   return (
     <div className="CVMurtazaTemp_background">
       <div className="CVMurtazaTemp_go_back_div">
@@ -34,9 +62,9 @@ function Background() {
       </div>
       <div className="CVMurtazaTemp_top_container">
         <h1>
-          Hello, I'm Murtaza Hassani.
+          {t("MURTAZA_CV_NAME")}
           <br />
-          I'm a Full Stack Web Developer.
+          {t("MURTAZA_CV_TITLE")}
         </h1>
 
         <button className="CVMurtazaTemp_work_button " data-wow-offset="0">
@@ -47,6 +75,32 @@ function Background() {
         <button className="btn_download">
           <a href="/MurtazaTampReview">See an example</a>
         </button>
+        <div>
+        <div>
+          <ul className="dropdown__MY_CV">
+            {languages.map(({ code, country_code }) => (
+              <li key={country_code}  className="dropdown__MY_CV_li">
+                <a
+                  href="#!"
+                  className={classNames("dropdown-item", {
+                    disabled: currentLanguageCode === code,
+                  })}
+                  onClick={() => {
+                    i18next.changeLanguage(code);
+                  }}
+                >
+                  <span
+                    className={`flag-icon flag-icon-${country_code} mx-2`}
+                    style={{
+                      opacity: currentLanguageCode === code ? 0.7 : 1,
+                    }}
+                  ></span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        </div>
       </div>
     </div>
   );
