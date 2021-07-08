@@ -58,6 +58,8 @@
     padding: 8px 16px;
     margin: 0px .5rem;
     margin-right: 40px;
+    margin-right: 40px;
+    display: -webkit-inline-box;
 }
 .JAnimatedNavList{
     color: #fff;
@@ -993,4 +995,16 @@
         /* margin-bottom: 4rem; */
         flex-basis: 70%;
     }
+}
+
+.dropdown-menu-in-jallow-cv{
+    display: flex;
+    font-size: 25px;
+    margin-top: 3px;
+    justify-content: center;
+    align-items: self-start;
+    /* position: fixed; */
+}
+.dropdown-menu-in-jallow-cv .dropdown-menu-in-jallow-cv-li{
+    margin: 5px;
 }

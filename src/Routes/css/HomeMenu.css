@@ -111,7 +111,22 @@
   position: absolute;
   list-style: none;
   font-size: 19px;
-  margin-top: -11px;
+  margin-top: -2px;
+}
+.cv_u_s_template_ul {
+  display: flex;
+  position: absolute;
+  list-style: none;
+  font-size: 26px;
+  margin-left: -19px;
+}
+.cv_u_s_template_ul .cv_u_s_template_li{
+margin: 4PX;
+}
+
+
+.dropdown-menu-maria-cv .dropdown-menu-maria-cv-li {
+ margin: 3px;
 }
 
 .dropdown-item {

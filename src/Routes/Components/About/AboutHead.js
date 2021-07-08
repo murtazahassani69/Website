@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { deviceSize } from "./Assets/responsive";
+import { useTranslation } from "react-i18next";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -60,6 +61,7 @@ const Line = styled.span`
 `;
 
 function AboutHead () {
+  const { t } = useTranslation();
 
   AOS.init({
     offset: 300,
@@ -70,8 +72,8 @@ function AboutHead () {
     <HeadContainer >
       <HeadContent data-aos="fade-down">
         <Line />
-        <HeadHeading>Hello! from <HeadingSpan>Eksi</HeadingSpan>-Nous.</HeadHeading>
-        <HeadText>We work with individual, companies & founders to build scalable, results-driven software teams in Greece. Focus on your business while we focus on making the world reach out to you and building your team.</HeadText>
+        <HeadHeading> {t("Hello_eksi")}</HeadHeading>
+        <HeadText>{t("Hello_eksi_paragraph")}</HeadText>
       </HeadContent>
     </HeadContainer>
   )

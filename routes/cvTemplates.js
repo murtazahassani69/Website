@@ -34,10 +34,11 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   try {
     pool.query(
-      `INSERT INTO cvtemplates (creationDate, cvType ) 
+
+      `INSERT INTO cvtemplates (creationDate, cvType) 
        VALUES (
-    '${req.params.creationDate}',
-    '${req.params.cvType}',
+    '${req.body.creationDate}',
+    '${req.body.cvType}'
     )`,
       () => {
         res.send("Posted successfully.");
@@ -54,8 +55,8 @@ router.put("/:id", (req, res) => {
     pool.query(
       `
     UPDATE cvtemplates SET 
-    '${req.params.creationDate}',
-    '${req.params.cvType}',
+    '${req.body.creationDate}',
+    '${req.body.cvType}'
     `,
       () => {
         res.send("Updated entry.");

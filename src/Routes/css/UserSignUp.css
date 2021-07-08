@@ -127,3 +127,12 @@ letter-spacing: 4px;
 .LoginRegister-popup-inner h6{
   color:white;
 }
+
+.dropdown_menu_sign_up {
+  display: flex;
+  justify-content: center;
+  font-size: 29px;
+}
+.dropdown_menu_sign_up .dropdown_menu_sign_up_li {
+margin: 5px;
+}

@@ -180,7 +180,7 @@ function StartupBloc({src, p, faSpan, span}){
                 <img src={src} alt="Picture"/>
             </div>    
             <p className="CVBaldeTemp-div-startup-bloc-text">{p}</p>
-            <a href="#">
+            <a href="#!">
                 <span><i className={faSpan}></i></span>
                 <span>{span}</span>
             </a>

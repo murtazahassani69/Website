@@ -74,17 +74,15 @@ function MariaTemp(){
             
             <div className="CVMarTemp-right"> 
             <a className="CVMarTemp-header-back" href='/templates'>&larr;Back</a>
-            <div className="language-select">
-            <div className="">
-              <div className="dropdown">
+
                 <ul
                   className="dropdown-menu-maria-cv"
                   aria-labelledby="dropdownMenuButton"
                 >
                   {languages.map(({ code, name, country_code }) => (
-                    <li key={country_code}>
+                    <li key={country_code} className="dropdown-menu-maria-cv-li">
                       <a
-                        href="#"
+                        href="#!"
                         className={classNames("dropdown-item", {
                           disabled: currentLanguageCode === code,
                         })}
@@ -102,9 +100,6 @@ function MariaTemp(){
                     </li>
                   ))}
                 </ul>
-              </div>
-            </div>
-          </div>
                 <section className="CVMarTemp-section">
                     <h2 className="CVMarTemp-section-h2">My Services</h2>
                     <div className="CVMarTemp-services">
