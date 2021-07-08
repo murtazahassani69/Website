@@ -5,11 +5,11 @@ const pool = require('../connection/connection');
 /* GET method */
 router.get('/', (req, res) => {
   try{
-    pool.query('SELECT * FROM users', function (error, results, fields) {
-            if (error) {
-                res.send(error);
-            }
-            res.send(results);
+    pool.query('SELECT * FROM genders', function (error, results, fields) {
+      if (error) {
+          res.send(error);
+      }
+      res.send(results);
     });
   } catch (error) {
     if (error) console.error(`Error: ${error.message}`);
@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   try {
     pool.query(
-      `SELECT * FROM users WHERE id=${req.params.id}`,
+      `SELECT * FROM genders WHERE id=${req.params.id}`,
       (error, results) => {
         res.send(results);
       }
@@ -34,18 +34,10 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   try {
     pool.query(
-      `INSERT INTO users (creationDate, firstName, lastName, email, password, country, language, dateOfBirth, profession
-        lookingJobAt, gender) 
+      `INSERT INTO genders (creationDate, fullName, gender) 
       VALUES ('${req.body.creationDate}',
-    '${req.body.firstName}',
-    '${req.body.lastName}',
-    '${req.body.email}',
-    '${req.body.password}',
-    '${req.body.language}',
-    '${req.body.dateOfBirth}',
-    '${req.body.profession}',
-    '${req.body.lookingJobAt}',
-    '${req.body.gender}')`,
+        '${req.body.fullName}',
+        '${req.body.gender}')`,
       () => {
         res.send('Posted successfully.');
       }
@@ -57,20 +49,13 @@ router.post('/', (req, res) => {
 
 /* PUT method */
 router.put('/:id', (req, res) => {
-  try {
+  try { 
     pool.query(
       `
-    UPDATE users SET
-    street='${req.body.creationDate}',
-    street_no='${req.body.firstName}',
-    region='${req.body.lastName}',
-    zipcode='${req.body.email}',
-    country_id='${req.body.password}',
-    country_id='${req.body.language}',
-    country_id='${req.body.dateOfBirth}',
-    country_id='${req.body.profession}',
-    country_id='${req.body.lookingJobAt}',
-    state_id='${req.body.gender}'
+    UPDATE genders SET
+    creationDate='${req.body.creationDate}', 
+    fullName='${req.body.fullName}'
+    gender='${req.body.gender}'
     WHERE id=${req.params.id}
     `,
       () => {
@@ -86,7 +71,7 @@ router.put('/:id', (req, res) => {
 /* DELETE method */
 router.delete('/:id', (req, res) => {
   try {
-    pool.query(`DELETE FROM users WHERE id=${req.params.id}`, () => {
+    pool.query(`DELETE FROM genders WHERE id=${req.params.id}`, () => {
       res.send('Deleted entry.');
     });
   } catch (error) {

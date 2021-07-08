@@ -4,8 +4,8 @@ import "../../../css/TemplateDisplayHeader.css";
 
 function Header() {
   return (
-      <div class="cv_tem_murtaza_header_top">
-        <a class="cv_tem_murtaza_header_active" href="/">
+      <div className="cv_tem_murtaza_header_top">
+        <a className="cv_tem_murtaza_header_active" href="/">
           Home
         </a>
         <a className="cv_tem_murtaza_header_a_" href="#news">News</a>
