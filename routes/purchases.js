@@ -4,12 +4,12 @@ const pool = require('../connection/connection');
 
 /* GET method */
 router.get('/', (req, res) => {
-  try{
-    pool.query('SELECT * FROM users', function (error, results, fields) {
-            if (error) {
-                res.send(error);
-            }
-            res.send(results);
+  try {
+    pool.query('SELECT * FROM purchases', function (error, results, fields) {
+      if (error) {
+        res.send(error);
+      }
+      res.send(results);
     });
   } catch (error) {
     if (error) console.error(`Error: ${error.message}`);
@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
   try {
     pool.query(
-      `SELECT * FROM users WHERE id=${req.params.id}`,
+      `SELECT * FROM purchases WHERE id=${req.params.id}`,
       (error, results) => {
         res.send(results);
       }
@@ -34,18 +34,14 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   try {
     pool.query(
-      `INSERT INTO users (creationDate, firstName, lastName, email, password, country, language, dateOfBirth, profession
-        lookingJobAt, gender) 
+      `INSERT INTO purchases (creationDate, fullName, cvType, amount, intNumber, floatNumber) 
       VALUES ('${req.body.creationDate}',
-    '${req.body.firstName}',
-    '${req.body.lastName}',
-    '${req.body.email}',
-    '${req.body.password}',
-    '${req.body.language}',
-    '${req.body.dateOfBirth}',
-    '${req.body.profession}',
-    '${req.body.lookingJobAt}',
-    '${req.body.gender}')`,
+    '${req.body.fullName}',
+    '${req.body.cvType}',
+    '${req.body.amount}',
+    '${req.body.intNumber}',
+    '${req.body.floatNumber}'
+    )`,
       () => {
         res.send('Posted successfully.');
       }
@@ -60,17 +56,13 @@ router.put('/:id', (req, res) => {
   try {
     pool.query(
       `
-    UPDATE users SET
-    street='${req.body.creationDate}',
-    street_no='${req.body.firstName}',
-    region='${req.body.lastName}',
-    zipcode='${req.body.email}',
-    country_id='${req.body.password}',
-    country_id='${req.body.language}',
-    country_id='${req.body.dateOfBirth}',
-    country_id='${req.body.profession}',
-    country_id='${req.body.lookingJobAt}',
-    state_id='${req.body.gender}'
+    UPDATE purchases SET
+    creationDate='${req.body.creationDate}',
+    fullName='${req.body.fullName}',
+    cvType='${req.body.cvType}',
+    amount='${req.body.amount}',
+    intNumber='${req.body.intNumber}',
+    floatNumber='${req.body.floatNumber}'
     WHERE id=${req.params.id}
     `,
       () => {
@@ -86,7 +78,7 @@ router.put('/:id', (req, res) => {
 /* DELETE method */
 router.delete('/:id', (req, res) => {
   try {
-    pool.query(`DELETE FROM users WHERE id=${req.params.id}`, () => {
+    pool.query(`DELETE FROM purchases WHERE id=${req.params.id}`, () => {
       res.send('Deleted entry.');
     });
   } catch (error) {

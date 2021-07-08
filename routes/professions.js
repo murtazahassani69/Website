@@ -34,18 +34,9 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   try {
     pool.query(
-      `INSERT INTO professions (creationDate, firstName, lastName, email, password, country, language, dateOfBirth, profession
-        lookingJobAt, gender) 
+      `INSERT INTO professions (creationDate, profession) 
       VALUES ('${req.body.creationDate}',
-    '${req.body.firstName}',
-    '${req.body.lastName}',
-    '${req.body.email}',
-    '${req.body.password}',
-    '${req.body.language}',
-    '${req.body.dateOfBirth}',
-    '${req.body.profession}',
-    '${req.body.lookingJobAt}',
-    '${req.body.gender}')`,
+            '${req.body.profession}')`,
       () => {
         res.send('Posted successfully.');
       }
@@ -57,20 +48,12 @@ router.post('/', (req, res) => {
 
 /* PUT method */
 router.put('/:id', (req, res) => {
-  try {
+  try { 
     pool.query(
       `
     UPDATE professions SET
-    street='${req.body.creationDate}',
-    street_no='${req.body.firstName}',
-    region='${req.body.lastName}',
-    zipcode='${req.body.email}',
-    country_id='${req.body.password}',
-    country_id='${req.body.language}',
-    country_id='${req.body.dateOfBirth}',
-    country_id='${req.body.profession}',
-    country_id='${req.body.lookingJobAt}',
-    state_id='${req.body.gender}'
+    creationDate='${req.body.creationDate}', 
+    profession='${req.body.profession}'
     WHERE id=${req.params.id}
     `,
       () => {

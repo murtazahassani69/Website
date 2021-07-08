@@ -4,16 +4,16 @@ import '../../css/HomeFooter.css';
 
 function Footer() {
     return (<>
-        <div class="div-footer">
-            <div  class="inner_footer">
-                <div id="footer-box2" class="footer-boxes">
+        <div className="div-footer">
+            <div  className="inner_footer">
+                <div id="footer-box2" className="footer-boxes">
                     <a href="#" ><img id="footer-logo" src={footer_img} alt="logo" ></img></a>
                     <h1><span>EKSI-</span>NOUS</h1>
                     <h4 className="footer-box2-text" >
                         We help future bosses of business. Together, we make better.
                     </h4>  
                 </div>
-                <div id="footer-box1" class="footer-boxes">    
+                <div id="footer-box1" className="footer-boxes">    
                     <div className='templateHome-footer-menu'>
                         <h2>Menu</h2>
                         <div className='templateHome-footer-menu-link'>
@@ -25,7 +25,7 @@ function Footer() {
                     </div>          
                 </div>
    
-                <div id="footer-box3" class="footer-boxes">
+                <div id="footer-box3" className="footer-boxes">
                 <div className='templateHome-footer-socialMedia'>
                 <h2>Social Media</h2>
                 <div className='templateHome-footer-socialMedia-link'>
@@ -42,11 +42,11 @@ function Footer() {
         {/* //  <!-- #copyright-container start --> */}
          <div id="templateHome-bottom-container">
             
-                  <div class="templateHome-footer-bottom">
+                  <div className="templateHome-footer-bottom">
                      <h5> &copy;2021 eksinous.com | Eksi-Nous Web Development Team</h5>
                  </div>
             
-             <a href="#" class="home-scroll-up"><i class="fa fa-angle-double-up"></i></a>
+             <a href="#" className="home-scroll-up"><i className="fa fa-angle-double-up"></i></a>
  
          </div>
         </>
