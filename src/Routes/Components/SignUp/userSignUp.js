@@ -1,29 +1,12 @@
-import React, { useState, useEffect } from 'react'
+
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom'
 import { Button, Card, CardBody, Col, Container,
   Form, Input, InputGroup, Row } from 'reactstrap'
 import '../../css/UserSignUp.css'
-
 import ModelPopup from './ModelPopup'
+const axios = require('axios').default;
 
-// languages import
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-import cookies from "js-cookie";
-import classNames from "classnames";
-
-
-// Language implementation
-const languages = [
-  {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
-    code: "en",
-    country_code: "gb",
-  },
-];
 const UserSignUp = (props) => {
   const initialInputState = { name: '',lastName: '', email: '', password:'', password2:'',
   gender: '',dateOfBird: '',country: '',language: '',profession: '',lookingJobAt: '', }
@@ -35,11 +18,28 @@ const UserSignUp = (props) => {
     text:'register',
     ext:'ext'
   })
+  const [countries, setCountries] = useState([]);
+  const [languages, setLanguages] = useState([]);
+  
+  const fetchCountries = async() => {
+    try{
+      setCountries(await (await axios.get('http://localhost:8080/countries')).data);
+    } catch(error){
+      console.log(`${error}`);
+    }
+  }
+  const fetchLanguages = async() => {
+    try{
+      setLanguages(await (await axios.get('http://localhost:8080/languages')).data);
+    } catch(error){
+      console.log(`${error}`);
+    }
+  }
 
-  // language implementation
-  const currentLanguageCode = cookies.get("i18next") || "en";
-  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
-  const { t } = useTranslation();
+  useEffect(() => {
+    fetchCountries();
+    fetchLanguages();
+    }, []);
 
 
   const handleChange= ( e ) => {
@@ -59,13 +59,6 @@ const UserSignUp = (props) => {
     }
   }
 
-  // language implementation
-  useEffect(() => {
-    document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
-  }, [currentLanguage, t]);
-
-
   return(
     <div className="temp-div-signUp-container" >
       <Container>
@@ -76,34 +69,8 @@ const UserSignUp = (props) => {
                 <Form id="temp-div-signUp-form">
                   <div className="mb-2 pageheading">
                     <div className='col-sm-12 btn btn-primary' onClick={() => {window.location.href="/templates"}}>
-                      <i class="fas fa-arrow-circle-left"></i>&nbsp;
-                      {t("sign_up_go_back")}
-
+                      <i class="fas fa-arrow-circle-left"></i>&nbsp;  Back to Templates
                     </div>
-                  <ul
-                    className="dropdown_menu_sign_up"
-                  >
-                    {languages.map(({ code, country_code }) => (
-                      <li key={country_code} className="dropdown_menu_sign_up_li">
-                        <a
-                          href="#!"
-                          className={classNames("dropdown-item", {
-                            disabled: currentLanguageCode === code,
-                          })}
-                          onClick={() => {
-                            i18next.changeLanguage(code);
-                          }}
-                        >
-                          <span
-                            className={`flag-icon flag-icon-${country_code} mx-2`}
-                            style={{
-                              opacity: currentLanguageCode === code ? 0.7 : 1,
-                            }}
-                          ></span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
                   </div>
                   <InputGroup className=' temp-div-signUp-mb-3'>
                     <Input
@@ -184,22 +151,23 @@ const UserSignUp = (props) => {
                       placeholder='date Of Bird' ></Input>
                   </InputGroup>
                   <InputGroup >
+                
                       <select id="country" name="country" 
                         className='temp-div-signUp-mb-4' onChange={handleChange}>
-                          <option value={country}>---Country---</option>
-                          <option value="Greece">Greece</option>
-                          <option value="UK">UK</option>
-                          <option value="USA">USA</option>
+                          <option value={country}>-Select Country-</option>
+                            { countries.map((country) =>
+                              <option value={country.country}>{country.country}</option> )
+                             }
                       </select>
                   </InputGroup>
-                  <InputGroup className='temp-div-signUp-mb-3'>
-                    <Input
-                      className="tempForm-signup-input"
-                      type='text'
-                      onChange={handleChange}
-                      name='language'
-                      value={language}
-                      placeholder='language' ></Input>
+                  <InputGroup>
+                      <select id="language" name="language" 
+                        className='temp-div-signUp-mb-4' onChange={handleChange}>
+                          <option value={language}>-Select Language-</option>
+                            { languages.map((language) =>
+                              <option value={language.language}>{language.language}</option> )
+                            }
+                      </select>
                   </InputGroup>
                   <InputGroup className='temp-div-signUp-mb-3'>
                     <Input
