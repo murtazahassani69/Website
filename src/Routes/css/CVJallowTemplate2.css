@@ -498,6 +498,7 @@
     .jallowCVTNavDiv{
         width: 50%;
         align-items: center;
+        visibility: hidden;
     }
 
     .jallowCVTCheckIcon{
@@ -520,12 +521,13 @@
         z-index: 5;
     }
     .jallowCVTNavItem {
-        display: block;
+        display: content;
         width: 99%;
         height: 8vh;
         margin: 10px 0;
         background-color: #add2f7;
     }
+
     .jallowCVTNavItem .jallowCVTNavLink{
         display: flex;
         font-size: 20px;
@@ -611,4 +613,18 @@
     .jallowCVTHR{
         margin: 0px;
     }
+    .CVBaldeTemp_div_ul_1 {
+        background: hsl(210deg 82% 82%);
+    }
 }
+
+.CVBaldeTemp_div_ul_1 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: -9px;
+    
+  }
+  .CVBaldeTemp_div_ul_1 .CVBaldeTemp_div_ul_li_1{
+   margin: 5px;
+  }

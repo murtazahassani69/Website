@@ -8,32 +8,21 @@ import { useTranslation } from "react-i18next";
 function Header() {
   const { t } = useTranslation();
   return (
-    <div className="header-container ">
+    <div className="header-container">
       <Particles className="header-particles" params={particlesConfig} />
-
       <div className="header-background-img">
         <div className="header-title">
           <div className="header-text">{t("Welcome_message")}</div>
           <div className="header-button">
             <NavLink to="/" activeClassName="header-active-title-btn">
               {t("Explore_message")}
-    <>
-      <Particles className='header-particles' params={particlesConfig} />
+            </NavLink>
 
-      <div className='header-background-img'>
-        <div className='header-title'>
-          <div className='header-text'>
-            Let's get started together in the world of buisness.
-          </div>
-
-          <div className='header-button'>
-            <NavLink to='/' activeClassName='header-active-title-btn'>
-              Sign up
-       </NavLink>
+            <Particles className="header-particles" params={particlesConfig} />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

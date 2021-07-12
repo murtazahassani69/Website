@@ -44,7 +44,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Amnick WebDev</title>
+      <title>Eksi Nous</title>
       <link rel="shortcut icon" href={icon} />
     </Helmet>
     <Suspense fallback={loadingMarkup}>

@@ -623,3 +623,25 @@ span.CVBaldeTemp2-content3-per5{
 .CVBaldeTemp2-video-pdf a:hover{
    border: solid 2px white;
 }
+.dropdown-menu-animation-cv {
+    /* display: flex; */
+    justify-content: center;
+    font-size: 25px;
+}
+
+.dropdown-menu-animation-cv .dropdown-menu-animation-cv-li{
+    margin: 5px;
+    justify-content: space-between;
+    margin-left: -17px;
+    font-size: 28px;
+}
+
+
+.CVBaldeTemp2-menu-ul .CVBaldeTemp2-menu-ul-li-flag{
+    cursor: pointer;
+    height: 240%;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    display: inline-grid;
+}

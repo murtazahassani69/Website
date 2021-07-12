@@ -1,14 +1,42 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "../../../../../css/CVYusufTemplate1.css";
 import Pdf from "react-to-pdf";
  
 import face from "./imgs/face.jpg";
  
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
 
 const ref = React.createRef();
 
 function CVYusufTemplate1 (){
    const [toggle, setToggle] = useState(false);
+
+   /*=====================+
+ |LANGUAGES TRANSLATION|
+ +=====================*/
+ const languages = [
+  {
+    code: "en",
+    country_code: "gb",
+   },
+   {
+     code: "gr",
+     country_code: "gr",
+   },
+];
+
+ const currentLanguageCode = cookies.get("i18next") || "en";
+ const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+ const { t } = useTranslation();
+
+ useEffect(() => {
+   document.body.dir = currentLanguage.dir || "ltr";
+   document.title = t("app_title");
+ }, [currentLanguage, t]);
+
     return(
     <>
       <header className={toggle ?'CVYusufTemp-nav-open':null}id="CVYusufTemp-div-menu-header">
@@ -29,6 +57,33 @@ function CVYusufTemplate1 (){
           <li><Pdf targetRef={ref} filename="resume.pdf"paperSize="A4" margin="2cm">
             {({ toPdf }) => <a className="CVYusufTemp-div-menu-nav-link" onClick={toPdf}href="#section">Download PDF</a>} 
             </Pdf></li>
+            <div className="dropdown">
+              <ul
+                className="cv_u_s_template_ul"
+                aria-labelledby="dropdownMenuButton"
+              >
+                {languages.map(({ code, name, country_code }) => (
+                  <li key={country_code}                 className="cv_u_s_template_li"                  >
+                    <a
+                      href="#!"
+                      className={classNames("dropdown-item", {
+                        disabled: currentLanguageCode === code,
+                      })}
+                      onClick={() => {
+                        i18next.changeLanguage(code);
+                      }}
+                    >
+                      <span
+                        className={`flag-icon flag-icon-${country_code} mx-2`}
+                        style={{
+                          opacity: currentLanguageCode === code ? 0.7 : 1,
+                        }}
+                      ></span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
         </ul>
       </nav>
    </header>
@@ -47,7 +102,8 @@ function CVYusufTemplate1 (){
       <section className="CVYusufTemp1-div-contents">
         <section className="CVYusufTemp1-div-main-section">
           <section className="CVYusufTemp1-div-highlights">
-            I am full stack developer. I can work with both the front and back ends of a website. I can tackle projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.
+            {t("YUSUF_TAMP_ABOUT")}
+
           </section>
           <section className="experience">
             <div className="CVYusufTemp1-div-section-title">Experience</div>

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import React, { Component, useEffect } from 'react';
 import '../../../../css/CVMariaTemplate.css';
 import user_img from "./imgs/default-user.png";
 import user_sign from "./imgs/signature.png";
@@ -8,8 +7,38 @@ import {FaTwitterSquare,FaLinkedin,FaFacebookSquare, FaRunning, FaHandsHelping,F
 import { ImBooks,ImPhone} from "react-icons/im";
 import { TiChevronRight,TiMail } from "react-icons/ti";
 
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
+
 
 function MariaTemp(){
+    /*=====================+
+ |LANGUAGES TRANSLATION|
+ +=====================*/
+ const languages = [
+    {
+      code: "en",
+      country_code: "gb",
+     },
+     {
+       code: "gr",
+       country_code: "gr",
+     },
+ ];
+
+ 
+ const currentLanguageCode = cookies.get("i18next") || "en";
+ const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+ const { t } = useTranslation();
+
+ useEffect(() => {
+   document.body.dir = currentLanguage.dir || "ltr";
+   document.title = t("app_title");
+ }, [currentLanguage, t]);
+
+
     return ( 
         <div className="CVMarTemp-container">
             <div className="CVMarTemp-left">
@@ -26,7 +55,7 @@ function MariaTemp(){
                         <p className="CVMarTemp-profile-infop"><ImPhone size={18} color='#0072b1'/>+44 00 0000 0000</p>
                     </div>
                     <p className="CVMarTemp-description1">
-                        Creative Front-End Developer offering 9+ years of experience providing high-impact web solutions for diverse industry organizations. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Aspiring to combine broad background with strong technical skills to excel as a Front-End Developer. 
+                    {t("maria_tamp_about")}
                     </p>
                     <p className="CVMarTemp-description2">
                     Designed and developed about 60 user-friendly responsive websites within 10 years, with high proficiency. Working closely to the client for requirement gathering and analysis and provided desired solution to client in time limits.</p>
@@ -44,7 +73,34 @@ function MariaTemp(){
             
             
             <div className="CVMarTemp-right"> 
-            <Link className="CVMarTemp-header-back" to='/templates'>&larr; </Link>
+            <a className="CVMarTemp-header-back" href='/templates'>&larr;Back</a>
+   
+                <ul
+                  className="dropdown-menu-maria-cv"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  {languages.map(({ code, name, country_code }) => (
+                    <li key={country_code} className="dropdown-menu-maria-cv-li">
+                      <a
+                        href="#!"
+                        className={classNames("dropdown-item", {
+                          disabled: currentLanguageCode === code,
+                        })}
+                        onClick={() => {
+                          i18next.changeLanguage(code);
+                        }}
+                      >
+                        <span
+                          className={`flag-icon flag-icon-${country_code} mx-2`}
+                          style={{
+                            opacity: currentLanguageCode === code ? 0.7 : 1,
+                          }}
+                        ></span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+        
                 <section className="CVMarTemp-section">
                     <h2 className="CVMarTemp-section-h2">My Services</h2>
                     <div className="CVMarTemp-services">

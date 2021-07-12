@@ -13,12 +13,12 @@ p {
 
 /*---------- welcome text ----------*/
 .central-hr-welcome {
-  width: 30%;
+  width: 45%;
   background-color: #68a0d2;
   border: 1px #68a0d2 solid;
 }
 .central-hr-welcome:hover {
-  transform: scale(1.5);
+  transform: scale(1.03);
 }
 
 .central-div-welcome-content {
@@ -28,21 +28,42 @@ p {
 }
 .central-div-welcome-content h1 {
   font-size: 2.5rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.05rem;
 }
 .central-div-welcome-content p {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .central-hr-welcome {
+    width: 50%;
+  }
+  .central-hr-welcome:hover {
+    transform: scale(1.2);
+  }
+  .central-div-welcome-content h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 0 10px;
+  }
+  .central-div-welcome-content > p {
+    margin: 0 10px;
+    line-height: 2rem;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .central-div-welcome-content > h1 {
     font-size: 1.5rem;
+    line-height: 1.8rem;
   }
   .central-div-welcome-content > p {
     font-size: 1.2rem;
   }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .central-div-welcome-content > h1 {
     font-size: 1.2rem;
   }
@@ -60,7 +81,7 @@ p {
     font-size: 1.1rem;
     letter-spacing: 0.05rem;
   }
-}
+} */
 
 /*---------- border ------------*/
 .central-hr-horizonal {
@@ -113,7 +134,7 @@ p {
 }
 
 .central-services-cardText {
-  width: 70%;
+  width: 90%;
   text-align: center;
   font-size: 1rem;
 }
@@ -129,6 +150,7 @@ p {
 
   .central-firstSectionTitle {
     margin-bottom: 3rem;
+    line-height: 1.7rem;
   }
 
   .central-services-imgContainer {
@@ -138,6 +160,9 @@ p {
   .central-services-one-card {
     width: 60%;
     margin-bottom: 3.5rem;
+  }
+  .central-services-one-card:last-child {
+    margin-bottom: 0;
   }
 
   .central-services-card-title {
@@ -150,13 +175,13 @@ p {
   }
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   .central-firstSectionTitle {
     font-size: 1.6rem;
     letter-spacing: 0.05rem;
     line-height: 1.7rem;
   }
-}
+} */
 
 @media screen and (max-width: 320px) {
   .central-firstSectionTitle {
@@ -177,8 +202,9 @@ p {
 
 /*--------- Portfolio ----------- */
 .central-port-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 4rem;
 }
 
@@ -187,6 +213,12 @@ p {
   margin: 1rem 0;
   padding: 2rem 0 0;
 }
+
+.central-port-active-link {
+  color: black;
+  line-height: 1.4;
+}
+
 .central-div-port-head {
   text-transform: uppercase;
   font-size: 2rem;
@@ -209,14 +241,14 @@ p {
 }
 
 .central-port-imgContainer {
-  width: 70%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .central-port-imgContainer > img {
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   border-radius: 10px;
 }
 
@@ -230,9 +262,15 @@ p {
   font-weight: bold;
 }
 
+@media screen and (max-width: 900px) {
+  .central-port-one-card {
+    width: 25%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .central-port-one-card {
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -253,7 +291,7 @@ p {
   }
 
   .central-port-one-card {
-    width: 50%;
+    width: 65%;
   }
   .central-port-one-card > h2 {
     font-size: 1.3rem;
@@ -278,8 +316,8 @@ p {
 
 /*----------- web-tools ---------------*/
 .central-div-web-tools {
-  margin: 2rem 0;
-  padding: 2rem 0 0 0;
+  margin: 2rem 1rem;
+  padding: 2rem 0 0;
   text-align: center;
 }
 .central-div-web-tools-head {
