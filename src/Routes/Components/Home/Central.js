@@ -14,7 +14,6 @@ function Central() {
   return (
     <div  id="portfolio_more" className="central_home-container">
       {/* <!-- Main page --> */}
-
       <div  class="central-div-welcome-content">
       <div class='central-div-welcome-content'>
         <h1 id='services'>Welcome to the StartUP Team</h1>
@@ -26,6 +25,7 @@ function Central() {
       <FirstSectionCards />
 
       {/* border */}
+      <hr id='portfolio' className='central-hr-horizonal'></hr>
 
       <div class="central-div-port">
       <hr id="portfolio" class='central-hr-horizonal'></hr>
