@@ -35,17 +35,17 @@ const LoginForm = () => {
         <div className="login-wrapper">
         
             <form className="login-form">
-            <div className="language-select">
-                <div className="dropdown">
-                  <ul
-                    className="dropdown-menu-sign-up"
-                    aria-labelledby="dropdownMenuButton"
+                  <div
+                    className="dropdown_menu_sign_in"
                   >
                     {languages.map(({ code, country_code }) => (
-                      <li key={country_code}>
+                      <span key={country_code}
+                      className="dropdown_menu_sign_in_li"
+
+                      >
                         <a
-                          href="#"
-                          className={classNames("dropdown-item", {
+                          href="#!"
+                          className={classNames("dropdown-itema", {
                             disabled: currentLanguageCode === code,
                           })}
                           onClick={() => {
@@ -59,11 +59,9 @@ const LoginForm = () => {
                             }}
                           ></span>
                         </a>
-                      </li>
+                      </span>
                     ))}
-                  </ul>
-                </div>
-              </div>
+                  </div>
                 <div className="login-tittle">Login</div>
                 <fieldset className="login-field">
                     <label  className="login-label">
