@@ -32,7 +32,7 @@ function SecondMenu() {
         <div>
           <div className="res_second_menu_center">
             <h3 className="second_menu_h3_title"> Our story </h3>
-            <span class="dot"></span>
+            <span className="dot"></span>
 
             <hr className="second_menu_hr" />
             <span className="dot"></span>
@@ -124,7 +124,7 @@ function RestaurantBookTable() {
 // central component
 function Central() {
   return (
-    <div class="restaurant_home_center">
+    <div className="restaurant_home_center">
       <h1 className="res_title_h1">WELCOME</h1>
       <p className="res_paragraph_p">
         Dear guests, you are welcomed at our restaurant. <br /> We greatly

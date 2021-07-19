@@ -8,7 +8,7 @@ import AboutHead from './About/AboutHead';
 import AboutCenterTop from './About/AboutCenterTop';
 import AboutCenter from './About/AboutCenter';
 import AboutCenterBottom from './About/AboutCenterBottom';
-import TemplateDisplayFooter from '../Components/Demo/TemplateDisplay/Footer';
+import HomeFooter from '../Components/Home/Footer';
 
 
 function About() {
@@ -32,7 +32,7 @@ function About() {
                 <AboutCenterTop />
                 <AboutCenter />
                 <AboutCenterBottom />
-                <TemplateDisplayFooter />
+                <HomeFooter />
             </div>
         </Router>
     )

@@ -150,10 +150,10 @@ function CVTemplateJallow2() {
 
             <div className='jallowCVTSocialTop'>
               <div className='jallowCVTSocialLink'>
-                  <i class="fab fa-linkedin-in"></i>
-                  <i class="fab fa-facebook-f"></i>
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-linkedin-in"></i>
+                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-instagram"></i>
               </div>
             </div>
 
@@ -271,23 +271,23 @@ function CVTemplateJallow2() {
 
               <div className='jallowCVTCliContainer'>
                 <div className='jallowCVTCliContent'>
-                <i class="fab fa-instalod jallowCVTClliIcon"></i>
+                <i className="fab fa-instalod jallowCVTClliIcon"></i>
                   <span className='jallowCVTCliName'>Instalod</span>
                 </div>
                 <div className='jallowCVTCliContent'>
-                <i class="fab fa-wizards-of-the-coast jallowCVTClliIcon"></i>
+                <i className="fab fa-wizards-of-the-coast jallowCVTClliIcon"></i>
                   <span className='jallowCVTCliName'>Wizards</span>
                 </div>
                 <div className='jallowCVTCliContent'>
-                <i class="fab fa-bitcoin jallowCVTClliIcon"></i>
+                <i className="fab fa-bitcoin jallowCVTClliIcon"></i>
                   <span className='jallowCVTCliName'>Bitcoin</span>
                 </div>
                 <div className='jallowCVTCliContent'> 
-                <i class="fab fa-aws jallowCVTClliIcon"></i>
+                <i className="fab fa-aws jallowCVTClliIcon"></i>
                   <span className='jallowCVTCliName'>A W S</span>
                 </div>
                 <div className='jallowCVTCliContent'>
-                <i class="fab fa-buy-n-large jallowCVTClliIcon"></i>
+                <i className="fab fa-buy-n-large jallowCVTClliIcon"></i>
                   <span className='jallowCVTCliName'>Buy & Loan</span>
                 </div>
               </div>
@@ -384,15 +384,15 @@ function CVTemplateJallow2() {
                   <hr className='jallowCVTHR'/>
 
                   <div className='jallowCVTSocialBottom'>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
+                    <i className="fab fa-linkedin-in"></i>
+                    <i className="fab fa-facebook-f"></i>
+                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-instagram"></i>
                   </div>
                 </div>
               </div>
             </section>
-            <a href="#" class="storeCopyright">&copy; {new Date().getFullYear()} Rachel Smith INC | All right reserved | Terms of Service | Privacy</a>
+            <a href="#" className="storeCopyright">&copy; {new Date().getFullYear()} Rachel Smith INC | All right reserved | Terms of Service | Privacy</a>
           </div>
         </div>
       </div>
