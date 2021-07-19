@@ -21,15 +21,15 @@ function Central() {
       <hr id='portfolio' className='central-hr-horizonal'></hr>
 
       {/* <!-- portfolio --> */}
-      <div className='central-div-port'>
+      <div id='portfolio_more' className='central-div-port'>
         <h1 className='central-div-port-head'>portfolio</h1>
         <p className='central-div-port-text'>
           <strong>
             Our Team of experts can help you bring your ideas in to light!
           </strong>
         </p>
+        <Portfolio />
       </div>
-      <Portfolio />
 
       <hr className='central-hr-horizonal'></hr>
       {/* web-tools */}
