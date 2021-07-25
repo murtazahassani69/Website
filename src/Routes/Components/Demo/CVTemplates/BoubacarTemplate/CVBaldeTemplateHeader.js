@@ -23,11 +23,11 @@ function Section(){
     return(
         <section className="CVBaldeTemp-section">
             <div className="CVBaldeTemp-div-section">
-                <h1>{t("CV_BALDE_TAMP_HEADER")}
+                <h1>{t("cvBaldeTampheader")}
                 
                 </h1>
                 <p>
-                {t("CV_BALDE_TAMP_TITLE")}
+                {t("cvBaldeTampTitle")}
                 </p>
                 <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="Image" id="CVBaldeTemp-img-section" />
             </div>
@@ -39,13 +39,13 @@ function Section(){
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
   ];
 function Menu() {
           // language implementation
@@ -56,7 +56,7 @@ function Menu() {
               // language implementation
           useEffect(() => {
             document.body.dir = currentLanguage.dir || "ltr";
-            document.title = t("app_title");
+            document.title = t("appTitle");
           }, [currentLanguage, t]);
         
     return (

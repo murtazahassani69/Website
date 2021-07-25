@@ -72,8 +72,8 @@ function AboutHead () {
     <HeadContainer >
       <HeadContent data-aos="fade-down">
         <Line />
-        <HeadHeading> {t("Hello_eksi")}</HeadHeading>
-        <HeadText>{t("Hello_eksi_paragraph")}</HeadText>
+        <HeadHeading> {t("helloEksi")}</HeadHeading>
+        <HeadText>{t("helloEksiParagraph")}</HeadText>
       </HeadContent>
     </HeadContainer>
   )

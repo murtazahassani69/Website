@@ -34,7 +34,7 @@ function CVYusufTemplate1 (){
 
  useEffect(() => {
    document.body.dir = currentLanguage.dir || "ltr";
-   document.title = t("app_title");
+   document.title = t("appTitle");
  }, [currentLanguage, t]);
 
     return(
@@ -102,7 +102,7 @@ function CVYusufTemplate1 (){
       <section className="CVYusufTemp1-div-contents">
         <section className="CVYusufTemp1-div-main-section">
           <section className="CVYusufTemp1-div-highlights">
-            {t("YUSUF_TAMP_ABOUT")}
+            {t("yusufTampAbout")}
 
           </section>
           <section className="experience">

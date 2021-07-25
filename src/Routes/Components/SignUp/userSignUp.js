@@ -16,13 +16,13 @@ import classNames from "classnames";
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 const UserSignUp = (props) => {
   const initialInputState = { name: '',lastName: '', email: '', password:'', password2:'',
@@ -62,7 +62,7 @@ const UserSignUp = (props) => {
   // language implementation
   useEffect(() => {
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    document.title = t("appTitle");
   }, [currentLanguage, t]);
 
 
@@ -77,14 +77,14 @@ const UserSignUp = (props) => {
                   <div className="mb-2 pageheading">
                     <div className='col-sm-12 btn btn-primary' onClick={() => {window.location.href="/templates"}}>
                       <i class="fas fa-arrow-circle-left"></i>&nbsp;
-                      {t("sign_up_go_back")}
+                      {t("signUpGoBack")}
 
                     </div>
-                  <ul
+                  <div
                     className="dropdown_menu_sign_up"
                   >
                     {languages.map(({ code, country_code }) => (
-                      <li key={country_code} className="dropdown_menu_sign_up_li">
+                      <span key={country_code} className="dropdown_menu_sign_up_li">
                         <a
                           href="#!"
                           className={classNames("dropdown-item", {
@@ -101,9 +101,9 @@ const UserSignUp = (props) => {
                             }}
                           ></span>
                         </a>
-                      </li>
+                      </span>
                     ))}
-                  </ul>
+                  </div>
                   </div>
                   <InputGroup className=' temp-div-signUp-mb-3'>
                     <Input

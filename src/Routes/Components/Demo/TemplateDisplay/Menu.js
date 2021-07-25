@@ -170,7 +170,7 @@ function Menu() {
 
   useEffect(() => {
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    document.title = t("appTitle");
   }, [currentLanguage, t]);
 
   return (

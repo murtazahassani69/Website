@@ -35,7 +35,7 @@ function MariaTemp(){
 
  useEffect(() => {
    document.body.dir = currentLanguage.dir || "ltr";
-   document.title = t("app_title");
+   document.title = t("appTitle");
  }, [currentLanguage, t]);
 
 
@@ -55,7 +55,7 @@ function MariaTemp(){
                         <p className="CVMarTemp-profile-infop"><ImPhone size={18} color='#0072b1'/>+44 00 0000 0000</p>
                     </div>
                     <p className="CVMarTemp-description1">
-                    {t("maria_tamp_about")}
+                    {t("mariaTampAbout")}
                     </p>
                     <p className="CVMarTemp-description2">
                     Designed and developed about 60 user-friendly responsive websites within 10 years, with high proficiency. Working closely to the client for requirement gathering and analysis and provided desired solution to client in time limits.</p>

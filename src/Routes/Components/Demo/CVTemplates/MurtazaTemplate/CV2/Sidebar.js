@@ -13,13 +13,13 @@ import classNames from "classnames";
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -31,7 +31,7 @@ const Sidebar = () => {
   // language implementation
   useEffect(() => {
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    document.title = t("appTitle");
   }, [currentLanguage, t]);
 
   return (

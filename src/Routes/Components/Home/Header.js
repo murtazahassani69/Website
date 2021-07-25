@@ -12,10 +12,10 @@ function Header() {
       <Particles className="header-particles" params={particlesConfig} />
       <div className="header-background-img">
         <div className="header-title">
-          <div className="header-text">{t("Welcome_message")}</div>
+          <div className="header-text">{t("welcomeMessage")}</div>
           <div className="header-button">
             <NavLink to="/" activeClassName="header-active-title-btn">
-              {t("Explore_message")}
+              {t("exploreMessage")}
             </NavLink>
 
             <Particles className="header-particles" params={particlesConfig} />
