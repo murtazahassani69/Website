@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../../css/HomeMenu.css";
 import logo_img from "../../imgs/footer_logo.png";
-import logo_6 from "../../imgs/new.png";
+import logo_6 from "../../imgs/logo_NoFrame.jpg";
 import logos_6 from "../../imgs/logo_6.png";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
@@ -68,6 +68,8 @@ const StyledLink = styled.a`
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size 0.3s;
+  list-style: none;
+
   :hover {
     cursor: pointer;
     background-size: 100% 3px;
@@ -138,13 +140,13 @@ const OverlayMenu = styled.ul`
 
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 
 function Menu() {
@@ -155,44 +157,15 @@ function Menu() {
 
   useEffect(() => {
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    document.title = t("appTitle");
   }, [currentLanguage, t]);
 
   const handleClick = () => {
     setToggle((prev) => !prev);
   };
 
-  const navBarOpts = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "Services",
-      link: "/ServicesId",
-    },
-    {
-      name: "Portfolio",
-      link: "/portfolio_more",
-    },
-    {
-      name: "About Us",
-      link: "/about",
-    },
-  ];
-
-
-  const mapNavOpts = navBarOpts.map((el) => (
-    <div key={el.name} onClick={() => setToggle(false)}>
-      <NavLink to={el.link} className="menu__navbar-active">
-        {el.name}
-      </NavLink>
-    </div>
-  ));
-
   return (
     <>
-
       <Nav>
         <a href="/">
           <Logo src={logo_img} alt="logo" />
@@ -256,7 +229,52 @@ function Menu() {
             : "menu-dropdown-container-inactive"
         }
       >
-        <div className="menu-dropdown-opts-cont">{mapNavOpts}</div>
+        <div className="menu-dropdown-opts-cont">
+          {" "}
+          <NavbarLinks>
+            <StyledLink href="/">Home</StyledLink>
+          </NavbarLinks>
+          <NavbarLinks>
+            <StyledLink href="#ServicesId">Services</StyledLink>
+          </NavbarLinks>
+          <NavbarLinks>
+            <StyledLink href="#portfolio_more">Portfolio</StyledLink>
+          </NavbarLinks>
+          <NavbarLinks>
+            <StyledLink href="#learnAboutUs">About us</StyledLink>
+          </NavbarLinks>
+          <div className="language-select">
+            <div className="">
+              <div className="dropdown">
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                {languages.map(({ code, country_code }) => (
+                  <li key={country_code}>
+                  <a
+                  href="#"
+                  className={classNames("dropdown-item", {
+                    disabled: currentLanguageCode === code,
+                  })}
+                  onClick={() => {
+                    i18next.changeLanguage(code);
+                  }}
+                  >
+                        <span
+                          className={`flag-icon flag-icon-${country_code} mx-2`}
+                          style={{
+                            opacity: currentLanguageCode === code ? 0.7 : 1,
+                          }}
+                        ></span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

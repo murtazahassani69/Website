@@ -14,13 +14,13 @@ const ref = React.createRef();
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 function CVYusufTemplate2 (){
   const [toggle, setToggle] = useState(false);
@@ -32,7 +32,7 @@ function CVYusufTemplate2 (){
           // language implementation
       useEffect(() => {
         document.body.dir = currentLanguage.dir || "ltr";
-        document.title = t("app_title");
+        document.title = t("appTitle");
       }, [currentLanguage, t]);
     
     return (
@@ -119,8 +119,8 @@ function CVYusufTemplate2 (){
         <div className="CVYusufTemp2-div-page-container" id="toPrint" ref={ref}>
           <section id="main">
             <header id="title">
-              <h1 className="CVYusufTemp2-div-h1"> {t("YOUSUF_CV_TEMPLATE_NAME")}</h1>
-              <span className="subtitle">{t("YOUSUF_CV_TEMPLATE_FULL")}</span>
+              <h1 className="CVYusufTemp2-div-h1"> {t("yusufCvTemplateName")}</h1>
+              <span className="subtitle">{t("yusufCvTemplateFull")}</span>
             </header>
             <section className="CVYusufTemp2-main-block">
               <h2 className="CVYusufTemp2-div-h">

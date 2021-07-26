@@ -37,13 +37,13 @@ function Toggle() {
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
   ];
 function Menu() {
     // language implementation
@@ -54,7 +54,7 @@ function Menu() {
         // language implementation
     useEffect(() => {
       document.body.dir = currentLanguage.dir || "ltr";
-      document.title = t("app_title");
+      document.title = t("appTitle");
     }, [currentLanguage, t]);
   
     return(

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,  {useEffect} from "react";
 import Pdf from "react-to-pdf";
 import P_img1 from './imgs/p-img1.jpg';
 import "../../../../css/CVJallowTemplate2.css";
@@ -6,13 +6,42 @@ import "../../../../css/CVJallowTemplate2.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
+
 const ref = React.createRef();
 
+// Language implementation
+const languages = [
+  {
+    code: "en",
+    country_code: "gb",
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
+];
 function CVTemplateJallow2() {
   AOS.init({
     offset: 300,
     duration: 1000
   })
+
+            // language implementation
+            const currentLanguageCode = cookies.get("i18next") || "en";
+            const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+            const { t } = useTranslation();
+          
+                // language implementation
+            useEffect(() => {
+              document.body.dir = currentLanguage.dir || "ltr";
+              document.title = t("appTitle");
+            }, [currentLanguage, t]);
+          
   return (
     <>
       <div id="jallowCVTContainer">
@@ -38,28 +67,52 @@ function CVTemplateJallow2() {
                   </li>
 
                   <li className='jallowCVTNavItem'>
-                    <a href='#jumpToExpPart' className='jallowCVTNavLink'>Experience</a>
+                    <a href='#experience' className='jallowCVTNavLink'>Experience</a>
                   </li>
 
                   <li className='jallowCVTNavItem'>
-                    <a href='#jumpToEduPart' className='jallowCVTNavLink'>Education</a>
+                    <a href='#education' className='jallowCVTNavLink'>Education</a>
                   </li>
 
                   <li className='jallowCVTNavItem'>
-                    <a href='#jumpToCliPart' className='jallowCVTNavLink'>Clients</a>
+                    <a href='#clients' className='jallowCVTNavLink'>Clients</a>
                   </li>
 
                   <li className='jallowCVTNavItem'>
-                    <a href='#jumpToSkillsPart' className='jallowCVTNavLink'>Skills</a>
+                    <a href='#skills' className='jallowCVTNavLink'>Skills</a>
                   </li>
 
                   <li className='jallowCVTNavItem'>
-                    <a href='#jumpToExpertPart' className='jallowCVTNavLink'>Expertise</a>
+                    <a href='#espertise' className='jallowCVTNavLink'>Expertise</a>
                   </li>
 
                   <li className='jallowCVTNavItem'>
-                    <a href='#jumpToContPart' className='jallowCVTNavLink'>Contact</a>
+                    <a href='#contact' className='jallowCVTNavLink'>Contact</a>
                   </li>
+
+                  <li className='flag_container'>
+                  <ul className="CVBaldeTemp_div_ul_1">
+                  {languages.map(({ code, country_code }) => (
+                    <li key={country_code}  className="CVBaldeTemp_div_ul_li_1"> 
+                      <a
+                        href="#!"
+                        className={classNames("dropdown-item", {
+                          disabled: currentLanguageCode === code,
+                        })}
+                        onClick={() => {
+                          i18next.changeLanguage(code);
+                        }}
+                      >
+                        <span
+                          className={`flag-icon flag-icon-${country_code} mx-2`}
+                          style={{
+                            opacity: currentLanguageCode === code ? 0.7 : 1,
+                          }}
+                        ></span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>                  </li>
                 </ul>
               </div>
             </nav>
@@ -106,15 +159,18 @@ function CVTemplateJallow2() {
 
             <section className='jallowCVTSection'>
               <div className='jallowCVTSectionProfile' data-aos="fade-left">
-                <h2 className='jallowCVTSectionTitle'>Profile</h2>
+                <h2 className='jallowCVTSectionTitle'>           
+                 {t("tampleteJallow2JobTitle")}
+                </h2>
                 <p className='jallowCVTProfileDescription'>
-                I started my career as a freelance couple of years ago later got the opportunity to work at some of the big Tech Companies, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+                {t("tampleteJallow2About")}
+
                 </p>
               </div>
             </section>
 
             {/* <!--========== EXPERIENCE ==========--> */}
-            <section className='jallowCVTExpSection' id='jumpToExpPart' data-aos="fade-right">
+            <section className='jallowCVTExpSection' data-aos="fade-right">
               <h2 className="jallowCVTSectionTitle">Experience</h2>
 
               <div className='jalowCVTExpContainer'>
@@ -160,7 +216,7 @@ function CVTemplateJallow2() {
               </div>
             </section>
 
-            <section className='jallowCVTEduSection' id='jumpToEduPart' data-aos="fade-left">
+            <section className='jallowCVTEduSection' data-aos="fade-left">
               <h2 className="jallowCVTSectionTitle">Education</h2>
 
               <div className='jalowCVTEduContainer'>
@@ -210,7 +266,7 @@ function CVTemplateJallow2() {
             </section>
 
             {/* <!--========== INTERESTS ==========--> */}
-            <section className='jallowCVTCliSection' id='jumpToCliPart' data-aos="fade-right">
+            <section className='jallowCVTCliSection' data-aos="fade-right">
               <h2 className="jallowCVTSectionTitle">Client</h2>
 
               <div className='jallowCVTCliContainer'>
@@ -238,7 +294,7 @@ function CVTemplateJallow2() {
             </section>
 
             {/* <!--========== SKILLS ==========--> */}
-            <section className='jallowCVTSkillSection jallowCVTSkills' id='jumpToSkillsPart' data-aos="fade-left">
+            <section className='jallowCVTSkillSection jallowCVTSkills' data-aos="fade-left">
               <h2 className="jallowCVTSectionTitle jallowCVTSkillsTitle">skills</h2>
 
               <div className='jallowCVTSkillContent'>
@@ -274,7 +330,7 @@ function CVTemplateJallow2() {
               </div>
             </section>
 
-            <section className='jallowCVTExpertSection' id='jumpToExpertPart' data-aos="fade-right">
+            <section className='jallowCVTExpertSection' data-aos="fade-right">
               <h2 className="jallowCVTSectionTitle">Expertise</h2>
 
               <div className='jallowCVTExpertContent'>
@@ -295,7 +351,7 @@ function CVTemplateJallow2() {
               </div>
             </section>
 
-            <section className='jallowCVTContactSection  ProfSectionJallow' id='jumpToContPart' data-aos="fade-left">
+            <section className='jallowCVTContactSection  ProfSectionJallow' data-aos="fade-left">
             <h2 className="jallowCVTSectionTitle">Contact Me</h2>
 
               <div className='jallowCVTContactFolder'>

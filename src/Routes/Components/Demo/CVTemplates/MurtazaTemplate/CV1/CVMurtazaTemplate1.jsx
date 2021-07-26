@@ -27,13 +27,13 @@ function Home_Cv() {
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 
 function Background() {
@@ -46,7 +46,7 @@ function Background() {
       // language implementation
   useEffect(() => {
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    document.title = t("appTitle");
   }, [currentLanguage, t]);
 
 
@@ -62,9 +62,9 @@ function Background() {
       </div>
       <div className="CVMurtazaTemp_top_container">
         <h1>
-          {t("MURTAZA_CV_NAME")}
+          {t("murtazaCvName")}
           <br />
-          {t("MURTAZA_CV_TITLE")}
+          {t("murtazaCvTitle")}
         </h1>
 
         <button className="CVMurtazaTemp_work_button " data-wow-offset="0">
