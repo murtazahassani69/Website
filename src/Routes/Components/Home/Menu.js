@@ -140,13 +140,13 @@ const OverlayMenu = styled.ul`
 
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 
 function Menu() {
@@ -157,7 +157,7 @@ function Menu() {
 
   useEffect(() => {
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    document.title = t("appTitle");
   }, [currentLanguage, t]);
 
   const handleClick = () => {

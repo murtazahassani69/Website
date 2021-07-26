@@ -17,13 +17,13 @@ const ref = React.createRef();
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 function CVTemplateJallow2() {
   AOS.init({
@@ -39,7 +39,7 @@ function CVTemplateJallow2() {
                 // language implementation
             useEffect(() => {
               document.body.dir = currentLanguage.dir || "ltr";
-              document.title = t("app_title");
+              document.title = t("appTitle");
             }, [currentLanguage, t]);
           
   return (
@@ -160,10 +160,10 @@ function CVTemplateJallow2() {
             <section className='jallowCVTSection'>
               <div className='jallowCVTSectionProfile' data-aos="fade-left">
                 <h2 className='jallowCVTSectionTitle'>           
-                 {t("TAMPLET_JALLOW_2_JOB_TITLE")}
+                 {t("tampleteJallow2JobTitle")}
                 </h2>
                 <p className='jallowCVTProfileDescription'>
-                {t("TAMPLET_JALLOW_2_ABOUT")}
+                {t("tampleteJallow2About")}
 
                 </p>
               </div>

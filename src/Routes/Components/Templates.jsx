@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Menu from "./Demo/TemplateDisplay/Menu";
 import Header from "./Demo/TemplateDisplay/Header";
 import Central from "./Demo/TemplateDisplay/Central";
-import Footer from "./Demo/TemplateDisplay/Footer";
+import HomeFooter from '../Components/Home/Footer';
 
 function Templates() {
     return (
@@ -11,7 +11,7 @@ function Templates() {
             <Menu />
             <Header /> 
             <Central />
-            <Footer />
+            <HomeFooter />
         </Router>
     )
 }

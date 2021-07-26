@@ -11,13 +11,13 @@ import classNames from "classnames";
 // Language implementation
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
 ];
 
 function Menu() {
@@ -142,7 +142,7 @@ function Menu() {
 
   useEffect(() => {
     document.body.dir = currentLanguage.dir || "ltr";
-    document.title = t("app_title");
+    document.title = t("appTitle");
   }, [currentLanguage, t]);
 
   return (
@@ -277,11 +277,11 @@ function Content1() {
           />
         </div>
         <div className="CVBaldeTemp2-content-hello">
-          <span>{t("BOUBACAR_cv_tam_flags_title")}</span>
+          <span>{t("boubacarCvTamFlagsTitle")}</span>
         </div>
       </div>
       <div className="CVBaldeTemp2-content-name">
-        <span>{t("BOUBACAR_cv_tam_flags_paragraph")}</span>
+        <span>{t("boubacarCvTamFlagsTitleParagraph")}</span>
       </div>
       <div className="CVBaldeTemp2-content-name1">
         <span>BOUBACAR BALDE</span>

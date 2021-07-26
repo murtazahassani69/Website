@@ -20,8 +20,8 @@ function Menu() {
                 <img src={logo_img} className="rest_logo" alt="logo"/>
                 <ul className="rest_menu-list" >
                     <li><a href="#" className="rest_menu-link">Home</a></li>
-                    <li ><a href="#" className="rest_menu-link">About</a></li>
-                    <li><a href="#" className="rest_menu-link">Gallery</a></li>
+                    <li ><a href="#res_link_about" className="rest_menu-link">About</a></li>
+                    <li><a href="#res_link_gallery" className="rest_menu-link">Gallery</a></li>
                     <li><a href="#" className="rest_menu-link">Menu</a>
                         <ul className="rest_menu-dropdown">
                             <li><a href="#">Menu-1</a></li>
@@ -29,7 +29,7 @@ function Menu() {
                             <li><a href="#">Menu-3</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" className="rest_menu-link">Contact</a></li>
+                    <li><a href="#RestaurantBookTable" className="rest_menu-link">Contact</a></li>
                 </ul>
             
 

@@ -63,13 +63,13 @@ function CVAnimateJallow() {
 
 const languages = [
   {
-    code: "gr",
-    country_code: "gr",
-  },
-  {
     code: "en",
     country_code: "gb",
-  },
+  },  
+{
+    code: "gr",
+    country_code: "gr",
+  }
   ];
   
 function Header() { 
@@ -79,7 +79,7 @@ function Header() {
   
     useEffect(() => {
       document.body.dir = currentLanguage.dir || "ltr";
-      document.title = t("app_title");
+      document.title = t("appTitle");
     }, [currentLanguage, t]);
   
     return (
@@ -173,9 +173,9 @@ function SectionHeader () {
             muted
           />
           <h1 className="JAnimatedSectHeading">
-            {t("jallow_cv_title")}
+            {t("jallowCvTitle")}
             <br />
-            <span> {t("jallow_cv_title_1")}</span>
+            <span> {t("jallowCvTitle_1")}</span>
           </h1>
           <div className="JAnimatedHeadBtns">
             <a className="JAnimatedBtns1">HIRE ME TODAY</a>
