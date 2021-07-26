@@ -180,13 +180,13 @@ function AboutMenu({ aboutToggle }) {
             </AboutMobileIcon >
             <AboutNavMenu>
               <AboutNavItem>
-                <AboutNavLinks to="/">Home</AboutNavLinks>
+                <AboutNavLinks href="/">Home</AboutNavLinks>
               </AboutNavItem>
               <AboutNavItem>
-                <AboutNavLinks to="/signUp">Sign Up</AboutNavLinks>
+                <AboutNavLinks href="/signUp">Sign Up</AboutNavLinks>
               </AboutNavItem>
               <AboutNavItem>
-                <AboutNavLinks to="/login">Sign In</AboutNavLinks>
+                <AboutNavLinks href="/login">Sign In</AboutNavLinks>
               </AboutNavItem>
               <div className="language-select">
             

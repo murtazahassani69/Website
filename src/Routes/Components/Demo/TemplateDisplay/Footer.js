@@ -53,7 +53,7 @@ function Footer() {
                     <a href='/signUp'>Sign Up</a>
                 </div>
             </div>
-            <div id='templateDisplay-footer-box' class="templateDisplay-footerLogo-div">
+            <div id='templateDisplay-footer-box' className="templateDisplay-footerLogo-div">
                     <a href="#" ><img id="footer-logo" src={footer_img} alt="logo" ></img></a>
                     <h1><span>EKSI-</span>NOUS</h1>
                     <h4 className="templateDisplay-footerLogo-text" >

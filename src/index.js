@@ -41,7 +41,8 @@ const loadingMarkup = (
 );
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
+  {/* <React.StrictMode> */}
     <Helmet>
       <meta charSet="utf-8" />
       <title>Eksi Nous</title>
@@ -52,7 +53,8 @@ ReactDOM.render(
         <App />
       </AppProvider>
     </Suspense>
-  </React.StrictMode>,
+  {/* </React.StrictMode>, */}
+  </>,
   document.getElementById("root")
 );
 

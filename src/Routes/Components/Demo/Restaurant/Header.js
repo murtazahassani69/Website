@@ -8,7 +8,7 @@ function Header() {
        <header className="rest_header">
             <div className="rest_header-title">
                 <h3>Discover</h3>
-                <h1 className>
+                <h1 className='RHT'>
                     London Plate
                 </h1>
                 <p className="rest_header-openhours">Opening hours</p>

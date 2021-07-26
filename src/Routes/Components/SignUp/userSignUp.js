@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom'
 import { Button, Card, CardBody, Col, Container,
   Form, Input, InputGroup, Row } from 'reactstrap'
 import '../../css/UserSignUp.css'
-
 import ModelPopup from './ModelPopup'
-
+const axios = require('axios').default;
 // languages import
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
@@ -24,6 +24,7 @@ const languages = [
     country_code: "gr",
   }
 ];
+
 const UserSignUp = (props) => {
   const initialInputState = { name: '',lastName: '', email: '', password:'', password2:'',
   gender: '',dateOfBird: '',country: '',language: '',profession: '',lookingJobAt: '', }
@@ -35,11 +36,28 @@ const UserSignUp = (props) => {
     text:'register',
     ext:'ext'
   })
+  const [countries, setCountries] = useState([]);
+  const [languages, setLanguages] = useState([]);
+  
+  const fetchCountries = async() => {
+    try{
+      setCountries(await (await axios.get('http://localhost:8080/countries')).data);
+    } catch(error){
+      console.log(`${error}`);
+    }
+  }
+  const fetchLanguages = async() => {
+    try{
+      setLanguages(await (await axios.get('http://localhost:8080/languages')).data);
+    } catch(error){
+      console.log(`${error}`);
+    }
+  }
 
-  // language implementation
-  const currentLanguageCode = cookies.get("i18next") || "en";
-  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
-  const { t } = useTranslation();
+  useEffect(() => {
+    fetchCountries();
+    fetchLanguages();
+    }, []);
 
 
   const handleChange= ( e ) => {
@@ -104,6 +122,7 @@ const UserSignUp = (props) => {
                       </span>
                     ))}
                   </div>
+                  
                   </div>
                   <InputGroup className=' temp-div-signUp-mb-3'>
                     <Input
@@ -184,22 +203,23 @@ const UserSignUp = (props) => {
                       placeholder='date Of Bird' ></Input>
                   </InputGroup>
                   <InputGroup >
+                
                       <select id="country" name="country" 
                         className='temp-div-signUp-mb-4' onChange={handleChange}>
-                          <option value={country}>---Country---</option>
-                          <option value="Greece">Greece</option>
-                          <option value="UK">UK</option>
-                          <option value="USA">USA</option>
+                          <option value={country}>-Select Country-</option>
+                            { countries.map((country) =>
+                              <option value={country.country}>{country.country}</option> )
+                             }
                       </select>
                   </InputGroup>
-                  <InputGroup className='temp-div-signUp-mb-3'>
-                    <Input
-                      className="tempForm-signup-input"
-                      type='text'
-                      onChange={handleChange}
-                      name='language'
-                      value={language}
-                      placeholder='language' ></Input>
+                  <InputGroup>
+                      <select id="language" name="language" 
+                        className='temp-div-signUp-mb-4' onChange={handleChange}>
+                          <option value={language}>-Select Language-</option>
+                            { languages.map((language) =>
+                              <option value={language.language}>{language.language}</option> )
+                            }
+                      </select>
                   </InputGroup>
                   <InputGroup className='temp-div-signUp-mb-3'>
                     <Input

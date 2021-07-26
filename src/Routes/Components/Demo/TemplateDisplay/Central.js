@@ -115,7 +115,7 @@ function DisplayResAni () {
           heading='Your Prefered Resume Template'
           paragph='Just click and fill in your details or you can let one of our team members do it for you.' /></a>
         </div>
-        <a href="#" className="scroll-up"><i class="fa fa-angle-double-up"></i></a>
+        <a href="#" className="scroll-up"><i className="fa fa-angle-double-up"></i></a>
       </div>
     </section>
   )

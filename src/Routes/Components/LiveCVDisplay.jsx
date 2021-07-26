@@ -1,7 +1,7 @@
 import React from 'react';
-import Central from "./LiveCVDisplay/Central";
-import Footer from "./Demo/TemplateDisplay/Footer";
 import Menu from "./Demo/TemplateDisplay/Menu";
+import Central from "./LiveCVDisplay/Central";
+import Footer from "./Home/Footer";
 
 function LiveCVDisplay() {
     return (

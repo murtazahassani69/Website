@@ -49,32 +49,32 @@ function About () {
 function Footer() {
   return (
     <>
-      <div class="storeFooterContainer">
-        <div class="storeFooterLinks">
+      <div className="storeFooterContainer">
+        <div className="storeFooterLinks">
           <Services />
           <Information />
           <About />
           <div className='storeFooterSocial'>
             <div className='storeFooterSocialLink'>
             <h3>Social</h3>
-              <a href="#" class="storeFooterIcon"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="storeFooterIcon"><i class='fab fa-twitter'></i></a>
-              <a href="#" class="storeFooterIcon"><i class='fab fa-instagram'></i></a>
-              <a href="#" class="storeFooterIcon"><i class='fab fa-youtube'></i></a>
+              <a href="#" className="storeFooterIcon"><i className="fab fa-facebook"></i></a>
+              <a href="#" className="storeFooterIcon"><i className='fab fa-twitter'></i></a>
+              <a href="#" className="storeFooterIcon"><i className='fab fa-instagram'></i></a>
+              <a href="#" className="storeFooterIcon"><i className='fab fa-youtube'></i></a>
             </div>
 
             <hr className='storeHr'></hr>
 
             <div className='storeFooterPaymentLink'>
             <h3>Payment Methods</h3>
-              <a href="#" class="storeFooterIcon"><i class='fab fa-cc-visa'></i></a>
-              <a href="#" class="storeFooterIcon"><i class='fab fa-cc-mastercard'></i></a>
-              <a href="#" class="storeFooterIcon"><i class='fab fa-paypal'></i></a>
+              <a href="#" className="storeFooterIcon"><i className='fab fa-cc-visa'></i></a>
+              <a href="#" className="storeFooterIcon"><i className='fab fa-cc-mastercard'></i></a>
+              <a href="#" className="storeFooterIcon"><i className='fab fa-paypal'></i></a>
             </div>
           </div>
         </div>
       </div>
-        <a href="#" class="storeCopyright">&copy; {new Date().getFullYear()} JALL INC | All right reserved | Terms of Service | Privacy</a>
+        <a href="#" className="storeCopyright">&copy; {new Date().getFullYear()} JALL INC | All right reserved | Terms of Service | Privacy</a>
       
     </>
   );
