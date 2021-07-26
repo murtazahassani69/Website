@@ -18,7 +18,12 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
   try{
-    pool.query(`SELECT ci.cityName FROM cities ci, states st WHERE st.countryId=${req.params.id} AND ci.stateId=st.id`, function (error, results, fields) {
+    pool.query(`SELECT ci.cityName, ci.stateId, st.state, st.countryId 
+    FROM cities ci, 
+         states st
+    WHERE
+         ci.stateId = st.id AND
+         st.countryId = ${req.params.id};`, function (error, results, fields) {
             if (error) {
                 res.send(error);
             }
