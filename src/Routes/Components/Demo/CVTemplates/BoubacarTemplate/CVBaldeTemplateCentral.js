@@ -53,7 +53,7 @@ function SkillsColumn({img, h, p1, p2, p3, p4, column}){
             <p className="CVBaldeTemp-div-column-title">{p4}</p>
             <ul  className="CVBaldeTemp-div-column-text">
                 {
-                    column.map((col, idx)=><li>{col}</li>)
+                    column.map((col, idx)=><li key={idx}>{col}</li>)
                 }
             </ul>
         </div>
@@ -81,7 +81,7 @@ function Work(){
                 <div className="CVBaldeTemp-div-work-btn">
                     <div className="CVBaldeTemp-div-work-btn1">
                         <a href="#">
-                            <span><i class="fab fa-dribbble"></i></span>
+                            <span><i className="fab fa-dribbble"></i></span>
                             <span>See more on Dribble</span>
                         </a>
                     </div>
@@ -108,10 +108,10 @@ function WorkFigure(props){
 function Collaborations(){
     return(
         <div className="CVBaldeTemp-collabore">
-            <diV className="CVBaldeTemp-collabore-title">
+            <div className="CVBaldeTemp-collabore-title">
                 <h1>I'm proud to have collaborated with some awesome companies:</h1>
-            </diV>
-            <diV className="CVBaldeTemp-div-collabore">
+            </div>
+            <div className="CVBaldeTemp-div-collabore">
                 <div className="CVBaldeTemp-div-collabore-imgs">
                     <ColaPicture src="https://mattfarley.ca/img/logos/briteweb.svg" />
                     <ColaPicture src="https://mattfarley.ca/img/logos/goodkind.svg" />
@@ -122,7 +122,7 @@ function Collaborations(){
                     <ColaPicture src="https://mattfarley.ca/img/logos/bldrs.png" />
                     <ColaPicture src="https://mattfarley.ca/img/logos/serpmetrics.svg" />
                 </div>
-            </diV>
+            </div>
         </div>
     )
 }
@@ -163,11 +163,11 @@ function Startup(){
                     <StartupBloc src='https://mattfarley.ca/img/logos/dovetail.svg' faSpan='fas fa-sunset'
                         p='A space and member management solution for coworking communities both big and small.'  span='Shutdown in 2017' />
                 </div>
-                <diV className="CVBaldeTemp-div-startup2">
+                <div className="CVBaldeTemp-div-startup2">
                     <h2>Interested in collaborating or investing?</h2>
                     <p>I’m always open to discussing product design work or partnership opportunities.</p>
                     <a href='#'>Start a conversation</a>
-                </diV>
+                </div>
             </div>
         </div>
     )
@@ -180,7 +180,7 @@ function StartupBloc({src, p, faSpan, span}){
                 <img src={src} alt="Picture"/>
             </div>    
             <p className="CVBaldeTemp-div-startup-bloc-text">{p}</p>
-            <a href="#!">
+            <a href="#">
                 <span><i className={faSpan}></i></span>
                 <span>{span}</span>
             </a>
@@ -195,7 +195,7 @@ function Testimonials(){
             <h1>Testimonials</h1>
             <p>People I've worked with have said some nice things...</p>
             <div className='CVBaldeTemp-div-testimonial'>
-                <input type="radio" name="images" id="i1" checked />
+                <input type="radio" name="images" id="i1"  />
                 <input type="radio" name="images" id="i2" />
                 <div className='CVBaldeTemp-div-testimonial-shift' id="CVBaldeTemp-div-testimonial-shift-one">
                     <img src='https://mattfarley.ca/img/avatars/alvin.png' alt='Picture'></img>
@@ -214,9 +214,9 @@ function Testimonials(){
                     <span>Creative Lead, Good Kind</span>
                 </div>
 
-                <div class="CVBaldeTemp-div-testimonial-nav">
-                    <label class="dots" id="dot1" for="i1"></label>
-                    <label class="dots" id="dot2" for="i2"></label>
+                <div className="CVBaldeTemp-div-testimonial-nav">
+                    <label className="dots" id="dot1" htmlFor="i1"></label>
+                    <label className="dots" id="dot2" htmlFor="i2"></label>
                 </div>
 
             </div>

@@ -23,7 +23,7 @@ import pic_left from "./imgs/pic_left.jpg";
 // second menu: story of restaurant component
 function SecondMenu() {
   return (
-    <div className="second_menu_home_section">
+    <div className="second_menu_home_section" id='res_link_about'>
       <div className="second_menu_home_section_container">
         <div className="second_menu_section_left">
           <img src={spices_left} alt="Amnick Smart Cites - Restaurant" />
@@ -124,7 +124,7 @@ function RestaurantBookTable() {
 // central component
 function Central() {
   return (
-    <div className="restaurant_home_center">
+    <div className="restaurant_home_center" id='res_link_gallery'>
       <h1 className="res_title_h1">WELCOME</h1>
       <p className="res_paragraph_p">
         Dear guests, you are welcomed at our restaurant. <br /> We greatly

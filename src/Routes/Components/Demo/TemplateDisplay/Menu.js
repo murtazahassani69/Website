@@ -192,7 +192,7 @@ function Menu() {
             <StyledLink href="/login">Sign-In</StyledLink>
           </NavbarLinks>
           <NavbarLinks>
-            <StyledLink href='#TemplatesFooterId'>About us</StyledLink>
+            <StyledLink href='/about'>About us</StyledLink>
           </NavbarLinks>
           <div className="language-select">
             <div className="">
