@@ -51,7 +51,7 @@ exports.up = function(knex, Promise){
   })
   .createTable('cities', table => {
     table.increments('id');
-    table.date('creationDate', 45).notNullable();
+    table.datetime('creationDate', 45).notNullable();
     table.varchar('cityName', 100).notNullable();
     table.integer('stateId').unsigned().nullable();
     table.foreign('stateId').references('states.id');
