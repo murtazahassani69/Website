@@ -4,10 +4,10 @@ import '../../../css/ResFooter.css';
 
 function Footer() {
     return (<>
-        <div class="ResFooter-div-wrapper">
-            <div  class="ResFooter-div-inner">
+        <div className="ResFooter-div-wrapper">
+            <div  className="ResFooter-div-inner">
             <div id="ResFooter-footer-box2" 
-            class="ResFooter-footer-boxes">
+            className="ResFooter-footer-boxes">
                     <h1><span>YuKa </span> Restaurant</h1>
                     <p>Wood fired Neapolitan pizzas prepared 
                      with the purestrespect for traditions, 
@@ -17,31 +17,31 @@ function Footer() {
                     </p>
                    
                 </div>
-                <div id="ResFooter-footer-box1" class="ResFooter-footer-boxes">
+                <div id="ResFooter-footer-box1" className="ResFooter-footer-boxes">
                     <a href="#" ><img id="ResFooter-logo" src={footer_img} alt="logo" ></img></a>
                     
-                    <div class="ResFooter-social">
+                    <div className="ResFooter-social">
                         <br></br>
-                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="ResFooter-social-icons"><i class="fab fa-youtube"></i></a>
+                        <a href="#" className="ResFooter-social-icons"><i className="fab fa-facebook"></i></a>
+                        <a href="#" className="ResFooter-social-icons"><i className="fab fa-twitter"></i></a>
+                        <a href="#" className="ResFooter-social-icons"><i className="fab fa-instagram"></i></a>
+                        <a href="#" className="ResFooter-social-icons"><i className="fab fa-youtube"></i></a>
                     </div>
                      
                 </div>
 
                 
-                <div id="ResFooter-footer-box3" class="ResFooter-footer-boxes">
-                    <div class="ResFooter-contact">
+                <div id="ResFooter-footer-box3" className="ResFooter-footer-boxes">
+                    <div className="ResFooter-contact">
                         <h2>Contact info</h2>
-                        <span><i class="fas fa-phone"></i>&nbsp;+306988083143</span><br></br>
-                        <span><i class="fas fa-at"></i>&nbsp;info@yuka.com</span>
+                        <span><i className="fas fa-phone"></i>&nbsp;+306988083143</span><br></br>
+                        <span><i className="fas fa-at"></i>&nbsp;info@yuka.com</span>
                                    
-                        <div class="ResFooter-newsletter">
+                        <div className="ResFooter-newsletter">
                             <form >
                             <br></br>
-                                <input class="email" type="email" placeholder="Subscribe to our newsletter:"/>
-                                <input type="submit" class="submit" value="Submit"/>
+                                <input className="email" type="email" placeholder="Subscribe to our newsletter:"/>
+                                <input type="submit" className="submit" value="Submit"/>
                             </form>
                         </div>
                     </div> 
@@ -52,8 +52,8 @@ function Footer() {
         {/* //  <!-- #copyright-container start --> */}
          <div id="ResFooter-bottom-container">
                   {/* <!-- .row start --> */}
-                 <div class="ResFooter-bottom-row"> 
-                         <ul class="ResFooter-navbar">
+                 <div className="ResFooter-bottom-row"> 
+                         <ul className="ResFooter-navbar">
                              <li><a href="index.html">Home</a></li>
                              <li><a href="about.html">About</a></li>
                              <li><a href="menu-01.html">Menu</a></li>
@@ -67,7 +67,7 @@ function Footer() {
                  </div>
                  {/* <!-- .row end --> */}
             
-             <a href="#" class="scroll-up"><i class="fa fa-angle-double-up"></i></a>
+             <a href="#" className="scroll-up"><i className="fa fa-angle-double-up"></i></a>
  
          </div>
         {/* //  <!-- .copyright-container end --> */}

@@ -41,7 +41,7 @@ function Right(){
   return(
       <div id='store-menu-right'>
           <form action="" className='store-menu-formSearch'>
-            <i class="fas fa-search"><input type="text" className='store-menu-search' placeholder='Search'/></i>
+            <i className="fas fa-search"><input type="text" className='store-menu-search' placeholder='Search'/></i>
             {/* <i class="fas fa-search"><input type="text" className='search' placeholder='Search'/></i> */}
             {/* <button className='search'>🍳</button> */}
           </form>

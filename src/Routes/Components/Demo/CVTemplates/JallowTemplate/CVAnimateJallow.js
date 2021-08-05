@@ -94,7 +94,7 @@ function Header() {
           <nav className="JAnimatedNav">
             <input type="checkbox" id="check" />
             <label htmlFor="check" className="CVTCheckIcon">
-              <i class="fas fa-bars"></i>
+              <i className="fas fa-bars"></i>
             </label>
 
             <div className="JAnimatedNavItem">
@@ -242,7 +242,7 @@ function Services(){
                 </div>
 
                 <div className='JAnimatedServBtn'>
-                    <a href='#'>Squarespace code shop <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='#'>Squarespace code shop <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
         </section>
@@ -262,7 +262,7 @@ function Projects(){
                             <img src={CoffeeShop} />
                         </div>
                         <div className="JAnimatedBackCard">
-                            <div class="JAnimateBackContent JAnimatedMiddle">
+                            <div className="JAnimateBackContent JAnimatedMiddle">
                                 <p className='AnimateP1'>Coffee Shop & Roaster</p>
                                 <p className='AnimateP2'>Elementry</p>
                                 <a href='#' className='AnimateAnka'>view Project</a>
@@ -288,7 +288,7 @@ function Projects(){
                             <img src={WeddingDJ} />
                         </div>
                         <div className="JAnimatedBackCard">
-                            <div class="JAnimateBackContent JAnimatedMiddle">
+                            <div className="JAnimateBackContent JAnimatedMiddle">
                             <p className='AnimateP1'>Personal Brand</p>
                                 <p className='AnimateP2'>Jason KLock</p>
                                 <a href='#' className='AnimateAnka'>view Project</a>
@@ -299,7 +299,7 @@ function Projects(){
                 </div>
 
                 <div className='JAnimatedProBtn'>
-                    <a href='#'>More Squarespace Projects <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='#'>More Squarespace Projects <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
 
             </div>
@@ -334,7 +334,7 @@ function Office (){
                 <p className='JAnimatedOffDescript'>Need help from a Squarespace expert? <br />Let’s discuss your needs in detail.</p>
 
                 <div className='JAnimatedServBtn'>
-                    <a href='#'>I'm here to help you <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='#'>I'm here to help you <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
         </section>
@@ -381,7 +381,7 @@ function LifeDesign(){
                 </div>
 
                 <div className='JAnimatedProBtn'>
-                    <a href='#'>More Squarespace Projects <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='#'>More Squarespace Projects <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
         </section>
@@ -420,7 +420,7 @@ function BlogPost() {
                 </div>
 
                 <div className='JAnimatedProBtn'>
-                    <a href='#'>More Squarespace Projects <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href='#'>More Squarespace Projects <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
 
             </div>
@@ -462,11 +462,11 @@ function Footer(){
                 </div>
 
                 <div className='JAnimatedSoicalIcons'>
-                    <i class="fab fa-facebook icon" ></i>
-                    <i class="fab fa-instagram icon" ></i>
-                    <i class="fab fa-linkedin icon" ></i>
-                    <i class="fab fa-youtube icon" ></i>
-                    <i class="fas fa-envelope icon" ></i>
+                    <i className="fab fa-facebook icon" ></i>
+                    <i className="fab fa-instagram icon" ></i>
+                    <i className="fab fa-linkedin icon" ></i>
+                    <i className="fab fa-youtube icon" ></i>
+                    <i className="fas fa-envelope icon" ></i>
                 </div>
             </div>
         </footer>

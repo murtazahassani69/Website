@@ -64,7 +64,7 @@ function MariaTemp(){
                     <img src={user_sign} alt="user" className="CVMarTemp-sign_img"/>
                 </div>
             
-                <ul class="CVMarTemp-socialicons">
+                <ul className="CVMarTemp-socialicons">
                     <li><a href="#" className="CVMarTemp-socialicons-link" ><FaLinkedin size={30} color='#0072b1'/></a></li>
                     <li><a href="#" className="CVMarTemp-socialicons-link" > <FaTwitterSquare size={30} color='#1DA1F2'  /></a></li>
                     <li><a href="#" className="CVMarTemp-socialicons-link" > <FaFacebookSquare size={30} color='#4169E1'/></a></li>

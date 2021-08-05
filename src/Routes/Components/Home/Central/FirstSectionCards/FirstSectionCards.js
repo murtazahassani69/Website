@@ -48,15 +48,15 @@ const FirstSectionCards = () => {
 
     <div id="ServicesId" className='central-firstSectionContainer'>
       <div className='central-firstSectionTitle'>
-
-    <div className='central-firstSectionContainer'>
-      <h3 className='central-firstSectionTitle'>
-
-        Enjoy our services in three simple steps
-      </h3>
-      <div className='central-firstSection-cards-container'>{displayCards}</div>
-    </div>
-    </div>
+        <div className='central-firstSectionContainer'>
+          <h3 className='central-firstSectionTitle'>
+            Enjoy our services in three simple steps
+          </h3>
+          <div className='central-firstSection-cards-container'>
+            {displayCards}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

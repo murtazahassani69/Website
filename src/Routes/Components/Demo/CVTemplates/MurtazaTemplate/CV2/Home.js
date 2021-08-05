@@ -77,7 +77,6 @@ const Home = () => {
           </h2>
         </a>
       </div>
-      
           <div className="Second_home_intro">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaiw7r4q5i9NAP8F0G9XUhUOkratFhncgHTQ&usqp=CAU"
@@ -96,7 +95,7 @@ const Home = () => {
               id="second_murtaza_temp_id"
               className=" Second_MurtazaCV_Temp_intro_article"
             >
-              <p className="Second_MurtazaCV_Temp_intro_p">
+              <div className="Second_MurtazaCV_Temp_intro_p">
                 <h3 className=" Second_MurtazaCV_Temp_intro_h3">ABOUT ME</h3>
                 Boyd Danvers loves programming, writing, speaking,
                 traveling, and lifting heavy things. He does not love talking
@@ -109,7 +108,7 @@ const Home = () => {
                 engineer at LinkedIn, TripAdvisor, Cisco Systems, and Thomson
                 Financial. For more info, check out his writing, speaking,
                 projects, and photos.
-              </p>
+              </div>
             </article>
           </div>
         </section>
@@ -130,7 +129,6 @@ const Title = () => {
     </div>
   );
 };
-
 
 const Services = () => {
   return (
@@ -189,9 +187,9 @@ const VideoPlayer_Section = () => {
         <iframe
         
           src="https://www.youtube.com/embed/Op7sI9ETays"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <h4>
           {" "}
