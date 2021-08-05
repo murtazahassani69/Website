@@ -23,8 +23,8 @@ const Wrapper = styled.div`
     display: block;
     font-size: 3rem;
     font-weight: 400;
-    line-height:3.5rem;
-    letter-spacing: .5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.5rem;
     animation: fadeIn 1.4s ease-out forwards, moveInLeft 1.4s ease-out;
     background: linear-gradient(to bottom, rgba(232, 69, 69, 0.8), #f17a3a);
     background-clip: text;
@@ -36,7 +36,7 @@ const Wrapper = styled.div`
     font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: 1.5rem;
-    line-height:2.5rem;
+    line-height: 2.5rem;
     animation: moveInRight 1.2s ease-out 0.5s;
     animation-fill-mode: backwards;
   }
@@ -46,20 +46,17 @@ const Wrapper = styled.div`
   }
   @media only screen and (max-width: 650px) {
     .heading-primary--main {
- 
       font-size: 2rem;
       font-weight: 100;
-      line-height:2.5rem;
-      letter-spacing: .2rem;
-    
+      line-height: 2.5rem;
+      letter-spacing: 0.2rem;
     }
     .heading-primary--sub {
- 
       font-size: 1rem;
       font-weight: 100;
       letter-spacing: 1rem;
-      line-height:1.5rem;
-    }    // text-decoration: none;
+      line-height: 1.5rem;
+    } // text-decoration: none;
   }
 `;
 
@@ -68,6 +65,7 @@ class Header extends Component {
     return (
       <Wrapper>
         <div className="header header--centered">
+          <h1>Flags</h1>
           <h1 className="heading-primary">
             <span className="heading-primary--main">Joe Karaca</span>
             <span className="heading-primary--sub">Full Stack Developer</span>

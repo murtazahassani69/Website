@@ -444,8 +444,10 @@
 
 .murtaza_cv_animation {
     font-size: 24px;
-    display: -webkit-box;
-    margin-left: -13px;
+    display: -webkit-inline-box;
+    float: right;
+    margin-top: 1px;
+    margin-right: 8px;
 }
 .murtaza_cv_animation .murtaza_cv_animation_li{
     margin: 2px;

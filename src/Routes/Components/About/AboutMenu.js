@@ -143,6 +143,19 @@ const AboutBtnLink =styled.a`
         font-weight: 500;
     }
 `;
+// const AboutBtnLink =styled(Link)`
+const FlagInAbout = styled.div`
+  display: flex;
+`;
+
+const FlagInAboutUl = styled.ul`
+  font-size: 22px;
+  display: -webkit-inline-box;
+`;
+
+const FlagInAboutLi = styled.li`
+  margin: 3px;
+`;
 
 
 // implementation languages
@@ -188,40 +201,35 @@ function AboutMenu({ aboutToggle }) {
               <AboutNavItem>
                 <AboutNavLinks to="/login">Sign In</AboutNavLinks>
               </AboutNavItem>
-              <div className="language-select">
-            
-                  <div className="dropdown">
-                    <ul
-                      className="dropdown-menu-about"
-                      aria-labelledby="dropdownMenuButton"
-                    >
-                      {languages.map(({ code, country_code }) => (
-                        <li key={country_code}>
-                          <a
-                            href="#"
-                            className={classNames("dropdown-item", {
-                              disabled: currentLanguageCode === code,
-                            })}
-                            onClick={() => {
-                              i18next.changeLanguage(code);
-                            }}
-                          >
-                            <span
-                              className={`flag-icon flag-icon-${country_code} mx-4`}
-                              style={{
-                                opacity: currentLanguageCode === code ? 0.7 : 1,
-                              }}
-                            ></span>
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-              </div>
+              
               <AboutNavBtn>
                 <AboutBtnLink to="/contactUs">Contact Us</AboutBtnLink>
               </AboutNavBtn>
-
+            
+              <FlagInAbout>
+                <FlagInAboutUl>
+                  {languages.map(({ code, country_code }) => (
+                    <FlagInAboutLi key={country_code}>
+                      <a
+                        href="#!"
+                        className={classNames("dropdown-item", {
+                          disabled: currentLanguageCode === code,
+                        })}
+                        onClick={() => {
+                          i18next.changeLanguage(code);
+                        }}
+                      >
+                        <span
+                          className={`flag-icon flag-icon-${country_code} mx-4`}
+                          style={{
+                            opacity: currentLanguageCode === code ? 0.7 : 1,
+                          }}
+                        ></span>
+                      </a>
+                    </FlagInAboutLi>
+                  ))}
+                </FlagInAboutUl>
+              </FlagInAbout>
               
             </AboutNavMenu>
           </AboutNavContainer>
