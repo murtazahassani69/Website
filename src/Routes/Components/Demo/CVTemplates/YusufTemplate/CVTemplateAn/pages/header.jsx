@@ -60,21 +60,19 @@ const Wrapper = styled.div`
   }
 `;
 
-class Header extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <div className="header header--centered">
-          <h1>Flags</h1>
-          <h1 className="heading-primary">
-            <span className="heading-primary--main">Joe Karaca</span>
-            <span className="heading-primary--sub">Full Stack Developer</span>
-          </h1>
-          <NavBar />
-        </div>
-      </Wrapper>
-    );
-  }
-}
+const Header = () => {
+  return (
+    <Wrapper>
+      <div className="header header--centered">
+        <h1>Flags</h1>
+        <h1 className="heading-primary">
+          <span className="heading-primary--main">Joe Karaca</span>
+          <span className="heading-primary--sub">Full Stack Developer</span>
+        </h1>
+        <NavBar />
+      </div>
+    </Wrapper>
+  );
+};
 
 export default Header;

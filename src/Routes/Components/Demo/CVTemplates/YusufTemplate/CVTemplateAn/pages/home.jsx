@@ -1,6 +1,11 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Header from "./header";
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
 
 const Wrapper = styled.div`
   .header--centered {
@@ -20,9 +25,9 @@ const Wrapper = styled.div`
   }
   .CVYusufTemp-btnPDF {
     background-color: transparent;
-    padding: .3rem 2rem;
+    padding: 0.3rem 2rem;
     position: relative;
-    margin-top:1%;
+    margin-top: 1%;
     text-transform: uppercase;
     font-size: 1.4rem;
     color: #7d6569;
@@ -75,31 +80,82 @@ const Wrapper = styled.div`
   }
 `;
 
-class home extends Component {
- 
-  render() {
-    return (
-      <Wrapper>
-       
-         <button id="CVYusufTemp-btnBack" onClick={() => {window.location.href="/templates"}}>
-           <i class="fas fa-arrow-circle-left"></i>&nbsp; Back to Templates</button>  
+const FlagInYousuf = styled.div`
+  float: right;
+  margin: 3px;
+  padding: 3px;
+`;
 
-        <iframe className="iframeV"
-          title="video about me"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/UwsrzCVZAb8"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-        <Header />
-  
-        <button className="CVYusufTemp-btnPDF">Download PDF</button>        
-                  
-      </Wrapper>
-    );
-  }
-}
+const FlagInYousuf1 = styled.span`
+  margin: 3px;
+  padding: 3px;
+  font-size: 20px;
+`;
+// Language implementation
+const languages = [
+  {
+    code: "en",
+    country_code: "gb",
+  },
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+];
 
-export default home;
+const Home = () => {
+  // language implementation
+  const currentLanguageCode = cookies.get("i18next") || "en";
+  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+  const { t } = useTranslation();
+
+  return (
+    <Wrapper>
+      <button
+        id="CVYusufTemp-btnBack"
+        onClick={() => {
+          window.location.href = "/templates";
+        }}
+      >
+        <i class="fas fa-arrow-circle-left"></i>&nbsp; Back to Templates
+      </button>
+      <FlagInYousuf>
+        {languages.map(({ code, country_code }) => (
+          <FlagInYousuf1 key={country_code}>
+            <a
+              href="#!"
+              className={classNames("dropdown-item", {
+                disabled: currentLanguageCode === code,
+              })}
+              onClick={() => {
+                i18next.changeLanguage(code);
+              }}
+            >
+              <span
+                className={`flag-icon flag-icon-${country_code} mx-2`}
+                style={{
+                  opacity: currentLanguageCode === code ? 0.7 : 1,
+                }}
+              ></span>
+            </a>
+          </FlagInYousuf1>
+        ))}
+      </FlagInYousuf>
+      <iframe
+        className="iframeV"
+        title="video about me"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UwsrzCVZAb8"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+      <Header />
+
+      <button className="CVYusufTemp-btnPDF">Download PDF</button>
+    </Wrapper>
+  );
+};
+
+export default Home;
