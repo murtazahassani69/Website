@@ -35,7 +35,7 @@ router.post('/', (req, res) => {
   try {
     pool.query(
       `INSERT INTO users (creationDate, firstName, lastName, email, password, dateOfBirth, lookingJobAt,
-        userTypeId, languageId, professionId, genderId ) 
+        userTypeId, languageId, professionId, genderId, cityId ) 
       VALUES ('${req.body.creationDate}',
               '${req.body.firstName}',
               '${req.body.lastName}',
@@ -46,7 +46,8 @@ router.post('/', (req, res) => {
               '${req.body.userTypeId}',
               '${req.body.languageId}',
               '${req.body.professionId}',
-              '${req.body.genderId}'
+              '${req.body.genderId}',
+              '${req.body.cityId}'
               )`,
       () => {console.log(req.body);
         res.send('Posted successfully.');

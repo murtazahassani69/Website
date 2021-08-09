@@ -1,21 +1,37 @@
-
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 import { Button, Card, CardBody, Col, Container,
-  Form, Input, InputGroup, Row } from 'reactstrap'
-import '../../css/UserSignUp.css'
-import ModelPopup from './ModelPopup'
-const axios = require('axios').default;
-const baseUrl = 'http://localhost:8080'
+  Form, Input, InputGroup, Row } from 'reactstrap';
+// languages import
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import cookies from "js-cookie";
+import classNames from "classnames";
 
-const UserSignUp = (props) => {
-  const initialInputState = {creationDate:'2020-2-2', firstName: 'Yusuf',lastName: 'Karaca', email: 'ykaraca@gmail.com', password:'555', password2:'555',
-    dateOfBirth: '2000-10-10', lookingJobAt:'developer', userTypeId:1, languageId:'', professionId:'', countryId:1,  genderId:'' }
-    const initial = { creationDate:'2020-2-2', firstName:'joes',lastName:'karaca', email:'kara@gmail.com', password:'555', 
-    dateOfBirth:'1980-1-1',lookingJobAt:'developer',userTypeId:1, languageId:1, professionId:1, genderId:1}
-  
-    const [userData, setUserData] = useState(initialInputState)
-  const { creationDate, firstName, lastName, email, password, password2, dateOfBirth, lookingJobAt, userTypeId, languageId, professionId, genderId } = userData
+import '../../css/UserSignUp.css';
+import moment from 'moment';
+import ModelPopup from './ModelPopup';
+const axios = require('axios').default;
+const baseUrl = 'http://localhost:8080';
+
+// Language implementation
+const languagesGREN = [
+  {
+    code: "en",
+    country_code: "gb",
+  },
+  {
+    code: "gr",
+    country_code: "gr",
+  },
+];
+
+const UserSignUp = () => {
+  const initialInputState = {creationDate:'', firstName: '',lastName: '', email: '', password:'', password2:'',
+    dateOfBirth: '1000-01-01', lookingJobAt:'', userTypeId:1, languageId:'', professionId:'', countryId:'',  genderId:'',cityId:'0'}
+     
+  const [userData, setUserData] = useState(initialInputState)
+  const { creationDate, firstName, lastName, email, password, password2, dateOfBirth, lookingJobAt, userTypeId, languageId, professionId, cityId, genderId } = userData
   const history = useHistory()
   const [pop, setPop] = useState({
     showPopup: false,
@@ -26,7 +42,10 @@ const UserSignUp = (props) => {
   const [cities, setCities] = useState([]);
   const [languages, setLanguages] = useState([]);
   const [professions, setProfessions] = useState([]);
-
+  // language state
+  const currentLanguageCode = cookies.get("i18next") || "en";
+  const currentLanguage = languagesGREN.find((l) => l.code === currentLanguageCode);
+  const { t } = useTranslation();
  
   const fetchCountries = async() => {
     try{
@@ -35,10 +54,9 @@ const UserSignUp = (props) => {
       console.log(`${error}`);
     }
   }
-  const fetchCities = async(countryid) => {
+  const fetchCities = async(ctId) => {
     try{
-      setCities(await (await axios.get(baseUrl+'/cities/'+countryid)).data);
-      console.log(cities);
+      setCities(await (await axios.get(baseUrl+'/cities/byCountry/'+ctId)).data);
     } catch(error){
       console.log(`${error}`);
     }
@@ -67,48 +85,50 @@ const UserSignUp = (props) => {
 
   useEffect(() => {
     fetchCountries();
-    //fetchCities();
     fetchLanguages();
     fetchProfessions();
+   // language implementation here
+    document.body.dir = currentLanguage.dir || "ltr";
+    document.title = t("appTitle");
     }, []);
  
 
   const handleChange= ( e ) => {
     e.preventDefault()
     setUserData({ ...userData, [e.target.name]:e.target.value })
-     
-    console.log(userData);
-    //console.log(e.target.name,e.target.value);
   }
 
   const handleChangeCountry= ( e ) => {
     e.preventDefault()
-    setUserData({ ...userData, [e.target.name]:e.target.value })
-    
-    const countryId = userData["countryId"];
-    console.log(countryId);
-
-    fetchCities(countryId);
-
-    //console.log(e.target.name,e.target.value);
+    setUserData({ ...userData, countryId:e.target.value })
+    const ctId = e.target.value;
+    if(ctId>0)fetchCities(ctId);
+    timeStamp();
   }
 
-  const addUser = () => {   
+  const timeStamp = () => {  
+    let now = moment(Date.now()).format('YYYY-MM-DD HH:mm:ss');
+    setUserData({...userData,creationDate:now});
+  }
+
+  const addUser = () => {  
     if(password!==password2){
       setPop({
         showPopup: !pop.showPopup,
         text:'ooppps ! Your password doesn`t match'
       })
         
-    }else{  
-      if (firstName.length>=3&lastName.length>=3&email.length>=3&password.length>=3&dateOfBirth.length>=3
+    }else{ 
+      if (firstName.length>=3&lastName.length>=3&email.length>=3&password.length>=3 
         &lookingJobAt.length>=3&languageId.length>=1&professionId.length>=1&genderId.length>=1){ 
           postUser(userData);
-               console.log('Register SUCCESS now you can Login')
-               console.log(userData);
-              }  else{setPop({showPopup: !pop.showPopup,text:"please fill all fields"})}     
+          console.log('Register SUCCESS')
+          setPop({showPopup: !pop.showPopup,text:"registration is succesfull"})
+          setTimeout(() => {
+            window.location.reload(); 
+          }, 600); 
+        }  else{setPop({showPopup: !pop.showPopup,text:"please fill all fields"})}     
     }
- 
   }
 
   return(
@@ -121,15 +141,43 @@ const UserSignUp = (props) => {
                 <Form id="temp-div-signUp-form">
                   <div className="mb-2 pageheading">
                     <div className='col-sm-12 btn btn-primary' onClick={() => {window.location.href="/templates"}}>
-                      <i className="fas fa-arrow-circle-left"></i>&nbsp;  Back to Templates
+                      <i className="fas fa-arrow-circle-left"></i>&nbsp;   {t("signUpGoBack")}
                     </div>
+                    {/* flag start */ }
+                    <div className="dropdown_menu_sign_up">
+                      {languagesGREN.map(({ code, country_code }) => (
+                        <span
+                          key={country_code}
+                          className="dropdown_menu_sign_up_li"
+                        >
+                          <a
+                            href="#!"
+                            className={classNames("dropdown-item", {
+                              disabled: currentLanguageCode === code,
+                            })}
+                            onClick={() => {
+                              i18next.changeLanguage(code);
+                            }}
+                          >
+                            <span
+                              className={`flag-icon flag-icon-${country_code} mx-2`}
+                              style={{
+                                opacity: currentLanguageCode === code ? 0.7 : 1,
+                              }}
+                            ></span>
+                          </a>
+                        </span>
+                      ))}
+                    </div>
+                    {/* /** * flag end */ }
+     
                   </div>
                   <InputGroup className=' temp-div-signUp-mb-3'>
                     <Input
                       className="tempForm-signup-input"
                       type='text'
                       onChange={handleChange}
-                      name='name'
+                      name='firstName'
                       value={firstName}
                       placeholder='First Name' ></Input><span>&#42;</span>
                   </InputGroup>
@@ -190,7 +238,7 @@ const UserSignUp = (props) => {
                       className="tempForm-signup-inputRadio"
                       type='radio' 
                       name='genderId'
-                      onChange={e =>e.target.checked ? (userData.genderId='0'):null}
+                      onChange={e =>e.target.checked ? (userData.genderId='3'):null}
                     ></Input> &#42;
                   </InputGroup>
                   <InputGroup className='temp-div-signUp-mb-3'>
@@ -217,16 +265,16 @@ const UserSignUp = (props) => {
                 
                       <select id="cityId" name="cityId" 
                         className='temp-div-signUp-mb-4' onChange={handleChange}>
-                          <option value={cities}>-Select City-</option>
+                          <option value={cityId}>-Select City-</option>
                             { cities.map((city) =>
-                              <option value={city.id}>{city.country}</option> )
+                              <option value={city.id}>{city.cityName}/{city.state}</option> )
                              }
                       </select>
                   </InputGroup>
                   <InputGroup>
                       <select id="languageId" name="languageId" 
                         className='temp-div-signUp-mb-4' onChange={handleChange}>
-                          <option value={languageId}>-Select Language-</option>
+                          <option value={languageId}>Select Language</option>
                             { languages.map((language) =>
                               <option value={language.id}>{language.language}</option> )
                             }
@@ -235,7 +283,7 @@ const UserSignUp = (props) => {
                   <InputGroup>
                     <select id="professionId" name="professionId" 
                         className='temp-div-signUp-mb-4' onChange={handleChange}>
-                          <option value={professionId}>-Select Profession-</option>
+                          <option value={professionId}>Select Profession</option>
                             { professions.map((profession) =>
                               <option value={profession.id}>{profession.profession}</option> )
                             }

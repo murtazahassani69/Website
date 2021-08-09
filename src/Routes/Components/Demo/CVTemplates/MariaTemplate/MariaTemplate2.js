@@ -64,30 +64,7 @@ function Header() {
         <h1 className="CVMarTemp2-header-fname">Helen Elien</h1>
         <span className="CVMarTemp2-header-proffesion">Web Developer</span>
       </div>
-      <ul
-        className="dropdown_menu_maria"
-      >
-        {languages.map(({ code, country_code }) => (
-          <li key={country_code} className="dropdown_menu_maria_li">
-            <a
-              href="#!"
-              className={classNames("dropdown-item", {
-                disabled: currentLanguageCode === code,
-              })}
-              onClick={() => {
-                i18next.changeLanguage(code);
-              }}
-            >
-              <span
-                className={`flag-icon flag-icon-${country_code} mx-2`}
-                style={{
-                  opacity: currentLanguageCode === code ? 0.7 : 1,
-                }}
-              ></span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      
       <div className="CVMarTemp2-header-right">
         <div className="CVMarTemp2-header-icons">
           <div className="CVMarTemp2-header-icon">
@@ -113,8 +90,33 @@ function Header() {
         <a className="CVMarTemp2-header-back" href="/templates">
           &larr;Back
         </a>
+
+        
       </div>
-      
+      <ul
+        className="dropdown_menu_maria"
+      >
+        {languages.map(({ code, country_code }) => (
+          <li key={country_code} className="dropdown_menu_maria_li">
+            <a
+              href="#!"
+              className={classNames("dropdown-item", {
+                disabled: currentLanguageCode === code,
+              })}
+              onClick={() => {
+                i18next.changeLanguage(code);
+              }}
+            >
+              <span
+                className={`flag-icon flag-icon-${country_code} mx-2`}
+                style={{
+                  opacity: currentLanguageCode === code ? 0.7 : 1,
+                }}
+              ></span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

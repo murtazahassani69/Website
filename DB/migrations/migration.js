@@ -8,6 +8,12 @@ exports.up = function(knex, Promise){
     table.varchar('userType', 100).notNullable();
     table.varchar('description', 100).notNullable();
   })
+  .createTable('adminTypes', table =>{
+    table.increments('id').primary();
+    table.timestamp('creationDate').notNullable();
+    table.varchar('adminType', 100).notNullable();
+    table.varchar('description', 100).notNullable();
+  })
   .createTable('cvTemplates', table => {
     table.increments('id').primary();
     table.timestamp('creationDate').notNullable();
@@ -54,6 +60,16 @@ exports.up = function(knex, Promise){
     table.varchar('cityName', 100).notNullable();
     table.integer('stateId').unsigned().nullable();
     table.foreign('stateId').references('states.id');
+  })
+  .createTable('admins', table => {
+    table.increments('id').primary();
+    table.timestamp('creationDate').notNullable();
+    table.varchar('firstName', 100).notNullable();
+    table.varchar('lastName', 100).notNullable();
+    table.varchar('email', 100).notNullable();
+    table.varchar('password', 100).notNullable();
+    table.integer('adminTypeId').unsigned().nullable();
+    table.foreign('adminTypeId').references('adminTypes.id');
   })
   .createTable('users', table =>{
     table.increments('id').primary();
@@ -103,4 +119,6 @@ exports.down = function(knex, Promise){
   .dropTable('languages')
   .dropTable('cvTemplates')
   .dropTable('userTypes')
+  .dropTable('admins')
+  .dropTable('adminTypes')
 };

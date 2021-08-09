@@ -21,7 +21,7 @@ import TempMu2 from './Routes/Components/TempMu2';
 import TempY1 from './Routes/Components/TempYu1';
 import TempY2 from './Routes/Components/TempYu2';
 import TempY3 from './Routes/Components/TempYu3An';
-// import User from './Routes/Components/UserSignUp.jsx';
+import User from './Routes/Components/UserSignUp.jsx';
 import Error from './Routes/Components/Error'; // Notice the keyword "exact" so react just renders the default page when nothing but the '/' is on it.
 
 // Swith Component renders the first match and ignore the rest.//
@@ -50,7 +50,7 @@ function App() {
           <Route path='/templateY3' exact component={TempY3} />
           <Route path='/templateMu1' exact component={TempMu1} />
           <Route path='/templateMu2' exact component={TempMu2} />
-          {/* <Route path='/signUp' exact component={User} /> */}
+          <Route path='/signUp' exact component={User} />
           <Route path='*' component={Error} />
         </Switch>
       </div>
