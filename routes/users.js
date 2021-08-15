@@ -34,19 +34,22 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   try {
     pool.query(
-      `INSERT INTO users (creationDate, firstName, lastName, email, password, country, language, dateOfBirth, profession
-        lookingJobAt, gender) 
+      `INSERT INTO users (creationDate, firstName, lastName, email, password, dateOfBirth, lookingJobAt,
+        userTypeId, languageId, professionId, genderId, cityId ) 
       VALUES ('${req.body.creationDate}',
-    '${req.body.firstName}',
-    '${req.body.lastName}',
-    '${req.body.email}',
-    '${req.body.password}',
-    '${req.body.language}',
-    '${req.body.dateOfBirth}',
-    '${req.body.profession}',
-    '${req.body.lookingJobAt}',
-    '${req.body.gender}')`,
-      () => {
+              '${req.body.firstName}',
+              '${req.body.lastName}',
+              '${req.body.email}',
+              '${req.body.password}',
+              '${req.body.dateOfBirth}',
+              '${req.body.lookingJobAt}',
+              '${req.body.userTypeId}',
+              '${req.body.languageId}',
+              '${req.body.professionId}',
+              '${req.body.genderId}',
+              '${req.body.cityId}'
+              )`,
+      () => {console.log(req.body);
         res.send('Posted successfully.');
       }
     );

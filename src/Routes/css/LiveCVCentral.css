@@ -5,6 +5,7 @@
 .liveCV-central-head{
     height: 25px;
     margin-top: 14vh;
+    padding-top: 2rem;
     animation: fadeIn 1.4s ease-out forwards, moveInLeft 1.4s ease-out;
 }
 .liveCV-central-headdown{

@@ -103,10 +103,16 @@
 .JaTAniTemplateText {
   font-size: 18px;
   color: black;
-  padding: 0 2rem;
+  padding: 0 1rem;
   letter-spacing: 0.7px;
 }
 
+@media screen and (max-width: 900px) {
+  .JaDTemplateText,
+  .JaTAniTemplateText {
+    padding: 0 .8rem;
+  }
+}
 @media screen and (max-width: 800px) {
   #JaTAniTag {
     flex-basis: 45%;

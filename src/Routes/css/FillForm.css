@@ -1,0 +1,204 @@
+:root {
+    --background: #eff6fc;
+    --main-blue: #1badec;
+    --secondary-blue: #0079e9;
+  }
+  
+  .fillForm-container {
+    position: relative;
+    top: 5vh;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+  }
+  
+  .fillForm-header > h1 {
+    padding: 4rem;
+  }
+  
+  .fillForm-header > h4 {
+    text-align: left;
+    padding: 0rem 5rem;
+  }
+  
+  .fillForm-hr-centarl {
+    height: 0;
+    border: 1px solid var(--main-blue);
+    display: block;
+    margin: 2.5rem 6.2rem 0 6.2rem;
+  }
+  
+  /* ------- STEPS --------- */
+  
+  .fillForm-steps-container {
+    position: sticky;
+    top: 4.5rem;
+    /* margin: 5rem 2rem 2rem 0rem; */
+    padding-top: 1rem;
+    display: flex;
+    background: var(--background);
+    z-index: 5;
+    width: 100%;
+  }
+  
+  .fillForm-num_txt_group {
+    width: 100%;
+  }
+  
+  .fillForm-step-round {
+    border: 2px solid var(--main-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-blue);
+  }
+  
+  .fillForm-num_txt_group p {
+    margin-top: 0.1rem;
+  }
+  
+  .fillForm-horizontal-line {
+    height: 0;
+    width: 100%;
+    border: 2px solid var(--main-blue);
+    display: block;
+    margin-top: 25px;
+  }
+  
+  .fillForm-grouped {
+    display: flex;
+  
+    width: 100%;
+  }
+  
+  .fillForm-grouped:last-child {
+    width: 50%;
+  }
+  
+  /*---------- PERSONAL DETAILS ----------*/
+  
+  .fillForm-personal_details {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  .fillForm-personal_details h3 {
+    align-self: flex-start;
+    margin-left: 6.2rem;
+    font-size: 1.5rem;
+  }
+  
+  .fillForm-pd-input-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  .fillForm-photo_label {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 40%;
+    margin: 2rem;
+  }
+  
+  .fillForm-photo_label label {
+    width: 0;
+    border: none;
+  }
+  
+  .fillForm-photo_label input {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border: none;
+  }
+  
+  .fillForm-pd-align_labels {
+    width: 25%;
+    text-align: left;
+  }
+  
+  .fillForm-label-container input {
+    width: 50%;
+    height: 4vh;
+    border: 2px solid var(--main-blue);
+    border-radius: 5px;
+  }
+  
+  .fillForm-label-container input:focus {
+    outline: 0;
+    border: 2px solid var(--secondary-blue);
+  }
+  
+  .fillForm-label-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    margin: 2rem;
+  }
+  
+  .fillForm-avatar {
+    width: 12%;
+  }
+  
+  #photo {
+    color: transparent;
+  }
+  
+  /* ------------ EDUCATION ----------------*/
+  .fillForm-education-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    margin-left: 6.2rem;
+    margin-right: 4rem;
+  }
+  .fillForm-education-container h3 {
+    font-size: 1.5rem;
+  }
+  
+  .fillForm-add-container:hover {
+    background: red;
+    cursor: pointer;
+    /* width: 100%; */
+  }
+  
+  #fillForm-plus-icon {
+    color: var(--main-blue);
+    margin-right: 1rem;
+  }
+  
+  .fill-form-add-btn {
+    border: none;
+    background: transparent;
+    color: var(--main-blue);
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .fillForm-fullwidth-form {
+    width: 100%;
+  }
+  /*---------- FORM ----------*/
+  .fillForm-form-container {
+    border: 1px solid var(--main-blue);
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .fillFrom-form_header {
+    margin-bottom: 2rem;
+  }
+  
+  .fillForm-inputsForm-closed {
+    display: none;
+  }
+  

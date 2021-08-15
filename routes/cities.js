@@ -16,6 +16,24 @@ router.get('/', (req, res) => {
   }
 });
 
+router.get('/byCountry/:id', (req, res) => {
+  try{
+    pool.query(`SELECT ci.id, ci.cityName, st.state 
+    FROM cities ci, 
+         states st
+    WHERE
+         ci.stateId = st.id AND
+         st.countryId = ${req.params.id};`, function (error, results, fields) {
+            if (error) {
+                res.send(error);
+            }
+            res.send(results);
+    });
+  } catch (error) {
+    if (error) console.error(`Error: ${error.message}`);
+  }
+});
+
 /* Specific GET method */
 router.get('/:id', (req, res) => {
   try {
