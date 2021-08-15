@@ -28,7 +28,7 @@ export default function AdminLogin() {
           </div>
         </div>
         <button type="button" class="btn btn-lg btn-primary" disabled>
-          Primary button
+         Login
         </button>
       </form>
     </div>
